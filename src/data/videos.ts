@@ -14,7 +14,7 @@ export const FEATURED_VIDEOS: Video[] = [
   },
   {
     id: "YTefIyKLBQA",
-    title: "Love and Peace (Short)",
+    title: "Liebe und Frieden (Short)",
     kind: "short",
     featured: true,
   },

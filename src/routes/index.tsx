@@ -22,7 +22,7 @@ function Home() {
   const { yt: initial } = Route.useLoaderData() as { yt: YtStats };
   const yt = useLiveYoutube(initial);
   const loveViews = viewsFor(yt, "KBXOvQr3bAY") ?? 5_600_000;
-  const shortViews = viewsFor(yt, "YTefIyKLBQA") ?? 1_394_968;
+  const shortViews = viewsFor(yt, "YTefIyKLBQA") ?? 1_300_000;
   const featured = TRACKS.filter((t) => t.featured);
   const latest = TRACKS.slice(0, 8);
   const copy = useT();
@@ -102,7 +102,7 @@ function Home() {
             <YoutubeEmbed videoId="KBXOvQr3bAY" title="Love and Peace" views={loveViews} />
             <YoutubeEmbed
               videoId="YTefIyKLBQA"
-              title="Love and Peace (Short)"
+              title="Liebe und Frieden"
               views={shortViews}
               short
             />
