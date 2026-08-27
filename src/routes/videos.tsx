@@ -47,7 +47,7 @@ function VideosPage() {
         {love ? (
           <p className="mb-8 text-sm text-muted">
             „Love and Peace“: mit Video und Short fast ein weltweites Lied für den Frieden —
-            zusammen fast sieben Millionen Aufrufe ({formatNumber(love)} im Video).
+            zusammen rund sieben Millionen Aufrufe ({formatNumber(love)} im Video).
           </p>
         ) : null}
 

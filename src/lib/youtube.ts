@@ -24,10 +24,10 @@ const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36";
 
 const FALLBACK: Omit<YtStats, "entries" | "fetchedAt"> = {
-  subscribers: 103_000,
+  subscribers: 112_000,
   videoCount: 49,
-  totalViews: 10_557_742,
-  views365: 10_557_742,
+  totalViews: 10_960_000,
+  views365: 10_960_000,
   joined: "2026-07-03",
   live: false,
 };

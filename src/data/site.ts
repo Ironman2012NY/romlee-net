@@ -16,9 +16,9 @@ export const SITE = {
     channelId: "UCRhEphOKTnrCO9BjKjmSOnA",
     handle: "@RomLeeMusic",
     videoCount: 49,
-    subscribersFallback: 103000,
-    subscribersLabel: "103 Tsd.",
-    viewsFallback: 10557742,
+    subscribersFallback: 112000,
+    subscribersLabel: "112 Tsd.",
+    viewsFallback: 10960000,
   },
   spotify: {
     url: "https://open.spotify.com/artist/4ASsjNRRtAasO5XcFdpQii",

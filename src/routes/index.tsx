@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
 function Home() {
   const { yt: initial } = Route.useLoaderData() as { yt: YtStats };
   const yt = useLiveYoutube(initial);
-  const loveViews = viewsFor(yt, "KBXOvQr3bAY") ?? 5_216_295;
+  const loveViews = viewsFor(yt, "KBXOvQr3bAY") ?? 5_600_000;
   const shortViews = viewsFor(yt, "YTefIyKLBQA") ?? 1_394_968;
   const featured = TRACKS.filter((t) => t.featured);
   const latest = TRACKS.slice(0, 8);
@@ -95,7 +95,7 @@ function Home() {
           <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">Love and Peace</h2>
           <p className="mt-3 mb-6 max-w-xl text-sm leading-relaxed text-muted">
             Mit Video und Short ist „Love and Peace“ fast zu einem weltweiten Lied für den Frieden geworden.
-            {formatNumber(loveViews)} Aufrufe im Video, {formatNumber(shortViews)} im Short — zusammen fast sieben
+            {formatNumber(loveViews)} Aufrufe im Video, {formatNumber(shortViews)} im Short — zusammen rund sieben
             Millionen.
           </p>
           <div className="grid gap-4 sm:grid-cols-[1fr_11rem] sm:items-start">
