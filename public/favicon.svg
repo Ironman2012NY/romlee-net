@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Rom Lee">
+  <rect width="32" height="32" rx="7" fill="#070c14"/>
+  <path fill="#f3efe6" fill-rule="evenodd" d="M8 5h10.6c4.15 0 6.85 2.4 6.85 6.05 0 2.75-1.5 4.8-4.2 5.55L26.4 24.8h-5.4l-5.1-7.5H12.5v7.5H8V5zm4.5 3.4v5.95h5.45c2.05 0 3.25-1.15 3.25-2.98S19.95 8.4 17.95 8.4H12.5z"/>
+  <rect x="8" y="26.2" width="16" height="1.8" fill="#c86a45"/>
+</svg>

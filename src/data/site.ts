@@ -1,0 +1,48 @@
+export const SITE = {
+  name: "Rom Lee Music",
+  alsoAs: "także Leszek",
+  brand: "Rom Lee Music",
+  tagline: "Music for all people. Love and Peace.",
+  email: "info@romlee.net",
+  phone: "02331 402230",
+  phoneHref: "tel:+492331402230",
+  address: "58135 Hagen",
+  operator: "Prof. Dr. Roman Leischik Medconsulting e. K.",
+  owner: "Prof. Dr. med. Roman Leischik",
+  register: "HRA 6625",
+  court: "Amtsgericht Hagen",
+  youtube: {
+    url: "https://www.youtube.com/@RomLeeMusic",
+    channelId: "UCRhEphOKTnrCO9BjKjmSOnA",
+    handle: "@RomLeeMusic",
+    videoCount: 49,
+    subscribersFallback: 103000,
+    subscribersLabel: "103 Tsd.",
+    viewsFallback: 10557742,
+  },
+  spotify: {
+    url: "https://open.spotify.com/artist/4ASsjNRRtAasO5XcFdpQii",
+    embed: "https://open.spotify.com/embed/artist/4ASsjNRRtAasO5XcFdpQii?utm_source=generator",
+    artistId: "4ASsjNRRtAasO5XcFdpQii",
+  },
+  pdf: "/files/musik-puls-herz-sport-web-compressed.pdf",
+  original: "https://romlee.net",
+  hospice: {
+    name: "Krakowskie Hospicjum dla Dzieci im. ks. Józefa Tischnera",
+    krs: "0000203313",
+    email: "kontakt@hospicjumtischnera.org",
+    phone: "+48 12 269 86 20",
+    iban: "98 1240 1444 1111 0010 1566 6214",
+    swift: "PKOPPLPW",
+  },
+} as const;
+
+export const NAV = [
+  { to: "/", label: "Home" },
+  { to: "/musik", label: "Musik" },
+  { to: "/songs", label: "Songs" },
+  { to: "/songtexte", label: "Songtexte" },
+  { to: "/videos", label: "Videos" },
+  { to: "/fotos", label: "Fotos" },
+  { to: "/blog", label: "Blog" },
+] as const;
