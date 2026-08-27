@@ -220,17 +220,29 @@ Dla mnie utwór ma więc jednocześnie trzy poziomy: poziom osobisty – o bólu
     title: "Nächte und Wölfe",
     lang: "de",
     youtubeId: "ul5DEIL8A-M",
-    text: `“Nights and Wolves” is a visual journey from destruction and darkness toward light, hope and peace. The film opens in a devastated cityscape. Ruined buildings, rubble and empty streets create an atmosphere of loss and isolation. A lone man walks through this broken world, surrounded by the visible scars of destruction. The images reflect the inner “wolves” of the song — fear, pain, memories and the darkness that can follow us through the night.
+    text: `„Nächte und Wölfe (Darkness and Light)“ ist eine Metapher. Man erkennt sie oft erst auf den zweiten Blick.
 
-The scenery gradually changes. The ruined city gives way to a vast, dry and almost lifeless landscape filled with oil pumps, pipelines and cracked earth. Yet on the horizon the sun begins to rise. Its warm light becomes stronger, and small signs of life appear in the barren ground. The sun becomes a symbol of hope: darkness does not last forever.
+Die ersten Bilder stammen aus Gaza und Mariupol: zerstörte Straßen, Trümmer, leere Häuser. Ein einzelner Mensch geht durch diese Welt. Die Wölfe der Nacht stehen für Angst, Schmerz, Erinnerung — und für das, was Städte und Land zerreißt.
 
-Other people begin to join the journey. What started with one person slowly becomes a shared path. Isolation turns into connection, and the mood changes from loneliness and despair to confidence and solidarity.
+Danach weitet sich die Landschaft. Aus der Stadt wird eine trockene, fast tote Ebene: Ölpumpen, Pipelines, rissige Erde. Auch das gehört zur Metapher: was wir der Erde nehmen, bis nichts mehr wächst.
 
-In the final part, the film opens into a huge gathering of people. A large peace symbol rises above the crowd. The once-dark and devastated world is now filled with people, light and a sense of common purpose.
+Dann kommt Licht. Die Sonne geht auf. Andere Menschen schließen sich an. Aus Einsamkeit wird ein Weg miteinander. Am Ende steht ein Friedenszeichen über einer Menge — nicht als Slogan, sondern als Hoffnung: Wir können alles wieder aufbauen.
 
-The film’s message is simple but powerful: pain and darkness are real, but they do not have the final word. After every night, the sun can rise again. And love, peace and human solidarity can be stronger than the wolves that surround us.
+Auf YouTube bleibt das ungesagt. Der Film soll zuerst wirken. Wer genauer hinsieht, sieht Gaza, Mariupol, die ausgetrocknete Erde — und die Botschaft, dass Nacht und Zerstörung nicht das letzte Wort haben.
 
-Hey, nights and wolves — we will drive you away with our love and our peace. We’ll give you a punch.`,
+Hey, Nächte und Wölfe — wir werden euch vertreiben mit unserer Liebe und unserem Frieden.
+
+“Nights and Wolves (Darkness and Light)” is a metaphor. You often see it only at second glance.
+
+The opening images come from Gaza and Mariupol: ruined streets, rubble, empty houses. A lone person walks through that world. The wolves of the night stand for fear, pain, memory — and for what tears cities and land apart.
+
+Then the landscape opens. The city gives way to a dry, almost lifeless plain: oil pumps, pipelines, cracked earth. That too is the metaphor: what we take from the ground until nothing grows.
+
+Then light. The sun rises. Other people join. Isolation becomes a shared path. At the end a peace sign stands over a crowd — not as a slogan, but as hope: we can rebuild everything.
+
+It is not spelled out on YouTube. The film is meant to work first. Those who look closer see Gaza, Mariupol, the dried earth — and the message that night and destruction do not have the last word.
+
+Hey, nights and wolves — we will drive you away with our love and our peace.`,
   },
   {
     slug: "durny-sen",
