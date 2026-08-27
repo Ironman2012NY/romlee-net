@@ -222,25 +222,21 @@ Dla mnie utwór ma więc jednocześnie trzy poziomy: poziom osobisty – o bólu
     youtubeId: "ul5DEIL8A-M",
     text: `„Nächte und Wölfe (Darkness and Light)“ ist eine Metapher. Man erkennt sie oft erst auf den zweiten Blick.
 
-Die ersten Bilder stammen aus Gaza und Mariupol: zerstörte Straßen, Trümmer, leere Häuser. Ein einzelner Mensch geht durch diese Welt. Die Wölfe der Nacht stehen für Angst, Schmerz, Erinnerung — und für das, was Städte und Land zerreißt.
+Zerstörte Straßen, Trümmer, ein Mensch allein. Die Wölfe der Nacht stehen für Angst, Schmerz, Erinnerung — und für das, was Städte und Land zerreißt. Danach eine trockene, fast tote Ebene: Maschinen, rissige Erde. Auch das gehört zum Bild.
 
-Danach weitet sich die Landschaft. Aus der Stadt wird eine trockene, fast tote Ebene: Ölpumpen, Pipelines, rissige Erde. Auch das gehört zur Metapher: was wir der Erde nehmen, bis nichts mehr wächst.
+Dann Licht. Die Sonne geht auf. Andere Menschen schließen sich an. Aus Einsamkeit wird ein Weg miteinander. Am Ende Hoffnung: Wir können alles wieder aufbauen.
 
-Dann kommt Licht. Die Sonne geht auf. Andere Menschen schließen sich an. Aus Einsamkeit wird ein Weg miteinander. Am Ende steht ein Friedenszeichen über einer Menge — nicht als Slogan, sondern als Hoffnung: Wir können alles wieder aufbauen.
-
-Auf YouTube bleibt das ungesagt. Der Film soll zuerst wirken. Wer genauer hinsieht, sieht Gaza, Mariupol, die ausgetrocknete Erde — und die Botschaft, dass Nacht und Zerstörung nicht das letzte Wort haben.
+Der Film soll zuerst wirken. Wer genauer hinsieht, sieht mehr. Die Nacht hat nicht das letzte Wort.
 
 Hey, Nächte und Wölfe — wir werden euch vertreiben mit unserer Liebe und unserem Frieden.
 
 “Nights and Wolves (Darkness and Light)” is a metaphor. You often see it only at second glance.
 
-The opening images come from Gaza and Mariupol: ruined streets, rubble, empty houses. A lone person walks through that world. The wolves of the night stand for fear, pain, memory — and for what tears cities and land apart.
+Ruined streets, rubble, one person alone. The wolves of the night stand for fear, pain, memory — and for what tears cities and land apart. Then a dry, almost lifeless plain: machines, cracked earth. That too belongs to the image.
 
-Then the landscape opens. The city gives way to a dry, almost lifeless plain: oil pumps, pipelines, cracked earth. That too is the metaphor: what we take from the ground until nothing grows.
+Then light. The sun rises. Other people join. Isolation becomes a shared path. At the end, hope: we can rebuild everything.
 
-Then light. The sun rises. Other people join. Isolation becomes a shared path. At the end a peace sign stands over a crowd — not as a slogan, but as hope: we can rebuild everything.
-
-It is not spelled out on YouTube. The film is meant to work first. Those who look closer see Gaza, Mariupol, the dried earth — and the message that night and destruction do not have the last word.
+The film is meant to work first. Those who look closer see more. Night does not have the last word.
 
 Hey, nights and wolves — we will drive you away with our love and our peace.`,
   },
