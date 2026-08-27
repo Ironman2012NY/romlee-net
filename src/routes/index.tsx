@@ -94,11 +94,19 @@ function Home() {
           <p className="text-xs uppercase tracking-[0.18em] text-accent">{copy.mostViewed}</p>
           <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">Love and Peace</h2>
           <p className="mt-3 mb-6 max-w-xl text-sm leading-relaxed text-muted">
-            Mit dem Video ist „Love and Peace“ fast zu einem weltweiten Lied für den Frieden geworden.
-            {formatNumber(loveViews)} Aufrufe, plus {formatNumber(shortViews)} im Short — zusammen fast sieben
+            Mit Video und Short ist „Love and Peace“ fast zu einem weltweiten Lied für den Frieden geworden.
+            {formatNumber(loveViews)} Aufrufe im Video, {formatNumber(shortViews)} im Short — zusammen fast sieben
             Millionen.
           </p>
-          <YoutubeEmbed videoId="KBXOvQr3bAY" title="Love and Peace" views={loveViews} />
+          <div className="grid gap-4 sm:grid-cols-[1fr_11rem] sm:items-start">
+            <YoutubeEmbed videoId="KBXOvQr3bAY" title="Love and Peace" views={loveViews} />
+            <YoutubeEmbed
+              videoId="YTefIyKLBQA"
+              title="Love and Peace (Short)"
+              views={shortViews}
+              short
+            />
+          </div>
         </div>
         <div>
           <p className="text-xs uppercase tracking-[0.18em] text-accent">{copy.current}</p>
