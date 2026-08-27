@@ -102,7 +102,7 @@ function Home() {
             <YoutubeEmbed videoId="KBXOvQr3bAY" title="Love and Peace" views={loveViews} />
             <YoutubeEmbed
               videoId="YTefIyKLBQA"
-              title="Liebe und Frieden"
+              title="Love and Peace (Short)"
               views={shortViews}
               short
             />
