@@ -16,9 +16,9 @@ export const POSTS: BlogPost[] = [
     dateLabel: "August 2026",
     cover: "/images/covers/4941713.jpg",
     excerpt:
-      "Ein Lied über Mut, Hoffnung, Menschlichkeit und die Kraft einer Idee, die sich nicht zum Schweigen bringen lässt.",
+      "Mit dem Video fast ein weltweites Lied für den Frieden: Mut, Hoffnung, Menschlichkeit — und eine Idee, die sich nicht zum Schweigen bringen lässt.",
     paragraphs: [
-      "“Love and Peace” is a song about courage, hope, humanity, and the power of an idea that cannot be silenced. In the video, the singer appears as a narrator. He guides the audience through the words and messages of six extraordinary men who inspired generations to believe in peace:",
+      "“Love and Peace” is a song about courage, hope, humanity, and the power of an idea that cannot be silenced. With the video it has become almost a worldwide song for peace. In the video, the singer appears as a narrator. He guides the audience through the words and messages of six extraordinary men who inspired generations to believe in peace:",
       "Martin Luther King Jr. spoke about overcoming hatred through love. Mahatma Gandhi showed the strength of nonviolence. Nelson Mandela reminded us that no one is born hating another person. Pablo Neruda represents hope that continues to grow even when people try to destroy it. Bob Marley carried the message of One Love. John Lennon asked the world to give peace a chance.",
       "The narrator connects their voices with the present and asks a simple question: After hatred, wars, and walls, is it finally time to choose another way?",
       "The refrain carries the central message: Make peace, try to love. Make peace and choose to love. Make peace and learn to love. You can’t stop the people when they rise for love. You can stop a song for a while. But you cannot stop an idea whose time has come.",

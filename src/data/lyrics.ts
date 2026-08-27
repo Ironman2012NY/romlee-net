@@ -13,7 +13,10 @@ export const SONG_TEXTS: SongText[] = [
     title: "Love and Peace",
     lang: "en",
     youtubeId: "KBXOvQr3bAY",
-    text: `Martin said: only love can drive out hate.
+    text: `With the video, “Love and Peace” has become almost a worldwide song for peace.
+Mit dem Video ist „Love and Peace“ fast zu einem weltweiten Lied für den Frieden geworden.
+
+Martin said: only love can drive out hate.
 Gandhi said: my life is my message.
 Mandela said: no one is born to hate.
 Neruda said: you may cut the flowers — but spring will come.

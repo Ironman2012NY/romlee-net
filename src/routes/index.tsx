@@ -21,8 +21,8 @@ export const Route = createFileRoute("/")({
 function Home() {
   const { yt: initial } = Route.useLoaderData() as { yt: YtStats };
   const yt = useLiveYoutube(initial);
-  const loveViews = viewsFor(yt, "KBXOvQr3bAY") ?? 5_189_304;
-  const shortViews = viewsFor(yt, "YTefIyKLBQA") ?? 1_290_022;
+  const loveViews = viewsFor(yt, "KBXOvQr3bAY") ?? 5_216_295;
+  const shortViews = viewsFor(yt, "YTefIyKLBQA") ?? 1_394_968;
   const featured = TRACKS.filter((t) => t.featured);
   const latest = TRACKS.slice(0, 8);
   const copy = useT();
@@ -94,8 +94,9 @@ function Home() {
           <p className="text-xs uppercase tracking-[0.18em] text-accent">{copy.mostViewed}</p>
           <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">Love and Peace</h2>
           <p className="mt-3 mb-6 max-w-xl text-sm leading-relaxed text-muted">
-            Make peace, try to love. Über {formatNumber(loveViews)} Aufrufe auf YouTube — plus{" "}
-            {formatNumber(shortViews)} im Short.
+            Mit dem Video ist „Love and Peace“ fast zu einem weltweiten Lied für den Frieden geworden.
+            {formatNumber(loveViews)} Aufrufe, plus {formatNumber(shortViews)} im Short — zusammen fast sieben
+            Millionen.
           </p>
           <YoutubeEmbed videoId="KBXOvQr3bAY" title="Love and Peace" views={loveViews} />
         </div>

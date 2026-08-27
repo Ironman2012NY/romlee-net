@@ -46,7 +46,8 @@ function VideosPage() {
 
         {love ? (
           <p className="mb-8 text-sm text-muted">
-            „Love and Peace“: {formatNumber(love)} Aufrufe auf YouTube.
+            „Love and Peace“: {formatNumber(love)} Aufrufe auf YouTube — mit dem Video fast ein weltweites
+            Lied für den Frieden. Video und Short zusammen fast sieben Millionen.
           </p>
         ) : null}
 
