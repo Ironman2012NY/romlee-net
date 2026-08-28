@@ -139,7 +139,7 @@ export const POSTS: BlogPost[] = [
     slug: "musik-puls-herz-sport",
     title: "Music, Pulse, Heart and Sport",
     dateLabel: "Wissenschaftlicher Artikel",
-    cover: "/images/blog/musik-puls-herz-sport.jpg",
+    cover: "/images/blog/musik-puls-herz-pubmed.png",
     coverContain: true,
     excerpt:
       "Musik ist nicht nur etwas, das wir hören. Wir spüren Rhythmus mit dem Körper – eine wissenschaftliche Arbeit von E. R. Gasenzer und R. Leischik.",
@@ -147,7 +147,8 @@ export const POSTS: BlogPost[] = [
       "Music is not only something we hear. We feel rhythm with our bodies, associate melodies with memories and emotions, and respond physiologically to tempo, harmony, and sound. Years before Rom Lee became a music project, this connection between music, the heart, and physical performance was already the subject of scientific work.",
       "In the medical review “Music, Pulse, Heart and Sport,” E. R. Gasenzer and R. Leischik examined how music can influence the cardiovascular system, exercise, rehabilitation, motivation, and recovery. Research discussed in the article shows that music can affect heart rate, exercise performance, motivation, and post-exercise recovery.",
       "At the same time, the effect of music is highly individual: rhythm, tempo, emotional meaning, personal preference, physical activity, and underlying disease all matter.",
-      "Den vollständigen Artikel gibt es als PDF.",
+      "Herz. 2018 Feb;43(1):43-52. doi: 10.1007/s00059-016-4520-7. PMID: 28116463.",
+      "Den vollständigen Artikel gibt es als PDF und bei PubMed.",
     ],
   },
 ];

@@ -45,6 +45,19 @@ function BlogPostPage() {
                   className="w-full rounded-2xl object-contain"
                 />
               </a>
+            ) : post.slug === "musik-puls-herz-sport" ? (
+              <a
+                href="https://pubmed.ncbi.nlm.nih.gov/28116463/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block w-full"
+              >
+                <img
+                  src={post.cover}
+                  alt="PubMed: Music, pulse, heart and sport"
+                  className="w-full rounded-xl border border-border object-contain"
+                />
+              </a>
             ) : (
               <img
                 src={post.cover}
@@ -70,12 +83,22 @@ function BlogPostPage() {
           </section>
         ))}
         {post.slug === "musik-puls-herz-sport" ? (
-          <a
-            href={SITE.pdf}
-            className="mt-8 inline-flex min-h-11 items-center text-sm text-fg underline underline-offset-4"
-          >
-            PDF herunterladen
-          </a>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a
+              href={SITE.pdf}
+              className="inline-flex min-h-11 items-center text-sm text-fg underline underline-offset-4"
+            >
+              PDF herunterladen
+            </a>
+            <a
+              href="https://pubmed.ncbi.nlm.nih.gov/28116463/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 items-center text-sm text-fg underline underline-offset-4"
+            >
+              PubMed
+            </a>
+          </div>
         ) : null}
       </article>
     </SiteShell>
