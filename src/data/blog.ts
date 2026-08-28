@@ -11,6 +11,22 @@ export type BlogPost = {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: "water-keep-it-for-tomorrow",
+    title: "Water (Keep it for tomorrow)",
+    dateLabel: "August 2026",
+    cover: "/images/blog/water-keep-it.jpg",
+    excerpt:
+      "Kindheit am Bach. Wasser aus den Händen. It’s cool — und keep it for tomorrow.",
+    paragraphs: [
+      "Water (Keep it for tomorrow) ist ein neues Lied von Rom Lee. Der Song ist cool. Das Video erzählt.",
+      "Als Kind am Haus der Großmutter: ein kleiner Bach, klares Wasser, Sommer. Daraus getrunken, darin geschwommen, damit gekocht. The river ran the house. Dieselbe Erinnerung auf English, Español und Polski — Babcia, abuela, grandma. Kein Zeigefinger. Nur das Bild.",
+      "Drink, drink the water. It’s cool, it’s cool, cool, cool cool. It gives you life. Keep it for tomorrow. If you want to survive.",
+      "Cool, weil das Wasser kühlt. Cool, sich daran zu erinnern. Der Refrain bleibt Englisch, wie Love and Peace — auf allen Sprachseiten derselbe Titel.",
+      "Im Bild: ein Junge am Wasser, trinkt aus den Händen. So fängt die Geschichte an.",
+      "Written, composed and sung by Rom Lee.",
+    ],
+  },
+  {
     slug: "love-and-peace",
     title: "Love and Peace",
     dateLabel: "August 2026",
