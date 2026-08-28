@@ -56,7 +56,7 @@ export function TrackRow({ track, index }: { track: Track; index?: number }) {
         rel="noopener noreferrer"
         className="hidden min-h-11 items-center text-xs text-muted hover:text-fg sm:inline-flex"
       >
-        YouTube
+        {track.localVideo ? "Video" : "YouTube"}
       </a>
     </div>
   );

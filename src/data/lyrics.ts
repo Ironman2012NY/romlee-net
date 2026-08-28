@@ -9,6 +9,21 @@ export type SongText = {
 
 export const SONG_TEXTS: SongText[] = [
   {
+    slug: "water-keep-it-for-tomorrow",
+    title: "Water (Keep it for tomorrow)",
+    lang: "en",
+    youtubeId: "water-keep-it",
+    text: `Neuerscheinung. Song and video: Water (Keep it for tomorrow).
+
+Drink, drink the water.
+It's cool, it's cool, cool, cool cool
+It gives you life.
+Keep it for tomorrow.
+If you want to survive.
+
+Strophen: English, Español, Polski — Kindheit, Bach, Babcia. Das Video erzählt. Der Song ist cool.`,
+  },
+  {
     slug: "love-and-peace",
     title: "Love and Peace",
     lang: "en",

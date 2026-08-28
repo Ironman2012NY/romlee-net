@@ -89,6 +89,18 @@ function Home() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <p className="text-xs uppercase tracking-[0.18em] text-accent">Neuerscheinung</p>
+        <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">Water (Keep it for tomorrow)</h2>
+        <p className="mt-3 mb-6 max-w-xl text-sm leading-relaxed text-muted">
+          Neuer Song. Drink, drink the water. It’s cool. Keep it for tomorrow. Strophen auf English, Español und
+          Polski — das Video erzählt, der Song ist cool.
+        </p>
+        <div className="max-w-xs">
+          <YoutubeEmbed videoId="water-keep-it" title="Water (Keep it for tomorrow)" short />
+        </div>
+      </section>
+
       <section className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.2fr_0.8fr]">
         <div>
           <p className="text-xs uppercase tracking-[0.18em] text-accent">{copy.mostViewed}</p>

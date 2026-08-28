@@ -15,6 +15,17 @@ export type Track = {
 
 export const TRACKS: Track[] = [
   {
+    id: "water-keep-it",
+    title: "Water (Keep it for tomorrow)",
+    duration: "0:59",
+    slug: "water-keep-it-for-tomorrow",
+    cover: "/images/covers/yt-water.jpg",
+    youtubeId: "water-keep-it",
+    lang: "en",
+    featured: true,
+    localVideo: "/videos/the-water-59s.mp4",
+  },
+  {
     id: "4941713",
     title: "Love and Peace",
     duration: "3:40",
@@ -298,5 +309,6 @@ export function localVideoForYoutubeId(id: string): string | undefined {
 }
 
 export function trackUrl(track: Track) {
+  if (track.localVideo) return track.localVideo;
   return `https://www.youtube.com/watch?v=${track.youtubeId}`;
 }
