@@ -17,13 +17,12 @@ export const TRACKS: Track[] = [
   {
     id: "water-keep-it",
     title: "Water (Keep it for tomorrow)",
-    duration: "0:59",
+    duration: "3:06",
     slug: "water-keep-it-for-tomorrow",
-    cover: "/images/covers/yt-water.jpg",
-    youtubeId: "water-keep-it",
+    cover: "/images/blog/water-keep-it.jpg",
+    youtubeId: "XB_kqlA0km4",
     lang: "en",
     featured: true,
-    localVideo: "/videos/the-water-59s.mp4",
   },
   {
     id: "4941713",

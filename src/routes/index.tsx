@@ -96,8 +96,8 @@ function Home() {
           Neuer Song. Drink, drink the water. It’s cool. Keep it for tomorrow. Strophen auf English, Español und
           Polski — das Video erzählt, der Song ist cool.
         </p>
-        <div className="max-w-xs">
-          <YoutubeEmbed videoId="water-keep-it" title="Water (Keep it for tomorrow)" short />
+        <div className="max-w-2xl">
+          <YoutubeEmbed videoId="XB_kqlA0km4" title="Water (Keep it for tomorrow)" />
         </div>
       </section>
 

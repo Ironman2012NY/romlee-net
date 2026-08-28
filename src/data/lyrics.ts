@@ -12,16 +12,25 @@ export const SONG_TEXTS: SongText[] = [
     slug: "water-keep-it-for-tomorrow",
     title: "Water (Keep it for tomorrow)",
     lang: "en",
-    youtubeId: "water-keep-it",
-    text: `Neuerscheinung. Song and video: Water (Keep it for tomorrow).
+    youtubeId: "XB_kqlA0km4",
+    text: `WHY I WROTE THIS SONG...You may be wondering why I wrote this song. My Spanish friends from Portocolom—especially Rosa—asked me to write a song about water. As you probably know, water is becoming increasingly scarce in Madrid, Valencia and Andalusia, as well as on Mallorca and here in Portocolom. “Drink the Water” tells the story of a childhood in the countryside, beside a clear stream near the singer’s grandmother’s house—a stream where he swam, drank the water from his hands, and which provided water for the whole household. The video connects this beautiful memory with an important message: water gives us life, so we must protect it and preserve it for tomorrow.
 
-Drink, drink the water.
-It's cool, it's cool, cool, cool cool
-It gives you life.
-Keep it for tomorrow.
-If you want to survive.
+At the same time, pollution in rivers and oceans around the world is increasing dramatically. Everyone is aware of this, but sometimes we do not talk about it enough.
 
-Strophen: English, Español, Polski — Kindheit, Bach, Babcia. Das Video erzählt. Der Song ist cool.`,
+We did not want to write a song that points an accusing finger or lectures people about where the water is particularly bad. We simply wanted to create a rhythmic song that can also be understood in a light-hearted way: drink water instead of wine or vodka.
+
+However, the video is also intended to show that rivers and water supplies are under increasing pressure. Many regions suffer from water shortages—whether in war zones, which I do not want to list because there are currently conflicts almost everywhere, or across large parts of Africa. In agricultural areas, many crops also receive too little water.
+With this song, we simply wanted to remind people—without preaching—that we all need to care for water, use it carefully and avoid wasting it. Especially in tourist regions and industrialized countries, water is not always treated as carefully as it should be.
+
+Fracking, oil extraction and the cooling of nuclear power plants all consume large amounts of water and other resources. In major manufacturing countries such as India and China, enormous quantities of water are also used in the production of textiles, clothing and leather products.
+
+I have personally treated a patient who had been in India and was exposed to mercury through contaminated drinking water. This song therefore has a very real background. Some of my patients have become ill because of dirty or contaminated water. At the same time, water is becoming increasingly scarce here in Spain, in Portocolom and in rural areas.
+
+That is why we should all use water carefully, sparingly and responsibly. The message is deliberately not stated too directly in the song itself, but I can explain it more clearly here in the accompanying YouTube text.
+
+The central message is simple: water gives us life, and we must preserve it for tomorrow.
+
+The song is performed in English, Spanish, and Polish. The song is now available to stream or download.`,
   },
   {
     slug: "love-and-peace",
