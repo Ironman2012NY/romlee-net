@@ -139,7 +139,8 @@ export const POSTS: BlogPost[] = [
     slug: "musik-puls-herz-sport",
     title: "Music, Pulse, Heart and Sport",
     dateLabel: "Wissenschaftlicher Artikel",
-    cover: "/images/covers/4906343.jpg",
+    cover: "/images/blog/musik-puls-herz-sport.jpg",
+    coverContain: true,
     excerpt:
       "Musik ist nicht nur etwas, das wir hören. Wir spüren Rhythmus mit dem Körper – eine wissenschaftliche Arbeit von E. R. Gasenzer und R. Leischik.",
     paragraphs: [

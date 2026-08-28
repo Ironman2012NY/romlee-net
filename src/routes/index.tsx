@@ -267,7 +267,15 @@ function Home() {
                 className="group overflow-hidden rounded-xl border border-border bg-elevated"
               >
                 {post.cover ? (
-                  <img src={post.cover} alt="" className="aspect-[4/3] w-full object-cover" />
+                  <img
+                    src={post.cover}
+                    alt=""
+                    className={
+                      post.coverContain
+                        ? "aspect-[4/3] w-full object-contain bg-elevated p-4"
+                        : "aspect-[4/3] w-full object-cover"
+                    }
+                  />
                 ) : null}
                 <div className="p-5">
                   <p className="text-xs text-subtle">{post.dateLabel}</p>
