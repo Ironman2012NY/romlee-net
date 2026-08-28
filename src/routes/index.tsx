@@ -9,7 +9,7 @@ import { YoutubeEmbed } from "@/components/youtube-embed";
 import { useLiveYoutube, YoutubeLiveStats } from "@/components/youtube-live-stats";
 import { PlaylistTiles } from "@/components/playlist-tiles";
 import { useT } from "@/components/lang-switch";
-import { fetchYoutubeStats, viewsFor, type YtStats } from "@/lib/youtube";
+import { fetchYoutubeStats, viewsFor, YT_FLOOR, type YtStats } from "@/lib/youtube";
 import { formatNumber } from "@/lib/utils";
 
 export const Route = createFileRoute("/")({
@@ -21,8 +21,8 @@ export const Route = createFileRoute("/")({
 function Home() {
   const { yt: initial } = Route.useLoaderData() as { yt: YtStats };
   const yt = useLiveYoutube(initial);
-  const loveViews = viewsFor(yt, "KBXOvQr3bAY") ?? 5_600_000;
-  const shortViews = viewsFor(yt, "YTefIyKLBQA") ?? 1_300_000;
+  const loveViews = viewsFor(yt, "KBXOvQr3bAY") ?? YT_FLOOR.viewsById.KBXOvQr3bAY;
+  const shortViews = viewsFor(yt, "YTefIyKLBQA") ?? YT_FLOOR.viewsById.YTefIyKLBQA;
   const featured = TRACKS.filter((t) => t.featured);
   const latest = TRACKS.slice(0, 8);
   const copy = useT();

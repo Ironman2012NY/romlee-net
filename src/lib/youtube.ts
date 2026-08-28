@@ -23,14 +23,55 @@ export type YtStats = {
 const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36";
 
-const FALLBACK: Omit<YtStats, "entries" | "fetchedAt"> = {
+/** Never show numbers below this floor. Live values only raise it. */
+export const YT_FLOOR = {
   subscribers: 112_000,
   videoCount: 49,
-  totalViews: 10_960_000,
-  views365: 10_960_000,
-  joined: "2026-07-03",
-  live: false,
+  totalViews: 11_000_000,
+  views365: 11_000_000,
+  viewsById: {
+    KBXOvQr3bAY: 5_622_361,
+    YTefIyKLBQA: 1_394_966,
+  } as Record<string, number>,
 };
+
+function floorNum(n: number, min: number) {
+  return Number.isFinite(n) && n > 0 ? Math.max(n, min) : min;
+}
+
+export function applyYoutubeFloor(stats: YtStats): YtStats {
+  const viewsById = { ...YT_FLOOR.viewsById };
+  for (const e of stats.entries) {
+    viewsById[e.id] = floorNum(e.views, viewsById[e.id] ?? 0);
+  }
+  return {
+    ...stats,
+    subscribers: floorNum(stats.subscribers, YT_FLOOR.subscribers),
+    videoCount: floorNum(stats.videoCount, YT_FLOOR.videoCount),
+    totalViews: floorNum(stats.totalViews, YT_FLOOR.totalViews),
+    views365: floorNum(stats.views365, YT_FLOOR.views365),
+    entries: stats.entries.map((e) => ({ ...e, views: viewsById[e.id] ?? e.views })),
+  };
+}
+
+export function mergeYoutubeStats(prev: YtStats, next: YtStats): YtStats {
+  const a = applyYoutubeFloor(prev);
+  const b = applyYoutubeFloor(next);
+  const byId = new Map<string, YtEntry>();
+  for (const e of [...a.entries, ...b.entries]) {
+    const old = byId.get(e.id);
+    byId.set(e.id, old ? { ...e, views: Math.max(old.views, e.views) } : e);
+  }
+  return {
+    ...b,
+    subscribers: Math.max(a.subscribers, b.subscribers),
+    videoCount: Math.max(a.videoCount, b.videoCount),
+    totalViews: Math.max(a.totalViews, b.totalViews),
+    views365: Math.max(a.views365, b.views365),
+    entries: [...byId.values()],
+    live: a.live || b.live,
+  };
+}
 
 function parseCompactNumber(raw: string): number | null {
   const cleaned = raw.replace(/\u00a0/g, " ").trim();
@@ -121,20 +162,20 @@ export async function fetchYoutubeStats(): Promise<YtStats> {
       /"subscriberCountText":"([^"]+)"/,
       /"subscriberCountText":\{"simpleText":"([^"]+)"/,
       /"subscriberCount":"(\d+)"/,
-    ]) ?? FALLBACK.subscribers;
+    ]) ?? YT_FLOOR.subscribers;
 
   const totalViews =
     firstNumber(html, [
       /"viewCountText":"([^"]+)"/,
       /"viewCountText":\{"simpleText":"([^"]+)"/,
       /"viewCount":"(\d+)"/,
-    ]) ?? FALLBACK.totalViews;
+    ]) ?? YT_FLOOR.totalViews;
 
   const videoCount =
     firstNumber(html, [/"videoCountText":"([^"]+)"/, /"videosCountText":"([^"]+)"/]) ??
-    FALLBACK.videoCount;
+    YT_FLOOR.videoCount;
 
-  const joined = parseJoined(html) ?? FALLBACK.joined;
+  const joined = parseJoined(html) ?? "2026-07-03";
   const cutoff = Date.now() - 365 * 24 * 60 * 60 * 1000;
   const joinedMs = joined ? Date.parse(`${joined}T00:00:00Z`) : NaN;
   const rss365 = entries.reduce((sum, e) => {
@@ -143,7 +184,20 @@ export async function fetchYoutubeStats(): Promise<YtStats> {
   }, 0);
   const views365 = !Number.isNaN(joinedMs) && joinedMs >= cutoff ? totalViews : rss365 || totalViews;
 
-  return {
+  const known = new Set(entries.map((e) => e.id));
+  for (const [id, views] of Object.entries(YT_FLOOR.viewsById)) {
+    if (!known.has(id)) {
+      entries.push({
+        id,
+        title: id,
+        views,
+        published: "",
+        isShort: id === "YTefIyKLBQA",
+      });
+    }
+  }
+
+  return applyYoutubeFloor({
     entries,
     subscribers,
     videoCount,
@@ -152,7 +206,7 @@ export async function fetchYoutubeStats(): Promise<YtStats> {
     joined,
     fetchedAt,
     live: Boolean(aboutHtml || rssXml),
-  };
+  });
 }
 
 export const loadYoutubeStats = createServerFn({ method: "GET" }).handler(async () => {
@@ -160,5 +214,10 @@ export const loadYoutubeStats = createServerFn({ method: "GET" }).handler(async 
 });
 
 export function viewsFor(stats: YtStats | undefined, id: string): number | undefined {
-  return stats?.entries.find((e) => e.id === id)?.views;
+  const live = stats?.entries.find((e) => e.id === id)?.views;
+  const floor = YT_FLOOR.viewsById[id];
+  if (live && floor) return Math.max(live, floor);
+  if (live) return live;
+  if (floor) return floor;
+  return undefined;
 }

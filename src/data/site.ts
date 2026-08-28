@@ -18,7 +18,7 @@ export const SITE = {
     videoCount: 49,
     subscribersFallback: 112000,
     subscribersLabel: "112 Tsd.",
-    viewsFallback: 10960000,
+    viewsFallback: 11000000,
   },
   spotify: {
     url: "https://open.spotify.com/artist/4ASsjNRRtAasO5XcFdpQii",

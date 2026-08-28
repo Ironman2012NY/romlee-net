@@ -1,15 +1,35 @@
 import { useEffect, useState } from "react";
-import { loadYoutubeStats, type YtStats } from "@/lib/youtube";
+import { loadYoutubeStats, mergeYoutubeStats, type YtStats } from "@/lib/youtube";
 import { formatNumber, formatViews, cn } from "@/lib/utils";
 import { useT } from "@/components/lang-switch";
 
 const POLL_MS = 60_000;
+const STORE_KEY = "romlee-yt-floor";
+
+function readStored(): YtStats | null {
+  try {
+    const raw = sessionStorage.getItem(STORE_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw) as YtStats;
+  } catch {
+    return null;
+  }
+}
+
+function writeStored(stats: YtStats) {
+  try {
+    sessionStorage.setItem(STORE_KEY, JSON.stringify(stats));
+  } catch {
+    /* ignore */
+  }
+}
 
 export function useLiveYoutube(initial: YtStats): YtStats {
   const [stats, setStats] = useState(initial);
 
   useEffect(() => {
-    setStats(initial);
+    const stored = readStored();
+    setStats((prev) => mergeYoutubeStats(stored ?? prev, initial));
   }, [initial]);
 
   useEffect(() => {
@@ -17,7 +37,12 @@ export function useLiveYoutube(initial: YtStats): YtStats {
     const refresh = async () => {
       try {
         const next = await loadYoutubeStats();
-        if (!cancelled) setStats(next);
+        if (cancelled) return;
+        setStats((prev) => {
+          const merged = mergeYoutubeStats(prev, next);
+          writeStored(merged);
+          return merged;
+        });
       } catch {
         /* keep last good snapshot */
       }
