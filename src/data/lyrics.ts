@@ -12,7 +12,7 @@ export const SONG_TEXTS: SongText[] = [
     slug: "water-keep-it-for-tomorrow",
     title: "Water (Keep it for tomorrow)",
     lang: "en",
-    youtubeId: "XB_kqlA0km4",
+    youtubeId: "isW24Vr4lhk",
     text: `WHY I WROTE THIS SONG...You may be wondering why I wrote this song. My Spanish friends from Portocolom—especially Rosa—asked me to write a song about water. As you probably know, water is becoming increasingly scarce in Madrid, Valencia and Andalusia, as well as on Mallorca and here in Portocolom. “Drink the Water” tells the story of a childhood in the countryside, beside a clear stream near the singer’s grandmother’s house—a stream where he swam, drank the water from his hands, and which provided water for the whole household. The video connects this beautiful memory with an important message: water gives us life, so we must protect it and preserve it for tomorrow.
 
 At the same time, pollution in rivers and oceans around the world is increasing dramatically. Everyone is aware of this, but sometimes we do not talk about it enough.

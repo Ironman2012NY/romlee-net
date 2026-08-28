@@ -7,9 +7,9 @@ export type Video = {
 
 export const FEATURED_VIDEOS: Video[] = [
   {
-    id: "XB_kqlA0km4",
+    id: "isW24Vr4lhk",
     title: "Water (Keep it for tomorrow)",
-    kind: "short",
+    kind: "video",
     featured: true,
   },
   {

@@ -97,7 +97,7 @@ function Home() {
           Polski — das Video erzählt, der Song ist cool.
         </p>
         <div className="max-w-2xl">
-          <YoutubeEmbed videoId="XB_kqlA0km4" title="Water (Keep it for tomorrow)" />
+          <YoutubeEmbed videoId="isW24Vr4lhk" title="Water (Keep it for tomorrow)" />
         </div>
       </section>
 

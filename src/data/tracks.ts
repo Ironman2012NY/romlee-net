@@ -20,7 +20,7 @@ export const TRACKS: Track[] = [
     duration: "3:06",
     slug: "water-keep-it-for-tomorrow",
     cover: "/images/blog/water-keep-it.jpg",
-    youtubeId: "XB_kqlA0km4",
+    youtubeId: "isW24Vr4lhk",
     lang: "en",
     featured: true,
   },
