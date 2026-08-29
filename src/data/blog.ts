@@ -51,6 +51,24 @@ export const POSTS: BlogPost[] = [
       "The central message is simple: water gives us life, and we must preserve it for tomorrow.",
       "The song is performed in English, Spanish, and Polish. The song is now available to stream or download.",
     ],
+    extra: [
+      {
+        heading: "Refrain",
+        body: "Drink, drink the water.\nIt's cool, it's cool, cool, cool cool\nIt gives you life.\nKeep it for tomorrow.\nIf you want to survive.",
+      },
+      {
+        heading: "English",
+        body: "At my grandma’s house\nIn the countryside,\nWhere time ran slow\nA little stream by the house\nClear as the morning light.\nI swam in it all summer long\nAnd drank the water from my hands.\nThey cooked with that same water;\nThe river ran the house.",
+      },
+      {
+        heading: "Español",
+        body: "De niño, en casa de abuela\nEn el campo, donde fluía el tiempo,\nJunto a la casa, un arroyo\nClaro como el alba\nEn él nadaba todo el verano\nBebía el agua con mis manos\nCocinaban con esa agua\nElla daba vida a todo el hogar.",
+      },
+      {
+        heading: "Polski",
+        body: "Jako dziecko u mej babci,\nTam na wsi, gdzie płynął czas,\nObok domu była rzeczka,\nCzysta jak poranny blask.\nW niej pływałem całe lato,\nWodę piłem z własnych rąk.\nZ tej samej wody gotowano,\nOna żywiła cały dom.",
+      },
+    ],
   },
   {
     slug: "love-and-peace",

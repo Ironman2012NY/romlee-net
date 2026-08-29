@@ -92,9 +92,18 @@ function Home() {
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <p className="text-xs uppercase tracking-[0.18em] text-accent">Neuerscheinung</p>
         <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">Water (Keep it for tomorrow)</h2>
-        <p className="mt-3 mb-6 max-w-xl text-sm leading-relaxed text-muted">
-          Neuer Song. Drink, drink the water. It’s cool. Keep it for tomorrow. Strophen auf English, Español und
-          Polski — das Video erzählt, der Song ist cool.
+        <p className="mt-3 mb-4 max-w-2xl text-sm leading-relaxed text-muted">
+          WHY I WROTE THIS SONG… My Spanish friends from Portocolom—especially Rosa—asked me to write a song
+          about water. Water is becoming increasingly scarce in Madrid, Valencia and Andalusia, as well as on
+          Mallorca and here in Portocolom. “Drink the Water” tells the story of a childhood in the countryside,
+          beside a clear stream near the grandmother’s house—a stream where he swam, drank the water from his
+          hands, and which provided water for the whole household. The video connects this memory with a simple
+          message: water gives us life, so we must protect it and preserve it for tomorrow.
+        </p>
+        <p className="mb-6 max-w-2xl text-sm leading-relaxed text-muted">
+          We did not want a song that points an accusing finger. A rhythmic song, also light-hearted: drink water.
+          English, Español, Polski. The central message is simple: water gives us life, and we must preserve it for
+          tomorrow.
         </p>
         <div className="max-w-2xl">
           <YoutubeEmbed videoId="isW24Vr4lhk" title="Water (Keep it for tomorrow)" />

@@ -85,7 +85,7 @@ function BlogPostPage() {
         {post.extra?.map((block) => (
           <section key={block.heading} className="mt-10">
             <h2 className="font-display text-2xl text-fg">{block.heading}</h2>
-            <p className="mt-3 text-base leading-relaxed text-muted">{block.body}</p>
+            <p className="mt-3 whitespace-pre-line text-base leading-relaxed text-muted">{block.body}</p>
           </section>
         ))}
         {post.slug === "musik-puls-herz-sport" ? (
