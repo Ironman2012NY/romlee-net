@@ -18,7 +18,7 @@ export const POSTS: BlogPost[] = [
       "„KI ersetzt hier nicht die Wirklichkeit. Sie ermöglicht mir, Gedanken sichtbar zu machen, für die es in der Wirklichkeit manchmal gar keine Kamera geben kann.“",
     dateLabel: "August 2026",
     subtitle: "KI als Bildsprache",
-    cover: "/images/blog/ki-beispiel-stadt.jpg",
+    cover: "/images/blog/thumb-naechte.jpg",
     coverCaption:
       "Beispiel-KI-Bild „Gaza-Streifen“. In der Wirklichkeit noch schlimmer.",
     excerpt:
@@ -37,7 +37,7 @@ export const POSTS: BlogPost[] = [
     slug: "water-keep-it-for-tomorrow",
     title: "Water (Keep it for tomorrow)",
     dateLabel: "August 2026",
-    cover: "/images/blog/water-keep-it.jpg",
+    cover: "/images/blog/thumb-water.jpg",
     excerpt:
       "WHY I WROTE THIS SONG… Friends in Portocolom asked for a song about water. Childhood by a stream — keep it for tomorrow.",
     paragraphs: [
@@ -56,7 +56,7 @@ export const POSTS: BlogPost[] = [
     slug: "love-and-peace",
     title: "Love and Peace",
     dateLabel: "August 2026",
-    cover: "/images/covers/4941713.jpg",
+    cover: "/images/blog/thumb-love-and-peace.jpg",
     excerpt:
       "Mit Video und Short fast ein weltweites Lied für den Frieden: Mut, Hoffnung, Menschlichkeit — und eine Idee, die sich nicht zum Schweigen bringen lässt.",
     paragraphs: [
@@ -72,7 +72,7 @@ export const POSTS: BlogPost[] = [
     slug: "als-du-klein-warst-jak-byles-maly",
     title: "Als du klein warst – Jak byłeś mały",
     dateLabel: "Juli 2026",
-    cover: "/images/covers/4941704.jpg",
+    cover: "/images/blog/thumb-jak-byles-maly.jpg",
     excerpt:
       "Eine zutiefst persönliche Reise durch Kindheit, polnische Geschichte, Literatur, Liebe und nationale Identität.",
     paragraphs: [
@@ -113,7 +113,7 @@ export const POSTS: BlogPost[] = [
     slug: "ty-tylko-ty",
     title: "Ty tylko ty – polnisches Kinderlied",
     dateLabel: "Juli 2026",
-    cover: "/images/covers/4906342.jpg",
+    cover: "/images/blog/thumb-ty-tylko-ty.jpg",
     excerpt:
       "Piosenka dla wszystkich, którą śpiewałam przy ognisku. Ein Kinderlied, adaptiert – Erinnerung an die Wurzeln.",
     paragraphs: [
@@ -130,7 +130,7 @@ export const POSTS: BlogPost[] = [
     slug: "tanze-so-lange-es-geht",
     title: "Tanze so lange es geht",
     dateLabel: "Juli 2026",
-    cover: "/images/covers/4906347.jpg",
+    cover: "/images/blog/thumb-tanze.jpg",
     excerpt:
       "Ein positives Lied für Rollstuhlfahrer – inspiriert von einem Patienten nach einem Unfall mit Querschnittslähmung.",
     paragraphs: [
