@@ -42,6 +42,9 @@ function BlogIndex() {
               <div className="p-6">
                 <p className="text-xs uppercase tracking-[0.14em] text-subtle">{post.dateLabel}</p>
                 <h2 className="mt-2 font-display text-2xl leading-tight text-fg">{post.title}</h2>
+                {post.subtitle ? (
+                  <p className="mt-2 text-sm font-medium text-accent">{post.subtitle}</p>
+                ) : null}
                 <p className="mt-3 text-sm leading-relaxed text-muted">{post.excerpt}</p>
               </div>
             </Link>

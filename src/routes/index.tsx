@@ -282,6 +282,9 @@ function Home() {
                   <h3 className="mt-1 font-display text-xl leading-tight text-fg group-hover:text-accent">
                     {post.title}
                   </h3>
+                  {post.subtitle ? (
+                    <p className="mt-1 text-sm text-accent">{post.subtitle}</p>
+                  ) : null}
                   <p className="mt-2 line-clamp-3 text-sm text-muted">{post.excerpt}</p>
                 </div>
               </Link>
