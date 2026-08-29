@@ -5,6 +5,7 @@ export type BlogPost = {
   dateLabel: string;
   cover?: string;
   coverContain?: boolean;
+  coverCaption?: string;
   subtitle?: string;
   paragraphs: string[];
   extra?: { heading: string; body: string }[];
@@ -17,6 +18,9 @@ export const POSTS: BlogPost[] = [
       "„KI ersetzt hier nicht die Wirklichkeit. Sie ermöglicht mir, Gedanken sichtbar zu machen, für die es in der Wirklichkeit manchmal gar keine Kamera geben kann.“",
     dateLabel: "August 2026",
     subtitle: "KI als Bildsprache",
+    cover: "/images/blog/ki-beispiel-stadt.jpg",
+    coverCaption:
+      "Beispiel-KI-Bild „Gaza-Streifen“. In der Wirklichkeit noch schlimmer.",
     excerpt:
       "Bei meinen Videos geht es oft um Dinge, die sich real kaum sinnvoll, verantwortungsvoll oder überhaupt filmen lassen.",
     paragraphs: [

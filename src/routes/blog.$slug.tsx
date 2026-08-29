@@ -74,6 +74,9 @@ function BlogPostPage() {
             )}
           </div>
         ) : null}
+        {post.coverCaption ? (
+          <p className="mt-3 text-center text-sm italic text-subtle">{post.coverCaption}</p>
+        ) : null}
         <div className="mt-10 space-y-5 text-base leading-relaxed text-muted">
           {post.paragraphs.map((p) => (
             <p key={p.slice(0, 48)}>{p}</p>
