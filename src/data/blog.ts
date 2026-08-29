@@ -18,7 +18,7 @@ export const POSTS: BlogPost[] = [
       "„KI ersetzt hier nicht die Wirklichkeit. Sie ermöglicht mir, Gedanken sichtbar zu machen, für die es in der Wirklichkeit manchmal gar keine Kamera geben kann.“",
     dateLabel: "August 2026",
     subtitle: "KI als Bildsprache",
-    cover: "/images/blog/thumb-naechte.jpg",
+    cover: "/images/blog/ki-gaza.jpg",
     coverCaption:
       "Beispiel-KI-Bild „Gaza-Streifen“. In der Wirklichkeit noch schlimmer.",
     excerpt:
