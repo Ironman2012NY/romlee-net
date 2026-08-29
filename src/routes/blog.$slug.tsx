@@ -30,6 +30,9 @@ function BlogPostPage() {
         <h1 className="mt-3 font-display text-3xl leading-tight tracking-tight text-fg sm:text-5xl">
           {post.title}
         </h1>
+        {post.subtitle ? (
+          <p className="mt-4 font-display text-xl tracking-tight text-accent sm:text-2xl">{post.subtitle}</p>
+        ) : null}
         {post.cover ? (
           <div className="mt-10 flex justify-center">
             {post.slug === "warum-deutsch-polnisch" ? (

@@ -5,6 +5,7 @@ export type BlogPost = {
   dateLabel: string;
   cover?: string;
   coverContain?: boolean;
+  subtitle?: string;
   paragraphs: string[];
   extra?: { heading: string; body: string }[];
 };
@@ -12,12 +13,13 @@ export type BlogPost = {
 export const POSTS: BlogPost[] = [
   {
     slug: "ki-als-bildsprache",
-    title: "KI als Bildsprache",
+    title:
+      "„KI ersetzt hier nicht die Wirklichkeit. Sie ermöglicht mir, Gedanken sichtbar zu machen, für die es in der Wirklichkeit manchmal gar keine Kamera geben kann.“",
     dateLabel: "August 2026",
+    subtitle: "KI als Bildsprache",
     excerpt:
       "KI ersetzt hier nicht die Wirklichkeit. Sie ermöglicht mir, Gedanken sichtbar zu machen, für die es in der Wirklichkeit manchmal gar keine Kamera geben kann.",
     paragraphs: [
-      "„KI ersetzt hier nicht die Wirklichkeit. Sie ermöglicht mir, Gedanken sichtbar zu machen, für die es in der Wirklichkeit manchmal gar keine Kamera geben kann.“",
       "Bei meinen Videos geht es oft um Dinge, die sich real kaum sinnvoll, verantwortungsvoll oder überhaupt filmen lassen: zerstörte Städte, Krieg, Vergangenheit und Gegenwart, große Menschenmengen, Ölfelder, verschmutztes Wasser, ausgetrocknete Landschaften oder symbolische Bilder von Hoffnung, Frieden und Neubeginn.",
       "Ich habe mich deshalb bewusst für eine künstlich erzeugte Bildwelt entschieden. KI ist für mich nicht nur ein Produktionswerkzeug, sondern eine Bildsprache für Situationen, Erinnerungen, Gedanken und Vorstellungen, die real gar nicht oder nur mit enormem Aufwand filmbar wären.",
       "Damit kann ich Gegensätze sichtbar machen: Zerstörung und Wiederaufbau, Dunkelheit und Licht, verschmutztes Wasser und eine wieder lebendige Landschaft, Angst und Hoffnung. Ich kann Entwicklungen zeigen, die sich über Jahre oder Jahrzehnte erstrecken, Vergangenheit und Zukunft miteinander verbinden oder Bilder erschaffen, die in der Realität nur mit großen Filmteams, aufwendigen Reisen und erheblichen Produktionsmitteln möglich wären.",
