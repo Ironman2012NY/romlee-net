@@ -11,6 +11,23 @@ export type BlogPost = {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: "ki-als-bildsprache",
+    title: "KI als Bildsprache",
+    dateLabel: "August 2026",
+    excerpt:
+      "KI ersetzt hier nicht die Wirklichkeit. Sie ermöglicht mir, Gedanken sichtbar zu machen, für die es in der Wirklichkeit manchmal gar keine Kamera geben kann.",
+    paragraphs: [
+      "„KI ersetzt hier nicht die Wirklichkeit. Sie ermöglicht mir, Gedanken sichtbar zu machen, für die es in der Wirklichkeit manchmal gar keine Kamera geben kann.“",
+      "Bei meinen Videos geht es oft um Dinge, die sich real kaum sinnvoll, verantwortungsvoll oder überhaupt filmen lassen: zerstörte Städte, Krieg, Vergangenheit und Gegenwart, große Menschenmengen, Ölfelder, verschmutztes Wasser, ausgetrocknete Landschaften oder symbolische Bilder von Hoffnung, Frieden und Neubeginn.",
+      "Ich habe mich deshalb bewusst für eine künstlich erzeugte Bildwelt entschieden. KI ist für mich nicht nur ein Produktionswerkzeug, sondern eine Bildsprache für Situationen, Erinnerungen, Gedanken und Vorstellungen, die real gar nicht oder nur mit enormem Aufwand filmbar wären.",
+      "Damit kann ich Gegensätze sichtbar machen: Zerstörung und Wiederaufbau, Dunkelheit und Licht, verschmutztes Wasser und eine wieder lebendige Landschaft, Angst und Hoffnung. Ich kann Entwicklungen zeigen, die sich über Jahre oder Jahrzehnte erstrecken, Vergangenheit und Zukunft miteinander verbinden oder Bilder erschaffen, die in der Realität nur mit großen Filmteams, aufwendigen Reisen und erheblichen Produktionsmitteln möglich wären.",
+      "Gleichzeitig möchte ich für meine Geschichten nicht einfach reale Menschen benutzen. Ich muss keine Personen in Krisengebieten filmen, keine fremden Schicksale für ein Musikvideo instrumentalisieren und keine zufällig anwesenden Menschen ungefragt Teil einer Geschichte werden lassen. Auch Genehmigungen, Persönlichkeitsrechte, Datenschutz und mögliche Beeinträchtigungen anderer Menschen spielen bei realen Dreharbeiten eine Rolle.",
+      "Die Bilder entstehen technisch mit Hilfe von KI. Aber die Geschichte, die Idee, die Auswahl der Szenen, ihre Reihenfolge, ihre Bedeutung und die Botschaft dahinter entstehen nicht durch die KI. Ich entscheide, welches Bild gebraucht wird, was es ausdrücken soll, was verworfen wird und wie daraus am Ende eine zusammenhängende Geschichte entsteht.",
+      "Für mich ist das ähnlich wie bei der Musik. Neue Technik hat die Möglichkeiten von Künstlern schon immer erweitert: Aufnahmegeräte, Synthesizer, Drumcomputer, Sequencer, digitale Studios, Software, Schnitt, Tuning und Mastering. Die Technik verändert die Werkzeuge – aber sie entscheidet nicht, was ein Mensch erzählen möchte und warum er es erzählt.",
+      "KI ersetzt für mich deshalb weder Kreativität noch Wirklichkeit. Sie erweitert den Raum, in dem ich eine Idee gestalten kann.",
+    ],
+  },
+  {
     slug: "water-keep-it-for-tomorrow",
     title: "Water (Keep it for tomorrow)",
     dateLabel: "August 2026",
