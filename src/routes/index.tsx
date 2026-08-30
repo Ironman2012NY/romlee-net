@@ -9,6 +9,8 @@ import { YoutubeEmbed } from "@/components/youtube-embed";
 import { useLiveYoutube, YoutubeLiveStats } from "@/components/youtube-live-stats";
 import { PlaylistTiles } from "@/components/playlist-tiles";
 import { useT } from "@/components/lang-switch";
+import { useLocale } from "@/lib/locale";
+import { homeCopy } from "@/data/home-copy";
 import { fetchYoutubeStats, viewsFor, YT_FLOOR, type YtStats } from "@/lib/youtube";
 import { formatNumber } from "@/lib/utils";
 import { WaterSeo, WATER_SEO } from "@/components/water-seo";
@@ -40,17 +42,19 @@ function Home() {
   const featured = TRACKS.filter((t) => t.featured);
   const latest = TRACKS.slice(0, 8);
   const copy = useT();
+  const locale = useLocale((s) => s.locale);
+  const home = homeCopy(locale);
 
   return (
-    <SiteShell solidHeader={false}>
+    <SiteShell solidHeader>
       <WaterSeo />
       <section className="relative min-h-[92dvh] overflow-hidden">
         <img
           src="/images/fotos/foto-15.jpeg"
           alt=""
-          className="absolute inset-0 size-full object-cover"
+          className="pointer-events-none absolute inset-0 size-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-bg via-bg/70 to-bg/30" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg via-bg/70 to-bg/30" />
         <div className="relative mx-auto flex min-h-[92dvh] max-w-6xl flex-col justify-end px-4 pb-16 pt-32 sm:px-6 sm:pb-20">
           <p className="text-xs uppercase tracking-[0.22em] text-accent">{SITE.brand}</p>
           <h1 className="mt-3 font-display text-3xl leading-[0.9] tracking-tight text-fg sm:text-6xl">
@@ -105,11 +109,11 @@ function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <p className="text-xs uppercase tracking-[0.18em] text-accent">Neuerscheinung</p>
+        <p className="text-xs uppercase tracking-[0.18em] text-accent">{home.newRelease}</p>
         <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">
           Water (Keep it for tomorrow)
         </h2>
-        <p className="mt-1 text-sm text-accent">Drink the Water · Rom Lee · new song</p>
+        <p className="mt-1 text-sm text-accent">Drink the Water · Rom Lee · {home.newSong}</p>
         <p className="mt-3 mb-4 max-w-2xl text-sm leading-relaxed text-muted">
           WHY I WROTE THIS SONG… My Spanish friends from Portocolom—especially Rosa—asked me to write a song
           about water. Water is becoming increasingly scarce in Madrid, Valencia and Andalusia, as well as on
@@ -141,7 +145,7 @@ function Home() {
             rel="noopener noreferrer"
             className="inline-flex min-h-11 items-center rounded-md border border-border-strong px-5 text-sm text-fg"
           >
-            Auf Spotify hören
+            {home.listenSpotify}
           </a>
         </div>
       </section>
@@ -151,9 +155,9 @@ function Home() {
           <p className="text-xs uppercase tracking-[0.18em] text-accent">{copy.mostViewed}</p>
           <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">Love and Peace</h2>
           <p className="mt-3 mb-6 max-w-xl text-sm leading-relaxed text-muted">
-            Mit Video und Short ist „Love and Peace“ fast zu einem weltweiten Lied für den Frieden geworden.
-            {formatNumber(loveViews)} Aufrufe im Video, {formatNumber(shortViews)} im Short — zusammen rund sieben
-            Millionen.
+            {home.loveLead
+              .replace("{video}", formatNumber(loveViews))
+              .replace("{short}", formatNumber(shortViews))}
           </p>
           <div className="grid gap-4 sm:grid-cols-[1fr_11rem] sm:items-start">
             <YoutubeEmbed videoId="KBXOvQr3bAY" title="Love and Peace" views={loveViews} />

@@ -1,15 +1,17 @@
 import { Link } from "@tanstack/react-router";
 import { NAV, SITE } from "@/data/site";
 import { LangSwitch, useT } from "@/components/lang-switch";
+import { useLocale } from "@/lib/locale";
 import { cn } from "@/lib/utils";
 
 export function SiteHeader({ solid = false }: { solid?: boolean }) {
   const copy = useT();
+  const locale = useLocale((s) => s.locale);
 
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-40 border-b transition-[background,border-color] duration-300",
+        "fixed inset-x-0 top-0 z-[200] border-b transition-[background,border-color] duration-300",
         solid
           ? "border-border bg-bg/95 backdrop-blur-md"
           : "border-transparent bg-gradient-to-b from-bg/80 to-transparent",
@@ -17,7 +19,7 @@ export function SiteHeader({ solid = false }: { solid?: boolean }) {
     >
       <div className="mx-auto flex max-w-6xl flex-col gap-1 px-3 py-2 sm:px-6 sm:py-3">
         <div className="flex items-center justify-between gap-3">
-          <Link to="/" className="flex shrink-0 items-center gap-3">
+          <Link to="/" search={locale === "de" ? undefined : { lang: locale }} className="flex shrink-0 items-center gap-3">
             <img
               src="/images/fotos/reserve.jpg"
               alt="Rom Lee Music"
@@ -40,6 +42,7 @@ export function SiteHeader({ solid = false }: { solid?: boolean }) {
             <Link
               key={item.to}
               to={item.to}
+              search={locale === "de" ? undefined : { lang: locale }}
               className="shrink-0 rounded-md px-3 py-2 text-sm text-muted hover:bg-elevated hover:text-fg"
               activeProps={{ className: "bg-elevated text-fg" }}
             >
