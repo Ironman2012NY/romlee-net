@@ -8,12 +8,12 @@ import { useT } from "@/components/lang-switch";
 
 export const Route = createFileRoute("/songtexte")({ component: SongtextePage });
 
-const FILTERS: { id: "all" | Lang; label: string }[] = [
-  { id: "all", label: "Alle" },
-  { id: "de", label: "Deutsch" },
-  { id: "pl", label: "Polski" },
-  { id: "en", label: "English" },
-  { id: "es", label: "Español" },
+const FILTERS: { id: "all" | Lang }[] = [
+  { id: "all" },
+  { id: "de" },
+  { id: "pl" },
+  { id: "en" },
+  { id: "es" },
 ];
 
 function SongtextePage() {
@@ -49,7 +49,7 @@ function SongtextePage() {
                   : "min-h-11 rounded-md border border-border px-4 text-sm text-muted hover:text-fg"
               }
             >
-              {f.label}
+              {f.id === "all" ? copy.allFilter : f.id === "de" ? "Deutsch" : LANG_LABEL[f.id]}
             </button>
           ))}
         </div>

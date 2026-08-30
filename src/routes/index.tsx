@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, FileText, Youtube } from "lucide-react";
-import { POSTS } from "@/data/blog";
+import { POSTS, localizePost } from "@/data/blog";
 import { NAV, SITE } from "@/data/site";
 import { TRACKS } from "@/data/tracks";
 import { SiteShell } from "@/components/site-shell";
@@ -302,13 +302,15 @@ function Home() {
       <section className="border-t border-border bg-surface">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
           <div className="flex items-end justify-between">
-            <h2 className="font-display text-3xl tracking-tight text-fg">Blog</h2>
+            <h2 className="font-display text-3xl tracking-tight text-fg">{copy.blogTitle}</h2>
             <Link to="/blog" className="text-sm text-muted hover:text-fg">
-              Alle Beiträge
+              {copy.allPosts}
             </Link>
           </div>
           <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {POSTS.slice(0, 3).map((post) => (
+            {POSTS.slice(0, 3).map((raw) => {
+              const post = localizePost(raw, locale);
+              return (
               <Link
                 key={post.slug}
                 to="/blog/$slug"
@@ -337,7 +339,8 @@ function Home() {
                   <p className="mt-2 line-clamp-3 text-sm text-muted">{post.excerpt}</p>
                 </div>
               </Link>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>

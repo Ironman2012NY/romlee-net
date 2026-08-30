@@ -1,9 +1,11 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
-import { getPost } from "@/data/blog";
+import { getPost, localizePost } from "@/data/blog";
 import { SITE } from "@/data/site";
 import { SiteShell } from "@/components/site-shell";
 import { WaterSeo, WATER_SEO } from "@/components/water-seo";
+import { useT } from "@/components/lang-switch";
+import { useLocale } from "@/lib/locale";
 
 export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params }) => {
@@ -29,7 +31,10 @@ export const Route = createFileRoute("/blog/$slug")({
 });
 
 function BlogPostPage() {
-  const { post } = Route.useLoaderData();
+  const { post: raw } = Route.useLoaderData();
+  const locale = useLocale((s) => s.locale);
+  const copy = useT();
+  const post = localizePost(raw, locale);
 
   return (
     <SiteShell>
@@ -40,7 +45,7 @@ function BlogPostPage() {
           className="inline-flex min-h-11 items-center gap-2 text-sm text-muted hover:text-fg"
         >
           <ArrowLeft className="size-4" />
-          Zurück zu allen Beiträgen
+          {copy.backToPosts}
         </Link>
         <p className="mt-8 text-xs uppercase tracking-[0.18em] text-accent">{post.dateLabel}</p>
         <h1 className="mt-3 font-display text-3xl leading-tight tracking-tight text-fg sm:text-5xl">
@@ -110,7 +115,7 @@ function BlogPostPage() {
               href={SITE.pdf}
               className="inline-flex min-h-11 items-center text-sm text-fg underline underline-offset-4"
             >
-              PDF herunterladen
+              {copy.readPdf}
             </a>
             <a
               href="https://pubmed.ncbi.nlm.nih.gov/28116463/"

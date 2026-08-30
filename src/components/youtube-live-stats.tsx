@@ -103,8 +103,8 @@ export function YoutubeLiveStats({
       <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-subtle">
         <span className="inline-block size-1.5 rounded-full bg-accent" aria-hidden="true" />
         {copy.liveFrom}
-        {stats.joined ? ` · Kanal seit ${formatJoined(stats.joined)}` : ""} ·{" "}
-        {formatNumber(stats.totalViews)} Aufrufe · Stand {formatClock(stats.fetchedAt)}
+        {stats.joined ? ` · ${copy.channelSince} ${formatJoined(stats.joined)}` : ""} ·{" "}
+        {formatNumber(stats.totalViews)} {copy.viewsWord} · {copy.asOf} {formatClock(stats.fetchedAt)}
       </p>
     </div>
   );

@@ -1,19 +1,22 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { POSTS } from "@/data/blog";
+import { POSTS, localizePost } from "@/data/blog";
 import { SITE } from "@/data/site";
 import { PageHead, SiteShell } from "@/components/site-shell";
 import { useT } from "@/components/lang-switch";
+import { useLocale } from "@/lib/locale";
 
 export const Route = createFileRoute("/blog/")({ component: BlogIndex });
 
 function BlogIndex() {
   const copy = useT();
+  const locale = useLocale((s) => s.locale);
+  const posts = POSTS.map((p) => localizePost(p, locale));
   return (
     <SiteShell>
       <PageHead kicker={copy.blogKicker} title={copy.blogTitle} lead={copy.blogLead} />
       <div className="mx-auto max-w-6xl px-4 pb-20 sm:px-6">
         <div className="grid gap-6 md:grid-cols-2">
-          {POSTS.map((post) => (
+          {posts.map((post) => (
             <Link
               key={post.slug}
               to="/blog/$slug"
@@ -54,7 +57,7 @@ function BlogIndex() {
           href={SITE.pdf}
           className="mt-10 inline-flex min-h-11 items-center text-sm text-muted underline underline-offset-4 hover:text-fg"
         >
-          Wissenschaftlichen Artikel als PDF lesen
+          {copy.readPdfArticle}
         </a>
       </div>
     </SiteShell>

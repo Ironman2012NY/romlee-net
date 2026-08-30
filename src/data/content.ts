@@ -24,6 +24,12 @@ Für die Videos wurden die originalen Musikdateien der veröffentlichten Produkt
 
 Die Videos sind somit keine rein automatisch erzeugten Werke, sondern das Ergebnis einer Verbindung aus menschlicher Kreativität, eigener Musikproduktion und KI-gestützter Bildgestaltung.`;
 
+export const VIDEO_AI_NOTE_EN = `The videos for Rom Lee’s songs were all made with the support of modern AI tools. Visual language, plot, mood, choice of scenes and artistic direction followed concrete human instructions and were developed individually for each song. The visual background is organic.
+
+The videos use the original music files of the published productions. Lyrics, musical ideas, compositions and the creative concept come from Rom Lee. Artificial intelligence served as a technical and design aid for the visual realisation of human ideas.
+
+The videos are therefore not purely automatic works, but the result of a combination of human creativity, original music production and AI-assisted imagery.`;
+
 export const TECH_NOTE_EN = `Change your mind ... Modern technology has become a natural part of everyday life. Without electronics and digital assistance, many of today's cars would not function — yet the person behind the wheel remains the driver. In the same way, AI-assisted tools can support creative work without replacing the human being, the original idea, or personal responsibility. Technology can also create new opportunities for people with disabilities. When someone is unable to sing, play an instrument, move freely, or participate in artistic life in a conventional way, digital and AI-assisted tools may help that person express ideas, communicate emotions, and take part more fully in cultural and social life. Used responsibly, technology does not diminish human creativity — it can make creativity and participation accessible to more people. Modern technology, when used responsibly, is a gift and an extension of our world. It can broaden human possibilities, support creativity, and help more people participate actively in life.`;
 
 export const SUMMARY = `Text, Gesang als Grundlage sowie Gitarre und Rhythmus, Komposition und musikalische Konzeption: Rom Lee.

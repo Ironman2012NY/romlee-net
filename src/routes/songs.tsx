@@ -4,11 +4,13 @@ import {
   ABOUT_SONGS_EN,
   SUMMARY,
   VIDEO_AI_NOTE,
+  VIDEO_AI_NOTE_EN,
 } from "@/data/content";
 import { LANG_LABEL, TRACKS, tracksByLang, type Lang } from "@/data/tracks";
 import { PageHead, SiteShell } from "@/components/site-shell";
 import { TrackRow } from "@/components/track-row";
 import { useT } from "@/components/lang-switch";
+import { useLocale } from "@/lib/locale";
 
 export const Route = createFileRoute("/songs")({ component: SongsPage });
 
@@ -16,6 +18,8 @@ const ORDER: Lang[] = ["de", "pl", "en", "es"];
 
 function SongsPage() {
   const copy = useT();
+  const locale = useLocale((s) => s.locale);
+  const aiNote = locale === "de" ? VIDEO_AI_NOTE : VIDEO_AI_NOTE_EN;
   return (
     <SiteShell>
       <PageHead kicker={copy.songsKicker} title={copy.songsTitle} lead={copy.songsLead} />
@@ -31,12 +35,11 @@ function SongsPage() {
           />
           <div className="flex flex-col justify-center p-6 sm:p-8">
             <p className="text-xs uppercase tracking-[0.18em] text-accent">YouTube</p>
-            <h2 className="mt-2 font-display text-2xl tracking-tight text-fg">Songtexte</h2>
+            <h2 className="mt-2 font-display text-2xl tracking-tight text-fg">{copy.lyricsTitle}</h2>
             <p className="mt-2 text-sm leading-relaxed text-muted">
-              Hintergründe und Texte aus den Beschreibungen des YouTube-Kanals — Love and Peace,
-              Wilki i Słońce, Durny sen und alle weiteren Songs.
+              {copy.lyricsTeaser}
             </p>
-            <span className="mt-4 text-sm text-fg">Zu den Texten →</span>
+            <span className="mt-4 text-sm text-fg">{copy.toLyrics}</span>
           </div>
         </Link>
 
@@ -59,23 +62,25 @@ function SongsPage() {
 
         <section className="rounded-xl border border-border bg-surface p-6 sm:p-8">
           <h2 className="font-display text-2xl tracking-tight text-fg">
-            Über die Lieder und künstliche Intelligenz
+            {copy.aboutSongsAi}
           </h2>
-          <p className="mt-4 text-sm leading-relaxed text-muted">About the Songs</p>
-          <p className="mt-3 text-sm leading-relaxed text-muted">{ABOUT_SONGS_EN}</p>
-          <div className="mt-6 space-y-4 text-sm leading-relaxed text-muted">
-            {ABOUT_SONGS_DE.map((p) => (
-              <p key={p.slice(0, 40)}>{p}</p>
-            ))}
-          </div>
+          {locale === "de" ? (
+            <div className="mt-6 space-y-4 text-sm leading-relaxed text-muted">
+              {ABOUT_SONGS_DE.map((p) => (
+                <p key={p.slice(0, 40)}>{p}</p>
+              ))}
+            </div>
+          ) : (
+            <p className="mt-3 text-sm leading-relaxed text-muted">{ABOUT_SONGS_EN}</p>
+          )}
         </section>
 
         <section className="rounded-xl border border-border bg-surface p-6 sm:p-8">
           <h2 className="font-display text-2xl tracking-tight text-fg">
-            Hinweis zur Videoproduktion
+            {copy.videoProductionNote}
           </h2>
           <p className="mt-4 whitespace-pre-line text-sm leading-relaxed text-muted">
-            {VIDEO_AI_NOTE}
+            {aiNote}
           </p>
         </section>
 

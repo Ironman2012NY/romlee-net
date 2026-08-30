@@ -1,4 +1,5 @@
 import type { Locale } from "@/lib/locale";
+import { pageCopy } from "@/data/i18n-pages";
 
 const de = {
   nav: {
@@ -1254,5 +1255,6 @@ export const UI: Record<Locale, Ui> = {
 };
 
 export function t(locale: Locale) {
-  return UI[locale] ?? UI.de;
+  const ui = UI[locale] ?? UI.de;
+  return { ...ui, ...pageCopy(locale) };
 }

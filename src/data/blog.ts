@@ -197,3 +197,5 @@ export const POSTS: BlogPost[] = [
 export function getPost(slug: string) {
   return POSTS.find((p) => p.slug === slug);
 }
+
+export { localizePost } from "@/data/blog-i18n";
