@@ -126,6 +126,24 @@ function Home() {
         <div className="max-w-2xl">
           <YoutubeEmbed videoId="isW24Vr4lhk" title="Water (Keep it for tomorrow)" />
         </div>
+        <div className="mt-6 flex flex-wrap gap-3">
+          <a
+            href="https://www.youtube.com/watch?v=isW24Vr4lhk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-11 items-center rounded-md bg-fg px-5 text-sm font-medium text-accent-fg"
+          >
+            YouTube
+          </a>
+          <a
+            href={SITE.spotify.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex min-h-11 items-center rounded-md border border-border-strong px-5 text-sm text-fg"
+          >
+            Auf Spotify hören
+          </a>
+        </div>
       </section>
 
       <section className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[1.2fr_0.8fr]">

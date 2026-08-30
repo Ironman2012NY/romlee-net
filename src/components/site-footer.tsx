@@ -37,6 +37,14 @@ export function SiteFooter() {
             <Youtube className="size-4" />
             YouTube {SITE.youtube.handle}
           </a>
+          <a
+            href={SITE.spotify.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex min-h-11 items-center gap-2 text-muted hover:text-fg"
+          >
+            Spotify · Rom Lee
+          </a>
         </div>
 
         <div className="text-sm">

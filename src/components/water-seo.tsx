@@ -8,6 +8,13 @@ const DATA = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "MusicGroup",
+      name: SITE.name,
+      alternateName: ["Rom Lee", SITE.alsoAs],
+      url: SITE.original,
+      sameAs: [SITE.youtube.url, SITE.spotify.url],
+    },
+    {
       "@type": "MusicRecording",
       name: "Water (Keep it for tomorrow)",
       alternateName: ["Drink the Water", "Drink, drink the water"],
