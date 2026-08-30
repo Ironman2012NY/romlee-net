@@ -75,8 +75,8 @@ export const FEATURED_VIDEOS: Video[] = [
     kind: "video",
   },
   {
-    id: "GLYQEV6DPic",
-    title: "Pierwszy raz",
+    id: "W9Tp8sZBRNA",
+    title: "Pierwszy raz (First Love)",
     kind: "video",
   },
   {

@@ -9,6 +9,7 @@ export type BlogPost = {
   subtitle?: string;
   paragraphs: string[];
   extra?: { heading: string; body: string }[];
+  youtubeId?: string;
 };
 
 export const POSTS: BlogPost[] = [
@@ -34,12 +35,37 @@ export const POSTS: BlogPost[] = [
     ],
   },
   {
+    slug: "first-love",
+    title: "First Love (Pierwszy raz)",
+    dateLabel: "August 2026",
+    subtitle: "Erinnert euch an eure Zeiten",
+    cover: "/images/blog/thumb-first-love.jpg",
+    coverCaption: "YouTube: Pierwszy raz (First Time)",
+    youtubeId: "W9Tp8sZBRNA",
+    excerpt:
+      "Für viele ist die erste Liebe eine wichtige Erinnerung. Deshalb erinnert euch an eure Zeiten — mit viel Wärme und Liebe in euch.",
+    paragraphs: [
+      "Für viele ist die erste Liebe eine wichtige Erinnerung. Deshalb erinnert euch an eure Zeiten — mit viel Wärme und Liebe in euch. Das Video ist bei YouTube.",
+      "„Pierwszy raz“ erzählt von einer ersten Liebe, die weder Zeit noch Trennung auslöschen konnten. Kasia und der Erzähler blicken zurück auf das erste Mal, auf die Schule in der Jagiellońska-Straße in Gliwice, auf eine Welt, die so bunt schien wie ein Regenbogen.",
+      "Später trennen sich die Wege. Briefe und Erinnerungen verblassen. Viele Jahre danach führt das Schicksal sie in Warschau wieder zusammen. Sie gibt ihr Herz den Kindern auf den Krankenstationen. Er, als Kardiologe, rettet ebenfalls Herzen.",
+      "Es ist ein Lied über die Unschuld der ersten Liebe, über Trennung, Erinnerung und die Hoffnung, dass wahre Liebe ihren Weg zurückfindet — auch nach vielen Jahren.",
+      "Menschgemachtes Lied: Originaltext, Komposition, Gesang und Quellton von Roman Leischik / Rom Lee. KI und digitale Studiowerkzeuge sind nur Produktionshilfen für Arrangement, Instrumentierung, Klang, Mastering und Bilder. Keine fremden Stimmen werden geklont.",
+    ],
+    extra: [
+      {
+        heading: "YouTube",
+        body: "Musikvideo tells the story of a first love (RomLee is in reality a real cardiologist) that neither time nor separation could erase. Kasia and the narrator look back on their first time, their school on Jagiellońska Street (Gliwice), and a world that once seemed as colorful as a rainbow.\n\nLater, their paths separate, and the letters and memories slowly fade. Many years later, fate brings them together again in Warsaw. She devotes her heart to children in hospital wards, while he, as a cardiologist, also saves human hearts.\n\nIt is a song about the innocence of first love, separation, memories, and the hope that true love can find its way back—even after many years.\n\nOriginal song written, composed, and produced by Roman Leischik (artist name: Rom Lee/Leszek).\n\nMusic is Therapy.",
+      },
+    ],
+  },
+  {
     slug: "naechte-und-woelfe",
     title: "Nächte und Wölfe (Darkness and Light)",
     dateLabel: "August 2026",
     subtitle: "Eine Metapher — oft erst auf den zweiten Blick",
     cover: "/images/blog/thumb-naechte.jpg",
     coverCaption: "YouTube: Nächte und Wölfe (Darkness and Light)",
+    youtubeId: "ul5DEIL8A-M",
     excerpt:
       "Zerstörte Straßen, Trümmer, ein Mensch allein. Die Wölfe der Nacht stehen für Angst, Schmerz, Erinnerung — und für das, was Städte und Land zerreißt.",
     paragraphs: [

@@ -231,12 +231,12 @@ export const TRACKS: Track[] = [
   },
   {
     id: "4941708",
-    title: "Pierwszy raz",
+    title: "Pierwszy raz (First Love)",
     duration: "5:30",
     slug: "pierwszy-raz",
     audio: "https://romlee.net/player/3937082/tracks/4941708.mp3",
-    cover: "/images/covers/yt-pierwszy-raz.jpg",
-    youtubeId: "GLYQEV6DPic",
+    cover: "/images/covers/yt-first-love.jpg",
+    youtubeId: "W9Tp8sZBRNA",
     lang: "pl",
   },
   {
@@ -299,6 +299,8 @@ export function coverForYoutubeId(id: string): string {
     YTefIyKLBQA: "/images/covers/yt-love-and-peace.jpg",
     T8oDDO3b4Zk: "/images/covers/yt-lato-to-raj-z5.jpg",
     "xcS-9lsdajg": "/images/covers/yt-lato-jest-raj.jpg",
+    W9Tp8sZBRNA: "/images/covers/yt-first-love.jpg",
+    GLYQEV6DPic: "/images/covers/yt-pierwszy-raz.jpg",
   };
   return extras[id] ?? `/api/yt-thumb/${id}`;
 }

@@ -99,12 +99,9 @@ function BlogPostPage() {
         {post.coverCaption ? (
           <p className="mt-3 text-center text-sm italic text-subtle">{post.coverCaption}</p>
         ) : null}
-        {post.slug === "naechte-und-woelfe" ? (
+        {post.youtubeId ? (
           <div className="mt-10">
-            <YoutubeEmbed
-              videoId="ul5DEIL8A-M"
-              title="Nächte und Wölfe (Darkness and Light)"
-            />
+            <YoutubeEmbed videoId={post.youtubeId} title={post.title} />
           </div>
         ) : null}
         <div className="mt-10 space-y-5 text-base leading-relaxed text-muted">

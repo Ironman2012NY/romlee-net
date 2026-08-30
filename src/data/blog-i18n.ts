@@ -1,6 +1,6 @@
 import type { Locale } from "@/lib/locale";
 import type { BlogPost } from "@/data/blog";
-import { WATER_MORE, LOVE_MORE, HOSPIZ_MORE, NIGHTS_MORE } from "@/data/blog-bodies";
+import { WATER_MORE, LOVE_MORE, HOSPIZ_MORE, NIGHTS_MORE, FIRST_LOVE_MORE } from "@/data/blog-bodies";
 import {
   WELCOME_MORE,
   SCIENCE_MORE,
@@ -665,6 +665,7 @@ const NIGHTS: Partial<Record<Locale, BlogText>> = {
 
 export const BLOG_I18N: Record<string, Partial<Record<Locale, BlogText>>> = {
   "ki-als-bildsprache": KI,
+  "first-love": FIRST_LOVE_MORE,
   "naechte-und-woelfe": { ...NIGHTS, ...NIGHTS_MORE },
   "water-keep-it-for-tomorrow": { ...WATER, ...WATER_MORE },
   "love-and-peace": { ...LOVE, ...LOVE_MORE },

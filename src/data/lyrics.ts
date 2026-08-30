@@ -560,10 +560,12 @@ This song is about much more than being able to walk. It is about inner strength
   },
   {
     slug: "pierwszy-raz",
-    title: "Pierwszy raz",
+    title: "Pierwszy raz (First Love)",
     lang: "pl",
-    youtubeId: "GLYQEV6DPic",
-    text: `“Pierwsza miłość” – “First Love” is a song about the kind of first love that can stay with you for an entire lifetime.
+    youtubeId: "W9Tp8sZBRNA",
+    text: `Für viele ist die erste Liebe eine wichtige Erinnerung. Deshalb erinnert euch an eure Zeiten — mit viel Wärme und Liebe in euch. Das Video ist bei YouTube.
+
+“Pierwsza miłość” – “First Love” is a song about the kind of first love that can stay with you for an entire lifetime.
 
 The story begins when they are very young: Kasia, school on Jagiellońska Street, holding hands for the first time, and the first kiss. For a teenager, that moment feels almost like being lifted straight into heaven. Suddenly the world becomes brighter, more colorful, and full of dreams.
 

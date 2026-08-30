@@ -426,6 +426,222 @@ export const NIGHTS_MORE: Partial<Record<Locale, BlogText>> = {
   ),
 };
 
+function firstLovePack(
+  excerpt: string,
+  dateLabel: string,
+  subtitle: string,
+  paragraphs: string[],
+): BlogText {
+  return { excerpt, dateLabel, subtitle, paragraphs };
+}
+
+export const FIRST_LOVE_MORE: Partial<Record<Locale, BlogText>> = {
+  en: firstLovePack(
+    "For many people, first love is an important memory. So remember your times — with much warmth and love inside you.",
+    "August 2026",
+    "Remember your times",
+    [
+      "For many people, first love is an important memory. So remember your times — with much warmth and love inside you. The video is on YouTube.",
+      "“Pierwszy raz” tells of a first love that neither time nor separation could erase. Kasia and the narrator look back on the first time, on the school on Jagiellońska Street in Gliwice, on a world that seemed as colourful as a rainbow.",
+      "Later their paths separate. Letters and memories fade. Many years later, fate brings them together again in Warsaw. She gives her heart to children on the wards. He, as a cardiologist, also saves hearts.",
+      "It is a song about the innocence of first love, about separation, memory, and the hope that true love can find its way back — even after many years.",
+      "Human-created song: original lyrics, composition, vocals and source audio by Roman Leischik / Rom Lee. AI and digital studio tools are only production aids. No third-party voices are cloned.",
+    ],
+  ),
+  pl: firstLovePack(
+    "Dla wielu pierwsza miłość jest ważnym wspomnieniem. Dlatego pamiętajcie swoje czasy — z dużo ciepła i miłości w sobie.",
+    "sierpień 2026",
+    "Pamiętajcie swoje czasy",
+    [
+      "Dla wielu pierwsza miłość jest ważnym wspomnieniem. Dlatego pamiętajcie swoje czasy — z dużo ciepła i miłości w sobie. Film jest na YouTube.",
+      "„Pierwszy raz” opowiada o pierwszej miłości, której nie zdołały wymazać ani czas, ani rozstanie. Kasia i narrator wracają do pierwszego razu, do szkoły przy ulicy Jagiellońskiej w Gliwicach, do świata tak kolorowego jak tęcza.",
+      "Później drogi się rozchodzą. Listy i wspomnienia bledną. Wiele lat później los znowu ich spotyka w Warszawie. Ona oddaje serce dzieciom na oddziałach. On, jako kardiolog, też ratuje serca.",
+      "To piosenka o niewinności pierwszej miłości, o rozstaniu, pamięci i nadziei, że prawdziwa miłość potrafi wrócić — nawet po wielu latach.",
+      "Piosenka stworzona przez człowieka: oryginalny tekst, kompozycja, wokal i dźwięk źródłowy Roman Leischik / Rom Lee. SI i narzędzia studyjne tylko jako pomoc produkcji. Żadnych sklonowanych cudzych głosów.",
+    ],
+  ),
+  es: firstLovePack(
+    "Para mucha gente, el primer amor es un recuerdo importante. Por eso recordad vuestros tiempos — con mucho calor y amor dentro.",
+    "agosto de 2026",
+    "Recordad vuestros tiempos",
+    [
+      "Para mucha gente, el primer amor es un recuerdo importante. Por eso recordad vuestros tiempos — con mucho calor y amor dentro. El vídeo está en YouTube.",
+      "“Pierwszy raz” cuenta un primer amor que ni el tiempo ni la separación pudieron borrar. Kasia y el narrador miran atrás a la primera vez, al colegio de la calle Jagiellońska en Gliwice, a un mundo tan de color como un arcoíris.",
+      "Luego los caminos se separan. Cartas y recuerdos se apagan. Muchos años después el destino los junta otra vez en Varsovia. Ella da su corazón a los niños en las plantas. Él, como cardiólogo, también salva corazones.",
+      "Es una canción sobre la inocencia del primer amor, la separación, la memoria y la esperanza de que el amor verdadero pueda volver — incluso después de muchos años.",
+      "Canción hecha por un ser humano: letra, composición, voz y audio original de Roman Leischik / Rom Lee. La IA es solo ayuda de producción. No se clonan voces ajenas.",
+    ],
+  ),
+  fr: firstLovePack(
+    "Pour beaucoup, le premier amour est un souvenir important. Souvenez-vous donc de vos temps — avec beaucoup de chaleur et d’amour en vous.",
+    "août 2026",
+    "Souvenez-vous de vos temps",
+    [
+      "Pour beaucoup, le premier amour est un souvenir important. Souvenez-vous donc de vos temps — avec beaucoup de chaleur et d’amour en vous. La vidéo est sur YouTube.",
+      "« Pierwszy raz » raconte un premier amour que ni le temps ni la séparation n’ont pu effacer. Kasia et le narrateur se souviennent de la première fois, de l’école de la rue Jagiellońska à Gliwice, d’un monde aussi coloré qu’un arc-en-ciel.",
+      "Plus tard les chemins se séparent. Lettres et souvenirs s’effacent. Bien des années après, le destin les réunit à Varsovie. Elle donne son cœur aux enfants dans les services. Lui, cardiologue, sauve aussi des cœurs.",
+      "C’est une chanson sur l’innocence du premier amour, la séparation, la mémoire, et l’espoir qu’un amour vrai puisse retrouver son chemin — même après de longues années.",
+      "Chanson créée par un humain : paroles, composition, voix et son source de Roman Leischik / Rom Lee. L’IA n’est qu’une aide de production. Aucune voix tierce n’est clonée.",
+    ],
+  ),
+  it: firstLovePack(
+    "Per molti il primo amore è un ricordo importante. Perciò ricordate i vostri tempi — con molto calore e amore dentro di voi.",
+    "agosto 2026",
+    "Ricordate i vostri tempi",
+    [
+      "Per molti il primo amore è un ricordo importante. Perciò ricordate i vostri tempi — con molto calore e amore dentro di voi. Il video è su YouTube.",
+      "“Pierwszy raz” racconta un primo amore che né il tempo né la separazione hanno potuto cancellare. Kasia e il narratore tornano alla prima volta, alla scuola di via Jagiellońska a Gliwice, a un mondo colorato come un arcobaleno.",
+      "Poi le strade si separano. Lettere e ricordi sbiadiscono. Molti anni dopo il destino li riunisce a Varsavia. Lei dà il cuore ai bambini nei reparti. Lui, cardiologo, salva anche cuori.",
+      "È una canzone sull’innocenza del primo amore, sulla separazione, sulla memoria e sulla speranza che l’amore vero possa ritrovare la via — anche dopo molti anni.",
+      "Canzone creata da un essere umano: testi, composizione, voce e audio originale di Roman Leischik / Rom Lee. L’IA è solo aiuto di produzione. Nessuna voce altrui viene clonata.",
+    ],
+  ),
+  pt: firstLovePack(
+    "Para muita gente, o primeiro amor é uma memória importante. Por isso lembrai os vossos tempos — com muito calor e amor em vós.",
+    "agosto de 2026",
+    "Lembrai os vossos tempos",
+    [
+      "Para muita gente, o primeiro amor é uma memória importante. Por isso lembrai os vossos tempos — com muito calor e amor em vós. O vídeo está no YouTube.",
+      "“Pierwszy raz” conta um primeiro amor que nem o tempo nem a separação puderam apagar. Kasia e o narrador olham para a primeira vez, para a escola da rua Jagiellońska em Gliwice, para um mundo tão colorido como um arco-íris.",
+      "Depois os caminhos separam-se. Cartas e memórias esbatem-se. Muitos anos depois o destino junta-os de novo em Varsóvia. Ela dá o coração às crianças nas enfermarias. Ele, cardiologista, também salva corações.",
+      "É uma canção sobre a inocência do primeiro amor, a separação, a memória e a esperança de que o amor verdadeiro possa voltar — mesmo depois de muitos anos.",
+      "Canção feita por um ser humano: letra, composição, voz e áudio original de Roman Leischik / Rom Lee. A IA é só ajuda de produção. Nenhuma voz alheia é clonada.",
+    ],
+  ),
+  no: firstLovePack(
+    "For mange er den første kjærligheten et viktig minne. Derfor husk tidene deres — med mye varme og kjærlighet i dere.",
+    "august 2026",
+    "Husk tidene deres",
+    [
+      "For mange er den første kjærligheten et viktig minne. Derfor husk tidene deres — med mye varme og kjærlighet i dere. Videoen er på YouTube.",
+      "«Pierwszy raz» forteller om en første kjærlighet som verken tid eller brudd kunne slette. Kasia og fortelleren ser tilbake på den første gangen, skolen i Jagiellońska-gaten i Gliwice, en verden så fargerik som en regnbue.",
+      "Senere skilles veiene. Brev og minner falmer. Mange år etter fører skjebnen dem sammen igjen i Warszawa. Hun gir hjertet til barn på avdelingene. Han, som kardiolog, redder også hjerter.",
+      "Det er en sang om uskylden i den første kjærligheten, om brudd, minne, og håpet om at ekte kjærlighet kan finne veien tilbake — selv etter mange år.",
+      "Menneskeskapt sang: original tekst, komposisjon, vokal og kildelyd av Roman Leischik / Rom Lee. KI er bare produksjonshjelp. Ingen andres stemmer klones.",
+    ],
+  ),
+  tr: firstLovePack(
+    "Birçok kişi için ilk aşk önemli bir anıdır. Bu yüzden zamanlarınızı hatırlayın — içinizde çok sıcaklık ve sevgiyle.",
+    "Ağustos 2026",
+    "Zamanlarınızı hatırlayın",
+    [
+      "Birçok kişi için ilk aşk önemli bir anıdır. Bu yüzden zamanlarınızı hatırlayın — içinizde çok sıcaklık ve sevgiyle. Video YouTube’da.",
+      "“Pierwszy raz”, zamanın da ayrılığın da silemediği bir ilk aşkı anlatır. Kasia ve anlatıcı ilk kez’e, Gliwice’deki Jagiellońska sokağındaki okula, gökkuşağı kadar renkli bir dünyaya bakıyor.",
+      "Sonra yollar ayrılır. Mektuplar ve anılar solar. Yıllar sonra kader onları Varşova’da yeniden bir araya getirir. O, kalbini servislerdeki çocuklara verir. O, kardiyolog olarak da kalpleri kurtarır.",
+      "İlk aşkın masumiyeti, ayrılık, bellek ve gerçek aşkın yıllar sonra bile yolunu bulabileceği umudu üzerine bir şarkı.",
+      "İnsan yapımı şarkı: özgün söz, beste, vokal ve kaynak ses Roman Leischik / Rom Lee. YZ yalnızca üretim yardımı. Başkasının sesi kopyalanmaz.",
+    ],
+  ),
+  ru: firstLovePack(
+    "Для многих первая любовь — важная память. Поэтому вспоминайте свои времена — с теплом и любовью в себе.",
+    "август 2026",
+    "Вспоминайте свои времена",
+    [
+      "Для многих первая любовь — важная память. Поэтому вспоминайте свои времена — с теплом и любовью в себе. Видео на YouTube.",
+      "«Pierwszy raz» — о первой любви, которую не стёрли ни время, ни разлука. Кася и рассказчик смотрят назад на первый раз, на школу на улице Ягеллоньской в Гливице, на мир, цветной как радуга.",
+      "Потом дороги расходятся. Письма и воспоминания бледнеют. Много лет спустя судьба снова сводит их в Варшаве. Она отдаёт сердце детям в отделениях. Он, кардиолог, тоже спасает сердца.",
+      "Это песня о невинности первой любви, о разлуке, памяти и надежде, что настоящая любовь может найти путь назад — даже спустя годы.",
+      "Песня, созданная человеком: текст, композиция, вокал и исходный звук — Roman Leischik / Rom Lee. ИИ только помощь в производстве. Чужие голоса не клонируются.",
+    ],
+  ),
+  uk: firstLovePack(
+    "Для багатьох перше кохання — важлива пам’ять. Тож згадуйте свої часи — з теплом і любов’ю в собі.",
+    "серпень 2026",
+    "Згадуйте свої часи",
+    [
+      "Для багатьох перше кохання — важлива пам’ять. Тож згадуйте свої часи — з теплом і любов’ю в собі. Відео на YouTube.",
+      "«Pierwszy raz» — про перше кохання, якого не стерли ні час, ні розлука. Кася і оповідач дивляться назад на перший раз, на школу на вулиці Ягеллонській у Гливицях, на світ, барвистий як веселка.",
+      "Потім дороги розходяться. Листи й спогади бліднуть. Багато років потому доля знову зводить їх у Варшаві. Вона віддає серце дітям у відділеннях. Він, кардіолог, теж рятує серця.",
+      "Це пісня про невинність першого кохання, про розлуку, пам’ять і надію, що справжнє кохання може знайти шлях назад — навіть через роки.",
+      "Пісня, створена людиною: текст, композиція, вокал і вихідний звук — Roman Leischik / Rom Lee. ШІ лише допомога у виробництві. Чужі голоси не клонують.",
+    ],
+  ),
+  ar: firstLovePack(
+    "عند كثيرين الحب الأول ذكرى مهمة. لذلك تذكّروا أزمانكم — بدفء كثير وحب في داخلكم.",
+    "أغسطس 2026",
+    "تذكّروا أزمانكم",
+    [
+      "عند كثيرين الحب الأول ذكرى مهمة. لذلك تذكّروا أزمانكم — بدفء كثير وحب في داخلكم. الفيديو على يوتيوب.",
+      "«Pierwszy raz» يحكي حباً أولاً لم يمحه زمن ولا فراق. كاسيا والراوي ينظران إلى المرة الأولى، إلى المدرسة في شارع ياغيونّسكا في غليفيتسه، إلى عالم بلون قوس قزح.",
+      "ثم تفترق الطرق. الرسائل والذكريات تتلاشى. بعد سنوات كثيرة يجمعهما القدر في وارسو. هي تعطي قلبها للأطفال في الأجنحة. وهو، طبيب قلب، ينقذ قلوباً أيضاً.",
+      "أغنية عن براءة الحب الأول، والفراق، والذاكرة، والأمل أن الحب الصادق يجد طريقه عائداً — حتى بعد سنين طويلة.",
+      "أغنية صنعها إنسان: الكلمات والتلحين والغناء والصوت الأصلي لرومان لايشيك / روم لي. الذكاء الاصطناعي مجرد عون إنتاج. لا تُستنسَخ أصوات الغير.",
+    ],
+  ),
+  he: firstLovePack(
+    "להרבה אנשים האהבה הראשונה היא זיכרון חשוב. לכן זכרו את הזמנים שלכם — עם הרבה חום ואהבה בתוככם.",
+    "אוגוסט 2026",
+    "זכרו את הזמנים שלכם",
+    [
+      "להרבה אנשים האהבה הראשונה היא זיכרון חשוב. לכן זכרו את הזמנים שלכם — עם הרבה חום ואהבה בתוככם. הסרטון ביוטיוב.",
+      "“Pierwszy raz” מספר על אהבה ראשונה שגם זמן וגם פרידה לא מחקו. קאסיה והמספר מביטים אל הפעם הראשונה, אל בית הספר ברחוב יגיילונסקה בגליביצה, אל עולם צבעוני כקשת.",
+      "אחר כך הדרכים נפרדות. מכתבים וזיכרונות דוהים. שנים רבות אחר כך הגורל מחבר אותם שוב בוורשה. היא נותנת את לבה לילדים במחלקות. הוא, קרדיולוג, גם מציל לבבות.",
+      "זה שיר על תום האהבה הראשונה, על פרידה, זיכרון, והתקווה שאהבה אמיתית יכולה למצוא את הדרך חזרה — גם אחרי שנים רבות.",
+      "שיר מעשה ידי אדם: מילים, לחן, שירה ושמע מקור של Roman Leischik / Rom Lee. בינה מלאכותית רק עזר הפקה. אין שיבוט קולות של אחרים.",
+    ],
+  ),
+  hi: firstLovePack(
+    "बहुतों के लिए पहला प्यार एक महत्वपूर्ण स्मृति है। इसलिए अपने समय याद रखो — अपने अंदर बहुत गर्मी और प्रेम के साथ।",
+    "अगस्त 2026",
+    "अपने समय याद रखो",
+    [
+      "बहुतों के लिए पहला प्यार एक महत्वपूर्ण स्मृति है। इसलिए अपने समय याद रखो — अपने अंदर बहुत गर्मी और प्रेम के साथ। वीडियो YouTube पर है।",
+      "“Pierwszy raz” ऐसे पहले प्यार की बात है जिसे न समय मिटा सका न बिछोह। कासिया और कथावाचक पहले बार को देखते हैं, ग्लिवित्से की जागिएल्लोंस्का सड़क के स्कूल को, इंद्रधनुष जितनी रंगीन दुनिया को।",
+      "फिर रास्ते जुदा होते हैं। चिट्ठियाँ और यादें फीकी पड़ती हैं। कई साल बाद किस्मत उन्हें वारसॉ में फिर मिलाती है। वह वार्डों में बच्चों को अपना दिल देती है। वह, हृदय रोग विशेषज्ञ, भी दिल बचाता है।",
+      "यह गीत पहले प्यार की मासूमियत, बिछोह, स्मृति, और इस आशा का है कि सच्चा प्यार वापस रास्ता पा सकता है — कई वर्षों बाद भी।",
+      "मनुष्य द्वारा रचित गीत: मूल बोल, रचना, गायन Roman Leischik / Rom Lee। AI केवल उत्पादन सहायता। किसी और की आवाज़ की नकल नहीं।",
+    ],
+  ),
+  th: firstLovePack(
+    "สำหรับหลายคน ความรักครั้งแรกเป็นความทรงจำสำคัญ ดังนั้นจงระลึกถึงเวลาของท่าน — ด้วยความอบอุ่นและความรักมากในตัว",
+    "สิงหาคม 2026",
+    "ระลึกถึงเวลาของท่าน",
+    [
+      "สำหรับหลายคน ความรักครั้งแรกเป็นความทรงจำสำคัญ ดังนั้นจงระลึกถึงเวลาของท่าน — ด้วยความอบอุ่นและความรักมากในตัว วิดีโออยู่บน YouTube",
+      "“Pierwszy raz” เล่าความรักครั้งแรกที่เวลาและการจากลาลบไม่ได้ คาเซียกับผู้เล่าหันไปมองครั้งแรก โรงเรียนที่ถนน Jagiellońska ใน Gliwice โลกสีสันเหมือนรุ้ง",
+      "แล้วทางแยกจากกัน จดหมายและความทรงจำจาง หลายปีต่อมาโชคชะตาพาพบกันอีกที่วอร์ซอ เธอให้หัวใจแก่เด็กในหอผู้ป่วย เขาในฐานะแพทย์หัวใจก็ช่วยหัวใจเช่นกัน",
+      "เพลงเรื่องความบริสุทธิ์ของรักแรก การจากลา ความทรงจำ และความหวังว่ารักแท้หาทางกลับได้ — แม้หลายปีผ่าน",
+      "เพลงที่มนุษย์สร้าง: เนื้อร้อง ทำนอง เสียงร้องโดย Roman Leischik / Rom Lee AI เป็นเพียงตัวช่วยผลิต ไม่โคลนเสียงของผู้อื่น",
+    ],
+  ),
+  ja: firstLovePack(
+    "多くの人にとって初恋は大切な記憶です。だから自分の時代を思い出して — 心の中にたくさんの温もりと愛を。",
+    "2026年8月",
+    "自分の時代を思い出して",
+    [
+      "多くの人にとって初恋は大切な記憶です。だから自分の時代を思い出して — 心の中にたくさんの温もりと愛を。映像は YouTube にあります。",
+      "「Pierwszy raz」は、時間も別れも消せなかった初恋の話です。カシアと語り手は最初の時、グリヴィツェのヤギェロンカ通りの学校、虹のように色鮮やかな世界を振り返ります。",
+      "やがて道は分かれます。手紙と記憶は薄れます。何年もあとに運命がワルシャワで再び出会わせます。彼女は病棟の子どもたちに心を捧げます。彼は循環器医として、やはり心臓を救います。",
+      "初恋の無垢、別れ、記憶、そして本当の愛が何年もあとに道を見つけられるという希望の歌です。",
+      "人が作った歌。詞、作曲、歌声は Roman Leischik / Rom Lee。AI は制作補助にすぎません。他人の声はクローンしません。",
+    ],
+  ),
+  ko: firstLovePack(
+    "많은 이에게 첫사랑은 중요한 기억입니다. 그러니 여러분의 시간을 기억하세요 — 안에 많은 온기와 사랑을 담고.",
+    "2026년 8월",
+    "여러분의 시간을 기억하세요",
+    [
+      "많은 이에게 첫사랑은 중요한 기억입니다. 그러니 여러분의 시간을 기억하세요 — 안에 많은 온기와 사랑을 담고. 영상은 YouTube에 있습니다.",
+      "“Pierwszy raz”는 시간도 이별도 지울 수 없었던 첫사랑 이야기입니다. 카시아와 화자는 첫 번, 글리비체 야기에워니스카 거리의 학교, 무지개처럼 다채로운 세상을 돌아봅니다.",
+      "나중에 길은 갈라집니다. 편지와 기억이 희미해집니다. 여러 해 뒤 운명이 바르샤바에서 다시 만나게 합니다. 그녀는 병동의 아이들에게 마음을 줍니다. 그는 심장내과 의사로서 또한 심장을 구합니다.",
+      "첫사랑의 순수함, 이별, 기억, 그리고 진짜 사랑이 여러 해 뒤에도 길을 찾을 수 있다는 희망의 노래입니다.",
+      "사람이 만든 노래. 가사, 작곡, 보컬은 Roman Leischik / Rom Lee. AI는 제작 도움일 뿐입니다. 남의 목소리는 복제하지 않습니다.",
+    ],
+  ),
+  id: firstLovePack(
+    "Bagi banyak orang, cinta pertama adalah kenangan penting. Karena itu ingatlah masa kalian — dengan banyak kehangatan dan cinta di dalam diri.",
+    "Agustus 2026",
+    "Ingatlah masa kalian",
+    [
+      "Bagi banyak orang, cinta pertama adalah kenangan penting. Karena itu ingatlah masa kalian — dengan banyak kehangatan dan cinta di dalam diri. Videonya ada di YouTube.",
+      "“Pierwszy raz” menceritakan cinta pertama yang tidak bisa dihapus waktu maupun perpisahan. Kasia dan narator menengok ke pertama kali, ke sekolah di jalan Jagiellońska di Gliwice, ke dunia sewarna pelangi.",
+      "Lalu jalan berpisah. Surat dan kenangan pudar. Bertahun-tahun kemudian nasib mempertemukan mereka lagi di Warsawa. Ia memberi hatinya kepada anak-anak di bangsal. Ia, sebagai kardiolog, juga menyelamatkan hati.",
+      "Ini lagu tentang kesucian cinta pertama, perpisahan, ingatan, dan harapan bahwa cinta yang benar bisa menemukan jalan kembali — bahkan setelah bertahun-tahun.",
+      "Lagu buatan manusia: lirik, komposisi, vokal Roman Leischik / Rom Lee. AI hanya bantuan produksi. Tidak ada suara orang lain yang dikloning.",
+    ],
+  ),
+};
+
 function lovePack(
   excerpt: string,
   dateLabel: string,
