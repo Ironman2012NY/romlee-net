@@ -97,18 +97,28 @@ function BlogPostPage() {
           </div>
         ) : null}
         {post.coverCaption ? (
-          <p className="mt-3 text-center text-sm italic text-subtle">{post.coverCaption}</p>
+          <p
+            className={
+              post.slug === "first-love"
+                ? "mt-4 text-base leading-relaxed text-muted"
+                : "mt-3 text-center text-sm italic text-subtle"
+            }
+          >
+            {post.coverCaption}
+          </p>
         ) : null}
         {post.youtubeId ? (
           <div className="mt-10">
             <YoutubeEmbed videoId={post.youtubeId} title={post.title} />
           </div>
         ) : null}
-        <div className="mt-10 space-y-5 text-base leading-relaxed text-muted">
-          {post.paragraphs.map((p) => (
-            <p key={p.slice(0, 48)}>{p}</p>
-          ))}
-        </div>
+        {post.paragraphs.length ? (
+          <div className="mt-10 space-y-5 text-base leading-relaxed text-muted">
+            {post.paragraphs.map((p) => (
+              <p key={p.slice(0, 48)}>{p}</p>
+            ))}
+          </div>
+        ) : null}
         {post.extra?.map((block) => (
           <section key={block.heading} className="mt-10">
             <h2 className="font-display text-2xl text-fg">{block.heading}</h2>

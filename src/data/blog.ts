@@ -40,17 +40,12 @@ export const POSTS: BlogPost[] = [
     dateLabel: "August 2026",
     subtitle: "Erinnert euch an eure Zeiten",
     cover: "/images/blog/thumb-first-love.jpg",
-    coverCaption: "YouTube: Pierwszy raz (First Time)",
+    coverCaption:
+      "Für viele ist die erste Liebe eine wichtige Erinnerung. Deshalb erinnert euch an eure Zeiten — mit viel Wärme und Liebe in euch. Das Video ist bei YouTube.",
     youtubeId: "W9Tp8sZBRNA",
     excerpt:
       "Für viele ist die erste Liebe eine wichtige Erinnerung. Deshalb erinnert euch an eure Zeiten — mit viel Wärme und Liebe in euch.",
-    paragraphs: [
-      "Für viele ist die erste Liebe eine wichtige Erinnerung. Deshalb erinnert euch an eure Zeiten — mit viel Wärme und Liebe in euch. Das Video ist bei YouTube.",
-      "„Pierwszy raz“ erzählt von einer ersten Liebe, die weder Zeit noch Trennung auslöschen konnten. Kasia und der Erzähler blicken zurück auf das erste Mal, auf die Schule in der Jagiellońska-Straße in Gliwice, auf eine Welt, die so bunt schien wie ein Regenbogen.",
-      "Später trennen sich die Wege. Briefe und Erinnerungen verblassen. Viele Jahre danach führt das Schicksal sie in Warschau wieder zusammen. Sie gibt ihr Herz den Kindern auf den Krankenstationen. Er, als Kardiologe, rettet ebenfalls Herzen.",
-      "Es ist ein Lied über die Unschuld der ersten Liebe, über Trennung, Erinnerung und die Hoffnung, dass wahre Liebe ihren Weg zurückfindet — auch nach vielen Jahren.",
-      "Menschgemachtes Lied: Originaltext, Komposition, Gesang und Quellton von Roman Leischik / Rom Lee. KI und digitale Studiowerkzeuge sind nur Produktionshilfen für Arrangement, Instrumentierung, Klang, Mastering und Bilder. Keine fremden Stimmen werden geklont.",
-    ],
+    paragraphs: [],
     extra: [
       {
         heading: "YouTube",

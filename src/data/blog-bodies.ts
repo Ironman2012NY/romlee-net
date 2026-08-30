@@ -432,7 +432,8 @@ function firstLovePack(
   subtitle: string,
   paragraphs: string[],
 ): BlogText {
-  return { excerpt, dateLabel, subtitle, paragraphs };
+  const short = paragraphs[0] ?? excerpt;
+  return { excerpt, dateLabel, subtitle, coverCaption: short, paragraphs: [] };
 }
 
 export const FIRST_LOVE_MORE: Partial<Record<Locale, BlogText>> = {
