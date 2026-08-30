@@ -11,10 +11,24 @@ import { PlaylistTiles } from "@/components/playlist-tiles";
 import { useT } from "@/components/lang-switch";
 import { fetchYoutubeStats, viewsFor, YT_FLOOR, type YtStats } from "@/lib/youtube";
 import { formatNumber } from "@/lib/utils";
+import { WaterSeo, WATER_SEO } from "@/components/water-seo";
 
 export const Route = createFileRoute("/")({
   loader: async () => ({ yt: await fetchYoutubeStats() }),
   staleTime: 0,
+  head: () => ({
+    meta: [
+      { title: WATER_SEO.title },
+      { name: "description", content: WATER_SEO.description },
+      { name: "keywords", content: WATER_SEO.keywords },
+      { property: "og:title", content: WATER_SEO.title },
+      { property: "og:description", content: WATER_SEO.description },
+      { property: "og:type", content: "music.song" },
+      { property: "og:url", content: "https://romlee.net/" },
+      { property: "og:image", content: "https://i.ytimg.com/vi/isW24Vr4lhk/sddefault.jpg" },
+      { property: "og:video", content: "https://www.youtube.com/watch?v=isW24Vr4lhk" },
+    ],
+  }),
   component: Home,
 });
 
@@ -29,6 +43,7 @@ function Home() {
 
   return (
     <SiteShell solidHeader={false}>
+      <WaterSeo />
       <section className="relative min-h-[92dvh] overflow-hidden">
         <img
           src="/images/fotos/foto-15.jpeg"
@@ -91,7 +106,10 @@ function Home() {
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <p className="text-xs uppercase tracking-[0.18em] text-accent">Neuerscheinung</p>
-        <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">Water (Keep it for tomorrow)</h2>
+        <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">
+          Water (Keep it for tomorrow)
+        </h2>
+        <p className="mt-1 text-sm text-accent">Drink the Water · Rom Lee · new song</p>
         <p className="mt-3 mb-4 max-w-2xl text-sm leading-relaxed text-muted">
           WHY I WROTE THIS SONG… My Spanish friends from Portocolom—especially Rosa—asked me to write a song
           about water. Water is becoming increasingly scarce in Madrid, Valencia and Andalusia, as well as on

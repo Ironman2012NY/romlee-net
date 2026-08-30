@@ -3,12 +3,27 @@ import { ArrowLeft } from "lucide-react";
 import { getPost } from "@/data/blog";
 import { SITE } from "@/data/site";
 import { SiteShell } from "@/components/site-shell";
+import { WaterSeo, WATER_SEO } from "@/components/water-seo";
 
 export const Route = createFileRoute("/blog/$slug")({
   loader: ({ params }) => {
     const post = getPost(params.slug);
     if (!post) throw notFound();
     return { post };
+  },
+  head: ({ params }) => {
+    if (params.slug !== "water-keep-it-for-tomorrow") return {};
+    return {
+      meta: [
+        { title: WATER_SEO.title },
+        { name: "description", content: WATER_SEO.description },
+        { name: "keywords", content: WATER_SEO.keywords },
+        { property: "og:title", content: WATER_SEO.title },
+        { property: "og:description", content: WATER_SEO.description },
+        { property: "og:image", content: "https://i.ytimg.com/vi/isW24Vr4lhk/sddefault.jpg" },
+        { property: "og:type", content: "music.song" },
+      ],
+    };
   },
   component: BlogPostPage,
 });
@@ -18,6 +33,7 @@ function BlogPostPage() {
 
   return (
     <SiteShell>
+      {post.slug === "water-keep-it-for-tomorrow" ? <WaterSeo /> : null}
       <article className="mx-auto max-w-3xl px-4 pb-20 pt-28 sm:px-6 sm:pt-32">
         <Link
           to="/blog"
