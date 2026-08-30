@@ -1,6 +1,6 @@
 import type { Locale } from "@/lib/locale";
 import type { BlogPost } from "@/data/blog";
-import { WATER_MORE, LOVE_MORE, HOSPIZ_MORE } from "@/data/blog-bodies";
+import { WATER_MORE, LOVE_MORE, HOSPIZ_MORE, NIGHTS_MORE } from "@/data/blog-bodies";
 import {
   WELCOME_MORE,
   SCIENCE_MORE,
@@ -595,8 +595,77 @@ const JAK: Partial<Record<Locale, BlogText>> = {
   },
 };
 
+const NIGHTS: Partial<Record<Locale, BlogText>> = {
+  en: {
+    subtitle: "A metaphor — often only at second glance",
+    excerpt:
+      "Ruined streets, rubble, one person alone. The wolves of the night stand for fear, pain, memory — and for what tears cities and land apart.",
+    dateLabel: "August 2026",
+    coverCaption: "YouTube: Nächte und Wölfe (Darkness and Light)",
+    paragraphs: [
+      "“Nights and Wolves (Darkness and Light)” is a metaphor. You often see it only at second glance. The film is meant to work first. Those who look closer see more. Night does not have the last word.",
+      "The film opens in a devastated city. Ruins, rubble, empty streets, one person alone. On YouTube it says: It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. The place stays open. That is how it should be. It can be many places at once.",
+      "The wolves of the night stand for fear, pain, memory — and for what tears cities and land apart. They are inner wolves that walk with us through the night. And they are outer images of loss and isolation.",
+      "Then the scene changes. The ruins give way to a vast, dry, almost lifeless landscape: oil pumps, pipelines, cracked earth. That too belongs to the image. One layer is destruction by war. Another is a landscape from which everything has been taken. Some see Texas after fracking. Some see a desert that cries out for people. The song points a finger at no one. It stays readable on several levels.",
+      "Then light. The sun rises. Small signs of life. Other people join. Isolation becomes a shared path. At the end a great gathering, a peace symbol. The message is simple: pain and darkness are real. But they do not have the last word. After every night the sun can rise again. Love, peace and solidarity can be stronger than the wolves. We can rebuild everything.",
+      "The layers are intended. There is an inner level: nights and wolves as fear, pain, memory. There is a visual level: destroyed city, empty street, then industry and cracked earth. And there is a shared level: from one person to many, from dark to light, from loss to rebuilding. Hope should stay open — so that each person sees what they themselves know.",
+      "Hey, nights and wolves — we will drive you away with our love and our peace. We’ll give you a punch.",
+      "Human-created song: original lyrics, composition, vocals and source audio by Roman Leischik / Rom Lee. AI and digital studio tools are used only as production aids for arrangement, instrumentation, sound design, mastering and visuals. No third-party voices are cloned.",
+    ],
+  },
+  pl: {
+    subtitle: "Metafora — często dopiero za drugim razem",
+    excerpt:
+      "Zniszczone ulice, gruzy, jeden człowiek sam. Wilki nocy to lęk, ból, pamięć — i to, co rozrywa miasta i ziemię.",
+    dateLabel: "sierpień 2026",
+    paragraphs: [
+      "„Nächte und Wölfe (Darkness and Light)” to metafora. Często widać ją dopiero za drugim razem. Film ma najpierw działać. Kto patrzy uważniej, widzi więcej. Noc nie ma ostatniego słowa.",
+      "Film zaczyna się w zniszczonym mieście. Ruiny, gruzy, puste ulice, jeden człowiek sam. Na YouTube stoi: It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. Miejsce zostaje otwarte. Tak ma być. Może to być wiele miejsc naraz.",
+      "Wilki nocy to lęk, ból, pamięć — i to, co rozrywa miasta i ziemię. To wewnętrzne wilki, które idą z nami przez noc. I zewnętrzne obrazy straty i izolacji.",
+      "Potem scena się zmienia. Ruiny ustępują wielkiemu, suchemu, niemal martwemu krajobrazowi: pompy naftowe, rurociągi, spękana ziemia. To też należy do obrazu. Jedna warstwa to zniszczenie wojną. Druga to krajobraz, z którego zabrano wszystko. Jedni widzą Teksas po frackingu. Inni pustynię, która woła o ludzi. Piosenka nie wskazuje palcem. Zostaje czytelna na kilku poziomach.",
+      "Potem światło. Wschodzi słońce. Małe znaki życia. Dołączają inni. Z samotności staje się droga razem. Na końcu wielkie zgromadzenie, znak pokoju. Przesłanie jest proste: ból i ciemność są prawdziwe. Ale nie mają ostatniego słowa. Po każdej nocy słońce może wstać znów. Miłość, pokój i solidarność mogą być silniejsze niż wilki. Możemy wszystko odbudować.",
+      "Wielowarstwowość jest zamierzona. Jest poziom wewnętrzny: noce i wilki jako lęk, ból, pamięć. Jest poziom obrazu: zniszczone miasto, pusta ulica, potem przemysł i spękana ziemia. I jest poziom wspólny: od jednego do wielu, od mroku do światła, od straty do odbudowy. Nadzieja ma zostać otwarta — żeby każdy zobaczył to, co sam zna.",
+      "Hey, noce i wilki — wypędzimy was naszą miłością i naszym pokojem. We’ll give you a punch.",
+      "Piosenka stworzona przez człowieka: oryginalny tekst, kompozycja, wokal i dźwięk źródłowy Roman Leischik / Rom Lee. SI i cyfrowe narzędzia studyjne tylko jako pomoc przy aranżacji, instrumentacji, dźwięku, masteringu i obrazach. Żadnych sklonowanych cudzych głosów.",
+    ],
+  },
+  es: {
+    subtitle: "Una metáfora — a menudo solo a segunda vista",
+    excerpt:
+      "Calles destruidas, escombros, una persona sola. Los lobos de la noche son miedo, dolor, memoria — y lo que rompe ciudades y tierra.",
+    dateLabel: "agosto de 2026",
+    paragraphs: [
+      "“Nächte und Wölfe (Darkness and Light)” es una metáfora. A menudo se ve solo a segunda vista. La película debe actuar primero. Quien mira más de cerca ve más. La noche no tiene la última palabra.",
+      "La película empieza en una ciudad destruida. Ruinas, escombros, calles vacías, una persona sola. En YouTube dice: It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. El lugar queda abierto. Así debe ser. Pueden ser muchos lugares a la vez.",
+      "Los lobos de la noche son miedo, dolor, memoria — y lo que rompe ciudades y tierra. Son lobos interiores que van con nosotros por la noche. Y son imágenes exteriores de pérdida y aislamiento.",
+      "Luego cambia la escena. Las ruinas ceden a un paisaje amplio, seco, casi muerto: bombas de petróleo, tuberías, tierra agrietada. Eso también pertenece a la imagen. Una capa es destrucción por la guerra. Otra es un paisaje al que se le ha quitado todo. Algunos ven Texas después del fracking. Otros un desierto que pide gente. La canción no señala con el dedo. Sigue siendo legible en varios niveles.",
+      "Luego luz. Sale el sol. Pequeñas señales de vida. Otras personas se unen. Del aislamiento nace un camino juntos. Al final una gran reunión, un símbolo de paz. El mensaje es simple: el dolor y la oscuridad son reales. Pero no tienen la última palabra. Después de cada noche el sol puede volver a salir. El amor, la paz y la solidaridad pueden ser más fuertes que los lobos. Podemos reconstruir todo.",
+      "Las capas son a propósito. Hay un nivel interior: noches y lobos como miedo, dolor, memoria. Hay un nivel de imagen: ciudad destruida, calle vacía, luego industria y tierra agrietada. Y hay un nivel compartido: de uno a muchos, de la oscuridad a la luz, de la pérdida a la reconstrucción. La esperanza debe quedar abierta — para que cada cual vea lo que conoce.",
+      "Hey, nights and wolves — we will drive you away with our love and our peace. We’ll give you a punch.",
+      "Canción hecha por un ser humano: letra, composición, voz y audio original de Roman Leischik / Rom Lee. La IA y las herramientas de estudio digitales son solo ayudas de producción para arreglo, instrumentación, sonido, mastering e imágenes. No se clonan voces ajenas.",
+    ],
+  },
+  fr: {
+    subtitle: "Une métaphore — souvent seulement au second regard",
+    excerpt:
+      "Rues détruites, décombres, un être seul. Les loups de la nuit sont peur, douleur, mémoire — et ce qui déchire villes et terre.",
+    dateLabel: "août 2026",
+    paragraphs: [
+      "« Nächte und Wölfe (Darkness and Light) » est une métaphore. On la voit souvent seulement au second regard. Le film doit d’abord agir. Qui regarde de plus près voit davantage. La nuit n’a pas le dernier mot.",
+      "Le film commence dans une ville détruite. Ruines, décombres, rues vides, un être seul. Sur YouTube il est écrit : It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. Le lieu reste ouvert. C’est ainsi. Ce peut être plusieurs lieux à la fois.",
+      "Les loups de la nuit sont peur, douleur, mémoire — et ce qui déchire villes et terre. Ce sont des loups intérieurs qui marchent avec nous dans la nuit. Et des images extérieures de perte et d’isolement.",
+      "Puis la scène change. Les ruines cèdent à un paysage vaste, sec, presque mort : pompes à pétrole, pipelines, terre fendue. Cela aussi appartient à l’image. Une couche est la destruction par la guerre. Une autre est un paysage auquel on a tout pris. Certains y voient le Texas après le fracking. D’autres un désert qui appelle les êtres humains. La chanson ne montre personne du doigt. Elle reste lisible à plusieurs niveaux.",
+      "Puis la lumière. Le soleil se lève. De petits signes de vie. D’autres personnes se joignent. De la solitude naît un chemin ensemble. À la fin un grand rassemblement, un symbole de paix. Le message est simple : la douleur et l’obscurité sont réelles. Mais elles n’ont pas le dernier mot. Après chaque nuit le soleil peut se lever à nouveau. L’amour, la paix et la solidarité peuvent être plus forts que les loups. Nous pouvons tout reconstruire.",
+      "Les strates sont voulues. Il y a un niveau intérieur : nuits et loups comme peur, douleur, mémoire. Un niveau d’image : ville détruite, rue vide, puis industrie et terre fendue. Et un niveau commun : de l’un vers beaucoup, de l’ombre vers la lumière, de la perte vers la reconstruction. L’espoir doit rester ouvert — pour que chacun y voie ce qu’il connaît.",
+      "Hey, nights and wolves — we will drive you away with our love and our peace. We’ll give you a punch.",
+      "Chanson créée par un humain : paroles, composition, voix et son source de Roman Leischik / Rom Lee. L’IA et les outils de studio numériques ne sont que des aides de production pour arrangement, instrumentation, son, mastering et images. Aucune voix tierce n’est clonée.",
+    ],
+  },
+};
+
 export const BLOG_I18N: Record<string, Partial<Record<Locale, BlogText>>> = {
   "ki-als-bildsprache": KI,
+  "naechte-und-woelfe": { ...NIGHTS, ...NIGHTS_MORE },
   "water-keep-it-for-tomorrow": { ...WATER, ...WATER_MORE },
   "love-and-peace": { ...LOVE, ...LOVE_MORE },
   "warum-deutsch-polnisch": { ...HOSPIZ, ...HOSPIZ_MORE },

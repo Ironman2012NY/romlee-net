@@ -4,6 +4,7 @@ import { getPost, localizePost } from "@/data/blog";
 import { SITE } from "@/data/site";
 import { SiteShell } from "@/components/site-shell";
 import { WaterSeo, WATER_SEO } from "@/components/water-seo";
+import { YoutubeEmbed } from "@/components/youtube-embed";
 import { useT } from "@/components/lang-switch";
 import { useLocale } from "@/lib/locale";
 
@@ -97,6 +98,14 @@ function BlogPostPage() {
         ) : null}
         {post.coverCaption ? (
           <p className="mt-3 text-center text-sm italic text-subtle">{post.coverCaption}</p>
+        ) : null}
+        {post.slug === "naechte-und-woelfe" ? (
+          <div className="mt-10">
+            <YoutubeEmbed
+              videoId="ul5DEIL8A-M"
+              title="Nächte und Wölfe (Darkness and Light)"
+            />
+          </div>
         ) : null}
         <div className="mt-10 space-y-5 text-base leading-relaxed text-muted">
           {post.paragraphs.map((p) => (

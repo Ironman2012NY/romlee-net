@@ -34,6 +34,32 @@ export const POSTS: BlogPost[] = [
     ],
   },
   {
+    slug: "naechte-und-woelfe",
+    title: "Nächte und Wölfe (Darkness and Light)",
+    dateLabel: "August 2026",
+    subtitle: "Eine Metapher — oft erst auf den zweiten Blick",
+    cover: "/images/blog/thumb-naechte.jpg",
+    coverCaption: "YouTube: Nächte und Wölfe (Darkness and Light)",
+    excerpt:
+      "Zerstörte Straßen, Trümmer, ein Mensch allein. Die Wölfe der Nacht stehen für Angst, Schmerz, Erinnerung — und für das, was Städte und Land zerreißt.",
+    paragraphs: [
+      "„Nächte und Wölfe (Darkness and Light)“ ist eine Metapher. Man erkennt sie oft erst auf den zweiten Blick. Der Film soll zuerst wirken. Wer genauer hinsieht, sieht mehr. Die Nacht hat nicht das letzte Wort.",
+      "Der Film beginnt in einer zerstörten Stadt. Ruinen, Trümmer, leere Straßen, ein Mensch allein. Auf YouTube steht: It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. Der Ort bleibt offen. Genau so soll es sein. Es kann viele Orte zugleich sein.",
+      "Die Wölfe der Nacht stehen für Angst, Schmerz, Erinnerung — und für das, was Städte und Land zerreißt. Es sind innere Wölfe, die durch die Nacht mitgehen. Und es sind äußere Bilder von Verlust und Isolation.",
+      "Dann wechselt die Szene. Die Ruinen weichen einer weiten, trockenen, fast toten Landschaft: Ölpumpen, Leitungen, rissige Erde. Auch das gehört zum Bild. Eine Schicht ist Zerstörung durch Krieg. Eine andere ist eine Landschaft, der man alles genommen hat. Manche sehen darin Texas nach dem Fracking. Manche sehen eine Wüste, die nach Menschen schreit. Das Lied zeigt mit dem Finger auf niemanden. Es bleibt auf mehreren Ebenen lesbar.",
+      "Dann Licht. Die Sonne geht auf. Kleine Zeichen von Leben. Andere Menschen schließen sich an. Aus Einsamkeit wird ein Weg miteinander. Am Ende eine große Versammlung, ein Friedenszeichen. Die Botschaft ist einfach: Schmerz und Dunkelheit sind echt. Aber sie haben nicht das letzte Wort. Nach jeder Nacht kann die Sonne wieder aufgehen. Liebe, Frieden und Zusammenhalt können stärker sein als die Wölfe. Wir können alles wieder aufbauen.",
+      "Die Vielschichtigkeit ist Absicht. Es gibt eine innere Ebene: Nächte und Wölfe als Angst, Schmerz, Erinnerung. Es gibt eine Bildebene: zerstörte Stadt, leere Straße, dann Industrie und rissige Erde. Und es gibt eine gemeinsame Ebene: vom Einzelnen zu vielen, vom Dunkel zum Licht, vom Verlust zum Wiederaufbau. Die Hoffnung soll offen bleiben — damit jeder hineinsieht, was er selbst kennt.",
+      "Hey, Nächte und Wölfe — wir werden euch vertreiben mit unserer Liebe und unserem Frieden. We’ll give you a punch.",
+      "Menschgemachtes Lied: Originaltext, Komposition, Gesang und Quellton von Roman Leischik / Rom Lee. KI und digitale Studiowerkzeuge sind nur Produktionshilfen für Arrangement, Instrumentierung, Klang, Mastering und Bilder. Keine fremden Stimmen werden geklont.",
+    ],
+    extra: [
+      {
+        heading: "YouTube",
+        body: "“Nights and Wolves” is a visual journey from destruction and darkness toward light, hope and peace. The film opens in a devastated cityscape (It could be: Gaza, Mariupol, Texas: Any resemblance to real persons or events is purely coincidental). Ruined buildings, rubble and empty streets create an atmosphere of loss and isolation. A lone man walks through this broken world, surrounded by the visible scars of destruction. The images reflect the inner “wolves” of the song — fear, pain, memories and the darkness that can follow us through the night.\n\nThe scenery gradually changes. The ruined city gives way to a vast, dry and almost lifeless landscape filled with oil pumps, pipelines and cracked earth. Yet on the horizon the sun begins to rise. Its warm light becomes stronger, and small signs of life appear in the barren ground. The sun becomes a symbol of hope: darkness does not last forever.\n\nOther people begin to join the journey. What started with one person slowly becomes a shared path. Isolation turns into connection, and the mood changes from loneliness and despair to confidence and solidarity.\n\nIn the final part, the film opens into a huge gathering of people. A large peace symbol rises above the crowd. The once-dark and devastated world is now filled with people, light and a sense of common purpose.\n\nThe film’s message is simple but powerful: pain and darkness are real, but they do not have the final word. After every night, the sun can rise again. And love, peace and human solidarity can be stronger than the wolves that surround us.\n\nHey, nights and wolves — we will drive you away with our love and our peace. We’ll give you a punch.",
+      },
+    ],
+  },
+  {
     slug: "water-keep-it-for-tomorrow",
     title: "Water (Keep it for tomorrow)",
     dateLabel: "August 2026",
