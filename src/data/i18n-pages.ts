@@ -45,7 +45,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "Zum Kanal",
     summaryTitle: "Zusammenfassung (gilt für alle Lieder)",
     asOfSongs: "Stand: 23. Juli 2026 · {n} Songs",
-    currentDiscussion: "Aktuelle Diskussion",
+    currentDiscussion: "Laufende Beiträge",
   },
   en: {
     playlistsLead:
@@ -69,7 +69,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "To the channel",
     summaryTitle: "Summary (applies to all songs)",
     asOfSongs: "As of 23 July 2026 · {n} songs",
-    currentDiscussion: "Current discussion",
+    currentDiscussion: "Ongoing posts",
   },
   pl: {
     playlistsLead:
@@ -93,7 +93,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "Do kanału",
     summaryTitle: "Podsumowanie (dotyczy wszystkich utworów)",
     asOfSongs: "Stan: 23 lipca 2026 · {n} utworów",
-    currentDiscussion: "Aktualna dyskusja",
+    currentDiscussion: "Bieżące wpisy",
   },
   es: {
     playlistsLead:
@@ -117,7 +117,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "Al canal",
     summaryTitle: "Resumen (vale para todas las canciones)",
     asOfSongs: "A 23 de julio de 2026 · {n} canciones",
-    currentDiscussion: "Discusión actual",
+    currentDiscussion: "Entradas en curso",
   },
   fr: {
     playlistsLead:
@@ -141,7 +141,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "Vers la chaîne",
     summaryTitle: "Résumé (vaut pour toutes les chansons)",
     asOfSongs: "Au 23 juillet 2026 · {n} chansons",
-    currentDiscussion: "Discussion actuelle",
+    currentDiscussion: "Articles en cours",
   },
   it: {
     playlistsLead:
@@ -165,7 +165,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "Al canale",
     summaryTitle: "Sintesi (vale per tutte le canzoni)",
     asOfSongs: "Agg. 23 luglio 2026 · {n} brani",
-    currentDiscussion: "Discussione attuale",
+    currentDiscussion: "Articoli in corso",
   },
   pt: {
     playlistsLead:
@@ -189,7 +189,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "Para o canal",
     summaryTitle: "Resumo (vale para todas as canções)",
     asOfSongs: "Em 23 de julho de 2026 · {n} canções",
-    currentDiscussion: "Discussão atual",
+    currentDiscussion: "Artigos em curso",
   },
   no: {
     playlistsLead:
@@ -213,7 +213,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "Til kanalen",
     summaryTitle: "Sammendrag (gjelder alle sanger)",
     asOfSongs: "Per 23. juli 2026 · {n} sanger",
-    currentDiscussion: "Aktuell diskusjon",
+    currentDiscussion: "Løpende innlegg",
   },
   tr: {
     playlistsLead:
@@ -237,7 +237,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "Kanala",
     summaryTitle: "Özet (tüm şarkılar için geçerli)",
     asOfSongs: "23 Temmuz 2026 · {n} şarkı",
-    currentDiscussion: "Güncel tartışma",
+    currentDiscussion: "Devam eden yazılar",
   },
   ru: {
     playlistsLead:
@@ -261,7 +261,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "К каналу",
     summaryTitle: "Кратко (для всех песен)",
     asOfSongs: "На 23 июля 2026 · {n} песен",
-    currentDiscussion: "Актуальная дискуссия",
+    currentDiscussion: "Текущие записи",
   },
   uk: {
     playlistsLead:
@@ -285,7 +285,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "До каналу",
     summaryTitle: "Коротко (для всіх пісень)",
     asOfSongs: "Станом на 23 липня 2026 · {n} пісень",
-    currentDiscussion: "Актуальна дискусія",
+    currentDiscussion: "Поточні записи",
   },
   ar: {
     playlistsLead:
@@ -309,7 +309,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "إلى القناة",
     summaryTitle: "ملخص (يسري على كل الأغاني)",
     asOfSongs: "حتى 23 يوليو 2026 · {n} أغنية",
-    currentDiscussion: "نقاش راهن",
+    currentDiscussion: "مقالات جارية",
   },
   he: {
     playlistsLead:
@@ -333,7 +333,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "אל הערוץ",
     summaryTitle: "סיכום (חל על כל השירים)",
     asOfSongs: "נכון ל־23 ביולי 2026 · {n} שירים",
-    currentDiscussion: "דיון עכשווי",
+    currentDiscussion: "רשומות שוטפות",
   },
   hi: {
     playlistsLead:
@@ -357,7 +357,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "चैनल पर",
     summaryTitle: "सार (सभी गानों पर लागू)",
     asOfSongs: "स्थिति: 23 जुलाई 2026 · {n} गाने",
-    currentDiscussion: "वर्तमान चर्चा",
+    currentDiscussion: "चल रहे लेख",
   },
   th: {
     playlistsLead:
@@ -381,7 +381,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "ไปที่ช่อง",
     summaryTitle: "สรุป (ใช้กับทุกเพลง)",
     asOfSongs: "ณ 23 กรกฎาคม 2026 · {n} เพลง",
-    currentDiscussion: "การอภิปรายปัจจุบัน",
+    currentDiscussion: "บทความต่อเนื่อง",
   },
   ja: {
     playlistsLead:
@@ -405,7 +405,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "チャンネルへ",
     summaryTitle: "要約（すべての曲に当てはまる）",
     asOfSongs: "2026年7月23日時点 · {n} 曲",
-    currentDiscussion: "いまの議論",
+    currentDiscussion: "連載の投稿",
   },
   ko: {
     playlistsLead:
@@ -429,7 +429,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "채널로",
     summaryTitle: "요약 (모든 노래에 해당)",
     asOfSongs: "2026년 7월 23일 기준 · {n}곡",
-    currentDiscussion: "현재 논의",
+    currentDiscussion: "진행 중인 글",
   },
   id: {
     playlistsLead:
@@ -453,7 +453,7 @@ const PAGE: Record<Locale, PageExtra> = {
     toChannel: "Ke kanal",
     summaryTitle: "Ringkasan (berlaku untuk semua lagu)",
     asOfSongs: "Per 23 Juli 2026 · {n} lagu",
-    currentDiscussion: "Diskusi terkini",
+    currentDiscussion: "Tulisan berjalan",
   },
 };
 
