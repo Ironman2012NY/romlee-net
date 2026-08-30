@@ -1,35 +1,86 @@
-import { useEffect } from "react";
-import { LOCALES, LOCALE_NAME, RTL_LOCALES, useLocale, isLocale, type Locale } from "@/lib/locale";
+import { useEffect, useRef, useState } from "react";
+import { useRouterState } from "@tanstack/react-router";
+import { LOCALES, LOCALE_NAME, RTL_LOCALES, useLocale, type Locale } from "@/lib/locale";
 import { t } from "@/data/i18n";
 
 export function LangSwitch() {
   const locale = useLocale((s) => s.locale);
   const setLocale = useLocale((s) => s.setLocale);
+  const hydrate = useLocale((s) => s.hydrate);
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const [open, setOpen] = useState(false);
+  const box = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    hydrate();
+  }, [hydrate, pathname]);
 
   useEffect(() => {
     document.documentElement.lang = locale;
     document.documentElement.dir = RTL_LOCALES.includes(locale) ? "rtl" : "ltr";
   }, [locale]);
 
+  useEffect(() => {
+    if (!open) return;
+    const onDoc = (e: MouseEvent) => {
+      if (!box.current?.contains(e.target as Node)) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    document.addEventListener("mousedown", onDoc);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onDoc);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
+  const pick = (code: Locale) => {
+    setLocale(code);
+    setOpen(false);
+  };
+
   return (
-    <label className="flex shrink-0 items-center gap-2 text-xs text-subtle">
-      <span className="sr-only">{t(locale).lang}</span>
-      <select
-        value={locale}
-        onChange={(e) => {
-          const next = e.target.value;
-          if (isLocale(next)) setLocale(next);
-        }}
-        className="min-h-11 max-w-[11rem] rounded-md border border-border bg-elevated px-2 text-sm text-fg"
+    <div className="relative z-50 shrink-0" ref={box}>
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="inline-flex min-h-11 min-w-[7.5rem] items-center justify-between gap-2 rounded-md border border-border bg-elevated px-3 text-sm text-fg"
+        aria-haspopup="listbox"
+        aria-expanded={open}
         aria-label={t(locale).lang}
       >
-        {LOCALES.map((code: Locale) => (
-          <option key={code} value={code}>
-            {LOCALE_NAME[code]}
-          </option>
-        ))}
-      </select>
-    </label>
+        <span>{LOCALE_NAME[locale]}</span>
+        <span className="text-subtle" aria-hidden>
+          ▾
+        </span>
+      </button>
+      {open ? (
+        <ul
+          role="listbox"
+          className="absolute right-0 z-50 mt-1 max-h-[min(70vh,22rem)] w-48 overflow-auto rounded-md border border-border bg-elevated py-1 shadow-lg"
+        >
+          {LOCALES.map((code: Locale) => (
+            <li key={code}>
+              <button
+                type="button"
+                role="option"
+                aria-selected={code === locale}
+                onClick={() => pick(code)}
+                className={
+                  code === locale
+                    ? "flex min-h-10 w-full items-center px-3 text-left text-sm text-accent"
+                    : "flex min-h-10 w-full items-center px-3 text-left text-sm text-fg hover:bg-surface"
+                }
+              >
+                {LOCALE_NAME[code]}
+              </button>
+            </li>
+          ))}
+        </ul>
+      ) : null}
+    </div>
   );
 }
 
