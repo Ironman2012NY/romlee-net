@@ -21,7 +21,7 @@ export const SITE = {
     viewsFallback: 11000000,
   },
   spotify: {
-    url: "https://open.spotify.com/artist/4ASsjNRRtAasO5XcFdpQii",
+    url: "https://open.spotify.com/intl-de/artist/4ASsjNRRtAasO5XcFdpQii",
     embed: "https://open.spotify.com/embed/artist/4ASsjNRRtAasO5XcFdpQii?utm_source=generator",
     artistId: "4ASsjNRRtAasO5XcFdpQii",
   },
