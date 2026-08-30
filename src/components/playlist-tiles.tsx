@@ -1,7 +1,9 @@
 import { Play } from "lucide-react";
 import { PLAYLISTS } from "@/data/videos";
+import { useT } from "@/components/lang-switch";
 
 export function PlaylistTiles() {
+  const copy = useT();
   return (
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {PLAYLISTS.map((p) => (
@@ -24,7 +26,7 @@ export function PlaylistTiles() {
             <div>
               <p className="font-display text-xl leading-tight text-fg">{p.title}</p>
               <p className="mt-1 text-xs uppercase tracking-[0.14em] text-muted">
-                {p.subtitle} · {p.count} Videos
+                {p.subtitle} · {p.count} {copy.videos}
               </p>
             </div>
             <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-full bg-fg text-accent-fg">

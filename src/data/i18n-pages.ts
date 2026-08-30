@@ -16,6 +16,9 @@ export type PageExtra = {
   channelSince: string;
   viewsWord: string;
   asOf: string;
+  toChannel: string;
+  summaryTitle: string;
+  asOfSongs: string;
 };
 
 const PAGE: Record<Locale, PageExtra> = {
@@ -38,6 +41,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "Kanal seit",
     viewsWord: "Aufrufe",
     asOf: "Stand",
+    toChannel: "Zum Kanal",
+    summaryTitle: "Zusammenfassung (gilt für alle Lieder)",
+    asOfSongs: "Stand: 23. Juli 2026 · {n} Songs",
   },
   en: {
     playlistsLead:
@@ -58,6 +64,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "Channel since",
     viewsWord: "views",
     asOf: "as of",
+    toChannel: "To the channel",
+    summaryTitle: "Summary (applies to all songs)",
+    asOfSongs: "As of 23 July 2026 · {n} songs",
   },
   pl: {
     playlistsLead:
@@ -78,6 +87,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "Kanał od",
     viewsWord: "wyświetleń",
     asOf: "stan",
+    toChannel: "Do kanału",
+    summaryTitle: "Podsumowanie (dotyczy wszystkich utworów)",
+    asOfSongs: "Stan: 23 lipca 2026 · {n} utworów",
   },
   es: {
     playlistsLead:
@@ -98,6 +110,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "Canal desde",
     viewsWord: "reproducciones",
     asOf: "a",
+    toChannel: "Al canal",
+    summaryTitle: "Resumen (vale para todas las canciones)",
+    asOfSongs: "A 23 de julio de 2026 · {n} canciones",
   },
   fr: {
     playlistsLead:
@@ -118,6 +133,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "Chaîne depuis",
     viewsWord: "vues",
     asOf: "au",
+    toChannel: "Vers la chaîne",
+    summaryTitle: "Résumé (vaut pour toutes les chansons)",
+    asOfSongs: "Au 23 juillet 2026 · {n} chansons",
   },
   it: {
     playlistsLead:
@@ -138,6 +156,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "Canale dal",
     viewsWord: "visualizzazioni",
     asOf: "agg.",
+    toChannel: "Al canale",
+    summaryTitle: "Sintesi (vale per tutte le canzoni)",
+    asOfSongs: "Agg. 23 luglio 2026 · {n} brani",
   },
   pt: {
     playlistsLead:
@@ -158,6 +179,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "Canal desde",
     viewsWord: "visualizações",
     asOf: "em",
+    toChannel: "Para o canal",
+    summaryTitle: "Resumo (vale para todas as canções)",
+    asOfSongs: "Em 23 de julho de 2026 · {n} canções",
   },
   no: {
     playlistsLead:
@@ -178,6 +202,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "Kanal siden",
     viewsWord: "visninger",
     asOf: "per",
+    toChannel: "Til kanalen",
+    summaryTitle: "Sammendrag (gjelder alle sanger)",
+    asOfSongs: "Per 23. juli 2026 · {n} sanger",
   },
   tr: {
     playlistsLead:
@@ -198,6 +225,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "Kanal",
     viewsWord: "izlenme",
     asOf: "güncelleme",
+    toChannel: "Kanala",
+    summaryTitle: "Özet (tüm şarkılar için geçerli)",
+    asOfSongs: "23 Temmuz 2026 · {n} şarkı",
   },
   ru: {
     playlistsLead:
@@ -218,6 +248,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "Канал с",
     viewsWord: "просмотров",
     asOf: "на",
+    toChannel: "К каналу",
+    summaryTitle: "Кратко (для всех песен)",
+    asOfSongs: "На 23 июля 2026 · {n} песен",
   },
   uk: {
     playlistsLead:
@@ -238,6 +271,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "Канал з",
     viewsWord: "переглядів",
     asOf: "станом на",
+    toChannel: "До каналу",
+    summaryTitle: "Коротко (для всіх пісень)",
+    asOfSongs: "Станом на 23 липня 2026 · {n} пісень",
   },
   ar: {
     playlistsLead:
@@ -258,6 +294,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "القناة منذ",
     viewsWord: "مشاهدات",
     asOf: "حتى",
+    toChannel: "إلى القناة",
+    summaryTitle: "ملخص (يسري على كل الأغاني)",
+    asOfSongs: "حتى 23 يوليو 2026 · {n} أغنية",
   },
   he: {
     playlistsLead:
@@ -278,6 +317,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "ערוץ מאז",
     viewsWord: "צפיות",
     asOf: "נכון ל",
+    toChannel: "אל הערוץ",
+    summaryTitle: "סיכום (חל על כל השירים)",
+    asOfSongs: "נכון ל־23 ביולי 2026 · {n} שירים",
   },
   hi: {
     playlistsLead:
@@ -298,6 +340,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "चैनल",
     viewsWord: "व्यू",
     asOf: "स्थिति",
+    toChannel: "चैनल पर",
+    summaryTitle: "सार (सभी गानों पर लागू)",
+    asOfSongs: "स्थिति: 23 जुलाई 2026 · {n} गाने",
   },
   th: {
     playlistsLead:
@@ -318,6 +363,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "ช่องตั้งแต่",
     viewsWord: "วิว",
     asOf: "ณ",
+    toChannel: "ไปที่ช่อง",
+    summaryTitle: "สรุป (ใช้กับทุกเพลง)",
+    asOfSongs: "ณ 23 กรกฎาคม 2026 · {n} เพลง",
   },
   ja: {
     playlistsLead:
@@ -338,6 +386,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "チャンネル開始",
     viewsWord: "回再生",
     asOf: "時点",
+    toChannel: "チャンネルへ",
+    summaryTitle: "要約（すべての曲に当てはまる）",
+    asOfSongs: "2026年7月23日時点 · {n} 曲",
   },
   ko: {
     playlistsLead:
@@ -358,6 +409,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "채널 개설",
     viewsWord: "조회",
     asOf: "기준",
+    toChannel: "채널로",
+    summaryTitle: "요약 (모든 노래에 해당)",
+    asOfSongs: "2026년 7월 23일 기준 · {n}곡",
   },
   id: {
     playlistsLead:
@@ -378,6 +432,9 @@ const PAGE: Record<Locale, PageExtra> = {
     channelSince: "Kanal sejak",
     viewsWord: "tayangan",
     asOf: "per",
+    toChannel: "Ke kanal",
+    summaryTitle: "Ringkasan (berlaku untuk semua lagu)",
+    asOfSongs: "Per 23 Juli 2026 · {n} lagu",
   },
 };
 

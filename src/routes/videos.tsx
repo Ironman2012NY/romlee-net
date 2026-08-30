@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { SITE } from "@/data/site";
 import { FEATURED_VIDEOS } from "@/data/videos";
-import { VIDEO_AI_NOTE, VIDEO_AI_NOTE_EN } from "@/data/content";
+import { videoAiNote } from "@/data/content-i18n";
 import { PageHead, SiteShell } from "@/components/site-shell";
 import { YoutubeEmbed } from "@/components/youtube-embed";
 import { useLiveYoutube, YoutubeLiveStats } from "@/components/youtube-live-stats";
@@ -88,7 +88,7 @@ function VideosPage() {
         </div>
 
         <p className="mt-10 whitespace-pre-line text-sm leading-relaxed text-subtle">
-          {locale === "de" ? VIDEO_AI_NOTE : VIDEO_AI_NOTE_EN}
+          {videoAiNote(locale)}
         </p>
         <a
           href={SITE.youtube.url}

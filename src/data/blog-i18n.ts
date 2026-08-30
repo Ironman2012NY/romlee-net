@@ -1,5 +1,13 @@
 import type { Locale } from "@/lib/locale";
 import type { BlogPost } from "@/data/blog";
+import { WATER_MORE, LOVE_MORE, HOSPIZ_MORE } from "@/data/blog-bodies";
+import {
+  WELCOME_MORE,
+  SCIENCE_MORE,
+  TANZE_MORE,
+  TY_MORE,
+  JAK_MORE,
+} from "@/data/blog-stories";
 
 export type BlogText = {
   title?: string;
@@ -589,14 +597,14 @@ const JAK: Partial<Record<Locale, BlogText>> = {
 
 export const BLOG_I18N: Record<string, Partial<Record<Locale, BlogText>>> = {
   "ki-als-bildsprache": KI,
-  "water-keep-it-for-tomorrow": WATER,
-  "love-and-peace": LOVE,
-  "warum-deutsch-polnisch": HOSPIZ,
-  "willkommen-bei-rom-lee": WELCOME,
-  "musik-puls-herz-sport": SCIENCE,
-  "tanze-so-lange-es-geht": TANZE,
-  "ty-tylko-ty": TY,
-  "als-du-klein-warst-jak-byles-maly": JAK,
+  "water-keep-it-for-tomorrow": { ...WATER, ...WATER_MORE },
+  "love-and-peace": { ...LOVE, ...LOVE_MORE },
+  "warum-deutsch-polnisch": { ...HOSPIZ, ...HOSPIZ_MORE },
+  "willkommen-bei-rom-lee": { ...WELCOME, ...WELCOME_MORE },
+  "musik-puls-herz-sport": { ...SCIENCE, ...SCIENCE_MORE },
+  "tanze-so-lange-es-geht": { ...TANZE, ...TANZE_MORE },
+  "ty-tylko-ty": { ...TY, ...TY_MORE },
+  "als-du-klein-warst-jak-byles-maly": { ...JAK, ...JAK_MORE },
 };
 
 export function localizePost(post: BlogPost, locale: Locale): BlogPost {

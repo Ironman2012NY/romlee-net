@@ -115,17 +115,10 @@ function Home() {
         </h2>
         <p className="mt-1 text-sm text-accent">Drink the Water · Rom Lee · {home.newSong}</p>
         <p className="mt-3 mb-4 max-w-2xl text-sm leading-relaxed text-muted">
-          WHY I WROTE THIS SONG… My Spanish friends from Portocolom—especially Rosa—asked me to write a song
-          about water. Water is becoming increasingly scarce in Madrid, Valencia and Andalusia, as well as on
-          Mallorca and here in Portocolom. “Drink the Water” tells the story of a childhood in the countryside,
-          beside a clear stream near the grandmother’s house—a stream where he swam, drank the water from his
-          hands, and which provided water for the whole household. The video connects this memory with a simple
-          message: water gives us life, so we must protect it and preserve it for tomorrow.
+          {home.waterLead1}
         </p>
         <p className="mb-6 max-w-2xl text-sm leading-relaxed text-muted">
-          We did not want a song that points an accusing finger. A rhythmic song, also light-hearted: drink water.
-          English, Español, Polski. The central message is simple: water gives us life, and we must preserve it for
-          tomorrow.
+          {home.waterLead2}
         </p>
         <div className="max-w-2xl">
           <YoutubeEmbed videoId="isW24Vr4lhk" title="Water (Keep it for tomorrow)" />
@@ -253,11 +246,11 @@ function Home() {
             </span>
             <h3 className="mt-3 font-display text-2xl text-fg">YouTube</h3>
             <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
-              {formatNumber(yt.subscribers)} Abonnenten · {formatNumber(yt.videoCount)} Videos ·{" "}
-              {formatNumber(yt.totalViews)} Aufrufe, live vom Kanal.
+              {formatNumber(yt.subscribers)} {copy.subs} · {formatNumber(yt.videoCount)} {copy.videos} ·{" "}
+              {formatNumber(yt.totalViews)} {copy.viewsTotal}, {copy.liveFrom}.
             </p>
             <span className="mt-4 inline-flex items-center gap-2 text-sm text-fg">
-              Zum Kanal
+              {copy.toChannel}
               <ArrowRight className="size-4" />
             </span>
           </Link>

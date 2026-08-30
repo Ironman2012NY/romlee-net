@@ -1,11 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import {
-  ABOUT_SONGS_DE,
-  ABOUT_SONGS_EN,
-  SUMMARY,
-  VIDEO_AI_NOTE,
-  VIDEO_AI_NOTE_EN,
-} from "@/data/content";
+import { aboutSongs, songsSummary, videoAiNote } from "@/data/content-i18n";
 import { LANG_LABEL, TRACKS, tracksByLang, type Lang } from "@/data/tracks";
 import { PageHead, SiteShell } from "@/components/site-shell";
 import { TrackRow } from "@/components/track-row";
@@ -19,7 +13,9 @@ const ORDER: Lang[] = ["de", "pl", "en", "es"];
 function SongsPage() {
   const copy = useT();
   const locale = useLocale((s) => s.locale);
-  const aiNote = locale === "de" ? VIDEO_AI_NOTE : VIDEO_AI_NOTE_EN;
+  const aiNote = videoAiNote(locale);
+  const about = aboutSongs(locale);
+  const summary = songsSummary(locale);
   return (
     <SiteShell>
       <PageHead kicker={copy.songsKicker} title={copy.songsTitle} lead={copy.songsLead} />
@@ -64,15 +60,11 @@ function SongsPage() {
           <h2 className="font-display text-2xl tracking-tight text-fg">
             {copy.aboutSongsAi}
           </h2>
-          {locale === "de" ? (
-            <div className="mt-6 space-y-4 text-sm leading-relaxed text-muted">
-              {ABOUT_SONGS_DE.map((p) => (
-                <p key={p.slice(0, 40)}>{p}</p>
-              ))}
-            </div>
-          ) : (
-            <p className="mt-3 text-sm leading-relaxed text-muted">{ABOUT_SONGS_EN}</p>
-          )}
+          <div className="mt-6 space-y-4 text-sm leading-relaxed text-muted">
+            {about.map((p) => (
+              <p key={p.slice(0, 48)}>{p}</p>
+            ))}
+          </div>
         </section>
 
         <section className="rounded-xl border border-border bg-surface p-6 sm:p-8">
@@ -86,10 +78,10 @@ function SongsPage() {
 
         <section>
           <h2 className="font-display text-2xl tracking-tight text-fg">
-            Zusammenfassung (gilt für alle Lieder)
+            {copy.summaryTitle}
           </h2>
-          <p className="mt-4 whitespace-pre-line text-sm leading-relaxed text-muted">{SUMMARY}</p>
-          <p className="mt-4 text-xs text-subtle">Stand: 23. Juli 2026 · {TRACKS.length} Songs</p>
+          <p className="mt-4 whitespace-pre-line text-sm leading-relaxed text-muted">{summary}</p>
+          <p className="mt-4 text-xs text-subtle">{copy.asOfSongs.replace("{n}", String(TRACKS.length))}</p>
         </section>
       </div>
     </SiteShell>
