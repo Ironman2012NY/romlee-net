@@ -13,7 +13,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
         <div>
           <p className="font-display text-3xl tracking-tight text-fg">{SITE.name}</p>
-          <p className="mt-1 font-display text-3xl tracking-tight text-fg">({SITE.alsoAs})</p>
+          <p className="mt-1 text-sm text-subtle">({SITE.alsoAs})</p>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-muted">{SITE.tagline}</p>
           <p className="mt-4 text-sm text-subtle">{SITE.brand} · Hagen / Portocolom</p>
         </div>
