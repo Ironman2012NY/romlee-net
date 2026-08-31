@@ -25,10 +25,10 @@ const UA =
 
 /** Never show numbers below this floor. Live values only raise it. */
 export const YT_FLOOR = {
-  subscribers: 112_000,
-  videoCount: 49,
-  totalViews: 11_000_000,
-  views365: 11_000_000,
+  subscribers: 161_000,
+  videoCount: 53,
+  totalViews: 11_990_900,
+  views365: 11_990_900,
   viewsById: {
     KBXOvQr3bAY: 5_622_361,
     YTefIyKLBQA: 1_394_966,

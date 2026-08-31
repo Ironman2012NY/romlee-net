@@ -8,7 +8,7 @@ const STORE_KEY = "romlee-yt-floor";
 
 function readStored(): YtStats | null {
   try {
-    const raw = sessionStorage.getItem(STORE_KEY);
+    const raw = localStorage.getItem(STORE_KEY);
     if (!raw) return null;
     return JSON.parse(raw) as YtStats;
   } catch {
@@ -18,7 +18,7 @@ function readStored(): YtStats | null {
 
 function writeStored(stats: YtStats) {
   try {
-    sessionStorage.setItem(STORE_KEY, JSON.stringify(stats));
+    localStorage.setItem(STORE_KEY, JSON.stringify(stats));
   } catch {
     /* ignore */
   }
