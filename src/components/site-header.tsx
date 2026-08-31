@@ -29,7 +29,9 @@ export function SiteHeader({ solid = false }: { solid?: boolean }) {
               <span className="block font-display text-xl tracking-tight text-fg sm:text-2xl">
                 {SITE.name}
               </span>
-              <span className="block text-[11px] text-subtle">({SITE.alsoAs})</span>
+              <span className="block font-display text-xl tracking-tight text-fg sm:text-2xl">
+                ({SITE.alsoAs})
+              </span>
             </span>
           </Link>
           <LangSwitch />

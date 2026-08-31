@@ -60,7 +60,9 @@ function Home() {
           <h1 className="mt-3 font-display text-3xl leading-[0.9] tracking-tight text-fg sm:text-6xl">
             {SITE.name}
           </h1>
-          <p className="mt-2 text-base text-muted sm:text-lg">({SITE.alsoAs})</p>
+          <p className="mt-3 font-display text-3xl leading-[0.9] tracking-tight text-fg sm:text-6xl">
+            ({SITE.alsoAs})
+          </p>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-fg/90 sm:text-lg">
             {SITE.tagline}
           </p>
