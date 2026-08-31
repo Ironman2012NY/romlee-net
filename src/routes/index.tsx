@@ -50,7 +50,7 @@ function Home() {
       <WaterSeo />
       <section className="relative min-h-[92dvh] overflow-hidden">
         <img
-          src="/images/fotos/foto-15.jpeg"
+          src="/images/fotos/hero-portocolom.jpg"
           alt=""
           className="pointer-events-none absolute inset-0 size-full object-cover"
         />
