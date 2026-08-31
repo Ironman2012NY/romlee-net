@@ -235,7 +235,7 @@ export const NIGHTS_MORE: Partial<Record<Locale, BlogText>> = {
     "Una metafora — spesso solo al secondo sguardo",
     [
       "“Nächte und Wölfe (Darkness and Light)” è una metafora. Spesso la si vede solo al secondo sguardo. Il film deve prima agire. Chi guarda più da vicino vede di più. La notte non ha l’ultima parola.",
-      "Il film inizia in una città distrutta. Rovine, macerie, strade vuote, una persona sola. Su YouTube sta scritto: It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. Il luogo resta aperto. Deve essere così. Possono essere molti luoghi insieme.",
+      "Il film inizia in una città distrutta. Rovine, macerie, strade vuote, una persona sola. Il luogo resta aperto. Deve essere così. Possono essere molti luoghi insieme.",
       "I lupi della notte sono paura, dolore, memoria — e ciò che squarcia città e terra. Sono lupi interiori che camminano con noi nella notte. E immagini esteriori di perdita e isolamento.",
       "Poi la scena cambia. Le rovine cedono a un paesaggio vasto, secco, quasi morto: pompe petrolifere, condotte, terra crepata. Anche questo appartiene all’immagine. Uno strato è distruzione di guerra. Un altro è un paesaggio a cui è stato tolto tutto. Alcuni vedono il Texas dopo il fracking. Altri un deserto che chiama gli esseri umani. La canzone non indica nessuno col dito. Resta leggibile su più livelli.",
       "Poi la luce. Sorge il sole. Piccoli segni di vita. Altre persone si uniscono. Dalla solitudine nasce un cammino insieme. Alla fine un grande raduno, un simbolo di pace. Il messaggio è semplice: dolore e oscurità sono reali. Ma non hanno l’ultima parola. Dopo ogni notte il sole può sorgere di nuovo. Amore, pace e solidarietà possono essere più forti dei lupi. Possiamo ricostruire tutto.",
@@ -250,7 +250,7 @@ export const NIGHTS_MORE: Partial<Record<Locale, BlogText>> = {
     "Uma metáfora — muitas vezes só à segunda vista",
     [
       "“Nächte und Wölfe (Darkness and Light)” é uma metáfora. Muitas vezes só se vê à segunda vista. O filme deve actuar primeiro. Quem olha mais de perto vê mais. A noite não tem a última palavra.",
-      "O filme começa numa cidade destruída. Ruínas, escombros, ruas vazias, uma pessoa sozinha. No YouTube está: It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. O lugar fica aberto. Assim deve ser. Podem ser muitos lugares ao mesmo tempo.",
+      "O filme começa numa cidade destruída. Ruínas, escombros, ruas vazias, uma pessoa sozinha. O lugar fica aberto. Assim deve ser. Podem ser muitos lugares ao mesmo tempo.",
       "Os lobos da noite são medo, dor, memória — e o que rasga cidades e terra. São lobos interiores que caminham connosco pela noite. E imagens exteriores de perda e isolamento.",
       "Depois a cena muda. As ruínas cedem a uma paisagem vasta, seca, quase morta: bombas de petróleo, condutas, terra gretada. Isso também pertence à imagem. Uma camada é destruição pela guerra. Outra é uma paisagem a que se tirou tudo. Alguns vêem o Texas depois do fracking. Outros um deserto que pede gente. A canção não aponta o dedo. Continua legível em vários níveis.",
       "Depois a luz. O sol nasce. Pequenos sinais de vida. Outras pessoas juntam-se. Do isolamento nasce um caminho em conjunto. No fim um grande encontro, um símbolo de paz. A mensagem é simples: a dor e a escuridão são reais. Mas não têm a última palavra. Depois de cada noite o sol pode nascer outra vez. Amor, paz e solidariedade podem ser mais fortes do que os lobos. Podemos reconstruir tudo.",
@@ -265,7 +265,7 @@ export const NIGHTS_MORE: Partial<Record<Locale, BlogText>> = {
     "En metafor — ofte først ved andre blikk",
     [
       "«Nächte und Wölfe (Darkness and Light)» er en metafor. Ofte ser man den først ved andre blikk. Filmen skal virke først. Den som ser nærmere, ser mer. Natten har ikke siste ord.",
-      "Filmen begynner i en ødelagt by. Ruiner, rasmasser, tomme gater, ett menneske alene. På YouTube står det: It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. Stedet forblir åpent. Slik skal det være. Det kan være mange steder på én gang.",
+      "Filmen begynner i en ødelagt by. Ruiner, rasmasser, tomme gater, ett menneske alene. Stedet forblir åpent. Slik skal det være. Det kan være mange steder på én gang.",
       "Nattens ulver er frykt, smerte, minne — og det som river byer og land. Det er indre ulver som går med oss gjennom natten. Og ytre bilder av tap og isolasjon.",
       "Så skifter scenen. Ruinene viker for et vidt, tørt, nesten dødt landskap: oljepumper, rør, sprukket jord. Det hører også til bildet. Ett lag er ødeleggelse av krig. Et annet er et landskap man har tatt alt fra. Noen ser Texas etter fracking. Noen ser en ørken som roper etter mennesker. Sangen peker ikke med fingeren. Den forblir lesbar på flere plan.",
       "Så lys. Solen står opp. Små tegn på liv. Andre slutter seg til. Av ensomhet blir en vei sammen. Til slutt en stor samling, et fredssymbol. Budskapet er enkelt: smerte og mørke er ekte. Men de har ikke siste ord. Etter hver natt kan solen stå opp igjen. Kjærlighet, fred og samhold kan være sterkere enn ulvene. Vi kan bygge opp alt igjen.",
@@ -280,7 +280,7 @@ export const NIGHTS_MORE: Partial<Record<Locale, BlogText>> = {
     "Bir metafor — çoğu zaman ancak ikinci bakışta",
     [
       "“Nächte und Wölfe (Darkness and Light)” bir metafordur. Çoğu zaman ancak ikinci bakışta görülür. Film önce etki etmeli. Daha yakından bakan daha çok görür. Gecenin son sözü yoktur.",
-      "Film yıkılmış bir kentte başlar. Harabeler, enkaz, boş sokaklar, yalnız bir insan. YouTube’da yazar: It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. Yer açık kalır. Böyle olmalı. Aynı anda birçok yer olabilir.",
+      "Film yıkılmış bir kentte başlar. Harabeler, enkaz, boş sokaklar, yalnız bir insan. Yer açık kalır. Böyle olmalı. Aynı anda birçok yer olabilir.",
       "Gecenin kurtları korku, acı, bellek — ve kentleri, toprağı yırtan şey. Gece boyunca bizimle yürüyen iç kurtlardır. Ve yitim ile yalnızlığın dış imgeleridir.",
       "Sonra sahne değişir. Harabeler geniş, kuru, neredeyse ölü bir peyzaja bırakır: petrol pompaları, borular, çatlamış toprak. Bu da imgeye aittir. Bir katman savaşın yıkımıdır. Öteki, her şeyi alınmış bir peyzajdır. Kimi fracking sonrası Teksas görür. Kimi insan çağıran bir çöl. Şarkı kimseyi parmakla göstermez. Birden çok düzeyde okunur kalır.",
       "Sonra ışık. Güneş doğar. Küçük yaşam işaretleri. Başkaları katılır. Yalnızlıktan ortak bir yol olur. Sonda büyük bir toplanma, bir barış işareti. Mesaj yalın: acı ve karanlık gerçektir. Ama son söz onlarda değildir. Her geceden sonra güneş yeniden doğabilir. Sevgi, barış ve dayanışma kurtlardan güçlü olabilir. Her şeyi yeniden kurabiliriz.",
@@ -295,7 +295,7 @@ export const NIGHTS_MORE: Partial<Record<Locale, BlogText>> = {
     "Метафора — часто только со второго взгляда",
     [
       "«Nächte und Wölfe (Darkness and Light)» — метафора. Часто её видишь только со второго взгляда. Сначала должен работать фильм. Кто смотрит внимательнее, видит больше. У ночи нет последнего слова.",
-      "Фильм начинается в разрушенном городе. Руины, обломки, пустые улицы, один человек один. На YouTube написано: It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. Место остаётся открытым. Так и должно быть. Это могут быть многие места сразу.",
+      "Фильм начинается в разрушенном городе. Руины, обломки, пустые улицы, один человек один. Место остаётся открытым. Так и должно быть. Это могут быть многие места сразу.",
       "Волки ночи — страх, боль, память — и то, что рвёт города и землю. Это внутренние волки, идущие с нами сквозь ночь. И внешние образы потери и одиночества.",
       "Потом сцена меняется. Руины уступают место широкому, сухому, почти мёртвому пейзажу: нефтяные качалки, трубы, треснувшая земля. Это тоже часть образа. Один слой — разрушение войной. Другой — пейзаж, у которого забрали всё. Кто-то видит Техас после фрекинга. Кто-то пустыню, зовущую людей. Песня ни на кого не указывает пальцем. Её можно читать на нескольких уровнях.",
       "Потом свет. Всходит солнце. Малые знаки жизни. Присоединяются другие. Из одиночества становится общий путь. В конце большое собрание, знак мира. Послание простое: боль и тьма настоящие. Но у них нет последнего слова. После каждой ночи солнце может взойти снова. Любовь, мир и сплочённость могут быть сильнее волков. Мы можем всё отстроить заново.",
@@ -310,7 +310,7 @@ export const NIGHTS_MORE: Partial<Record<Locale, BlogText>> = {
     "Метафора — часто лише з другого погляду",
     [
       "«Nächte und Wölfe (Darkness and Light)» — метафора. Часто її бачиш лише з другого погляду. Спочатку має діяти фільм. Хто дивиться уважніше, бачить більше. Ніч не має останнього слова.",
-      "Фільм починається в зруйнованому місті. Руїни, уламки, порожні вулиці, одна людина сама. На YouTube написано: It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. Місце лишається відкритим. Так і має бути. Це можуть бути багато місць водночас.",
+      "Фільм починається в зруйнованому місті. Руїни, уламки, порожні вулиці, одна людина сама. Місце лишається відкритим. Так і має бути. Це можуть бути багато місць водночас.",
       "Вовки ночі — страх, біль, пам’ять — і те, що рве міста й землю. Це внутрішні вовки, що йдуть з нами крізь ніч. І зовнішні образи втрати й самотності.",
       "Потім сцена змінюється. Руїни поступаються широкому, сухому, майже мертвому краєвидові: нафтові качалки, труби, потріскана земля. Це теж частина образу. Один шар — руйнація війною. Інший — краєвид, з якого забрали все. Хтось бачить Техас після фрекінгу. Хтось пустелю, що кличе людей. Пісня ні на кого не вказує пальцем. Її можна читати на кількох рівнях.",
       "Потім світло. Сходить сонце. Малі знаки життя. Приєднуються інші. З самотності стає спільний шлях. Наприкінці велике зібрання, знак миру. Послання просте: біль і темрява справжні. Але в них немає останнього слова. Після кожної ночі сонце може зійти знову. Любов, мир і згуртованість можуть бути сильнішими за вовків. Ми можемо все відбудувати.",
@@ -325,7 +325,7 @@ export const NIGHTS_MORE: Partial<Record<Locale, BlogText>> = {
     "استعارة — غالباً لا تُرى إلا من النظرة الثانية",
     [
       "«Nächte und Wölfe (Darkness and Light)» استعارة. غالباً لا تُرى إلا من النظرة الثانية. الفيلم يجب أن يعمل أولاً. من ينظر أدق يرى أكثر. الليل ليست له الكلمة الأخيرة.",
-      "يبدأ الفيلم في مدينة مدمَّرة. أطلال، أنقاض، شوارع فارغة، إنسان وحده. على يوتيوب مكتوب: It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. المكان يبقى مفتوحاً. هكذا يجب أن يكون. يمكن أن يكون أماكن كثيرة في آن.",
+      "يبدأ الفيلم في مدينة مدمَّرة. أطلال، أنقاض، شوارع فارغة، إنسان وحده. المكان يبقى مفتوحاً. هكذا يجب أن يكون. يمكن أن يكون أماكن كثيرة في آن.",
       "ذئاب الليل خوف وألم وذاكرة — وما يمزق المدن والأرض. ذئاب داخلية تمشي معنا في الليل. وصور خارجية للخسارة والعزلة.",
       "ثم تتبدل المشهد. الأطلال تفسح لمشهد واسع جاف شبه ميت: مضخات نفط، أنابيب، أرض متشققة. هذا أيضاً من الصورة. طبقة هي الدمار بالحرب. وأخرى مشهدٌ أُخذ منه كل شيء. بعضهم يرى تكساس بعد التكسير الهيدروليكي. وبعضهم صحراء تنادي الناس. الأغنية لا تشير بإصبع. تبقى مقروءة على عدة مستويات.",
       "ثم الضوء. تشرق الشمس. علامات حياة صغيرة. ينضم آخرون. من الوحدة يصير درباً معاً. في النهاية تجمع كبير ورمز سلام. الرسالة بسيطة: الألم والظلام حقيقيان. لكن ليست لهما الكلمة الأخيرة. بعد كل ليل يمكن أن تشرق الشمس من جديد. الحب والسلام والتضامن يمكن أن تكون أقوى من الذئاب. يمكننا أن نعيد بناء كل شيء.",
@@ -340,7 +340,7 @@ export const NIGHTS_MORE: Partial<Record<Locale, BlogText>> = {
     "מטאפורה — לעיתים קרובות רק במבט השני",
     [
       "“Nächte und Wölfe (Darkness and Light)” היא מטאפורה. לעיתים קרובות רואים אותה רק במבט השני. הסרט צריך לפעול קודם. מי שמביט מקרוב רואה יותר. ללילה אין את המילה האחרונה.",
-      "הסרט נפתח בעיר הרוסה. הריסות, חורבות, רחובות ריקים, אדם אחד לבד. ביוטיוב כתוב: It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. המקום נשאר פתוח. כך צריך להיות. אלה יכולים להיות מקומות רבים בבת אחת.",
+      "הסרט נפתח בעיר הרוסה. הריסות, חורבות, רחובות ריקים, אדם אחד לבד. המקום נשאר פתוח. כך צריך להיות. אלה יכולים להיות מקומות רבים בבת אחת.",
       "זאבי הלילה הם פחד, כאב, זיכרון — ומה שקורע ערים ואדמה. אלה זאבים פנימיים שהולכים איתנו בלילה. ותמונות חיצוניות של אובדן ובידוד.",
       "אחר כך הסצנה משתנה. ההריסות מפנות מקום לנוף רחב, יבש, כמעט מת: משאבות נפט, צינורות, אדמה סדוקה. גם זה שייך לתמונה. שכבה אחת היא הרס ממלחמה. אחרת נוף שלקחו ממנו הכול. יש שרואים טקסס אחרי פראקינג. יש שרואים מדבר שקורא לאנשים. השיר לא מצביע באצבע. הוא נשאר קריא בכמה רבדים.",
       "אחר כך אור. השמש עולה. סימני חיים קטנים. אחרים מצטרפים. מבדידות נולד דרך יחד. בסוף התכנסות גדולה, סמל שלום. המסר פשוט: כאב וחושך אמיתיים. אבל אין להם את המילה האחרונה. אחרי כל לילה השמש יכולה לזרוח שוב. אהבה, שלום וסולידריות יכולים להיות חזקים מהזאבים. אפשר לבנות הכול מחדש.",
@@ -355,7 +355,7 @@ export const NIGHTS_MORE: Partial<Record<Locale, BlogText>> = {
     "एक रूपक — अक्सर दूसरी नज़र में ही दिखता है",
     [
       "“Nächte und Wölfe (Darkness and Light)” एक रूपक है। अक्सर दूसरी नज़र में ही दिखता है। फिल्म पहले काम करे। जो पास से देखे, वह और देखे। रात की आखिरी बात नहीं।",
-      "फिल्म एक तबाह शहर में शुरू होती है। खंडहर, मलबा, खाली सड़कें, एक अकेला इंसान। YouTube पर लिखा है: It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. जगह खुली रहती है। ऐसा ही होना चाहिए। एक साथ कई जगहें हो सकती हैं।",
+      "फिल्म एक तबाह शहर में शुरू होती है। खंडहर, मलबा, खाली सड़कें, एक अकेला इंसान। जगह खुली रहती है। ऐसा ही होना चाहिए। एक साथ कई जगहें हो सकती हैं।",
       "रात के भेड़िये डर, दर्द, स्मृति हैं — और जो शहरों और ज़मीन को फाड़ता है। भीतरी भेड़िये जो रात भर साथ चलते हैं। और नुकसान और अकेलेपन की बाहरी तस्वीरें।",
       "फिर दृश्य बदलता है। खंडहर एक चौड़े, सूखे, लगभग मरे परिदृश्य को देते हैं: तेल के पंप, पाइप, फटी धरती। यह भी चित्र का हिस्सा है। एक परत युद्ध से विनाश है। दूसरी वह भूमि जिससे सब कुछ ले लिया गया। कोई फ्रैकिंग के बाद टेक्सस देखता है। कोई ऐसा रेगिस्तान जो इंसान पुकारता है। गीत उंगली नहीं उठाता। कई स्तरों पर पढ़ा जा सकता है।",
       "फिर प्रकाश। सूरज उगता है। जीवन के छोटे संकेत। दूसरे जुड़ते हैं। अकेलेपन से साझा रास्ता बनता है। अंत में बड़ी सभा, शांति का चिह्न। संदेश सरल है: दर्द और अंधेरा सच हैं। लेकिन आखिरी बात उनकी नहीं। हर रात के बाद सूरज फिर उग सकता है। प्रेम, शांति और एकजुटता भेड़ियों से मजबूत हो सकती है। हम सब कुछ फिर बना सकते हैं।",
@@ -370,7 +370,7 @@ export const NIGHTS_MORE: Partial<Record<Locale, BlogText>> = {
     "อุปมา — มักเห็นชัดเมื่อมองครั้งที่สอง",
     [
       "“Nächte und Wölfe (Darkness and Light)” เป็นอุปมา มักเห็นชัดเมื่อมองครั้งที่สอง ภาพยนตร์ต้องทำงานก่อน ผู้ที่มองใกล้เห็นมากกว่า คืนไม่มีคำสุดท้าย",
-      "เรื่องเริ่มในเมืองถูกทำลาย ซากปรัก เศษหิน ถนนว่าง หนึ่งคนเดียว บน YouTube เขียนว่า It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental สถานที่ยังเปิดไว้ ควรเป็นเช่นนั้น อาจเป็นหลายที่พร้อมกัน",
+      "เรื่องเริ่มในเมืองถูกทำลาย ซากปรัก เศษหิน ถนนว่าง หนึ่งคนเดียว สถานที่ยังเปิดไว้ ควรเป็นเช่นนั้น อาจเป็นหลายที่พร้อมกัน",
       "หมาป่าแห่งคืนคือความกลัว ความเจ็บ ความทรงจำ — และสิ่งที่ฉีกเมืองกับแผ่นดิน เป็นหมาป่าภายในที่เดินกับเราในคืน และภาพภายนอกของการสูญเสียและความโดดเดี่ยว",
       "แล้วฉากเปลี่ยน ซากปรักเปิดทางสู่ภูมิทัศน์กว้าง แห้ง เกือบทึม: ปั๊มน้ำมัน ท่อ ดินแตกร้าว นี่ก็เป็นส่วนของภาพ ชั้นหนึ่งคือการทำลายด้วยสงคราม อีกชั้นคือภูมิทัศน์ที่ถูกเอาทุกอย่างไป บางคนเห็นเท็กซัสหลังแฟรกกิง บางคนเห็นทะเลทรายที่ร้องหาผู้คน เพลงไม่ชี้หน้า ยังอ่านได้หลายระดับ",
       "แล้วแสง พระอาทิตย์ขึ้น สัญญาณชีวิตเล็ก ๆ คนอื่นเข้าร่วม จากความโดดเดี่ยวกลายเป็นทางร่วมกัน ท้ายสุดการชุมนุมใหญ่ สัญลักษณ์สันติ สารง่าย: ความเจ็บและความมืดจริง แต่ไม่มีคำสุดท้าย หลังทุกคืนพระอาทิตย์ขึ้นได้อีก ความรัก สันติ และสามัคคีอาจแข็งกว่าหมาป่า เราสามารถสร้างใหม่ได้ทั้งหมด",
@@ -385,7 +385,7 @@ export const NIGHTS_MORE: Partial<Record<Locale, BlogText>> = {
     "隠喩 — しばしば二度目の視線で初めて見える",
     [
       "「Nächte und Wölfe (Darkness and Light)」は隠喩です。しばしば二度目の視線で初めて見えます。映像がまず働くべきです。近くを見る人はもっと見ます。夜に最後の言葉はありません。",
-      "映像は壊れた街から始まります。廃墟、瓦礫、空の通り、ひとりの人。YouTubeにはこうあります。It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. 場所は開いたままです。そうあるべきです。同時に多くの場所であり得ます。",
+      "映像は壊れた街から始まります。廃墟、瓦礫、空の通り、ひとりの人。場所は開いたままです。そうあるべきです。同時に多くの場所であり得ます。",
       "夜の狼は恐れ、痛み、記憶 — そして街と大地を裂くものです。夜をともに歩く内なる狼です。喪失と孤立の外の画像でもあります。",
       "それから場面が変わります。廃墟は広く乾いた、ほとんど死んだ風景に譲ります。石油ポンプ、パイプライン、割れた土。これも画像に属します。一層は戦争による破壊。もう一層はすべてを奪われた風景。フラッキング後のテキサスを見る人もいます。人を呼ぶ砂漠を見る人もいます。歌は誰も指さしません。いくつもの層で読めます。",
       "それから光。太陽が昇ります。小さな命の印。ほかの人が加わります。孤独から共に歩く道になります。終わりに大きな集まり、平和の印。メッセージは単純です。痛みと闇は本物です。しかし最後の言葉は彼らにはありません。どの夜のあとも太陽はまた昇り得ます。愛と平和と連帯は狼より強くあり得ます。私たちはすべてを再建できます。",
@@ -400,7 +400,7 @@ export const NIGHTS_MORE: Partial<Record<Locale, BlogText>> = {
     "은유 — 종종 두 번째 눈에야 보인다",
     [
       "“Nächte und Wölfe (Darkness and Light)”는 은유입니다. 종종 두 번째 눈에야 보입니다. 영상이 먼저 작동해야 합니다. 더 가까이 보는 사람은 더 봅니다. 밤에게 마지막 말은 없습니다.",
-      "영상은 파괴된 도시에서 시작합니다. 폐허, 잔해, 빈 거리, 혼자인 사람. YouTube에는 이렇게 적혀 있습니다. It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. 장소는 열린 채로 남습니다. 그래야 합니다. 한꺼번에 여러 곳일 수 있습니다.",
+      "영상은 파괴된 도시에서 시작합니다. 폐허, 잔해, 빈 거리, 혼자인 사람. 장소는 열린 채로 남습니다. 그래야 합니다. 한꺼번에 여러 곳일 수 있습니다.",
       "밤의 늑대는 두려움, 고통, 기억 — 그리고 도시와 땅을 찢는 것입니다. 밤을 함께 걷는 안의 늑대입니다. 상실과 고립의 바깥 이미지이기도 합니다.",
       "그다음 장면이 바뀝니다. 폐허가 넓고 마르고 거의 죽은 풍경에 자리를 줍니다. 석유 펌프, 파이프, 갈라진 땅. 이것도 이미지에 속합니다. 한 층은 전쟁으로 인한 파괴. 다른 층은 모든 것을 빼앗긴 풍경. 어떤 이는 프래킹 이후의 텍사스를 봅니다. 어떤 이는 사람을 부르는 사막을 봅니다. 노래는 누구를 손가락질하지 않습니다. 여러 층에서 읽힙니다.",
       "그다음 빛. 해가 뜹니다. 작은 생명의 징후. 다른 사람들이 합류합니다. 고립에서 함께 가는 길이 됩니다. 끝에 큰 모임, 평화의 상징. 메시지는 단순합니다. 고통과 어둠은 진짜입니다. 그러나 마지막 말은 그들의 것이 아닙니다. 모든 밤 뒤에 해는 다시 뜰 수 있습니다. 사랑, 평화, 연대는 늑대보다 강할 수 있습니다. 우리는 모든 것을 다시 세울 수 있습니다.",
@@ -415,7 +415,7 @@ export const NIGHTS_MORE: Partial<Record<Locale, BlogText>> = {
     "Metafora — sering baru terlihat pada pandangan kedua",
     [
       "“Nächte und Wölfe (Darkness and Light)” adalah metafora. Sering baru terlihat pada pandangan kedua. Film harus bekerja dulu. Yang melihat lebih dekat melihat lebih banyak. Malam tidak punya kata terakhir.",
-      "Film dimulai di kota yang hancur. Reruntuhan, puing, jalan kosong, satu orang sendirian. Di YouTube tertulis: It could be Gaza, Mariupol, Texas. Any resemblance to real persons or events is purely coincidental. Tempat tetap terbuka. Begitu seharusnya. Bisa banyak tempat sekaligus.",
+      "Film dimulai di kota yang hancur. Reruntuhan, puing, jalan kosong, satu orang sendirian. Tempat tetap terbuka. Begitu seharusnya. Bisa banyak tempat sekaligus.",
       "Serigala malam adalah takut, sakit, ingatan — dan apa yang merobek kota dan tanah. Serigala dalam yang berjalan bersama kita di malam. Dan gambar luar dari kehilangan dan isolasi.",
       "Lalu adegan berubah. Reruntuhan memberi tempat pada lanskap luas, kering, hampir mati: pompa minyak, pipa, tanah retak. Itu juga milik gambar. Satu lapis adalah kehancuran perang. Lainnya lanskap yang diambil semuanya. Ada yang melihat Texas setelah fracking. Ada yang gurun yang memanggil manusia. Lagu tidak menuding. Tetap bisa dibaca di beberapa tingkat.",
       "Lalu cahaya. Matahari terbit. Tanda hidup kecil. Orang lain bergabung. Dari kesepian menjadi jalan bersama. Di akhir pertemuan besar, lambang damai. Pesannya sederhana: sakit dan gelap nyata. Tetapi mereka tidak punya kata terakhir. Setelah setiap malam matahari bisa terbit lagi. Cinta, damai, dan kebersamaan bisa lebih kuat dari serigala. Kita bisa membangun kembali semuanya.",
