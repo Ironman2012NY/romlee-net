@@ -110,7 +110,15 @@ export function publicAppHost(hostHeader) {
  * request host / X-Forwarded-Host. Never prefer request Host on a published
  * app — Envoy rewrites it to `*.vercel.app`.
  */
-export function resolvePublicHost(hostHeader) {
+export function resolvePublicHost(hostHeader, site = {}) {
+  const fromSite = String(site.imageHost ?? "")
+    .trim()
+    .toLowerCase()
+    .replace(/^https?:\/\//, "")
+    .split("/")[0];
+  if (fromSite && /^[a-z0-9.-]+$/.test(fromSite) && fromSite.includes(".")) {
+    return fromSite;
+  }
   return (
     publicAppHost(process.env?.VITE_PUBLIC_HOSTNAME) || publicAppHost(hostHeader)
   );
@@ -341,7 +349,7 @@ export function grokOgHeadTags({
   cwd = process.cwd(),
 } = {}) {
   const title = resolveOgTitle(site, appName, host, documentTitle);
-  const publicHost = resolvePublicHost(host);
+  const publicHost = resolvePublicHost(host, site);
   const tags = [
     `<meta name="twitter:card" content="summary_large_image">`,
     `<meta property="og:title" content="${escapeHtml(title)}">`,

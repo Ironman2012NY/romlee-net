@@ -1,4 +1,6 @@
 {
   "title": "Rom Lee Music",
-  "card": "custom"
+  "description": "Rom Lee Music (także Leszek) — Lieder von Liebe, Hoffnung, Heimat und Frieden.",
+  "card": "custom",
+  "imageHost": "romlee-net.vercel.app"
 }
