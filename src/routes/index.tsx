@@ -26,8 +26,12 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: WATER_SEO.title },
       { property: "og:description", content: WATER_SEO.description },
       { property: "og:type", content: "music.song" },
-      { property: "og:url", content: "https://romlee.net/" },
-      { property: "og:image", content: "https://i.ytimg.com/vi/isW24Vr4lhk/sddefault.jpg" },
+      { property: "og:url", content: "https://romlee-net.vercel.app/" },
+      { property: "og:image", content: "https://romlee-net.vercel.app/og.jpg" },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://romlee-net.vercel.app/og.jpg" },
       { property: "og:video", content: "https://www.youtube.com/watch?v=isW24Vr4lhk" },
     ],
   }),
@@ -54,7 +58,7 @@ function Home() {
           alt=""
           className="pointer-events-none absolute inset-0 size-full object-cover"
         />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg via-bg/70 to-bg/30" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg/80 via-bg/25 to-transparent" />
         <div className="relative mx-auto flex min-h-[92dvh] max-w-6xl flex-col justify-end px-4 pb-16 pt-32 sm:px-6 sm:pb-20">
           <p className="text-xs uppercase tracking-[0.22em] text-accent">{SITE.brand}</p>
           <h1 className="mt-3 font-display text-3xl leading-[0.9] tracking-tight text-fg sm:text-6xl">
