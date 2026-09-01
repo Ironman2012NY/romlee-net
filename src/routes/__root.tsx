@@ -32,10 +32,7 @@ export const Route = createRootRoute({
     <html lang="de" className="antialiased" suppressHydrationWarning>
       <head>
         <meta property="og:title" content={APP_NAME} />
-        <meta
-          property="og:description"
-          content="Rom Lee Music (także Leszek) — Lieder von Liebe, Hoffnung, Heimat und Frieden."
-        />
+        <meta property="og:description" content={SITE.shareText} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={SITE.shareUrl} />
         <meta property="og:site_name" content={APP_NAME} />
@@ -47,6 +44,7 @@ export const Route = createRootRoute({
         <meta property="og:image:alt" content="Sonnenuntergang Portocolom — Rom Lee Music" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={APP_NAME} />
+        <meta name="twitter:description" content={SITE.shareText} />
         <meta name="twitter:image" content={OG} />
         <link rel="image_src" href={OG} />
         <HeadContent />

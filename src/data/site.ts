@@ -29,6 +29,8 @@ export const SITE = {
   original: "https://romlee.net",
   shareUrl: "https://romlee-net.vercel.app/",
   shareImage: "https://romlee-net.vercel.app/og.jpg?v=3",
+  shareText:
+    "Love one another, love one another. Together, we can overcome everything. I’m only a single drop in the ocean. But many drops can form a wave, and many waves can become the ocean.",
   hospice: {
     name: "Krakowskie Hospicjum dla Dzieci im. ks. Józefa Tischnera",
     krs: "0000203313",
