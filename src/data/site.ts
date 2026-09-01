@@ -27,6 +27,8 @@ export const SITE = {
   },
   pdf: "/files/musik-puls-herz-sport-web-compressed.pdf",
   original: "https://romlee.net",
+  shareUrl: "https://romlee-net.vercel.app/",
+  shareImage: "https://romlee-net.vercel.app/og.jpg?v=3",
   hospice: {
     name: "Krakowskie Hospicjum dla Dzieci im. ks. Józefa Tischnera",
     krs: "0000203313",

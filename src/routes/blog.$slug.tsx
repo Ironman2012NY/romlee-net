@@ -21,10 +21,6 @@ export const Route = createFileRoute("/blog/$slug")({
         { title: WATER_SEO.title },
         { name: "description", content: WATER_SEO.description },
         { name: "keywords", content: WATER_SEO.keywords },
-        { property: "og:title", content: WATER_SEO.title },
-        { property: "og:description", content: WATER_SEO.description },
-        { property: "og:image", content: "https://i.ytimg.com/vi/isW24Vr4lhk/sddefault.jpg" },
-        { property: "og:type", content: "music.song" },
       ],
     };
   },
