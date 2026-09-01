@@ -31,7 +31,7 @@ export const Route = createRootRoute({
   component: () => (
     <html lang="de" className="antialiased" suppressHydrationWarning>
       <head>
-        <meta property="og:title" content={APP_NAME} />
+        <meta property="og:title" content={SITE.shareText} />
         <meta property="og:description" content={SITE.shareText} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={SITE.shareUrl} />
@@ -43,7 +43,7 @@ export const Route = createRootRoute({
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Sonnenuntergang Portocolom — Rom Lee Music" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={APP_NAME} />
+        <meta name="twitter:title" content={SITE.shareText} />
         <meta name="twitter:description" content={SITE.shareText} />
         <meta name="twitter:image" content={OG} />
         <link rel="image_src" href={OG} />

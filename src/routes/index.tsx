@@ -20,9 +20,8 @@ export const Route = createFileRoute("/")({
   staleTime: 0,
   head: () => ({
     meta: [
-      { title: WATER_SEO.title },
-      { name: "description", content: WATER_SEO.description },
-      { name: "keywords", content: WATER_SEO.keywords },
+      { title: SITE.shareText },
+      { name: "description", content: SITE.shareText },
     ],
   }),
   component: Home,
