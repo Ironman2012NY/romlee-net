@@ -38,7 +38,7 @@ export const POSTS: BlogPost[] = [
     slug: "stand-up-for-peace",
     title: "Stand Up for Peace",
     dateLabel: "September 2026",
-    cover: "/images/blog/thumb-stand-up-for-peace.jpg",
+    cover: "/images/blog/stand-up-for-peace.jpg",
     youtubeId: "c72SbFOaNSI",
     excerpt:
       "Christianity, Islam, Judaism and Buddhism may speak in different languages — and still return to compassion, mercy, forgiveness and peace.",

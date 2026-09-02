@@ -51,7 +51,7 @@ function BlogPostPage() {
         {post.subtitle ? (
           <p className="mt-4 font-display text-xl tracking-tight text-accent sm:text-2xl">{post.subtitle}</p>
         ) : null}
-        {post.cover && !post.youtubeId ? (
+        {post.cover && (!post.youtubeId || post.slug === "stand-up-for-peace") ? (
           <div className="mt-10 flex justify-center">
             {post.slug === "warum-deutsch-polnisch" ? (
               <a
