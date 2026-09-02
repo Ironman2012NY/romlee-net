@@ -35,6 +35,23 @@ export const POSTS: BlogPost[] = [
     ],
   },
   {
+    slug: "stand-up-for-peace",
+    title: "Stand Up for Peace",
+    dateLabel: "September 2026",
+    cover: "/images/blog/thumb-stand-up-for-peace.jpg",
+    youtubeId: "c72SbFOaNSI",
+    excerpt:
+      "Christianity, Islam, Judaism and Buddhism may speak in different languages — and still return to compassion, mercy, forgiveness and peace.",
+    paragraphs: [
+      "Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
+      "“Stand Up for Peace” is a song about the common ground that can be found across different religions and traditions.",
+      "Jesus points to the wounded man and teaches us not to walk away. Yusuf shows the strength of forgiveness. Moses asks for mercy even when his people have failed. Buddha meets violence without violence and shows that even a hardened heart can change.",
+      "The chorus brings these paths together in one simple message: Stand up for love. Stand up for peace. Don’t give up.",
+      "And the song ends with a question that goes beyond religion: if ordinary people everywhere truly stand together for love and peace, who can ultimately stop them? Not weapons, not hatred, and not governments — because governments, too, are made of people and exist through the societies we create.",
+      "Peace does not begin somewhere above us. It begins with us, in the way we see one another, forgive one another and decide what kind of world we are willing to build together.",
+    ],
+  },
+  {
     slug: "first-love",
     title: "First Love (Pierwszy raz)",
     dateLabel: "August 2026",
