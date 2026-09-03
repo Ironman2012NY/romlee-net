@@ -104,27 +104,31 @@ function Home() {
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <p className="text-xs uppercase tracking-[0.18em] text-accent">{home.newRelease}</p>
         <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">
-          Water (Keep it for tomorrow)
+          Stand Up for Peace
         </h2>
-        <p className="mt-1 text-sm text-accent">Drink the Water · Rom Lee · {home.newSong}</p>
-        <p className="mt-3 mb-4 max-w-2xl text-sm leading-relaxed text-muted">
-          {home.waterLead1}
-        </p>
-        <p className="mb-6 max-w-2xl text-sm leading-relaxed text-muted">
-          {home.waterLead2}
+        <p className="mt-1 text-sm text-accent">Rom Lee · {home.newSong}</p>
+        <p className="mt-3 mb-6 max-w-2xl text-sm leading-relaxed text-muted">
+          {home.standUpLead}
         </p>
         <div className="max-w-2xl">
-          <YoutubeEmbed videoId="isW24Vr4lhk" title="Water (Keep it for tomorrow)" />
+          <YoutubeEmbed videoId="c72SbFOaNSI" title="Stand Up for Peace" />
         </div>
         <div className="mt-6 flex flex-wrap gap-3">
           <a
-            href="https://www.youtube.com/watch?v=isW24Vr4lhk"
+            href="https://www.youtube.com/watch?v=c72SbFOaNSI"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex min-h-11 items-center rounded-md bg-fg px-5 text-sm font-medium text-accent-fg"
           >
             YouTube
           </a>
+          <Link
+            to="/blog/$slug"
+            params={{ slug: "stand-up-for-peace" }}
+            className="inline-flex min-h-11 items-center rounded-md border border-border-strong px-5 text-sm text-fg"
+          >
+            {copy.blogTitle}
+          </Link>
           <a
             href={SITE.spotify.url}
             target="_blank"

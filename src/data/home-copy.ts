@@ -7,12 +7,15 @@ type HomeCopy = {
   loveLead: string;
   waterLead1: string;
   waterLead2: string;
+  standUpLead: string;
 };
 
 const de: HomeCopy = {
   newRelease: "Neuerscheinung",
   newSong: "neues Lied",
   listenSpotify: "Auf Spotify hören",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "Mit Video und Short ist „Love and Peace“ fast zu einem weltweiten Lied für den Frieden geworden. {video} Aufrufe im Video, {short} im Short — zusammen rund sieben Millionen.",
   waterLead1:
@@ -25,6 +28,8 @@ const en: HomeCopy = {
   newRelease: "New release",
   newSong: "new song",
   listenSpotify: "Listen on Spotify",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "With the video and the Short, “Love and Peace” has become almost a worldwide song for peace. {video} views on the video, {short} on the Short — about seven million together.",
   waterLead1:
@@ -37,6 +42,8 @@ const pl: HomeCopy = {
   newRelease: "Nowa płyta",
   newSong: "nowy utwór",
   listenSpotify: "Słuchaj na Spotify",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "Dzięki teledyskowi i Shortowi „Love and Peace” stało się niemal światową piosenką o pokoju. {video} wyświetleń teledysku, {short} Shorta — razem około siedmiu milionów.",
   waterLead1:
@@ -49,6 +56,8 @@ const es: HomeCopy = {
   newRelease: "Novedad",
   newSong: "canción nueva",
   listenSpotify: "Escuchar en Spotify",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "Con el vídeo y el Short, “Love and Peace” se ha convertido casi en una canción mundial por la paz. {video} reproducciones del vídeo, {short} del Short — unos siete millones en total.",
   waterLead1:
@@ -61,6 +70,8 @@ const fr: HomeCopy = {
   newRelease: "Nouveauté",
   newSong: "nouvelle chanson",
   listenSpotify: "Écouter sur Spotify",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "Avec la vidéo et le Short, « Love and Peace » est presque devenue une chanson mondiale pour la paix. {video} vues sur la vidéo, {short} sur le Short — environ sept millions au total.",
   waterLead1:
@@ -73,6 +84,8 @@ const it: HomeCopy = {
   newRelease: "Novità",
   newSong: "canzone nuova",
   listenSpotify: "Ascolta su Spotify",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "Con il video e lo Short, “Love and Peace” è quasi diventata una canzone mondiale per la pace. {video} visualizzazioni del video, {short} dello Short — circa sette milioni in tutto.",
   waterLead1:
@@ -85,6 +98,8 @@ const pt: HomeCopy = {
   newRelease: "Novidade",
   newSong: "canção nova",
   listenSpotify: "Ouvir no Spotify",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "Com o vídeo e o Short, “Love and Peace” tornou-se quase uma canção mundial pela paz. {video} visualizações do vídeo, {short} do Short — cerca de sete milhões no total.",
   waterLead1:
@@ -97,6 +112,8 @@ const no: HomeCopy = {
   newRelease: "Ny utgivelse",
   newSong: "ny sang",
   listenSpotify: "Hør på Spotify",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "Med videoen og Shorten har «Love and Peace» nesten blitt en verdensomspennende sang for freden. {video} visninger på videoen, {short} på Shorten — rundt sju millioner til sammen.",
   waterLead1:
@@ -109,6 +126,8 @@ const tr: HomeCopy = {
   newRelease: "Yeni çıkan",
   newSong: "yeni şarkı",
   listenSpotify: "Spotify’da dinle",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "Video ve Short ile “Love and Peace” neredeyse dünya çapında bir barış şarkısı oldu. Videoda {video} izlenme, Short’ta {short} — birlikte yaklaşık yedi milyon.",
   waterLead1:
@@ -121,6 +140,8 @@ const ru: HomeCopy = {
   newRelease: "Новинка",
   newSong: "новая песня",
   listenSpotify: "Слушать в Spotify",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "С клипом и Short «Love and Peace» почти стала всемирной песней о мире. {video} просмотров у клипа, {short} у Short — вместе около семи миллионов.",
   waterLead1:
@@ -133,6 +154,8 @@ const uk: HomeCopy = {
   newRelease: "Новинка",
   newSong: "нова пісня",
   listenSpotify: "Слухати у Spotify",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "З кліпом і Short «Love and Peace» майже стала всесвітньою піснею про мир. {video} переглядів кліпу, {short} Short — разом близько семи мільйонів.",
   waterLead1:
@@ -145,6 +168,8 @@ const ar: HomeCopy = {
   newRelease: "إصدار جديد",
   newSong: "أغنية جديدة",
   listenSpotify: "استمع على Spotify",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "مع الفيديو والـ Short أصبحت «Love and Peace» شبه أغنية سلام عالمية. {video} مشاهدة للفيديو و{short} للـ Short — نحو سبعة ملايين معاً.",
   waterLead1:
@@ -157,6 +182,8 @@ const he: HomeCopy = {
   newRelease: "יציאה חדשה",
   newSong: "שיר חדש",
   listenSpotify: "האזן ב-Spotify",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "עם הווידאו וה-Short כמעט הפך “Love and Peace” לשיר עולמי לשלום. {video} צפיות בווידאו, {short} ב-Short — יחד כשבעה מיליון.",
   waterLead1:
@@ -169,6 +196,8 @@ const hi: HomeCopy = {
   newRelease: "नई रिलीज़",
   newSong: "नया गीत",
   listenSpotify: "Spotify पर सुनें",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "वीडियो और Short के साथ “Love and Peace” लगभग विश्वव्यापी शांति गीत बन गया है। वीडियो पर {video} व्यू, Short पर {short} — साथ लगभग सात मिलियन।",
   waterLead1:
@@ -181,6 +210,8 @@ const th: HomeCopy = {
   newRelease: "ออกใหม่",
   newSong: "เพลงใหม่",
   listenSpotify: "ฟังบน Spotify",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "ด้วยวิดีโอและ Short “Love and Peace” เกือบเป็นเพลงสันติภาพระดับโลก {video} วิวที่วิดีโอ {short} ที่ Short — รวมราวเจ็ดล้าน",
   waterLead1:
@@ -193,6 +224,8 @@ const ja: HomeCopy = {
   newRelease: "新作",
   newSong: "新曲",
   listenSpotify: "Spotifyで聴く",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "動画とショートで「Love and Peace」はほぼ世界的な平和の歌になりました。動画 {video} 回、ショート {short} 回 — 合わせて約700万回。",
   waterLead1:
@@ -205,6 +238,8 @@ const ko: HomeCopy = {
   newRelease: "신작",
   newSong: "새 노래",
   listenSpotify: "Spotify에서 듣기",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "영상과 쇼츠로 “Love and Peace”는 거의 세계적인 평화의 노래가 되었습니다. 영상 {video}회, 쇼츠 {short}회 — 합쳐 약 700만.",
   waterLead1:
@@ -217,6 +252,8 @@ const id: HomeCopy = {
   newRelease: "Rilis baru",
   newSong: "lagu baru",
   listenSpotify: "Dengar di Spotify",
+  standUpLead:
+    "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
   loveLead:
     "Dengan video dan Short, “Love and Peace” hampir menjadi lagu damai sedunia. {video} tayangan di video, {short} di Short — bersama sekitar tujuh juta.",
   waterLead1:

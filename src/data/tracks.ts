@@ -15,6 +15,16 @@ export type Track = {
 
 export const TRACKS: Track[] = [
   {
+    id: "stand-up-for-peace",
+    title: "Stand Up for Peace",
+    duration: "Video",
+    slug: "stand-up-for-peace",
+    cover: "/images/blog/thumb-stand-up-for-peace.jpg",
+    youtubeId: "c72SbFOaNSI",
+    lang: "en",
+    featured: true,
+  },
+  {
     id: "water-keep-it",
     title: "Water (Keep it for tomorrow)",
     duration: "3:06",

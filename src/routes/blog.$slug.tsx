@@ -92,10 +92,11 @@ function BlogPostPage() {
             )}
           </div>
         ) : null}
-        {post.coverCaption && (post.slug === "first-love" || !post.youtubeId) ? (
+        {post.coverCaption &&
+        (post.slug === "first-love" || post.slug === "stand-up-for-peace" || !post.youtubeId) ? (
           <p
             className={
-              post.slug === "first-love"
+              post.slug === "first-love" || post.slug === "stand-up-for-peace"
                 ? "mt-4 text-base leading-relaxed text-muted"
                 : "mt-3 text-center text-sm italic text-subtle"
             }

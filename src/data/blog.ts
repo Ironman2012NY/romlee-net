@@ -38,12 +38,13 @@ export const POSTS: BlogPost[] = [
     slug: "stand-up-for-peace",
     title: "Stand Up for Peace",
     dateLabel: "September 2026",
-    cover: "/images/blog/stand-up-for-peace.jpg",
+    cover: "/images/blog/thumb-stand-up-for-peace.jpg",
     youtubeId: "c72SbFOaNSI",
     excerpt:
-      "Christianity, Islam, Judaism and Buddhism may speak in different languages — and still return to compassion, mercy, forgiveness and peace.",
+      "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together.",
+    coverCaption:
+      "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
     paragraphs: [
-      "Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
       "“Stand Up for Peace” is a song about the common ground that can be found across different religions and traditions.",
       "Jesus points to the wounded man and teaches us not to walk away. Yusuf shows the strength of forgiveness. Moses asks for mercy even when his people have failed. Buddha meets violence without violence and shows that even a hardened heart can change.",
       "The chorus brings these paths together in one simple message: Stand up for love. Stand up for peace. Don’t give up.",

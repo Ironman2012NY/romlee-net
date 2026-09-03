@@ -616,7 +616,7 @@ const NIGHTS: Partial<Record<Locale, BlogText>> = {
 const STAND_UP: Partial<Record<Locale, BlogText>> = {
   en: {
     excerpt:
-      "Christianity, Islam, Judaism and Buddhism may speak in different languages — and still return to compassion, mercy, forgiveness and peace.",
+      "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together.",
     dateLabel: "September 2026",
   },
 };
