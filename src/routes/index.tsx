@@ -111,7 +111,7 @@ function Home() {
           {home.standUpLead}
         </p>
         <div className="max-w-2xl">
-          <YoutubeEmbed videoId="c72SbFOaNSI" title="Stand Up for Peace" />
+          <YoutubeEmbed videoId="FDxctULaTKI" title="Stand Up for Peace" />
         </div>
         <div className="mt-6 flex flex-wrap gap-3">
           <a
