@@ -1,7 +1,4 @@
-subscribers: 331_000,
-videoCount: 54,
-totalViews: 13_400_000,
-views365: 13_400_000,import { createServerFn } from "@tanstack/react-start";
+
 import { SITE } from "@/data/site";
 
 export type YtEntry = {
