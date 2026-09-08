@@ -1,4 +1,4 @@
-
+import { createServerFn } from "@tanstack/react-start";
 import { SITE } from "@/data/site";
 
 export type YtEntry = {
