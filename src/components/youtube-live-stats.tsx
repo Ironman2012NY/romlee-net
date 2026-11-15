@@ -89,13 +89,13 @@ export function YoutubeLiveStats({
       <div
         className={cn(
           variant === "panel"
-            ? "grid grid-cols-2 gap-x-4 gap-y-8 rounded-xl border border-border bg-surface p-5 sm:p-6 xl:grid-cols-4"
-            : "grid grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-4",
+            ? "grid w-full grid-cols-2 gap-x-6 gap-y-8 rounded-xl border border-border bg-surface p-5 sm:p-6 xl:grid-cols-4"
+            : "grid w-full grid-cols-2 gap-x-8 gap-y-8 lg:grid-cols-4",
         )}
       >
         {items.map((item) => (
           <div key={item.label} className="min-w-0" title={formatNumber(item.exact)}>
-            <p className="whitespace-nowrap font-display text-2xl leading-none tabular-nums text-fg sm:text-3xl">
+            <p className="whitespace-nowrap font-display text-[clamp(1.45rem,2.5vw,2.35rem)] leading-none tabular-nums text-fg">
               {item.value}
             </p>
             <p className="mt-2 text-xs uppercase tracking-[0.14em] text-muted">{item.label}</p>
