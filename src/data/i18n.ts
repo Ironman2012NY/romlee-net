@@ -4,7 +4,7 @@ import { pageCopy } from "@/data/i18n-pages";
 const de = {
   nav: {
     "/": "Home",
-    "/musik": "Musik",
+    "/musik": "Playlists",
     "/songs": "Songs",
     "/songtexte": "Songtexte",
     "/videos": "Videos",
@@ -98,7 +98,7 @@ function L(s: Ui): Ui {
 export const UI: Record<Locale, Ui> = {
   de,
   en: L({
-    nav: { "/": "Home", "/musik": "Music", "/songs": "Songs", "/songtexte": "Lyrics", "/videos": "Videos", "/fotos": "Photos", "/blog": "Blog" },
+    nav: { "/": "Home", "/musik": "Playlists", "/songs": "Songs", "/songtexte": "Lyrics", "/videos": "Videos", "/fotos": "Photos", "/blog": "Blog" },
     cookieTitle: "Cookies and external content",
     cookieBody: "This site uses technically necessary cookies. YouTube content loads only after your consent (Art. 6 (1)(a) GDPR, § 25 (1) TDDDG). Details in the",
     privacy: "Privacy policy",

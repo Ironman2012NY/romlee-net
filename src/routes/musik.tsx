@@ -1,33 +1,22 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { SITE } from "@/data/site";
-import { TRACKS } from "@/data/tracks";
+import { PlaylistTiles } from "@/components/playlist-tiles";
 import { PageHead, SiteShell } from "@/components/site-shell";
-import { TrackRow } from "@/components/track-row";
-import { useT } from "@/components/lang-switch";
+import { useLocale } from "@/lib/locale";
 
-export const Route = createFileRoute("/musik")({ component: MusikPage });
+export const Route = createFileRoute("/musik")({ component: PlaylistsPage });
 
-function MusikPage() {
-  const copy = useT();
+function PlaylistsPage() {
+  const locale = useLocale((s) => s.locale);
+  const de = locale === "de";
   return (
     <SiteShell>
-      <PageHead kicker={copy.musikKicker} title={copy.musikTitle} lead={copy.musikLead} />
+      <PageHead
+        kicker="YouTube"
+        title="Playlists"
+        lead={de ? "Die Playlists vom YouTube-Kanal." : "The playlists from the YouTube channel."}
+      />
       <div className="mx-auto max-w-6xl px-4 pb-20 sm:px-6">
-        <div className="mb-8 overflow-hidden rounded-xl">
-          <img
-            src="/images/covers/4941713.jpg"
-            alt="Love and Peace"
-            className="aspect-[21/9] w-full object-cover"
-          />
-        </div>
-        <div className="divide-y divide-border rounded-xl border border-border bg-surface p-2 sm:p-3">
-          {TRACKS.map((t, i) => (
-            <TrackRow key={t.id} track={t} index={i + 1} />
-          ))}
-        </div>
-        <p className="mt-8 text-sm text-subtle">
-          Audio wird von {SITE.original} geladen. Vollständige Download-Optionen dort.
-        </p>
+        <PlaylistTiles />
       </div>
     </SiteShell>
   );
