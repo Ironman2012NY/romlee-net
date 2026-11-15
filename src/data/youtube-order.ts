@@ -35,6 +35,7 @@ export const videosByViews: YtItem[] = [
   { id: "CfYmpaBKOc8", title: "Dance - Thank you, Gracias (Afrobeat)", views: 1421 },
   { id: "0KRBCAbwQBU", title: "Ty umiesz kochac (you know how to love)", views: 723 },
   { id: "1RyKKsTsqcQ", title: "Revolution - How to live ?", views: 604 },
+  { id: "QF7i4Z4yIrY", title: "Ich habe Dich gesehen", views: 482 },
   { id: "9xtF9Y0XB0g", title: "Generation '95", views: 377 },
 ];
 
