@@ -14,6 +14,40 @@ export type BlogPost = {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: "christmas-for-all",
+    title: "Christmas for All — ein internationaler Christmas-Song in vier Sprachen",
+    dateLabel: "November 2026",
+    cover: "/images/blog/christmas-for-all.jpg",
+    youtubeId: "sd_elh2GVhE",
+    excerpt:
+      "Ein internationaler Christmas-Song in vier Sprachen. Die Reise führt von Johannesburg über Havanna, Delhi, Seoul, Paris und Palma nach Washington.",
+    paragraphs: [
+      "Wir möchten mit diesem neuen internationalen Christmas-Song Christmas for All vorstellen. Das Video zeigt ihn besonders in Johannesburg, und dann die Kinder — nicht nur in Johannesburg, sondern in Havanna.",
+      "Havanna liegt mir besonders am Herzen. Vor zwei Jahren war ich dort und musste sehen, wie arm die Menschen sind. Und jetzt noch mehr. Viele sind unterernährt. Nicht nur der Hunger und die Möglichkeit, sich zu ernähren, spielen eine Rolle. Zuletzt gab es auch sehr viele Energieprobleme.",
+      "Ich möchte darauf hinweisen, dass wir dem kubanischen Volk in dieser Situation zu Weihnachten helfen sollen. Ich möchte mich dafür einsetzen, dass sie zu Weihnachten und auch danach genug Energie und genug Lebensmittel bekommen.",
+      "Dann geht die Reise nach Delhi, über Seoul, Paris und Palma de Mallorca nach Washington. Ich hoffe, mit dieser Christmas-for-All-Reise decken wir fast alle Kontinente ab und zeigen dadurch allen Menschen Respekt.",
+      "Wir möchten zeigen, dass dieses Fest der Liebe für alle Menschen auf der Erde gilt. Wir möchten die englischsprachigen, die spanisch sprechenden, die deutschsprachigen und die polnisch sprechenden Menschen erreichen. Ich singe in allen diesen vier Sprachen, die ich auch beherrsche.",
+      "Leider nicht auf Französisch, sonst würde ich auch Französisch und Portugiesisch gerne einschließen — eigentlich alle Sprachen der Welt. Aber dank YouTube kann alles automatisch übersetzt werden. Deshalb ist das eine tolle Plattform, die allen Menschen der ganzen Welt die Botschaft der Liebe und des Friedens übersetzt und alle unterstützt. Hiermit möchte ich mich auch bei YouTube bedanken.",
+      "Ich hoffe, ihr habt alle Freude an dem Lied. Jeder kann mitsingen. Ich denke, es wird uns in den nächsten Jahren über Weihnachten sehr breit angenommen. Ich wünsche euch allen viel Spaß dabei, viel Freude und Gottes Segen.",
+    ],
+  },
+  {
+    slug: "weihnachten-wir-sind-die-engel",
+    title: "Weihnachten — Wir sind die Engel",
+    dateLabel: "November 2026",
+    cover: "/images/blog/weihnachten-engel.jpg",
+    youtubeId: "Bw3US7uj4t4",
+    excerpt:
+      "Das Lied „Wir sind die Engel“ ist auf Englisch, Deutsch, Polnisch und Spanisch erschienen — und als Album Christmas Dance.",
+    paragraphs: [
+      "Weihnachten 2026. Das Lied heißt „Wir sind die Engel“. Es ist auf Englisch, Deutsch, Polnisch und Spanisch erschienen.",
+      "Auf Englisch: We Are the Angels. Auf Deutsch in Köln: Wir sind die Engel. Auf Polnisch in Krakau: Święta — Aniołami jesteśmy też my. Auf Spanisch: Navidad — Somos Ángeles.",
+      "Engel sind hier keine Figuren über den Dächern. Es sind die Menschen, die in diesen Tagen beieinander bleiben, eine Tür öffnen, einen Teller teilen.",
+      "Dazu das Album Christmas Dance und „A Star from Heaven — Gwiazdka z nieba“. Alles liegt in der Playlist Christmas Navidad Weihnachten auf YouTube.",
+      "Die Lieder gibt es auf YouTube und zum Hören auf Spotify. Alle Einnahmen gehen weiter an das Kinderhospiz in Krakau.",
+    ],
+  },
+  {
     slug: "ki-als-bildsprache",
     title:
       "„KI ersetzt hier nicht die Wirklichkeit. Sie ermöglicht mir, Gedanken sichtbar zu machen, für die es in der Wirklichkeit manchmal gar keine Kamera geben kann.“",

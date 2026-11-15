@@ -5,6 +5,12 @@ export type Photo = {
 };
 
 export const PHOTOS: Photo[] = [
+  { src: "/images/fotos/neu-kopfhoerer.png", alt: "Rom Lee mit Kopfhörern" },
+  { src: "/images/fotos/neu-studio.png", alt: "Rom Lee im Studio mit Gitarre" },
+  { src: "/images/fotos/neu-garten.png", alt: "Rom Lee im Garten" },
+  { src: "/images/fotos/neu-presse.png", alt: "Rom Lee, Pressefoto im Studio" },
+  { src: "/images/fotos/neu-gitarre.png", alt: "Rom Lee mit Gitarre" },
+  { src: "/images/fotos/neu-hund.png", alt: "Rom Lee mit Hund an der Küste" },
   { src: "/images/fotos/foto-15.jpeg", alt: "Hafen von Portocolom, Mallorca", wide: true },
   { src: "/images/fotos/reserve.jpg", alt: "Rom Lee auf dem Boot, Portocolom" },
   { src: "/images/fotos/foto-16.jpeg", alt: "Küste und Meer", wide: true },

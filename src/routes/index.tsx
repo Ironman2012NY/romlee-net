@@ -102,16 +102,15 @@ function Home() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <p className="text-xs uppercase tracking-[0.18em] text-accent">{home.newRelease}</p>
         <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">
           Stand Up for Peace
         </h2>
-        <p className="mt-1 text-sm text-accent">Rom Lee · {home.newSong}</p>
         <p className="mt-3 mb-6 max-w-2xl text-sm leading-relaxed text-muted">
           {home.standUpLead}
         </p>
-        <div className="max-w-2xl">
+        <div className="grid max-w-3xl gap-4 sm:grid-cols-[1fr_11rem] sm:items-start">
           <YoutubeEmbed videoId="FDxctULaTKI" title="Stand Up for Peace" />
+          <YoutubeEmbed videoId="c72SbFOaNSI" title="Stand Up for Peace (Short)" short />
         </div>
         <div className="mt-6 flex flex-wrap gap-3">
           <a

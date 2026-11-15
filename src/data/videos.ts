@@ -143,6 +143,14 @@ export const FEATURED_VIDEOS: Video[] = [
 
 export const PLAYLISTS = [
   {
+    id: "PLYAhhweh_kMM",
+    title: "Christmas Navidad Weihnachten",
+    subtitle: "Weihnachten",
+    count: 11,
+    video: "sd_elh2GVhE",
+    cover: "/images/blog/weihnachten-engel.jpg",
+  },
+  {
     id: "PLNtVOCJfApOA",
     title: "German Songs",
     subtitle: "Deutsche Songs",
