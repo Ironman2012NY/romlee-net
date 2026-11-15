@@ -12,7 +12,8 @@ export function formatViews(n: number): string {
   }
   if (n >= 1_000_000) {
     const v = n / 1_000_000;
-    return `${v.toFixed(v >= 100 ? 0 : 1).replace(".", ",")} Mio.`;
+    const digits = v >= 100 || Math.abs(v - Math.round(v)) < 0.05 ? 0 : 1;
+    return `${v.toFixed(digits).replace(".", ",")} Mio.`;
   }
   if (n >= 1_000) {
     const v = n / 1_000;

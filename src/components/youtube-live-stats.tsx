@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { loadYoutubeStats, mergeYoutubeStats, type YtStats } from "@/lib/youtube";
+import { loadYoutubeStats, mergeYoutubeStats, YT_WATCH_HOURS, type YtStats } from "@/lib/youtube";
 import { formatNumber, formatViews, cn } from "@/lib/utils";
 import { useT } from "@/components/lang-switch";
 
@@ -73,6 +73,14 @@ export function YoutubeLiveStats({
   const items = [
     { value: formatViews(stats.subscribers), label: copy.subs, exact: stats.subscribers },
     { value: formatViews(stats.totalViews), label: copy.viewsTotal, exact: stats.totalViews },
+    {
+      value: new Intl.NumberFormat("de-DE", {
+        minimumFractionDigits: 1,
+        maximumFractionDigits: 1,
+      }).format(YT_WATCH_HOURS),
+      label: copy.watchHours,
+      exact: YT_WATCH_HOURS,
+    },
     { value: formatNumber(stats.videoCount), label: copy.videos, exact: stats.videoCount },
   ];
 
