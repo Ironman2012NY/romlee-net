@@ -48,24 +48,19 @@ export const POSTS: BlogPost[] = [
     ],
   },
   {
-    slug: "ki-als-bildsprache",
-    title:
-      "„KI ersetzt hier nicht die Wirklichkeit. Sie ermöglicht mir, Gedanken sichtbar zu machen, für die es in der Wirklichkeit manchmal gar keine Kamera geben kann.“",
+    slug: "love-and-peace",
+    title: "Love and Peace",
     dateLabel: "August 2026",
-    subtitle: "KI als Bildsprache",
-    cover: "/images/blog/ki-stadt.jpg",
-    coverCaption:
-      "Beispiel-KI-Bild „Gaza-Streifen“. In der Wirklichkeit noch schlimmer.",
+    cover: "/images/blog/thumb-love-and-peace.jpg",
     excerpt:
-      "Bei meinen Videos geht es oft um Dinge, die sich real kaum sinnvoll, verantwortungsvoll oder überhaupt filmen lassen.",
+      "Mit Video und Short fast ein weltweites Lied für den Frieden: Mut, Hoffnung, Menschlichkeit — und eine Idee, die sich nicht zum Schweigen bringen lässt.",
     paragraphs: [
-      "Bei meinen Videos geht es oft um Dinge, die sich real kaum sinnvoll, verantwortungsvoll oder überhaupt filmen lassen: zerstörte Städte, Krieg, Vergangenheit und Gegenwart, große Menschenmengen, Ölfelder, verschmutztes Wasser, ausgetrocknete Landschaften oder symbolische Bilder von Hoffnung, Frieden und Neubeginn.",
-      "Ich habe mich deshalb bewusst für eine künstlich erzeugte Bildwelt entschieden. KI ist für mich nicht nur ein Produktionswerkzeug, sondern eine Bildsprache für Situationen, Erinnerungen, Gedanken und Vorstellungen, die real gar nicht oder nur mit enormem Aufwand filmbar wären.",
-      "Damit kann ich Gegensätze sichtbar machen: Zerstörung und Wiederaufbau, Dunkelheit und Licht, verschmutztes Wasser und eine wieder lebendige Landschaft, Angst und Hoffnung. Ich kann Entwicklungen zeigen, die sich über Jahre oder Jahrzehnte erstrecken, Vergangenheit und Zukunft miteinander verbinden oder Bilder erschaffen, die in der Realität nur mit großen Filmteams, aufwendigen Reisen und erheblichen Produktionsmitteln möglich wären.",
-      "Gleichzeitig möchte ich für meine Geschichten nicht einfach reale Menschen benutzen. Ich muss keine Personen in Krisengebieten filmen, keine fremden Schicksale für ein Musikvideo instrumentalisieren und keine zufällig anwesenden Menschen ungefragt Teil einer Geschichte werden lassen. Auch Genehmigungen, Persönlichkeitsrechte, Datenschutz und mögliche Beeinträchtigungen anderer Menschen spielen bei realen Dreharbeiten eine Rolle.",
-      "Die Bilder entstehen technisch mit Hilfe von KI. Aber die Geschichte, die Idee, die Auswahl der Szenen, ihre Reihenfolge, ihre Bedeutung und die Botschaft dahinter entstehen nicht durch die KI. Ich entscheide, welches Bild gebraucht wird, was es ausdrücken soll, was verworfen wird und wie daraus am Ende eine zusammenhängende Geschichte entsteht.",
-      "Für mich ist das ähnlich wie bei der Musik. Neue Technik hat die Möglichkeiten von Künstlern schon immer erweitert: Aufnahmegeräte, Synthesizer, Drumcomputer, Sequencer, digitale Studios, Software, Schnitt, Tuning und Mastering. Die Technik verändert die Werkzeuge – aber sie entscheidet nicht, was ein Mensch erzählen möchte und warum er es erzählt.",
-      "KI ersetzt für mich deshalb weder Kreativität noch Wirklichkeit. Sie erweitert den Raum, in dem ich eine Idee gestalten kann.",
+      "“Love and Peace” is a song about courage, hope, humanity, and the power of an idea that cannot be silenced. With the video and the Short it has become almost a worldwide song for peace. In the video, the singer appears as a narrator. He guides the audience through the words and messages of six extraordinary men who inspired generations to believe in peace:",
+      "Martin Luther King Jr. spoke about overcoming hatred through love. Mahatma Gandhi showed the strength of nonviolence. Nelson Mandela reminded us that no one is born hating another person. Pablo Neruda represents hope that continues to grow even when people try to destroy it. Bob Marley carried the message of One Love. John Lennon asked the world to give peace a chance.",
+      "The narrator connects their voices with the present and asks a simple question: After hatred, wars, and walls, is it finally time to choose another way?",
+      "The refrain carries the central message: Make peace, try to love. Make peace and choose to love. Make peace and learn to love. You can’t stop the people when they rise for love. You can stop a song for a while. But you cannot stop an idea whose time has come.",
+      "“You can cut all the flowers, but you cannot stop the spring.” We have tried hate. We have tried war. We have tried walls. Maybe it is time to try love and peace.",
+      "Written, composed and narrated by Rom Lee.",
     ],
   },
   {
@@ -84,44 +79,6 @@ export const POSTS: BlogPost[] = [
       "The chorus brings these paths together in one simple message: Stand up for love. Stand up for peace. Don’t give up.",
       "And the song ends with a question that goes beyond religion: if ordinary people everywhere truly stand together for love and peace, who can ultimately stop them? Not weapons, not hatred, and not governments — because governments, too, are made of people and exist through the societies we create.",
       "Peace does not begin somewhere above us. It begins with us, in the way we see one another, forgive one another and decide what kind of world we are willing to build together.",
-    ],
-  },
-  {
-    slug: "first-love",
-    title: "First Love (Pierwszy raz)",
-    dateLabel: "August 2026",
-    subtitle: "Erinnert euch an eure Zeiten",
-    cover: "/images/blog/thumb-first-love.jpg",
-    coverCaption:
-      "Für viele ist die erste Liebe eine wichtige Erinnerung. Deshalb erinnert euch an eure Zeiten — mit viel Wärme und Liebe in euch. Das Video ist bei YouTube.",
-    youtubeId: "W9Tp8sZBRNA",
-    excerpt:
-      "Für viele ist die erste Liebe eine wichtige Erinnerung. Deshalb erinnert euch an eure Zeiten — mit viel Wärme und Liebe in euch.",
-    paragraphs: [],
-    extra: [
-      {
-        heading: "YouTube",
-        body: "Musikvideo tells the story of a first love (RomLee is in reality a real cardiologist) that neither time nor separation could erase. Kasia and the narrator look back on their first time, their school on Jagiellońska Street (Gliwice), and a world that once seemed as colorful as a rainbow.\n\nLater, their paths separate, and the letters and memories slowly fade. Many years later, fate brings them together again in Warsaw. She devotes her heart to children in hospital wards, while he, as a cardiologist, also saves human hearts.\n\nIt is a song about the innocence of first love, separation, memories, and the hope that true love can find its way back—even after many years.\n\nOriginal song written, composed, and produced by Roman Leischik (artist name: Rom Lee/Leszek).\n\nMusic is Therapy.",
-      },
-    ],
-  },
-  {
-    slug: "naechte-und-woelfe",
-    title: "Nächte und Wölfe (Darkness and Light)",
-    dateLabel: "August 2026",
-    cover: "/images/blog/thumb-naechte.jpg",
-    coverCaption: "YouTube: Nächte und Wölfe (Darkness and Light)",
-    youtubeId: "ul5DEIL8A-M",
-    excerpt:
-      "“Nights and Wolves” is a visual journey from destruction and darkness toward light, hope and peace.",
-    paragraphs: [
-      "“Nights and Wolves” is a visual journey from destruction and darkness toward light, hope and peace. The film opens in a devastated cityscape (any resemblance to real persons or events is purely coincidental). Ruined buildings, rubble and empty streets create an atmosphere of loss and isolation. A lone man walks through this broken world, surrounded by the visible scars of destruction. The images reflect the inner “wolves” of the song — fear, pain, memories and the darkness that can follow us through the night.",
-      "The scenery gradually changes. The ruined city gives way to a vast, dry and almost lifeless landscape filled with oil pumps, pipelines and cracked earth. Yet on the horizon the sun begins to rise. Its warm light becomes stronger, and small signs of life appear in the barren ground. The sun becomes a symbol of hope: darkness does not last forever.",
-      "Other people begin to join the journey. What started with one person slowly becomes a shared path. Isolation turns into connection, and the mood changes from loneliness and despair to confidence and solidarity.",
-      "In the final part, the film opens into a huge gathering of people. A large peace symbol rises above the crowd. The once-dark and devastated world is now filled with people, light and a sense of common purpose.",
-      "The film’s message is simple but powerful: pain and darkness are real, but they do not have the last word. After every night, the sun can rise again. And love, peace and human solidarity can be stronger than the wolves that surround us.",
-      "Hey, nights and wolves — we will drive you away with our love and our peace. We’ll give you a punch.",
-      "Human-created song: original lyrics, composition, vocals and source audio by Roman Leischik / Rom Lee. AI and digital studio tools are used only as production aids for arrangement, instrumentation, sound design, mastering and visuals. No third-party voices are cloned.",
     ],
   },
   {
@@ -162,19 +119,75 @@ export const POSTS: BlogPost[] = [
     ],
   },
   {
-    slug: "love-and-peace",
-    title: "Love and Peace",
-    dateLabel: "August 2026",
-    cover: "/images/blog/thumb-love-and-peace.jpg",
+    slug: "tanze-so-lange-es-geht",
+    title: "Tanze so lange es geht",
+    dateLabel: "Juli 2026",
+    cover: "/images/blog/thumb-tanze.jpg",
     excerpt:
-      "Mit Video und Short fast ein weltweites Lied für den Frieden: Mut, Hoffnung, Menschlichkeit — und eine Idee, die sich nicht zum Schweigen bringen lässt.",
+      "Ein positives Lied für Rollstuhlfahrer – inspiriert von einem Patienten nach einem Unfall mit Querschnittslähmung.",
     paragraphs: [
-      "“Love and Peace” is a song about courage, hope, humanity, and the power of an idea that cannot be silenced. With the video and the Short it has become almost a worldwide song for peace. In the video, the singer appears as a narrator. He guides the audience through the words and messages of six extraordinary men who inspired generations to believe in peace:",
-      "Martin Luther King Jr. spoke about overcoming hatred through love. Mahatma Gandhi showed the strength of nonviolence. Nelson Mandela reminded us that no one is born hating another person. Pablo Neruda represents hope that continues to grow even when people try to destroy it. Bob Marley carried the message of One Love. John Lennon asked the world to give peace a chance.",
-      "The narrator connects their voices with the present and asks a simple question: After hatred, wars, and walls, is it finally time to choose another way?",
-      "The refrain carries the central message: Make peace, try to love. Make peace and choose to love. Make peace and learn to love. You can’t stop the people when they rise for love. You can stop a song for a while. But you cannot stop an idea whose time has come.",
-      "“You can cut all the flowers, but you cannot stop the spring.” We have tried hate. We have tried war. We have tried walls. Maybe it is time to try love and peace.",
-      "Written, composed and narrated by Rom Lee.",
+      "Das Lied „Tanze so lange es geht“: das hat mein Patient geschrieben, nachdem der Song fertig war:",
+      "„Was für ein geiler Song. Vielen lieben Dank lieber Professor! Ich bin sehr berührt. Ganz liebe Grüße, ich freue mich und segel gerne mit. Ganz liebe Grüße und vielen lieben Dank.“",
+      "Bei der polnischen Version gibt es Zuschriften: „Das Lied wird eine Hymne.“ Übrigens: Ich kenne weltweit keinen positiven Song für Rollstuhlfahrer, und die sind alle tapfer.",
+    ],
+  },
+  {
+    slug: "naechte-und-woelfe",
+    title: "Nächte und Wölfe (Darkness and Light)",
+    dateLabel: "August 2026",
+    cover: "/images/blog/thumb-naechte.jpg",
+    coverCaption: "YouTube: Nächte und Wölfe (Darkness and Light)",
+    youtubeId: "ul5DEIL8A-M",
+    excerpt:
+      "“Nights and Wolves” is a visual journey from destruction and darkness toward light, hope and peace.",
+    paragraphs: [
+      "“Nights and Wolves” is a visual journey from destruction and darkness toward light, hope and peace. The film opens in a devastated cityscape (any resemblance to real persons or events is purely coincidental). Ruined buildings, rubble and empty streets create an atmosphere of loss and isolation. A lone man walks through this broken world, surrounded by the visible scars of destruction. The images reflect the inner “wolves” of the song — fear, pain, memories and the darkness that can follow us through the night.",
+      "The scenery gradually changes. The ruined city gives way to a vast, dry and almost lifeless landscape filled with oil pumps, pipelines and cracked earth. Yet on the horizon the sun begins to rise. Its warm light becomes stronger, and small signs of life appear in the barren ground. The sun becomes a symbol of hope: darkness does not last forever.",
+      "Other people begin to join the journey. What started with one person slowly becomes a shared path. Isolation turns into connection, and the mood changes from loneliness and despair to confidence and solidarity.",
+      "In the final part, the film opens into a huge gathering of people. A large peace symbol rises above the crowd. The once-dark and devastated world is now filled with people, light and a sense of common purpose.",
+      "The film’s message is simple but powerful: pain and darkness are real, but they do not have the last word. After every night, the sun can rise again. And love, peace and human solidarity can be stronger than the wolves that surround us.",
+      "Hey, nights and wolves — we will drive you away with our love and our peace. We’ll give you a punch.",
+      "Human-created song: original lyrics, composition, vocals and source audio by Roman Leischik / Rom Lee. AI and digital studio tools are used only as production aids for arrangement, instrumentation, sound design, mastering and visuals. No third-party voices are cloned.",
+    ],
+  },
+  {
+    slug: "ki-als-bildsprache",
+    title:
+      "„KI ersetzt hier nicht die Wirklichkeit. Sie ermöglicht mir, Gedanken sichtbar zu machen, für die es in der Wirklichkeit manchmal gar keine Kamera geben kann.“",
+    dateLabel: "August 2026",
+    subtitle: "KI als Bildsprache",
+    cover: "/images/blog/ki-stadt.jpg",
+    coverCaption:
+      "Beispiel-KI-Bild „Gaza-Streifen“. In der Wirklichkeit noch schlimmer.",
+    excerpt:
+      "Bei meinen Videos geht es oft um Dinge, die sich real kaum sinnvoll, verantwortungsvoll oder überhaupt filmen lassen.",
+    paragraphs: [
+      "Bei meinen Videos geht es oft um Dinge, die sich real kaum sinnvoll, verantwortungsvoll oder überhaupt filmen lassen: zerstörte Städte, Krieg, Vergangenheit und Gegenwart, große Menschenmengen, Ölfelder, verschmutztes Wasser, ausgetrocknete Landschaften oder symbolische Bilder von Hoffnung, Frieden und Neubeginn.",
+      "Ich habe mich deshalb bewusst für eine künstlich erzeugte Bildwelt entschieden. KI ist für mich nicht nur ein Produktionswerkzeug, sondern eine Bildsprache für Situationen, Erinnerungen, Gedanken und Vorstellungen, die real gar nicht oder nur mit enormem Aufwand filmbar wären.",
+      "Damit kann ich Gegensätze sichtbar machen: Zerstörung und Wiederaufbau, Dunkelheit und Licht, verschmutztes Wasser und eine wieder lebendige Landschaft, Angst und Hoffnung. Ich kann Entwicklungen zeigen, die sich über Jahre oder Jahrzehnte erstrecken, Vergangenheit und Zukunft miteinander verbinden oder Bilder erschaffen, die in der Realität nur mit großen Filmteams, aufwendigen Reisen und erheblichen Produktionsmitteln möglich wären.",
+      "Gleichzeitig möchte ich für meine Geschichten nicht einfach reale Menschen benutzen. Ich muss keine Personen in Krisengebieten filmen, keine fremden Schicksale für ein Musikvideo instrumentalisieren und keine zufällig anwesenden Menschen ungefragt Teil einer Geschichte werden lassen. Auch Genehmigungen, Persönlichkeitsrechte, Datenschutz und mögliche Beeinträchtigungen anderer Menschen spielen bei realen Dreharbeiten eine Rolle.",
+      "Die Bilder entstehen technisch mit Hilfe von KI. Aber die Geschichte, die Idee, die Auswahl der Szenen, ihre Reihenfolge, ihre Bedeutung und die Botschaft dahinter entstehen nicht durch die KI. Ich entscheide, welches Bild gebraucht wird, was es ausdrücken soll, was verworfen wird und wie daraus am Ende eine zusammenhängende Geschichte entsteht.",
+      "Für mich ist das ähnlich wie bei der Musik. Neue Technik hat die Möglichkeiten von Künstlern schon immer erweitert: Aufnahmegeräte, Synthesizer, Drumcomputer, Sequencer, digitale Studios, Software, Schnitt, Tuning und Mastering. Die Technik verändert die Werkzeuge – aber sie entscheidet nicht, was ein Mensch erzählen möchte und warum er es erzählt.",
+      "KI ersetzt für mich deshalb weder Kreativität noch Wirklichkeit. Sie erweitert den Raum, in dem ich eine Idee gestalten kann.",
+    ],
+  },
+  {
+    slug: "first-love",
+    title: "First Love (Pierwszy raz)",
+    dateLabel: "August 2026",
+    subtitle: "Erinnert euch an eure Zeiten",
+    cover: "/images/blog/thumb-first-love.jpg",
+    coverCaption:
+      "Für viele ist die erste Liebe eine wichtige Erinnerung. Deshalb erinnert euch an eure Zeiten — mit viel Wärme und Liebe in euch. Das Video ist bei YouTube.",
+    youtubeId: "W9Tp8sZBRNA",
+    excerpt:
+      "Für viele ist die erste Liebe eine wichtige Erinnerung. Deshalb erinnert euch an eure Zeiten — mit viel Wärme und Liebe in euch.",
+    paragraphs: [],
+    extra: [
+      {
+        heading: "YouTube",
+        body: "Musikvideo tells the story of a first love (RomLee is in reality a real cardiologist) that neither time nor separation could erase. Kasia and the narrator look back on their first time, their school on Jagiellońska Street (Gliwice), and a world that once seemed as colorful as a rainbow.\n\nLater, their paths separate, and the letters and memories slowly fade. Many years later, fate brings them together again in Warsaw. She devotes her heart to children in hospital wards, while he, as a cardiologist, also saves human hearts.\n\nIt is a song about the innocence of first love, separation, memories, and the hope that true love can find its way back—even after many years.\n\nOriginal song written, composed, and produced by Roman Leischik (artist name: Rom Lee/Leszek).\n\nMusic is Therapy.",
+      },
     ],
   },
   {
@@ -233,19 +246,6 @@ export const POSTS: BlogPost[] = [
       "Refren: Ty, tylko ty jesteś tą królewną, / Ty, tylko ty umiesz kłamać cudnie. / Ty, tylko ty jesteś tą królewną.",
       "Zwrotka 2: Była sobie ta królewna, / Miała główkę cudną, / A w tej główce same dziwy — / Psst, iskierka zgasła. / Patrzy Wojtuś, patrzy długo, / Łzami zaszły oczęta. / „Czemu mnie oszukałaś?” / Wojtuś zapamięta.",
       "Zwrotka 3: Już ci nigdy nie uwierzę, / Ty królewno mała. / Najpierw błyśniesz, potem zgaśniesz — / Ot, i bajka cała.",
-    ],
-  },
-  {
-    slug: "tanze-so-lange-es-geht",
-    title: "Tanze so lange es geht",
-    dateLabel: "Juli 2026",
-    cover: "/images/blog/thumb-tanze.jpg",
-    excerpt:
-      "Ein positives Lied für Rollstuhlfahrer – inspiriert von einem Patienten nach einem Unfall mit Querschnittslähmung.",
-    paragraphs: [
-      "Das Lied „Tanze so lange es geht“: das hat mein Patient geschrieben, nachdem der Song fertig war:",
-      "„Was für ein geiler Song. Vielen lieben Dank lieber Professor! Ich bin sehr berührt. Ganz liebe Grüße, ich freue mich und segel gerne mit. Ganz liebe Grüße und vielen lieben Dank.“",
-      "Bei der polnischen Version gibt es Zuschriften: „Das Lied wird eine Hymne.“ Übrigens: Ich kenne weltweit keinen positiven Song für Rollstuhlfahrer, und die sind alle tapfer.",
     ],
   },
   {
