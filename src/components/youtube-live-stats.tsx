@@ -73,7 +73,6 @@ export function YoutubeLiveStats({
   const items = [
     { value: formatViews(stats.subscribers), label: copy.subs, exact: stats.subscribers },
     { value: formatViews(stats.totalViews), label: copy.viewsTotal, exact: stats.totalViews },
-    { value: formatViews(stats.views365), label: copy.views365, exact: stats.views365 },
     { value: formatNumber(stats.videoCount), label: copy.videos, exact: stats.videoCount },
   ];
 
