@@ -1,3 +1,5 @@
+import { videosByViews } from "@/data/youtube-order";
+
 export type Lang = "de" | "pl" | "en" | "es";
 
 export type Track = {
@@ -20,7 +22,7 @@ export const TRACKS: Track[] = [
     duration: "Video",
     slug: "stand-up-for-peace",
     cover: "/images/blog/thumb-stand-up-for-peace.jpg",
-    youtubeId: "c72SbFOaNSI",
+    youtubeId: "FDxctULaTKI",
     lang: "en",
     featured: true,
   },
@@ -289,6 +291,141 @@ export const TRACKS: Track[] = [
     youtubeId: "FHUNHArNAEA",
     lang: "pl",
   },
+  {
+    id: "wir-sind-der-ozean",
+    title: "Wir sind der Ozean",
+    duration: "Video",
+    slug: "wir-sind-der-ozean",
+    cover: "/api/yt-thumb/XxG2R3tZfp8",
+    youtubeId: "XxG2R3tZfp8",
+    lang: "de",
+  },
+  {
+    id: "weihnachten-engel",
+    title: "Weihnachten – Wir sind die Engel",
+    duration: "Video",
+    slug: "weihnachten-wir-sind-die-engel",
+    cover: "/api/yt-thumb/sqXEEGy_UdI",
+    youtubeId: "sqXEEGy_UdI",
+    lang: "de",
+  },
+  {
+    id: "mister-krawatte",
+    title: "Mister Krawatte",
+    duration: "Video",
+    slug: "mister-krawatte",
+    cover: "/api/yt-thumb/s0XOukcXpuQ",
+    youtubeId: "s0XOukcXpuQ",
+    lang: "de",
+  },
+  {
+    id: "wir-danken",
+    title: "Wir danken",
+    duration: "Video",
+    slug: "wir-danken",
+    cover: "/api/yt-thumb/k894z2QzuEc",
+    youtubeId: "k894z2QzuEc",
+    lang: "de",
+  },
+  {
+    id: "liebe",
+    title: "Liebe",
+    duration: "Video",
+    slug: "liebe",
+    cover: "/api/yt-thumb/xb3k8jNFN4U",
+    youtubeId: "xb3k8jNFN4U",
+    lang: "de",
+  },
+  {
+    id: "christmas-for-all",
+    title: "Christmas for All",
+    duration: "Video",
+    slug: "christmas-for-all",
+    cover: "/api/yt-thumb/sd_elh2GVhE",
+    youtubeId: "sd_elh2GVhE",
+    lang: "en",
+  },
+  {
+    id: "we-are-the-ocean",
+    title: "We Are the Ocean",
+    duration: "Video",
+    slug: "we-are-the-ocean",
+    cover: "/api/yt-thumb/wNhwBXmauU0",
+    youtubeId: "wNhwBXmauU0",
+    lang: "en",
+  },
+  {
+    id: "dance-love-and-peace",
+    title: "Dance – Love and Peace",
+    duration: "Video",
+    slug: "dance-love-and-peace",
+    cover: "/api/yt-thumb/nodyNStPtxs",
+    youtubeId: "nodyNStPtxs",
+    lang: "en",
+  },
+  {
+    id: "stand-up-deep-house",
+    title: "Stand Up for Peace (Deep House)",
+    duration: "Video",
+    slug: "stand-up-for-peace-deep-house",
+    cover: "/api/yt-thumb/AJMoFm3F4A0",
+    youtubeId: "AJMoFm3F4A0",
+    lang: "en",
+  },
+  {
+    id: "revolution",
+    title: "Revolution – How to live?",
+    duration: "Video",
+    slug: "revolution",
+    cover: "/api/yt-thumb/1RyKKsTsqcQ",
+    youtubeId: "1RyKKsTsqcQ",
+    lang: "en",
+  },
+  {
+    id: "navidad-somos-angeles",
+    title: "Navidad – Somos Ángeles",
+    duration: "Video",
+    slug: "navidad-somos-angeles",
+    cover: "/api/yt-thumb/yk9NZ-6HfX8",
+    youtubeId: "yk9NZ-6HfX8",
+    lang: "es",
+  },
+  {
+    id: "gracias",
+    title: "Dance – Thank You, Gracias",
+    duration: "Video",
+    slug: "gracias",
+    cover: "/api/yt-thumb/CfYmpaBKOc8",
+    youtubeId: "CfYmpaBKOc8",
+    lang: "es",
+  },
+  {
+    id: "corka",
+    title: "Córka",
+    duration: "Video",
+    slug: "corka",
+    cover: "/api/yt-thumb/a16PCeDdBj4",
+    youtubeId: "a16PCeDdBj4",
+    lang: "pl",
+  },
+  {
+    id: "swieta-aniolami",
+    title: "Święta – To my jesteśmy aniołami",
+    duration: "Video",
+    slug: "swieta-aniolami",
+    cover: "/api/yt-thumb/9qwsuxEq8-M",
+    youtubeId: "9qwsuxEq8-M",
+    lang: "pl",
+  },
+  {
+    id: "gwiazdka",
+    title: "Gwiazdka z nieba",
+    duration: "Video",
+    slug: "gwiazdka-z-nieba",
+    cover: "/api/yt-thumb/JRFkofdFLnE",
+    youtubeId: "JRFkofdFLnE",
+    lang: "pl",
+  },
 ];
 
 export const LANG_LABEL: Record<Lang, string> = {
@@ -298,8 +435,12 @@ export const LANG_LABEL: Record<Lang, string> = {
   es: "Español",
 };
 
+const VIEWS = new Map(videosByViews.map((video) => [video.id, video.views]));
+
 export function tracksByLang(lang: Lang) {
-  return TRACKS.filter((t) => t.lang === lang);
+  return TRACKS.filter((t) => t.lang === lang).sort(
+    (a, b) => (VIEWS.get(b.youtubeId) ?? 0) - (VIEWS.get(a.youtubeId) ?? 0),
+  );
 }
 
 export function coverForYoutubeId(id: string): string {

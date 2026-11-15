@@ -8,7 +8,7 @@ import { useLocale } from "@/lib/locale";
 
 export const Route = createFileRoute("/songs")({ component: SongsPage });
 
-const ORDER: Lang[] = ["de", "pl", "en", "es"];
+const ORDER: Lang[] = ["de", "en", "es", "pl"];
 
 function SongsPage() {
   const copy = useT();
