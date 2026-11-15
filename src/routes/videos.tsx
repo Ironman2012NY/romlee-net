@@ -11,13 +11,8 @@ function VideosPage() {
   const locale = useLocale((s) => s.locale);
   const de = locale === "de";
   const [filter, setFilter] = useState<"all" | "video" | "short">("all");
-  const ranked = [
-    ...videosByViews.map((v) => ({ ...v, short: false })),
-    ...shortsByViews.map((v) => ({ ...v, short: true })),
-  ].sort((a, b) => b.views - a.views);
-  const shown = ranked.filter((clip) =>
-    filter === "all" ? true : filter === "short" ? clip.short : !clip.short,
-  );
+  const videos = [...videosByViews].sort((a, b) => b.views - a.views);
+  const shorts = [...shortsByViews].sort((a, b) => b.views - a.views);
   const tabs = [
     ["all", de ? "Alle" : "All"],
     ["video", "Videos"],
@@ -54,16 +49,31 @@ function VideosPage() {
             </button>
           ))}
         </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {shown.map((clip) => (
-            <YoutubeEmbed
-              key={clip.id}
-              videoId={clip.id}
-              title={clip.title}
-              views={clip.views}
-              short={clip.short}
-            />
-          ))}
+        <div className="space-y-12">
+          {filter !== "short" ? (
+            <section>
+              <h2 className="mb-4 font-display text-3xl tracking-tight text-fg">
+                {de ? "Videos, nach Aufrufen" : "Videos, by views"}
+              </h2>
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {videos.map((clip) => (
+                  <YoutubeEmbed key={clip.id} videoId={clip.id} title={clip.title} views={clip.views} />
+                ))}
+              </div>
+            </section>
+          ) : null}
+          {filter !== "video" ? (
+            <section>
+              <h2 className="mb-4 font-display text-3xl tracking-tight text-fg">
+                {de ? "Shorts, nach Aufrufen" : "Shorts, by views"}
+              </h2>
+              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {shorts.map((clip) => (
+                  <YoutubeEmbed key={clip.id} videoId={clip.id} title={clip.title} views={clip.views} short />
+                ))}
+              </div>
+            </section>
+          ) : null}
         </div>
       </div>
     </SiteShell>
