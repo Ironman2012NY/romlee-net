@@ -3,14 +3,14 @@ export type YtAlbum = { title: string; id: string; tracks: { id: string; title: 
 
 /** Snapshot from the YouTube channel, ordered by views. */
 export const videosByViews: YtItem[] = [
-  { id: "KBXOvQr3bAY", title: "Love and Peace", views: 7300000 },
-  { id: "XxG2R3tZfp8", title: "Wir sind der Ozean", views: 546224 },
+  { id: "KBXOvQr3bAY", title: "Love and Peace", views: 7304502 },
+  { id: "XxG2R3tZfp8", title: "Wir sind der Ozean", views: 815234 },
   { id: "ul5DEIL8A-M", title: "Nächte und Wölfe (Darkness and Light)", views: 489677 },
   { id: "Z5tyIzbLzPE", title: "Lato to raj (Summer is Paradise)", views: 475975 },
   { id: "D4-AHjBm5KA", title: "Tańcz, dopóki się da", views: 464170 },
-  { id: "FDxctULaTKI", title: "Steh auf für den Frieden", views: 418195 },
-  { id: "sd_elh2GVhE", title: "Christmas For All", views: 408274 },
-  { id: "isW24Vr4lhk", title: "Water (keep it for tomorrow)", views: 370765 },
+  { id: "FDxctULaTKI", title: "Steh auf für den Frieden", views: 418204 },
+  { id: "sd_elh2GVhE", title: "Christmas For All", views: 758278 },
+  { id: "isW24Vr4lhk", title: "Water (keep it for tomorrow)", views: 370785 },
   { id: "sqXEEGy_UdI", title: "Weihnachten – Wir sind die Engel", views: 368710 },
   { id: "3UJvZX06lVU", title: "Naiver Traum", views: 359836 },
   { id: "99vogJyqsfU", title: "Sonne Wind und Wellen (Sun Wind Waves)", views: 315389 },
@@ -33,15 +33,15 @@ export const videosByViews: YtItem[] = [
   { id: "Bw3US7uj4t4", title: "Weihnachten - Wir sind die Engel", views: 13505 },
   { id: "KG0sUFX2mwE", title: "Liebe", views: 2708 },
   { id: "CfYmpaBKOc8", title: "Dance - Thank you, Gracias (Afrobeat)", views: 1421 },
-  { id: "0KRBCAbwQBU", title: "Ty umiesz kochac (you know how to love)", views: 723 },
-  { id: "1RyKKsTsqcQ", title: "Revolution - How to live ?", views: 604 },
-  { id: "QF7i4Z4yIrY", title: "Ich habe Dich gesehen", views: 482 },
-  { id: "9xtF9Y0XB0g", title: "Generation '95", views: 377 },
+  { id: "0KRBCAbwQBU", title: "Ty umiesz kochac (you know how to love)", views: 725 },
+  { id: "1RyKKsTsqcQ", title: "Revolution - How to live ?", views: 649 },
+  { id: "QF7i4Z4yIrY", title: "Ich habe Dich gesehen", views: 495 },
+  { id: "9xtF9Y0XB0g", title: "Generation '95", views: 381 },
 ];
 
 export const shortsByViews: YtItem[] = [
-  { id: "YTefIyKLBQA", title: "Love and Peace", views: 1500000 },
-  { id: "c72SbFOaNSI", title: "Stand Up for Peace", views: 41752 },
+  { id: "YTefIyKLBQA", title: "Love and Peace", views: 1502232 },
+  { id: "c72SbFOaNSI", title: "Stand Up for Peace", views: 41756 },
   { id: "yTKTc6aRwnw", title: "#romlee", views: 9428 },
   { id: "GoWR8KArejc", title: "Dance - Thank you Gracias", views: 7381 },
   { id: "NEgP2c4Ly0c", title: "Ojos negros", views: 5425 },

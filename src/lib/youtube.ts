@@ -23,16 +23,16 @@ export type YtStats = {
 const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36";
 
-/** Official artist channel, YouTube Studio, 15 Nov 2026. */
+/** Public YouTube counts, 18 Nov 2026. Watch hours stay the last Studio figure. */
 export const YT_WATCH_HOURS = 240_506.9;
 export const YT_FLOOR = {
-  subscribers: 671_000,
-  videoCount: 123,
-  totalViews: 17_000_000,
-  views365: 17_000_000,
+  subscribers: 679_000,
+  videoCount: 136,
+  totalViews: 17_971_909,
+  views365: 17_971_909,
   viewsById: {
-    KBXOvQr3bAY: 5_622_361,
-    YTefIyKLBQA: 1_394_966,
+    KBXOvQr3bAY: 7_304_502,
+    YTefIyKLBQA: 1_502_232,
   } as Record<string, number>,
 };
 

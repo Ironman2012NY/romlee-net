@@ -12,7 +12,7 @@ import { useT } from "@/components/lang-switch";
 import { useLocale } from "@/lib/locale";
 import { homeCopy } from "@/data/home-copy";
 import { fetchYoutubeStats, viewsFor, YT_FLOOR, type YtStats } from "@/lib/youtube";
-import { formatNumber } from "@/lib/utils";
+import { formatNumber, formatViews } from "@/lib/utils";
 import { WaterSeo, WATER_SEO } from "@/components/water-seo";
 
 export const Route = createFileRoute("/")({
@@ -146,7 +146,8 @@ function Home() {
           <p className="mt-3 mb-6 max-w-xl text-sm leading-relaxed text-muted">
             {home.loveLead
               .replace("{video}", formatNumber(loveViews))
-              .replace("{short}", formatNumber(shortViews))}
+              .replace("{short}", formatNumber(shortViews))
+              .replace("{sum}", formatViews(loveViews + shortViews))}
           </p>
           <div className="grid gap-4 sm:grid-cols-[1fr_11rem] sm:items-start">
             <YoutubeEmbed videoId="KBXOvQr3bAY" title="Love and Peace" views={loveViews} />
