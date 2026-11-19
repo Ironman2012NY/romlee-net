@@ -1,3 +1,4 @@
+import { christmasCopy } from "@/data/christmas";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, FileText, Youtube } from "lucide-react";
 import { POSTS, localizePost } from "@/data/blog";
@@ -41,6 +42,64 @@ function Home() {
   return (
     <SiteShell solidHeader>
       <WaterSeo />
+      <section className="border-t border-border bg-surface">
+        <div className="mx-auto max-w-6xl px-4 pb-12 pt-32 sm:px-6 sm:pt-36">
+          <div className="flex items-end justify-between">
+            <h1 className="font-display text-3xl tracking-tight text-fg">{copy.blogTitle}</h1>
+            <Link to="/blog" className="text-sm text-muted hover:text-fg">
+              {copy.allPosts}
+            </Link>
+          </div>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <a href={SITE.spotify.url} className="inline-flex min-h-11 items-center rounded-md bg-fg px-5 text-sm font-medium text-accent-fg">
+              {home.listenSpotify}
+            </a>
+            <a href={SITE.youtube.url} className="inline-flex min-h-11 items-center rounded-md border border-border-strong px-5 text-sm text-fg">
+              {copy.youtubeChannel}
+            </a>
+          </div>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {POSTS.slice(0, 2).map((raw) => {
+              const post = localizePost(raw, locale);
+              return (
+              <Link
+                key={post.slug}
+                to="/blog/$slug"
+                params={{ slug: post.slug }}
+                className="group overflow-hidden rounded-xl border border-border bg-elevated"
+              >
+                {post.cover ? (
+                  <img
+                    src={post.cover}
+                    alt=""
+                    className={
+                      post.coverContain
+                        ? "aspect-video w-full object-contain bg-elevated p-4"
+                        : "aspect-video w-full object-cover"
+                    }
+                  />
+                ) : null}
+                <div className="p-5">
+                  <p className="text-xs text-subtle">{post.dateLabel}</p>
+                  <h3 className="mt-1 font-display text-xl leading-tight text-fg group-hover:text-accent">
+                    {post.title}
+                  </h3>
+                  {post.subtitle ? (
+                    <p className="mt-1 text-sm text-accent">{post.subtitle}</p>
+                  ) : null}
+                  <p className="mt-2 line-clamp-3 text-sm text-muted">{post.excerpt}</p>
+                </div>
+              </Link>
+              );
+            })}
+          </div>
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-base text-accent">
+            <Link to="/blog/$slug" params={{ slug: "thank-you-to-the-people-in-power" }} className="underline underline-offset-4">Thank You to the People in Power</Link>
+            <Link to="/blog/$slug" params={{ slug: "christmas-dance" }} className="underline underline-offset-4">Christmas Dance</Link>
+            <Link to="/weihnachten" className="underline underline-offset-4">{christmasCopy(locale).title}</Link>
+          </div>
+        </div>
+      </section>
       <section className="relative min-h-[92dvh] overflow-hidden">
         <img
           src="/images/fotos/hero-portocolom.jpg"
@@ -50,9 +109,9 @@ function Home() {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg/80 via-bg/25 to-transparent" />
         <div className="relative mx-auto flex min-h-[92dvh] max-w-6xl flex-col justify-end px-4 pb-16 pt-32 sm:px-6 sm:pb-20">
           <p className="text-xs uppercase tracking-[0.22em] text-accent">{SITE.brand}</p>
-          <h1 className="mt-3 font-display text-3xl leading-[0.9] tracking-tight text-fg sm:text-6xl">
+          <h2 className="mt-3 font-display text-3xl leading-[0.9] tracking-tight text-fg sm:text-6xl">
             {SITE.name}
-          </h1>
+          </h2>
           <p className="mt-2 text-base text-muted sm:text-lg">({SITE.alsoAs})</p>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-fg/90 sm:text-lg">
             {SITE.tagline}
@@ -289,51 +348,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="border-t border-border bg-surface">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <div className="flex items-end justify-between">
-            <h2 className="font-display text-3xl tracking-tight text-fg">{copy.blogTitle}</h2>
-            <Link to="/blog" className="text-sm text-muted hover:text-fg">
-              {copy.allPosts}
-            </Link>
-          </div>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {POSTS.slice(0, 3).map((raw) => {
-              const post = localizePost(raw, locale);
-              return (
-              <Link
-                key={post.slug}
-                to="/blog/$slug"
-                params={{ slug: post.slug }}
-                className="group overflow-hidden rounded-xl border border-border bg-elevated"
-              >
-                {post.cover ? (
-                  <img
-                    src={post.cover}
-                    alt=""
-                    className={
-                      post.coverContain
-                        ? "aspect-[4/3] w-full object-contain bg-elevated p-4"
-                        : "aspect-[4/3] w-full object-cover"
-                    }
-                  />
-                ) : null}
-                <div className="p-5">
-                  <p className="text-xs text-subtle">{post.dateLabel}</p>
-                  <h3 className="mt-1 font-display text-xl leading-tight text-fg group-hover:text-accent">
-                    {post.title}
-                  </h3>
-                  {post.subtitle ? (
-                    <p className="mt-1 text-sm text-accent">{post.subtitle}</p>
-                  ) : null}
-                  <p className="mt-2 line-clamp-3 text-sm text-muted">{post.excerpt}</p>
-                </div>
-              </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+
     </SiteShell>
   );
 }
