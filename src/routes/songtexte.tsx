@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { ExternalLink } from "lucide-react";
 import { SONG_TEXTS } from "@/data/lyrics";
+import { ORIGINAL_LYRICS } from "@/data/original-lyrics";
 import { LANG_LABEL, TRACKS, type Lang } from "@/data/tracks";
 import { PageHead, SiteShell } from "@/components/site-shell";
 import { useT } from "@/components/lang-switch";
@@ -16,11 +17,13 @@ const FILTERS: { id: "all" | Lang }[] = [
   { id: "es" },
 ];
 
+const allLyrics = [...ORIGINAL_LYRICS, ...SONG_TEXTS];
+
 function SongtextePage() {
   const [filter, setFilter] = useState<"all" | Lang>("all");
   const copy = useT();
   const list = useMemo(
-    () => (filter === "all" ? SONG_TEXTS : SONG_TEXTS.filter((s) => s.lang === filter)),
+    () => (filter === "all" ? allLyrics : allLyrics.filter((s) => s.lang === filter)),
     [filter],
   );
 
@@ -107,7 +110,7 @@ function SongtextePage() {
         </div>
 
         <p className="mt-10 text-xs leading-relaxed text-subtle">
-          Quelle: YouTube-Beschreibungen des Kanals Rom Lee Music.{" "}
+          Quellen: Originaltexte von Rom Lee und Videobeschreibungen auf seinem YouTube-Kanal.{" "}
           <Link to="/songs" className="underline underline-offset-4">
             Zur Songübersicht
           </Link>
