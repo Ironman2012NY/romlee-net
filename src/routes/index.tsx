@@ -162,18 +162,18 @@ function Home() {
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">
-          Stand Up for Peace
+          We Are the Ocean
         </h2>
         <p className="mt-3 mb-6 max-w-2xl text-sm leading-relaxed text-muted">
-          {home.standUpLead}
+          I am a drop, you are a drop. More drops can become a wave.
         </p>
         <div className="grid max-w-3xl gap-4 sm:grid-cols-[1fr_11rem] sm:items-start">
-          <YoutubeEmbed videoId="FDxctULaTKI" title="Stand Up for Peace" />
+          <YoutubeEmbed videoId="XxG2R3tZfp8" title="We Are the Ocean" />
           <YoutubeEmbed videoId="c72SbFOaNSI" title="Stand Up for Peace (Short)" short />
         </div>
         <div className="mt-6 flex flex-wrap gap-3">
           <a
-            href="https://www.youtube.com/watch?v=c72SbFOaNSI"
+            href="https://www.youtube.com/watch?v=XxG2R3tZfp8"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex min-h-11 items-center rounded-md bg-fg px-5 text-sm font-medium text-accent-fg"
@@ -182,7 +182,7 @@ function Home() {
           </a>
           <Link
             to="/blog/$slug"
-            params={{ slug: "stand-up-for-peace" }}
+            params={{ slug: "we-are-the-ocean" }}
             className="inline-flex min-h-11 items-center rounded-md border border-border-strong px-5 text-sm text-fg"
           >
             {copy.blogTitle}
