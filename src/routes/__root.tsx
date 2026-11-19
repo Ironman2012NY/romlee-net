@@ -29,7 +29,7 @@ export const Route = createRootRoute({
     ],
   }),
   component: () => (
-    <html lang="de" className="antialiased" suppressHydrationWarning>
+    <html lang="en" className="antialiased" suppressHydrationWarning>
       <head>
         <meta property="og:title" content={SITE.shareText} />
         <meta property="og:description" content={SITE.shareText} />

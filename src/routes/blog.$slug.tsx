@@ -1,3 +1,4 @@
+import { danceClips } from "@/data/christmas";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { getPost, localizePost } from "@/data/blog";
@@ -116,12 +117,25 @@ function BlogPostPage() {
             ))}
           </div>
         ) : null}
-        {post.extra?.map((block) => (
-          <section key={block.heading} className="mt-10">
+        {post.slug === "christmas-dance" && (
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {danceClips.filter(clip => clip.id !== post.youtubeId).map(clip => (
+              <YoutubeEmbed key={clip.id} videoId={clip.id} title={clip.title} short={clip.id === "kwd6l5JNUZc"} />
+            ))}
+          </div>
+        )}
+        {post.slug === "christmas-for-all" && (
+          <div className="mx-auto mt-8 max-w-xs"><YoutubeEmbed videoId="nxBdygnv93Y" title="Christmas Is For All (Short)" short /></div>
+        )}
+        {post.extra?.map((block, index) => (
+          <section key={`${index}-${block.heading}`} className="mt-10">
             <h2 className="font-display text-2xl text-fg">{block.heading}</h2>
             <p className="mt-3 whitespace-pre-line text-base leading-relaxed text-muted">{block.body}</p>
           </section>
         ))}
+        {["christmas-for-all", "christmas-dance", "weihnachten-wir-sind-die-engel"].includes(post.slug) && (
+          <Link to="/weihnachten" className="mt-10 inline-flex min-h-11 items-center text-accent underline">{locale === "de" ? "Alle Weihnachtsvideos von Rom Lee" : "Christmas with Rom Lee – all videos"}</Link>
+        )}
         {post.slug === "musik-puls-herz-sport" ? (
           <div className="mt-8 flex flex-wrap gap-4">
             <a

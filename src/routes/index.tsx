@@ -1,8 +1,9 @@
+import { christmasCopy } from "@/data/christmas";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, FileText, Youtube } from "lucide-react";
 import { POSTS, localizePost } from "@/data/blog";
 import { NAV, SITE } from "@/data/site";
-import { TRACKS } from "@/data/tracks";
+import { LANG_LABEL, TRACKS, coverForYoutubeId } from "@/data/tracks";
 import { SiteShell } from "@/components/site-shell";
 import { TrackRow } from "@/components/track-row";
 import { YoutubeEmbed } from "@/components/youtube-embed";
@@ -27,12 +28,18 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
+// Most recent full videos on the channel when the RSS feed is unavailable.
+const recentVideoIds = ["KlvjPdkS8xs", "eNLWMLCXAeg", "a1K-o6DXN78", "nK8ASrLCSis", "k894z2QzuEc", "Bw3US7uj4t4"];
+
 function Home() {
   const { yt: initial } = Route.useLoaderData() as { yt: YtStats };
   const yt = useLiveYoutube(initial);
   const loveViews = viewsFor(yt, "KBXOvQr3bAY") ?? YT_FLOOR.viewsById.KBXOvQr3bAY;
   const shortViews = viewsFor(yt, "YTefIyKLBQA") ?? YT_FLOOR.viewsById.YTefIyKLBQA;
-  const featured = TRACKS.filter((t) => t.featured);
+  const uploads = yt.entries
+    .filter(entry => !entry.isShort && Number.isFinite(Date.parse(entry.published)))
+    .sort((a, b) => Date.parse(b.published) - Date.parse(a.published));
+  const recentIds = [...new Set([...uploads.map(entry => entry.id), ...recentVideoIds])].slice(0, 6);
   const latest = TRACKS.slice(0, 8);
   const copy = useT();
   const locale = useLocale((s) => s.locale);
@@ -41,6 +48,64 @@ function Home() {
   return (
     <SiteShell solidHeader>
       <WaterSeo />
+      <section className="border-t border-border bg-surface">
+        <div className="mx-auto max-w-6xl px-4 pb-12 pt-32 sm:px-6 sm:pt-36">
+          <div className="flex items-end justify-between">
+            <h1 className="font-display text-3xl tracking-tight text-fg">{copy.blogTitle}</h1>
+            <Link to="/blog" className="text-sm text-muted hover:text-fg">
+              {copy.allPosts}
+            </Link>
+          </div>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <a href={SITE.spotify.url} className="inline-flex min-h-11 items-center rounded-md bg-fg px-5 text-sm font-medium text-accent-fg">
+              {home.listenSpotify}
+            </a>
+            <a href={SITE.youtube.url} className="inline-flex min-h-11 items-center rounded-md border border-border-strong px-5 text-sm text-fg">
+              {copy.youtubeChannel}
+            </a>
+          </div>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {POSTS.slice(0, 2).map((raw) => {
+              const post = localizePost(raw, locale);
+              return (
+              <Link
+                key={post.slug}
+                to="/blog/$slug"
+                params={{ slug: post.slug }}
+                className="group overflow-hidden rounded-xl border border-border bg-elevated"
+              >
+                {post.cover ? (
+                  <img
+                    src={post.cover}
+                    alt=""
+                    className={
+                      post.coverContain
+                        ? "aspect-video w-full object-contain bg-elevated p-4"
+                        : "aspect-video w-full object-cover"
+                    }
+                  />
+                ) : null}
+                <div className="p-5">
+                  <p className="text-xs text-subtle">{post.dateLabel}</p>
+                  <h3 className="mt-1 font-display text-xl leading-tight text-fg group-hover:text-accent">
+                    {post.title}
+                  </h3>
+                  {post.subtitle ? (
+                    <p className="mt-1 text-sm text-accent">{post.subtitle}</p>
+                  ) : null}
+                  <p className="mt-2 line-clamp-3 text-sm text-muted">{post.excerpt}</p>
+                </div>
+              </Link>
+              );
+            })}
+          </div>
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-3 text-base text-accent">
+            <Link to="/blog/$slug" params={{ slug: "thank-you-to-the-people-in-power" }} className="underline underline-offset-4">Thank You to the People in Power</Link>
+            <Link to="/blog/$slug" params={{ slug: "christmas-dance" }} className="underline underline-offset-4">Christmas Dance</Link>
+            <Link to="/weihnachten" className="underline underline-offset-4">{christmasCopy(locale).title}</Link>
+          </div>
+        </div>
+      </section>
       <section className="relative min-h-[92dvh] overflow-hidden">
         <img
           src="/images/fotos/hero-portocolom.jpg"
@@ -50,9 +115,9 @@ function Home() {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg/80 via-bg/25 to-transparent" />
         <div className="relative mx-auto flex min-h-[92dvh] max-w-6xl flex-col justify-end px-4 pb-16 pt-32 sm:px-6 sm:pb-20">
           <p className="text-xs uppercase tracking-[0.22em] text-accent">{SITE.brand}</p>
-          <h1 className="mt-3 font-display text-3xl leading-[0.9] tracking-tight text-fg sm:text-6xl">
+          <h2 className="mt-3 font-display text-3xl leading-[0.9] tracking-tight text-fg sm:text-6xl">
             {SITE.name}
-          </h1>
+          </h2>
           <p className="mt-2 text-base text-muted sm:text-lg">({SITE.alsoAs})</p>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-fg/90 sm:text-lg">
             {SITE.tagline}
@@ -103,18 +168,18 @@ function Home() {
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">
-          Stand Up for Peace
+          We Are the Ocean
         </h2>
         <p className="mt-3 mb-6 max-w-2xl text-sm leading-relaxed text-muted">
-          {home.standUpLead}
+          I am a drop, you are a drop. More drops can become a wave.
         </p>
         <div className="grid max-w-3xl gap-4 sm:grid-cols-[1fr_11rem] sm:items-start">
-          <YoutubeEmbed videoId="FDxctULaTKI" title="Stand Up for Peace" />
+          <YoutubeEmbed videoId="XxG2R3tZfp8" title="We Are the Ocean" />
           <YoutubeEmbed videoId="c72SbFOaNSI" title="Stand Up for Peace (Short)" short />
         </div>
         <div className="mt-6 flex flex-wrap gap-3">
           <a
-            href="https://www.youtube.com/watch?v=c72SbFOaNSI"
+            href="https://www.youtube.com/watch?v=XxG2R3tZfp8"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex min-h-11 items-center rounded-md bg-fg px-5 text-sm font-medium text-accent-fg"
@@ -123,7 +188,7 @@ function Home() {
           </a>
           <Link
             to="/blog/$slug"
-            params={{ slug: "stand-up-for-peace" }}
+            params={{ slug: "we-are-the-ocean" }}
             className="inline-flex min-h-11 items-center rounded-md border border-border-strong px-5 text-sm text-fg"
           >
             {copy.blogTitle}
@@ -163,9 +228,22 @@ function Home() {
           <p className="text-xs uppercase tracking-[0.18em] text-accent">{copy.current}</p>
           <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">{copy.newTracks}</h2>
           <div className="mt-6 space-y-1">
-            {featured.map((t, i) => (
-              <TrackRow key={t.id} track={t} index={i + 1} />
-            ))}
+            {recentIds.map((id, index) => {
+              const track = TRACKS.find(item => item.youtubeId === id);
+              const entry = uploads.find(item => item.id === id);
+              const title = entry?.title.split(/\s+#/)[0].trim() || track?.title || id;
+              return (
+                <a key={id} href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener noreferrer"
+                  className="flex min-h-14 items-center gap-3 rounded-lg px-2 py-2 text-fg hover:bg-elevated">
+                  <img src={coverForYoutubeId(id)} alt="" className="aspect-video w-20 shrink-0 rounded-sm object-cover" />
+                  <span className="text-xs tabular-nums text-subtle">{String(index + 1).padStart(2, "0")}</span>
+                  <span className="min-w-0">
+                    <span className="block text-sm font-medium">{title}</span>
+                    <span className="block text-xs text-subtle">{track ? `Rom Lee · ${LANG_LABEL[track.lang]} · ${track.duration}` : "Rom Lee · YouTube"}</span>
+                  </span>
+                </a>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -289,51 +367,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="border-t border-border bg-surface">
-        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <div className="flex items-end justify-between">
-            <h2 className="font-display text-3xl tracking-tight text-fg">{copy.blogTitle}</h2>
-            <Link to="/blog" className="text-sm text-muted hover:text-fg">
-              {copy.allPosts}
-            </Link>
-          </div>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {POSTS.slice(0, 3).map((raw) => {
-              const post = localizePost(raw, locale);
-              return (
-              <Link
-                key={post.slug}
-                to="/blog/$slug"
-                params={{ slug: post.slug }}
-                className="group overflow-hidden rounded-xl border border-border bg-elevated"
-              >
-                {post.cover ? (
-                  <img
-                    src={post.cover}
-                    alt=""
-                    className={
-                      post.coverContain
-                        ? "aspect-[4/3] w-full object-contain bg-elevated p-4"
-                        : "aspect-[4/3] w-full object-cover"
-                    }
-                  />
-                ) : null}
-                <div className="p-5">
-                  <p className="text-xs text-subtle">{post.dateLabel}</p>
-                  <h3 className="mt-1 font-display text-xl leading-tight text-fg group-hover:text-accent">
-                    {post.title}
-                  </h3>
-                  {post.subtitle ? (
-                    <p className="mt-1 text-sm text-accent">{post.subtitle}</p>
-                  ) : null}
-                  <p className="mt-2 line-clamp-3 text-sm text-muted">{post.excerpt}</p>
-                </div>
-              </Link>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+
     </SiteShell>
   );
 }
