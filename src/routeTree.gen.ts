@@ -18,6 +18,7 @@ import { Route as SongsRouteImport } from './routes/songs'
 import { Route as SongtexteRouteImport } from './routes/songtexte'
 import { Route as SpotifyRouteImport } from './routes/spotify'
 import { Route as VideosRouteImport } from './routes/videos'
+import { Route as WeihnachtenRouteImport } from './routes/weihnachten'
 import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogSlugRouteImport } from './routes/blog.$slug'
 import { Route as ApiYtThumbIdRouteImport } from './routes/api/yt-thumb.$id'
@@ -67,6 +68,11 @@ const VideosRoute = VideosRouteImport.update({
   path: '/videos',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WeihnachtenRoute = WeihnachtenRouteImport.update({
+  id: '/weihnachten',
+  path: '/weihnachten',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogIndexRoute = BlogIndexRouteImport.update({
   id: '/blog/',
   path: '/blog/',
@@ -93,6 +99,7 @@ export interface FileRoutesByFullPath {
   '/songtexte': typeof SongtexteRoute
   '/spotify': typeof SpotifyRoute
   '/videos': typeof VideosRoute
+  '/weihnachten': typeof WeihnachtenRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/': typeof BlogIndexRoute
   '/api/yt-thumb/$id': typeof ApiYtThumbIdRoute
@@ -107,6 +114,7 @@ export interface FileRoutesByTo {
   '/songtexte': typeof SongtexteRoute
   '/spotify': typeof SpotifyRoute
   '/videos': typeof VideosRoute
+  '/weihnachten': typeof WeihnachtenRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog': typeof BlogIndexRoute
   '/api/yt-thumb/$id': typeof ApiYtThumbIdRoute
@@ -122,6 +130,7 @@ export interface FileRoutesById {
   '/songtexte': typeof SongtexteRoute
   '/spotify': typeof SpotifyRoute
   '/videos': typeof VideosRoute
+  '/weihnachten': typeof WeihnachtenRoute
   '/blog/$slug': typeof BlogSlugRoute
   '/blog/': typeof BlogIndexRoute
   '/api/yt-thumb/$id': typeof ApiYtThumbIdRoute
@@ -138,6 +147,7 @@ export interface FileRouteTypes {
     | '/songtexte'
     | '/spotify'
     | '/videos'
+    | '/weihnachten'
     | '/blog/$slug'
     | '/blog/'
     | '/api/yt-thumb/$id'
@@ -152,6 +162,7 @@ export interface FileRouteTypes {
     | '/songtexte'
     | '/spotify'
     | '/videos'
+    | '/weihnachten'
     | '/blog/$slug'
     | '/blog'
     | '/api/yt-thumb/$id'
@@ -166,6 +177,7 @@ export interface FileRouteTypes {
     | '/songtexte'
     | '/spotify'
     | '/videos'
+    | '/weihnachten'
     | '/blog/$slug'
     | '/blog/'
     | '/api/yt-thumb/$id'
@@ -181,6 +193,7 @@ export interface RootRouteChildren {
   SongtexteRoute: typeof SongtexteRoute
   SpotifyRoute: typeof SpotifyRoute
   VideosRoute: typeof VideosRoute
+  WeihnachtenRoute: typeof WeihnachtenRoute
   BlogSlugRoute: typeof BlogSlugRoute
   BlogIndexRoute: typeof BlogIndexRoute
   ApiYtThumbIdRoute: typeof ApiYtThumbIdRoute
@@ -251,6 +264,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof VideosRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/weihnachten': {
+      id: '/weihnachten'
+      path: '/weihnachten'
+      fullPath: '/weihnachten'
+      preLoaderRoute: typeof WeihnachtenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/': {
       id: '/blog/'
       path: '/blog'
@@ -285,6 +305,7 @@ const rootRouteChildren: RootRouteChildren = {
   SongtexteRoute: SongtexteRoute,
   SpotifyRoute: SpotifyRoute,
   VideosRoute: VideosRoute,
+  WeihnachtenRoute: WeihnachtenRoute,
   BlogSlugRoute: BlogSlugRoute,
   BlogIndexRoute: BlogIndexRoute,
   ApiYtThumbIdRoute: ApiYtThumbIdRoute,
