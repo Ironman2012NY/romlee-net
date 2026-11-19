@@ -1,3 +1,5 @@
+import { CHRISTMAS_LYRICS, OCEAN_LYRICS, THANK_YOU_LYRICS } from "./featured-lyrics";
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -14,8 +16,33 @@ export type BlogPost = {
 
 export const POSTS: BlogPost[] = [
   {
+    slug: "we-are-the-ocean",
+    title: "We Are the Ocean – Gemeinsam können wir die Welt verändern",
+    dateLabel: "18. November 2026",
+    cover: "/api/yt-thumb/XxG2R3tZfp8",
+    youtubeId: "XxG2R3tZfp8",
+    excerpt: "Über 800.000 Aufrufe und eine Botschaft: Aus einzelnen Tropfen werden Wellen – und gemeinsam werden wir zum Ozean.",
+    extra: OCEAN_LYRICS,
+    paragraphs: [
+      "Ich bin nur ein Tropfen. Du bist nur ein Tropfen. Gemeinsam können wir eine Welle bilden. Und wenn wir viele zusammenkommen, werden wir zum Ozean. Das ist das Motto von RomleeMusic und die Botschaft meines Liedes We Are the Ocean.",
+      "Dass der Song bereits über 800.000 Aufrufe erreicht hat, berührt mich sehr. Hinter dieser Zahl stehen Menschen, die eine gemeinsame Sehnsucht nach Liebe, Frieden und Menschlichkeit teilen.",
+      "Wir erleben, wie Kriege unsere Städte zerstören, Familien auseinanderreißen und den Zusammenhalt der Menschen bedrohen. Einzelne Mächtige treffen Entscheidungen, deren Folgen Millionen tragen müssen. Aber wir dürfen nicht vergessen, wie viel wir gemeinsam bewirken können.",
+      "Ein einzelner Mensch kann vielleicht keinen Krieg beenden. Doch jeder kann einem anderen Menschen die Hand reichen, einem Hungrigen etwas zu essen geben oder einem Durstigen Wasser anbieten. Jede dieser Taten ist ein Tropfen Menschlichkeit.",
+      "Aus vielen Tropfen entsteht eine Welle. Und aus vielen Wellen wird ein Ozean.",
+      "Es spielt keine Rolle, wo wir leben, welche Sprache wir sprechen, woran wir glauben oder ob wir im Osten oder Westen zu Hause sind. Wir sind Menschen und gehören zusammen.",
+      "Selbst wenn Mächtige irgendwo auf der Welt gegen Vernunft und Menschlichkeit handeln, können wir gemeinsam aufstehen. Unsere Zukunft darf nicht allein von denen bestimmt werden, die Macht besitzen.",
+      "We Are the Ocean ist deshalb nicht einfach nur ein Lied. Es ist eine Einladung, einander zu helfen und gemeinsam Verantwortung für unsere Welt zu übernehmen – ohne Hass, ohne Gewalt, dafür mit Liebe, Frieden und Solidarität.",
+      "Wenn RomleeMusic dazu beiträgt, dass Menschen einander näherkommen und sich wieder gegenseitig unterstützen, dann hat dieses Musikprojekt seinen wichtigsten Sinn erfüllt.",
+      "Auch mein nächster Beitrag wird zum Nachdenken anregen: Auf Polnisch und Englisch sagen wir Dziękujemy – Thank You. Dieses Dankeschön ist durchaus doppeldeutig gemeint.",
+      "Doch jetzt hört euch We Are the Ocean an, schaut euch das Video an und tragt die Botschaft weiter. Wir können die Welt vielleicht nicht an einem Tag verändern. Aber wir können heute damit beginnen.",
+      "We are the drops. We are the waves. We are the ocean. Together, we can change the world.",
+      "Rom Lee – RomleeMusic. Music for Love, Peace and Humanity."
+    ],
+  },
+  {
     slug: "christmas-for-all",
-    title: "Christmas for All — ein internationaler Christmas-Song in vier Sprachen",
+    extra: CHRISTMAS_LYRICS,
+    title: "Christmas Is For All — ein internationaler Christmas-Song in vier Sprachen",
     dateLabel: "November 2026",
     cover: "/images/blog/christmas-for-all.jpg",
     youtubeId: "sd_elh2GVhE",
@@ -31,6 +58,39 @@ export const POSTS: BlogPost[] = [
       "Ich hoffe, ihr habt alle Freude an dem Lied. Jeder kann mitsingen. Ich denke, es wird uns in den nächsten Jahren über Weihnachten sehr breit angenommen. Ich wünsche euch allen viel Spaß dabei, viel Freude und Gottes Segen.",
     ],
   },
+  {
+  "slug": "thank-you-to-the-people-in-power",
+  "title": "Thank You to the People in Power",
+  "dateLabel": "18 November 2026",
+  "cover": "/images/blog/thank-you.webp",
+  "coverContain": true,
+  "excerpt": "Now, as a father and grandfather, I feel a responsibility to speak up. Returning to my roots as a singer-songwriter, I have written this song — first in Polish, and now in English.",
+  "paragraphs": [
+    "As a teenager, I was already a songwriter. By the age of 18, I had written some serious, thought-provoking songs, but unfortunately, I never published them.",
+    "Now, as a father and grandfather, I feel a responsibility to speak up. Returning to my roots as a singer-songwriter, I have written this song — first in Polish, and now in English.",
+    "I believe the lyrics speak for themselves, and there is very little I need to add.",
+    "Read the words. Think about them. And listen to the song.",
+    "This is a song in the true tradition of singer-songwriters — music that tells a story, raises questions, and encourages people to reflect on the world around them.",
+    "I would never presume to compare myself to Bob Dylan. But I can certainly say that Bob Dylan and Bruce Springsteen have been important inspirations to me, especially in the way they use lyrics to tell stories, address social issues, and express what they believe.",
+    "Their example has influenced my own approach to songwriting.",
+    "And today, I feel it is time to let these songs speak.",
+    "Rom Lee"
+  ],
+  extra: THANK_YOU_LYRICS,
+},
+  {
+  "slug": "christmas-dance",
+  "title": "Christmas Dance",
+  "dateLabel": "November 2026",
+  "cover": "/api/yt-thumb/KlvjPdkS8xs",
+  "youtubeId": "KlvjPdkS8xs",
+  "excerpt": "London, Köln, Palma de Mallorca und Warschau feiern Weihnachten in vier Sprachen.",
+  "paragraphs": [
+    "Für Christmas Dance habe ich sieben eigene Lieder auf Englisch, Spanisch, Polnisch und Deutsch zusammengestellt. Die Weihnachtsmelodien treffen auf Deep House und Afro House. Die Videos führen nach London, Köln, Palma de Mallorca und Warschau.",
+    "Am Piccadilly Circus tanzen wir mit dem Publikum. Die Crew lässt Ballons mit der Aufschrift „Love and Peace“ steigen. I See Angels in Your Face ist eine neue Dance-Komposition, die musikalische Elemente aus den vier Sprachfassungen von We Are the Angels aufgreift.",
+    "Legt das Album beim Plätzchenbacken auf, tanzt dazu oder feiert mit eurer Familie. Weihnachten ist für mich auch ein Fest der Freude. – Rom Lee"
+  ]
+},
   {
     slug: "weihnachten-wir-sind-die-engel",
     title: "Weihnachten — Wir sind die Engel",

@@ -3,7 +3,7 @@ export const SITE = {
   alsoAs: "także Leszek",
   brand: "Rom Lee Music",
   tagline: "Music for all people. Love and Peace.",
-  email: "info@romlee.net",
+  email: "info@romleemusic.com",
   phone: "02331 402230",
   phoneHref: "tel:+492331402230",
   address: "58135 Hagen",

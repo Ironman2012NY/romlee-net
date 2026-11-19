@@ -23,7 +23,7 @@ export const IMPRESSUM: LegalBlock[] = [
   },
   {
     sub: "Kontakt",
-    paragraphs: ["E-Mail: info@romlee.net", "Tel: 02331 402230"],
+    paragraphs: ["E-Mail: info@romleemusic.com", "Tel: 02331 402230"],
   },
   {
     sub: "Handelsregister",
@@ -51,7 +51,7 @@ export const IMPRESSUM: LegalBlock[] = [
     heading: "Kontaktstelle nach dem Digitale-Dienste-Gesetz / Digital Services Act",
     paragraphs: [
       "Für Behörden, Nutzerinnen und Nutzer sowie die Europäische Kommission ist die zentrale Kontaktstelle:",
-      "E-Mail: info@romlee.net",
+      "E-Mail: info@romleemusic.com",
       "Sprache: Deutsch und Englisch.",
       "Diese Website ist ein künstlerischer Informationsauftritt und keine Online-Plattform im Sinne der Vermittlung zwischen einer großen Zahl von Nutzern. Es werden keine Nutzerkonten angeboten und keine fremden Inhalte Dritter zum öffentlichen Austausch bereitgestellt.",
     ],
@@ -107,7 +107,7 @@ export const DATENSCHUTZ: LegalBlock[] = [
       "Nordrhein-Westfalen",
       "Deutschland",
       "Telefon: 02331 40 2230",
-      "E-Mail: info@romlee.net",
+      "E-Mail: info@romleemusic.com",
       "Verantwortlicher und vertretungsberechtigter Inhaber: Prof. Dr. med. Roman Leischik",
     ],
   },
@@ -135,7 +135,7 @@ export const DATENSCHUTZ: LegalBlock[] = [
       "Soweit für bestimmte Datenverarbeitungen oder das Setzen nicht notwendiger Cookies eine Einwilligung eingeholt wird, erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Eine erteilte Einwilligung kann jederzeit über die Cookie-Einstellungen mit Wirkung für die Zukunft widerrufen werden.",
       "Da Vercel Inc. ihren Sitz in den USA hat, können personenbezogene Daten in den Vereinigten Staaten verarbeitet werden. Die Übermittlung stützt sich auf den Angemessenheitsbeschluss der Europäischen Kommission zum EU-US Data Privacy Framework, soweit Vercel zertifiziert ist, sowie auf Standardvertragsklauseln nach Art. 46 DSGVO im Rahmen der Data Processing Addendum von Vercel.",
       "Weitere Einzelheiten ergeben sich aus der Datenschutzerklärung von Vercel: https://vercel.com/legal/privacy-policy",
-      "Die Domain romlee.net kann weiterhin über Bandzoogle / Sitezoogle verwaltet werden (DNS). Solange Besucher über Bandzoogle umgeleitet werden, kann auch Bandzoogle technische Zugriffsdaten verarbeiten. E-Mail an info@romlee.net wird über den bisherigen E-Mail-Dienst (mx1.emailsrvr.com / Rackspace) zugestellt.",
+      "Die Domain romlee.net kann weiterhin über Bandzoogle / Sitezoogle verwaltet werden (DNS). Solange Besucher über Bandzoogle umgeleitet werden, kann auch Bandzoogle technische Zugriffsdaten verarbeiten.",
     ],
   },
   {
@@ -164,7 +164,7 @@ export const DATENSCHUTZ: LegalBlock[] = [
       "Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, soweit Ihre Anfrage mit der Anbahnung oder Durchführung eines Vertrags zusammenhängt. In anderen Fällen erfolgt die Verarbeitung auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse besteht in der sachgerechten Bearbeitung der an uns gerichteten Anfrage.",
       "Soweit Sie ausdrücklich in eine weitergehende Verarbeitung eingewilligt haben, ist Art. 6 Abs. 1 lit. a DSGVO die Rechtsgrundlage.",
       "Die Daten werden gelöscht, sobald sie für die Bearbeitung Ihrer Anfrage nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungspflichten oder sonstigen berechtigten Gründe für eine weitere Speicherung bestehen.",
-      "Bitte übermitteln Sie über die allgemeine E-Mail-Adresse info@romlee.net keine vertraulichen medizinischen Unterlagen oder besonders sensiblen Gesundheitsdaten.",
+      "Bitte übermitteln Sie über die allgemeine E-Mail-Adresse info@romleemusic.com keine vertraulichen medizinischen Unterlagen oder besonders sensiblen Gesundheitsdaten.",
     ],
   },
   {
@@ -356,7 +356,7 @@ export const DATENSCHUTZ: LegalBlock[] = [
   {
     paragraphs: [
       "Der Widerruf einer Einwilligung gilt für die Zukunft. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt.",
-      "Zur Ausübung Ihrer Rechte können Sie sich an folgende Adresse wenden: info@romlee.net",
+      "Zur Ausübung Ihrer Rechte können Sie sich an folgende Adresse wenden: info@romleemusic.com",
     ],
   },
   {
@@ -426,14 +426,14 @@ export const DATENSCHUTZ: LegalBlock[] = [
     heading: "22. Digitale-Dienste-Gesetz und Digital Services Act",
     paragraphs: [
       "Diese Website unterliegt dem Digitale-Dienste-Gesetz, mit dem unter anderem der Digital Services Act in Deutschland umgesetzt wird. Die Angaben zum Diensteanbieter und zur Kontaktstelle stehen im Impressum.",
-      "Illegale Inhalte können per E-Mail an info@romlee.net gemeldet werden. Wir prüfen Hinweise und entfernen rechtswidrige eigene Inhalte unverzüglich, sobald uns konkrete Kenntnis davon vorliegt.",
+      "Illegale Inhalte können per E-Mail an info@romleemusic.com gemeldet werden. Wir prüfen Hinweise und entfernen rechtswidrige eigene Inhalte unverzüglich, sobald uns konkrete Kenntnis davon vorliegt.",
     ],
   },
   {
     heading: "23. Barrierefreiheit",
     paragraphs: [
       "Diese Website ist ein künstlerischer Informationsauftritt. Das Barrierefreiheitsstärkungsgesetz (BFSG) gilt vor allem für bestimmte Produkte und Dienstleistungen im elektronischen Geschäftsverkehr, nicht automatisch für jede private Künstlerseite.",
-      "Gleichwohl ist die Seite auf Lesbarkeit, Tastaturbedienung, ausreichende Kontraste und mobile Nutzung ausgelegt. Hinweise zur Verbesserung der Barrierefreiheit senden Sie bitte an info@romlee.net.",
+      "Gleichwohl ist die Seite auf Lesbarkeit, Tastaturbedienung, ausreichende Kontraste und mobile Nutzung ausgelegt. Hinweise zur Verbesserung der Barrierefreiheit senden Sie bitte an info@romleemusic.com.",
     ],
   },
   {
