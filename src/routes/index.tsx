@@ -3,7 +3,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, FileText, Youtube } from "lucide-react";
 import { POSTS, localizePost } from "@/data/blog";
 import { NAV, SITE } from "@/data/site";
-import { TRACKS } from "@/data/tracks";
+import { LANG_LABEL, TRACKS, coverForYoutubeId } from "@/data/tracks";
 import { SiteShell } from "@/components/site-shell";
 import { TrackRow } from "@/components/track-row";
 import { YoutubeEmbed } from "@/components/youtube-embed";
@@ -28,12 +28,18 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
+// Most recent full videos on the channel when the RSS feed is unavailable.
+const recentVideoIds = ["KlvjPdkS8xs", "eNLWMLCXAeg", "a1K-o6DXN78", "nK8ASrLCSis", "k894z2QzuEc", "Bw3US7uj4t4"];
+
 function Home() {
   const { yt: initial } = Route.useLoaderData() as { yt: YtStats };
   const yt = useLiveYoutube(initial);
   const loveViews = viewsFor(yt, "KBXOvQr3bAY") ?? YT_FLOOR.viewsById.KBXOvQr3bAY;
   const shortViews = viewsFor(yt, "YTefIyKLBQA") ?? YT_FLOOR.viewsById.YTefIyKLBQA;
-  const featured = TRACKS.filter((t) => t.featured);
+  const uploads = yt.entries
+    .filter(entry => !entry.isShort && Number.isFinite(Date.parse(entry.published)))
+    .sort((a, b) => Date.parse(b.published) - Date.parse(a.published));
+  const recentIds = [...new Set([...uploads.map(entry => entry.id), ...recentVideoIds])].slice(0, 6);
   const latest = TRACKS.slice(0, 8);
   const copy = useT();
   const locale = useLocale((s) => s.locale);
@@ -222,9 +228,22 @@ function Home() {
           <p className="text-xs uppercase tracking-[0.18em] text-accent">{copy.current}</p>
           <h2 className="mt-2 font-display text-3xl tracking-tight text-fg">{copy.newTracks}</h2>
           <div className="mt-6 space-y-1">
-            {featured.map((t, i) => (
-              <TrackRow key={t.id} track={t} index={i + 1} />
-            ))}
+            {recentIds.map((id, index) => {
+              const track = TRACKS.find(item => item.youtubeId === id);
+              const entry = uploads.find(item => item.id === id);
+              const title = entry?.title.split(/\s+#/)[0].trim() || track?.title || id;
+              return (
+                <a key={id} href={`https://www.youtube.com/watch?v=${id}`} target="_blank" rel="noopener noreferrer"
+                  className="flex min-h-14 items-center gap-3 rounded-lg px-2 py-2 text-fg hover:bg-elevated">
+                  <img src={coverForYoutubeId(id)} alt="" className="aspect-video w-20 shrink-0 rounded-sm object-cover" />
+                  <span className="text-xs tabular-nums text-subtle">{String(index + 1).padStart(2, "0")}</span>
+                  <span className="min-w-0">
+                    <span className="block text-sm font-medium">{title}</span>
+                    <span className="block text-xs text-subtle">{track ? `Rom Lee · ${LANG_LABEL[track.lang]} · ${track.duration}` : "Rom Lee · YouTube"}</span>
+                  </span>
+                </a>
+              );
+            })}
           </div>
         </div>
       </section>
