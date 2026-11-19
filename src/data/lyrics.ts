@@ -656,7 +656,56 @@ Text und Musik, Komposition von mir. Musikbegleitung und Produktion: Hanno di Ro
     lang: "pl",
     youtubeId: "BmlVyZ6hTGs",
     text: `@RomLeeMusic 
- through childhood, Polish history, literature, love, and national identity. The song tells the story of a boy who experiences Poland’s history through imagination—becoming Janosik and Kościuszko, fighting at Grunwald, joining uprisings, and sharing the fate of The Paul Street Boys.
+Jak byłeś mały!
+Ty jesteś mały i kochasz twój kraj
+Byłeś Janosikiem i Kościuszką
+Walczyłeś pod Grunwaldem
+I powstańcem byłeś też
+Z Chłopcem z Placu Broni umarłeś
+A w Oświęcimiu płakałeś
+Sienkiewicza z dziesiątką czytałeś
+W pustyni i w puszczy uciekałeś
+Kochałeś jak Wołodyjowski
+I Tatarów zwalczałeś jak lew
+Jako ułan wierzyłeś w Napoleona
+I z szablą na Moskwę szedłeś
+O Litwo, ojczyzno moja
+Ja wiem, jak to płakać jest
+Jak ci nazwisko zmienili
+I z Lesia powstał czołg
+Który jechał jako Leopard
+I śpiewał w marszu rytm
+I śpiewał w marszu rytm
+Dziękuję Bogu, że przeżyłeś
+Nie dobili Cię Gomułki
+Czy Chruszcze, czy inne wszy
+Wierz w siebie, kochaj, serce moje
+Kochaj, kochaj i wierz
+Razem z wami będę zawsze żyć
+O Kasiu, wiesz, jak na Stawowej
+Cię bardzo kochałem
+I przed windą cię całowałem
+I w Gliwicach jako rycerz
+Na trawie walczyłem, żeby
+Naszą wojnę wygrać tą
+O Litwo, ojczyzno moja
+Ja wiem, jak to płakać jest
+Jak ci nazwisko zmienili
+I z Lesia powstał czołg
+Który jechał jako Leopard
+I śpiewał w marszu rytm
+I śpiewał w marszu rytm
+Outro
+W Zakopanem wchodziłeś
+Na Kasprowy, żeby na nartach
+Ja, wariat, na dół gnać
+W Poroninie spotkałeś Lenina
+Żeby z Kasprowiczem
+Wiersze uszami pić
+Żeby z Kasprowiczem
+Wiersze uszami pić.
+
+“Jak byłeś mały” is a deeply personal journey through childhood, Polish history, literature, love, and national identity. The song tells the story of a boy who experiences Poland’s history through imagination—becoming Janosik and Kościuszko, fighting at Grunwald, joining uprisings, and sharing the fate of The Paul Street Boys.
 
 Through Sienkiewicz, he crosses deserts and forests, loves like Wołodyjowski, fights Tatars, and rides toward Moscow as a Polish lancer believing in Napoleon. Inspired by Mickiewicz’s “Lithuania, my homeland,” the song explores a lost homeland, a changed name and identity, and growing up between different cultures and versions of history.
 
