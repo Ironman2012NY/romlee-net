@@ -50,33 +50,18 @@ export function isLocale(value: string): value is Locale {
   return (LOCALES as readonly string[]).includes(value);
 }
 
-function readLocale(): Locale {
-  if (typeof window === "undefined") return "de";
-  const q = new URLSearchParams(window.location.search).get("lang");
-  if (q && isLocale(q)) return q;
-  try {
-    const raw = localStorage.getItem("romlee-locale");
-    if (!raw) return "de";
-    const parsed = JSON.parse(raw) as { state?: { locale?: string } } | string;
-    const loc = typeof parsed === "string" ? parsed : parsed?.state?.locale;
-    if (loc && isLocale(loc)) return loc;
-  } catch {
-    /* ignore */
-  }
-  return "de";
+function readLocale(fallback: Locale): Locale {
+  if (typeof window === "undefined") return "en";
+  const query = new URLSearchParams(window.location.search).get("lang");
+  return query && isLocale(query) ? query : fallback;
 }
 
 function writeLocale(locale: Locale) {
   if (typeof window === "undefined") return;
-  try {
-    localStorage.setItem("romlee-locale", JSON.stringify({ state: { locale }, version: 0 }));
-  } catch {
-    /* iframe / private mode */
-  }
   const url = new URL(window.location.href);
-  if (locale === "de") url.searchParams.delete("lang");
+  if (locale === "en") url.searchParams.delete("lang");
   else url.searchParams.set("lang", locale);
-  window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+  window.history.replaceState(window.history.state, "", url);
 }
 
 type LocaleState = {
@@ -85,14 +70,14 @@ type LocaleState = {
   hydrate: () => void;
 };
 
-export const useLocale = create<LocaleState>((set) => ({
-  locale: "de",
+export const useLocale = create<LocaleState>((set, get) => ({
+  locale: "en",
   setLocale: (locale) => {
     writeLocale(locale);
     set({ locale });
   },
   hydrate: () => {
-    const locale = readLocale();
+    const locale = readLocale(get().locale);
     writeLocale(locale);
     set({ locale });
   },
