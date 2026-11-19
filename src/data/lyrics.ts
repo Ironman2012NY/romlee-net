@@ -656,7 +656,7 @@ Text und Musik, Komposition von mir. Musikbegleitung und Produktion: Hanno di Ro
     lang: "pl",
     youtubeId: "BmlVyZ6hTGs",
     text: `@RomLeeMusic 
-“Jak byłeś mały” is a deeply personal journey through childhood, Polish history, literature, love, and national identity. The song tells the story of a boy who experiences Poland’s history through imagination—becoming Janosik and Kościuszko, fighting at Grunwald, joining uprisings, and sharing the fate of The Paul Street Boys.
+ through childhood, Polish history, literature, love, and national identity. The song tells the story of a boy who experiences Poland’s history through imagination—becoming Janosik and Kościuszko, fighting at Grunwald, joining uprisings, and sharing the fate of The Paul Street Boys.
 
 Through Sienkiewicz, he crosses deserts and forests, loves like Wołodyjowski, fights Tatars, and rides toward Moscow as a Polish lancer believing in Napoleon. Inspired by Mickiewicz’s “Lithuania, my homeland,” the song explores a lost homeland, a changed name and identity, and growing up between different cultures and versions of history.
 
