@@ -622,6 +622,53 @@ const STAND_UP: Partial<Record<Locale, BlogText>> = {
 };
 
 export const BLOG_I18N: Record<string, Partial<Record<Locale, BlogText>>> = {
+  "we-are-the-ocean": {
+  "en": {
+    "title": "We Are the Ocean – Together We Can Change the World",
+    "excerpt": "A drop becomes a wave. What can we do for one another when the world feels too big to change?",
+    "dateLabel": "18 November 2026",
+    "paragraphs": [
+      "I am just a drop. You are just a drop. Together we can make a wave. And when enough of us come together, we become the ocean. That is the motto of RomleeMusic and the idea behind this song.",
+      "It moves me that the song has reached more than 800,000 views. Behind each view is a person, and I think many of us share the same longing for love, peace and humanity.",
+      "Wars destroy our cities, tear families apart and set people against one another. A few people in power make decisions whose consequences millions have to bear. Even so, there is much we can do together.",
+      "One person may struggle to end a war. But each of us can reach out a hand, give someone a meal or offer a thirsty person water. Every one of those acts is a drop of humanity.",
+      "Many drops make a wave. Many waves make an ocean.",
+      "Wherever we live, whatever language we speak, whatever we believe, east or west, we belong to one another.",
+      "When those in power act against reason and humanity, we can stand up together. Everyone deserves a say in our future.",
+      "We Are the Ocean is an invitation to help one another and take responsibility for our world, with love, peace and solidarity.",
+      "If RomleeMusic brings people a little closer and helps them look out for one another again, it has done what I hoped it would.",
+      "My next song offers a different kind of thanks. In Polish and English we sing Dziękujemy – Thank You. There is a double meaning in those words.",
+      "For now, listen to We Are the Ocean, watch the film and pass it on. We may need more than a day to change the world. We can start today.",
+      "We are the drops. We are the waves. We are the ocean. Together, we can change the world.",
+      "Rom Lee – RomleeMusic. Music for Love, Peace and Humanity."
+    ]
+  }
+},
+  "christmas-for-all": {
+  "en": {
+    "title": "Christmas Is For All",
+    "excerpt": "A Christmas song in English, Polish, Spanish and German. Our journey begins in Johannesburg and Havana.",
+    "paragraphs": [
+      "With Christmas Is For All, I wanted to introduce a Christmas song in four languages. The film takes us to Johannesburg and then to the children in Havana.",
+      "Havana is especially close to my heart. I visited two years ago and saw how many people struggled to find enough to eat. Since then, shortages of food and energy have made daily life even harder.",
+      "At Christmas and throughout the year, I hope we can help the people of Cuba get the food and energy they need.",
+      "The film continues through Delhi, Seoul, Paris and Palma de Mallorca to Washington. I wanted that journey across continents to show respect for people everywhere.",
+      "This celebration of love belongs to everyone. I sing in English, Spanish, German and Polish, the four languages I speak.",
+      "I would love to include French, Portuguese and all the other languages of the world. I’m grateful that YouTube’s translation tools can help our message of love and peace reach people in their own language.",
+      "I hope you enjoy singing along and that the song will be part of your Christmas for years to come. I wish you joy and God’s blessing."
+    ]
+  }
+},
+  "christmas-dance": {
+  "en": {
+    "excerpt": "Christmas in London, Cologne, Palma de Mallorca and Warsaw, in four languages.",
+    "paragraphs": [
+      "For Christmas Dance I brought together seven of my own songs in English, Spanish, Polish and German. The Christmas melodies meet deep house and Afro house. In the films we travel to London, Cologne, Palma de Mallorca and Warsaw.",
+      "At Piccadilly Circus we dance with the crowd while the crew releases balloons marked “Love and Peace”. I See Angels in Your Face is a new dance composition that draws on the four language versions of We Are the Angels.",
+      "Put the album on while you bake, dance to it in the kitchen or play it at your Christmas party. For me, Christmas is also a time for joy. – Rom Lee"
+    ]
+  }
+},
   "ki-als-bildsprache": KI,
   "stand-up-for-peace": STAND_UP,
   "first-love": FIRST_LOVE_MORE,

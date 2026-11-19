@@ -1,3 +1,4 @@
+import { OCEAN_LYRICS, CHRISTMAS_LYRICS } from "./featured-lyrics";
 import type { Lang } from "@/data/tracks";
 export type SongText = {
   slug: string;
@@ -8,6 +9,14 @@ export type SongText = {
 };
 
 export const SONG_TEXTS: SongText[] = [
+  {
+    slug: "we-are-the-ocean", title: "We Are the Ocean", lang: "en", youtubeId: "XxG2R3tZfp8",
+    text: OCEAN_LYRICS.map(({ heading, body }) => heading + "\n\n" + body).join("\n\n"),
+  },
+  {
+    slug: "christmas-for-all", title: "Christmas Is For All · English / Polski / Español / Deutsch", lang: "en", youtubeId: "sd_elh2GVhE",
+    text: CHRISTMAS_LYRICS.map(({ heading, body }) => heading + "\n\n" + body).join("\n\n"),
+  },
   {
     slug: "water-keep-it-for-tomorrow",
     title: "Water (Keep it for tomorrow)",

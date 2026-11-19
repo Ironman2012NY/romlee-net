@@ -11,7 +11,9 @@ function VideosPage() {
   const locale = useLocale((s) => s.locale);
   const de = locale === "de";
   const [filter, setFilter] = useState<"all" | "video" | "short">("all");
-  const videos = [...videosByViews].sort((a, b) => b.views - a.views);
+  const featuredIds = ["XxG2R3tZfp8", "sd_elh2GVhE"];
+  const featured = featuredIds.flatMap(id => videosByViews.filter(video => video.id === id));
+  const videos = videosByViews.filter(video => !featuredIds.includes(video.id)).sort((a, b) => b.views - a.views);
   const shorts = [...shortsByViews].sort((a, b) => b.views - a.views);
   const tabs = [
     ["all", de ? "Alle" : "All"],
@@ -50,6 +52,14 @@ function VideosPage() {
           ))}
         </div>
         <div className="space-y-12">
+          {filter !== "short" && (
+            <section>
+              <h2 className="mb-4 font-display text-3xl">{de ? "Im Mittelpunkt" : "Featured songs"}</h2>
+              <div className="grid gap-6 sm:grid-cols-2">
+                {featured.map(clip => <YoutubeEmbed key={clip.id} videoId={clip.id} title={clip.title} views={clip.views} />)}
+              </div>
+            </section>
+          )}
           {filter !== "short" ? (
             <section>
               <h2 className="mb-4 font-display text-3xl tracking-tight text-fg">
