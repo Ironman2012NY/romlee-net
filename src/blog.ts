@@ -1,0 +1,352 @@
+import { CHRISTMAS_LYRICS, OCEAN_LYRICS, THANK_YOU_LYRICS } from "./featured-lyrics";
+
+export type BlogPost = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  dateLabel: string;
+  cover?: string;
+  coverContain?: boolean;
+  coverCaption?: string;
+  subtitle?: string;
+  paragraphs: string[];
+  extra?: { heading: string; body: string }[];
+  youtubeId?: string;
+};
+
+export const POSTS: BlogPost[] = [
+  {
+    slug: "we-are-the-ocean",
+    title: "We Are the Ocean – Gemeinsam können wir die Welt verändern",
+    dateLabel: "18. November 2026",
+    cover: "/api/yt-thumb/XxG2R3tZfp8",
+    youtubeId: "XxG2R3tZfp8",
+    excerpt: "Über 800.000 Aufrufe und eine Botschaft: Aus einzelnen Tropfen werden Wellen – und gemeinsam werden wir zum Ozean.",
+    extra: OCEAN_LYRICS,
+    paragraphs: [
+      "Ich bin nur ein Tropfen. Du bist nur ein Tropfen. Gemeinsam können wir eine Welle bilden. Und wenn wir viele zusammenkommen, werden wir zum Ozean. Das ist das Motto von RomleeMusic und die Botschaft meines Liedes We Are the Ocean.",
+      "Dass der Song bereits über 800.000 Aufrufe erreicht hat, berührt mich sehr. Hinter dieser Zahl stehen Menschen, die eine gemeinsame Sehnsucht nach Liebe, Frieden und Menschlichkeit teilen.",
+      "Wir erleben, wie Kriege unsere Städte zerstören, Familien auseinanderreißen und den Zusammenhalt der Menschen bedrohen. Einzelne Mächtige treffen Entscheidungen, deren Folgen Millionen tragen müssen. Aber wir dürfen nicht vergessen, wie viel wir gemeinsam bewirken können.",
+      "Ein einzelner Mensch kann vielleicht keinen Krieg beenden. Doch jeder kann einem anderen Menschen die Hand reichen, einem Hungrigen etwas zu essen geben oder einem Durstigen Wasser anbieten. Jede dieser Taten ist ein Tropfen Menschlichkeit.",
+      "Aus vielen Tropfen entsteht eine Welle. Und aus vielen Wellen wird ein Ozean.",
+      "Es spielt keine Rolle, wo wir leben, welche Sprache wir sprechen, woran wir glauben oder ob wir im Osten oder Westen zu Hause sind. Wir sind Menschen und gehören zusammen.",
+      "Selbst wenn Mächtige irgendwo auf der Welt gegen Vernunft und Menschlichkeit handeln, können wir gemeinsam aufstehen. Unsere Zukunft darf nicht allein von denen bestimmt werden, die Macht besitzen.",
+      "We Are the Ocean ist deshalb nicht einfach nur ein Lied. Es ist eine Einladung, einander zu helfen und gemeinsam Verantwortung für unsere Welt zu übernehmen – ohne Hass, ohne Gewalt, dafür mit Liebe, Frieden und Solidarität.",
+      "Wenn RomleeMusic dazu beiträgt, dass Menschen einander näherkommen und sich wieder gegenseitig unterstützen, dann hat dieses Musikprojekt seinen wichtigsten Sinn erfüllt.",
+      "Auch mein nächster Beitrag wird zum Nachdenken anregen: Auf Polnisch und Englisch sagen wir Dziękujemy – Thank You. Dieses Dankeschön ist durchaus doppeldeutig gemeint.",
+      "Doch jetzt hört euch We Are the Ocean an, schaut euch das Video an und tragt die Botschaft weiter. Wir können die Welt vielleicht nicht an einem Tag verändern. Aber wir können heute damit beginnen.",
+      "We are the drops. We are the waves. We are the ocean. Together, we can change the world.",
+      "Rom Lee – RomleeMusic. Music for Love, Peace and Humanity."
+    ],
+  },
+  {
+    slug: "christmas-for-all",
+    extra: CHRISTMAS_LYRICS,
+    title: "Christmas Is For All — ein internationaler Christmas-Song in vier Sprachen",
+    dateLabel: "November 2026",
+    cover: "/images/blog/christmas-for-all.jpg",
+    youtubeId: "sd_elh2GVhE",
+    excerpt:
+      "Ein internationaler Christmas-Song in vier Sprachen. Die Reise führt von Johannesburg über Havanna, Delhi, Seoul, Paris und Palma nach Washington.",
+    paragraphs: [
+      "Wir möchten mit diesem neuen internationalen Christmas-Song Christmas for All vorstellen. Das Video zeigt ihn besonders in Johannesburg, und dann die Kinder — nicht nur in Johannesburg, sondern in Havanna.",
+      "Havanna liegt mir besonders am Herzen. Vor zwei Jahren war ich dort und musste sehen, wie arm die Menschen sind. Und jetzt noch mehr. Viele sind unterernährt. Nicht nur der Hunger und die Möglichkeit, sich zu ernähren, spielen eine Rolle. Zuletzt gab es auch sehr viele Energieprobleme.",
+      "Ich möchte darauf hinweisen, dass wir dem kubanischen Volk in dieser Situation zu Weihnachten helfen sollen. Ich möchte mich dafür einsetzen, dass sie zu Weihnachten und auch danach genug Energie und genug Lebensmittel bekommen.",
+      "Dann geht die Reise nach Delhi, über Seoul, Paris und Palma de Mallorca nach Washington. Ich hoffe, mit dieser Christmas-for-All-Reise decken wir fast alle Kontinente ab und zeigen dadurch allen Menschen Respekt.",
+      "Wir möchten zeigen, dass dieses Fest der Liebe für alle Menschen auf der Erde gilt. Wir möchten die englischsprachigen, die spanisch sprechenden, die deutschsprachigen und die polnisch sprechenden Menschen erreichen. Ich singe in allen diesen vier Sprachen, die ich auch beherrsche.",
+      "Leider nicht auf Französisch, sonst würde ich auch Französisch und Portugiesisch gerne einschließen — eigentlich alle Sprachen der Welt. Aber dank YouTube kann alles automatisch übersetzt werden. Deshalb ist das eine tolle Plattform, die allen Menschen der ganzen Welt die Botschaft der Liebe und des Friedens übersetzt und alle unterstützt. Hiermit möchte ich mich auch bei YouTube bedanken.",
+      "Ich hoffe, ihr habt alle Freude an dem Lied. Jeder kann mitsingen. Ich denke, es wird uns in den nächsten Jahren über Weihnachten sehr breit angenommen. Ich wünsche euch allen viel Spaß dabei, viel Freude und Gottes Segen.",
+    ],
+  },
+  {
+  "slug": "thank-you-to-the-people-in-power",
+  "title": "Thank You to the People in Power",
+  "dateLabel": "18 November 2026",
+  "cover": "/images/blog/thank-you.webp",
+  "coverContain": true,
+  "excerpt": "Now, as a father and grandfather, I feel a responsibility to speak up. Returning to my roots as a singer-songwriter, I have written this song — first in Polish, and now in English.",
+  "paragraphs": [
+    "As a teenager, I was already a songwriter. By the age of 18, I had written some serious, thought-provoking songs, but unfortunately, I never published them.",
+    "Now, as a father and grandfather, I feel a responsibility to speak up. Returning to my roots as a singer-songwriter, I have written this song — first in Polish, and now in English.",
+    "I believe the lyrics speak for themselves, and there is very little I need to add.",
+    "Read the words. Think about them. And listen to the song.",
+    "This is a song in the true tradition of singer-songwriters — music that tells a story, raises questions, and encourages people to reflect on the world around them.",
+    "I would never presume to compare myself to Bob Dylan. But I can certainly say that Bob Dylan and Bruce Springsteen have been important inspirations to me, especially in the way they use lyrics to tell stories, address social issues, and express what they believe.",
+    "Their example has influenced my own approach to songwriting.",
+    "And today, I feel it is time to let these songs speak.",
+    "Rom Lee"
+  ],
+  extra: THANK_YOU_LYRICS,
+},
+  {
+  "slug": "christmas-dance",
+  "title": "Christmas Dance",
+  "dateLabel": "November 2026",
+  "cover": "/api/yt-thumb/KlvjPdkS8xs",
+  "youtubeId": "KlvjPdkS8xs",
+  "excerpt": "London, Köln, Palma de Mallorca und Warschau feiern Weihnachten in vier Sprachen.",
+  "paragraphs": [
+    "Für Christmas Dance habe ich sieben eigene Lieder auf Englisch, Spanisch, Polnisch und Deutsch zusammengestellt. Die Weihnachtsmelodien treffen auf Deep House und Afro House. Die Videos führen nach London, Köln, Palma de Mallorca und Warschau.",
+    "Am Piccadilly Circus tanzen wir mit dem Publikum. Die Crew lässt Ballons mit der Aufschrift „Love and Peace“ steigen. I See Angels in Your Face ist eine neue Dance-Komposition, die musikalische Elemente aus den vier Sprachfassungen von We Are the Angels aufgreift.",
+    "Legt das Album beim Plätzchenbacken auf, tanzt dazu oder feiert mit eurer Familie. Weihnachten ist für mich auch ein Fest der Freude. – Rom Lee"
+  ]
+},
+  {
+    slug: "weihnachten-wir-sind-die-engel",
+    title: "Weihnachten — Wir sind die Engel",
+    dateLabel: "November 2026",
+    cover: "/images/blog/weihnachten-engel.jpg",
+    youtubeId: "Bw3US7uj4t4",
+    excerpt:
+      "Das Lied „Wir sind die Engel“ ist auf Englisch, Deutsch, Polnisch und Spanisch erschienen — und als Album Christmas Dance.",
+    paragraphs: [
+      "Weihnachten 2026. Das Lied heißt „Wir sind die Engel“. Es ist auf Englisch, Deutsch, Polnisch und Spanisch erschienen.",
+      "Auf Englisch: We Are the Angels. Auf Deutsch in Köln: Wir sind die Engel. Auf Polnisch in Krakau: Święta — Aniołami jesteśmy też my. Auf Spanisch: Navidad — Somos Ángeles.",
+      "Engel sind hier keine Figuren über den Dächern. Es sind die Menschen, die in diesen Tagen beieinander bleiben, eine Tür öffnen, einen Teller teilen.",
+      "Dazu das Album Christmas Dance und „A Star from Heaven — Gwiazdka z nieba“. Alles liegt in der Playlist Christmas Navidad Weihnachten auf YouTube.",
+      "Die Lieder gibt es auf YouTube und zum Hören auf Spotify. Alle Einnahmen gehen weiter an das Kinderhospiz in Krakau.",
+    ],
+  },
+  {
+    slug: "love-and-peace",
+    title: "Love and Peace",
+    dateLabel: "August 2026",
+    cover: "/images/blog/thumb-love-and-peace.jpg",
+    excerpt:
+      "Mit Video und Short fast ein weltweites Lied für den Frieden: Mut, Hoffnung, Menschlichkeit — und eine Idee, die sich nicht zum Schweigen bringen lässt.",
+    paragraphs: [
+      "“Love and Peace” is a song about courage, hope, humanity, and the power of an idea that cannot be silenced. With the video and the Short it has become almost a worldwide song for peace. In the video, the singer appears as a narrator. He guides the audience through the words and messages of six extraordinary men who inspired generations to believe in peace:",
+      "Martin Luther King Jr. spoke about overcoming hatred through love. Mahatma Gandhi showed the strength of nonviolence. Nelson Mandela reminded us that no one is born hating another person. Pablo Neruda represents hope that continues to grow even when people try to destroy it. Bob Marley carried the message of One Love. John Lennon asked the world to give peace a chance.",
+      "The narrator connects their voices with the present and asks a simple question: After hatred, wars, and walls, is it finally time to choose another way?",
+      "The refrain carries the central message: Make peace, try to love. Make peace and choose to love. Make peace and learn to love. You can’t stop the people when they rise for love. You can stop a song for a while. But you cannot stop an idea whose time has come.",
+      "“You can cut all the flowers, but you cannot stop the spring.” We have tried hate. We have tried war. We have tried walls. Maybe it is time to try love and peace.",
+      "Written, composed and narrated by Rom Lee.",
+    ],
+  },
+  {
+    slug: "stand-up-for-peace",
+    title: "Stand Up for Peace",
+    dateLabel: "September 2026",
+    cover: "/images/blog/thumb-stand-up-for-peace.jpg",
+    youtubeId: "c72SbFOaNSI",
+    excerpt:
+      "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together.",
+    coverCaption:
+      "All religions wish for peace. Whatever the reasons behind a conflict — political, historical, territorial or religious — people of every faith can stand together. Different beliefs. One humanity. One hope. Stand Up for Peace. Christianity, Islam, Judaism and Buddhism may speak in different languages and tell different stories, but again and again they return to the same human values: compassion, mercy, forgiveness and peace.",
+    paragraphs: [
+      "“Stand Up for Peace” is a song about the common ground that can be found across different religions and traditions.",
+      "Jesus points to the wounded man and teaches us not to walk away. Yusuf shows the strength of forgiveness. Moses asks for mercy even when his people have failed. Buddha meets violence without violence and shows that even a hardened heart can change.",
+      "The chorus brings these paths together in one simple message: Stand up for love. Stand up for peace. Don’t give up.",
+      "And the song ends with a question that goes beyond religion: if ordinary people everywhere truly stand together for love and peace, who can ultimately stop them? Not weapons, not hatred, and not governments — because governments, too, are made of people and exist through the societies we create.",
+      "Peace does not begin somewhere above us. It begins with us, in the way we see one another, forgive one another and decide what kind of world we are willing to build together.",
+    ],
+  },
+  {
+    slug: "water-keep-it-for-tomorrow",
+    title: "Water (Keep it for tomorrow)",
+    dateLabel: "August 2026",
+    cover: "/images/blog/thumb-water.jpg",
+    excerpt:
+      "WHY I WROTE THIS SONG… Friends in Portocolom asked for a song about water. Childhood by a stream — keep it for tomorrow.",
+    paragraphs: [
+      "WHY I WROTE THIS SONG...You may be wondering why I wrote this song. My Spanish friends from Portocolom—especially Rosa—asked me to write a song about water. As you probably know, water is becoming increasingly scarce in Madrid, Valencia and Andalusia, as well as on Mallorca and here in Portocolom. “Drink the Water” tells the story of a childhood in the countryside, beside a clear stream near the singer’s grandmother’s house—a stream where he swam, drank the water from his hands, and which provided water for the whole household. The video connects this beautiful memory with an important message: water gives us life, so we must protect it and preserve it for tomorrow.",
+      "At the same time, pollution in rivers and oceans around the world is increasing dramatically. Everyone is aware of this, but sometimes we do not talk about it enough.",
+      "We did not want to write a song that points an accusing finger or lectures people about where the water is particularly bad. We simply wanted to create a rhythmic song that can also be understood in a light-hearted way: drink water instead of wine or vodka.",
+      "However, the video is also intended to show that rivers and water supplies are under increasing pressure. Many regions suffer from water shortages—whether in war zones, which I do not want to list because there are currently conflicts almost everywhere, or across large parts of Africa. In agricultural areas, many crops also receive too little water. With this song, we simply wanted to remind people—without preaching—that we all need to care for water, use it carefully and avoid wasting it. Especially in tourist regions and industrialized countries, water is not always treated as carefully as it should be.",
+      "Fracking, oil extraction and the cooling of nuclear power plants all consume large amounts of water and other resources. In major manufacturing countries such as India and China, enormous quantities of water are also used in the production of textiles, clothing and leather products.",
+      "I have personally treated a patient who had been in India and was exposed to mercury through contaminated drinking water. This song therefore has a very real background. Some of my patients have become ill because of dirty or contaminated water. At the same time, water is becoming increasingly scarce here in Spain, in Portocolom and in rural areas.",
+      "That is why we should all use water carefully, sparingly and responsibly. The message is deliberately not stated too directly in the song itself, but I can explain it more clearly here in the accompanying YouTube text.",
+      "The central message is simple: water gives us life, and we must preserve it for tomorrow.",
+      "The song is performed in English, Spanish, and Polish. The song is now available to stream or download.",
+    ],
+    extra: [
+      {
+        heading: "Refrain",
+        body: "Drink, drink the water.\nIt's cool, it's cool, cool, cool cool\nIt gives you life.\nKeep it for tomorrow.\nIf you want to survive.",
+      },
+      {
+        heading: "English",
+        body: "At my grandma’s house\nIn the countryside,\nWhere time ran slow\nA little stream by the house\nClear as the morning light.\nI swam in it all summer long\nAnd drank the water from my hands.\nThey cooked with that same water;\nThe river ran the house.",
+      },
+      {
+        heading: "Español",
+        body: "De niño, en casa de abuela\nEn el campo, donde fluía el tiempo,\nJunto a la casa, un arroyo\nClaro como el alba\nEn él nadaba todo el verano\nBebía el agua con mis manos\nCocinaban con esa agua\nElla daba vida a todo el hogar.",
+      },
+      {
+        heading: "Polski",
+        body: "Jako dziecko u mej babci,\nTam na wsi, gdzie płynął czas,\nObok domu była rzeczka,\nCzysta jak poranny blask.\nW niej pływałem całe lato,\nWodę piłem z własnych rąk.\nZ tej samej wody gotowano,\nOna żywiła cały dom.",
+      },
+    ],
+  },
+  {
+    slug: "tanze-so-lange-es-geht",
+    title: "Tanze so lange es geht",
+    dateLabel: "Juli 2026",
+    cover: "/images/blog/thumb-tanze.jpg",
+    excerpt:
+      "Ein positives Lied für Rollstuhlfahrer – inspiriert von einem Patienten nach einem Unfall mit Querschnittslähmung.",
+    paragraphs: [
+      "Das Lied „Tanze so lange es geht“: das hat mein Patient geschrieben, nachdem der Song fertig war:",
+      "„Was für ein geiler Song. Vielen lieben Dank lieber Professor! Ich bin sehr berührt. Ganz liebe Grüße, ich freue mich und segel gerne mit. Ganz liebe Grüße und vielen lieben Dank.“",
+      "Bei der polnischen Version gibt es Zuschriften: „Das Lied wird eine Hymne.“ Übrigens: Ich kenne weltweit keinen positiven Song für Rollstuhlfahrer, und die sind alle tapfer.",
+    ],
+  },
+  {
+    slug: "naechte-und-woelfe",
+    title: "Nächte und Wölfe (Darkness and Light)",
+    dateLabel: "August 2026",
+    cover: "/images/blog/thumb-naechte.jpg",
+    coverCaption: "YouTube: Nächte und Wölfe (Darkness and Light)",
+    youtubeId: "ul5DEIL8A-M",
+    excerpt:
+      "“Nights and Wolves” is a visual journey from destruction and darkness toward light, hope and peace.",
+    paragraphs: [
+      "“Nights and Wolves” is a visual journey from destruction and darkness toward light, hope and peace. The film opens in a devastated cityscape (any resemblance to real persons or events is purely coincidental). Ruined buildings, rubble and empty streets create an atmosphere of loss and isolation. A lone man walks through this broken world, surrounded by the visible scars of destruction. The images reflect the inner “wolves” of the song — fear, pain, memories and the darkness that can follow us through the night.",
+      "The scenery gradually changes. The ruined city gives way to a vast, dry and almost lifeless landscape filled with oil pumps, pipelines and cracked earth. Yet on the horizon the sun begins to rise. Its warm light becomes stronger, and small signs of life appear in the barren ground. The sun becomes a symbol of hope: darkness does not last forever.",
+      "Other people begin to join the journey. What started with one person slowly becomes a shared path. Isolation turns into connection, and the mood changes from loneliness and despair to confidence and solidarity.",
+      "In the final part, the film opens into a huge gathering of people. A large peace symbol rises above the crowd. The once-dark and devastated world is now filled with people, light and a sense of common purpose.",
+      "The film’s message is simple but powerful: pain and darkness are real, but they do not have the last word. After every night, the sun can rise again. And love, peace and human solidarity can be stronger than the wolves that surround us.",
+      "Hey, nights and wolves — we will drive you away with our love and our peace. We’ll give you a punch.",
+      "Human-created song: original lyrics, composition, vocals and source audio by Roman Leischik / Rom Lee. AI and digital studio tools are used only as production aids for arrangement, instrumentation, sound design, mastering and visuals. No third-party voices are cloned.",
+    ],
+  },
+  {
+    slug: "ki-als-bildsprache",
+    title:
+      "„KI ersetzt hier nicht die Wirklichkeit. Sie ermöglicht mir, Gedanken sichtbar zu machen, für die es in der Wirklichkeit manchmal gar keine Kamera geben kann.“",
+    dateLabel: "August 2026",
+    subtitle: "KI als Bildsprache",
+    cover: "/images/blog/ki-stadt.jpg",
+    coverCaption:
+      "Beispiel-KI-Bild „Gaza-Streifen“. In der Wirklichkeit noch schlimmer.",
+    excerpt:
+      "Bei meinen Videos geht es oft um Dinge, die sich real kaum sinnvoll, verantwortungsvoll oder überhaupt filmen lassen.",
+    paragraphs: [
+      "Bei meinen Videos geht es oft um Dinge, die sich real kaum sinnvoll, verantwortungsvoll oder überhaupt filmen lassen: zerstörte Städte, Krieg, Vergangenheit und Gegenwart, große Menschenmengen, Ölfelder, verschmutztes Wasser, ausgetrocknete Landschaften oder symbolische Bilder von Hoffnung, Frieden und Neubeginn.",
+      "Ich habe mich deshalb bewusst für eine künstlich erzeugte Bildwelt entschieden. KI ist für mich nicht nur ein Produktionswerkzeug, sondern eine Bildsprache für Situationen, Erinnerungen, Gedanken und Vorstellungen, die real gar nicht oder nur mit enormem Aufwand filmbar wären.",
+      "Damit kann ich Gegensätze sichtbar machen: Zerstörung und Wiederaufbau, Dunkelheit und Licht, verschmutztes Wasser und eine wieder lebendige Landschaft, Angst und Hoffnung. Ich kann Entwicklungen zeigen, die sich über Jahre oder Jahrzehnte erstrecken, Vergangenheit und Zukunft miteinander verbinden oder Bilder erschaffen, die in der Realität nur mit großen Filmteams, aufwendigen Reisen und erheblichen Produktionsmitteln möglich wären.",
+      "Gleichzeitig möchte ich für meine Geschichten nicht einfach reale Menschen benutzen. Ich muss keine Personen in Krisengebieten filmen, keine fremden Schicksale für ein Musikvideo instrumentalisieren und keine zufällig anwesenden Menschen ungefragt Teil einer Geschichte werden lassen. Auch Genehmigungen, Persönlichkeitsrechte, Datenschutz und mögliche Beeinträchtigungen anderer Menschen spielen bei realen Dreharbeiten eine Rolle.",
+      "Die Bilder entstehen technisch mit Hilfe von KI. Aber die Geschichte, die Idee, die Auswahl der Szenen, ihre Reihenfolge, ihre Bedeutung und die Botschaft dahinter entstehen nicht durch die KI. Ich entscheide, welches Bild gebraucht wird, was es ausdrücken soll, was verworfen wird und wie daraus am Ende eine zusammenhängende Geschichte entsteht.",
+      "Für mich ist das ähnlich wie bei der Musik. Neue Technik hat die Möglichkeiten von Künstlern schon immer erweitert: Aufnahmegeräte, Synthesizer, Drumcomputer, Sequencer, digitale Studios, Software, Schnitt, Tuning und Mastering. Die Technik verändert die Werkzeuge – aber sie entscheidet nicht, was ein Mensch erzählen möchte und warum er es erzählt.",
+      "KI ersetzt für mich deshalb weder Kreativität noch Wirklichkeit. Sie erweitert den Raum, in dem ich eine Idee gestalten kann.",
+    ],
+  },
+  {
+    slug: "first-love",
+    title: "First Love (Pierwszy raz)",
+    dateLabel: "August 2026",
+    subtitle: "Erinnert euch an eure Zeiten",
+    cover: "/images/blog/thumb-first-love.jpg",
+    coverCaption:
+      "Für viele ist die erste Liebe eine wichtige Erinnerung. Deshalb erinnert euch an eure Zeiten — mit viel Wärme und Liebe in euch. Das Video ist bei YouTube.",
+    youtubeId: "W9Tp8sZBRNA",
+    excerpt:
+      "Für viele ist die erste Liebe eine wichtige Erinnerung. Deshalb erinnert euch an eure Zeiten — mit viel Wärme und Liebe in euch.",
+    paragraphs: [],
+    extra: [
+      {
+        heading: "YouTube",
+        body: "Musikvideo tells the story of a first love (RomLee is in reality a real cardiologist) that neither time nor separation could erase. Kasia and the narrator look back on their first time, their school on Jagiellońska Street (Gliwice), and a world that once seemed as colorful as a rainbow.\n\nLater, their paths separate, and the letters and memories slowly fade. Many years later, fate brings them together again in Warsaw. She devotes her heart to children in hospital wards, while he, as a cardiologist, also saves human hearts.\n\nIt is a song about the innocence of first love, separation, memories, and the hope that true love can find its way back—even after many years.\n\nOriginal song written, composed, and produced by Roman Leischik (artist name: Rom Lee/Leszek).\n\nMusic is Therapy.",
+      },
+    ],
+  },
+  {
+    slug: "als-du-klein-warst-jak-byles-maly",
+    title: "Als du klein warst – Jak byłeś mały",
+    dateLabel: "Juli 2026",
+    cover: "/images/blog/thumb-jak-byles-maly.jpg",
+    excerpt:
+      "Eine zutiefst persönliche Reise durch Kindheit, polnische Geschichte, Literatur, Liebe und nationale Identität.",
+    paragraphs: [
+      "„Jak byłeś mały“ ist eine zutiefst persönliche Reise durch Kindheit, polnische Geschichte, Literatur, Liebe und nationale Identität. Das Lied porträtiert einen Jungen, der die Geschichte Polens durch seine Fantasie erlebt. Er wird zu Janosik und Kościuszko, kämpft bei Tannenberg, schließt sich den polnischen Aufständischen an und teilt das Schicksal der Jungen aus „Die Jungen von der Paulstraße“.",
+      "In den Büchern von Henryk Sienkiewicz reist er durch Wüsten und Wälder, liebt wie Wołodyjowski, kämpft gegen die Tataren und reitet als polnischer Lanzenreiter, der noch immer an Napoleon glaubt, nach Moskau. Die von Adam Mickiewicz inspirierten Worte „O Litauen, mein Heimatland“ eröffnen eine schmerzlichere Dimension: den Verlust der Heimat, den Wechsel von Namen und Identität und das Aufwachsen zwischen verschiedenen Kulturen und Geschichtserzählungen.",
+      "Das Bild eines Jungen, der sich in einen Panzer verwandelt und wie ein Leopard marschiert, verbindet kindliche Fantasie mit der harten Realität der europäischen Geschichte. Das Lied blickt auch auf das Leben unter dem kommunistischen System zurück und verweist auf Gomułka und das bewusst erfundene, satirische Wort „Chruszcze“. Trotz politischen Drucks, Krieges und Vertreibung bleibt die zentrale Botschaft die des Überlebens: Glaube an dich selbst, liebe von ganzem Herzen und verliere niemals die Hoffnung.",
+      "Neben den großen Ereignissen der Geschichte bewahrt das Lied intime Erinnerungen – eine erste Liebe namens Kasia, Küsse vor einem Aufzug in der Stawowa-Straße und spielerische Kämpfe wie ein Ritter auf der Wiese in Gliwice. In den letzten Strophen verlagert sich die Geschichte in die polnischen Berge. Der Junge besteigt den Kasprowy Wierch in Zakopane, rast auf Skiern die Hänge hinab und begegnet in Poronin symbolisch Lenin und dem Dichter Jan Kasprowicz. Geschichte, Poesie und Erinnerung verschmelzen, bis die Poesie beinahe „durch die Ohren getrunken“ werden kann.",
+      "„Jak byłeś mały“ ist ein Lied über einen Jungen, der Polen in sich trägt. Es erzählt von den Helden, die er bewunderte, den Büchern, die ihn prägten, den Menschen, die er liebte, und der Geschichte, die ihn sein Leben lang begleitete. Es ist zugleich eine Hommage an die polnische Kultur und eine emotionale Suche nach den eigenen Wurzeln.",
+    ],
+    extra: [
+      {
+        heading: "Polski",
+        body: "„Jak byłeś mały” to głęboko osobista podróż przez dzieciństwo, polską historię, literaturę, miłość i tożsamość narodową. Piosenka opowiada o chłopcu, który przeżywa historię Polski poprzez własną wyobraźnię. Staje się Janosikiem i Kościuszką, walczy pod Grunwaldem, przyłącza się do polskich powstańców i dzieli los bohaterów „Chłopców z Placu Broni”. W książkach Henryka Sienkiewicza przemierza pustynie i puszcze, kocha jak Wołodyjowski, walczy z Tatarami i jako polski ułan, który wciąż wierzy w Napoleona, wyrusza na Moskwę. Zainspirowane Adamem Mickiewiczem słowa „O Litwo, ojczyzno moja” otwierają bardziej bolesny wymiar: utratę ojczyzny, zmianę nazwiska i tożsamości oraz dorastanie pomiędzy różnymi kulturami i odmiennymi narracjami historycznymi. Obraz chłopca, który przemienia się w czołg i maszeruje niczym Leopard, łączy dziecięcą fantazję z brutalną rzeczywistością europejskiej historii. Piosenka powraca również do życia w systemie komunistycznym, przywołując Gomułkę oraz świadomie wymyślone, satyryczne słowo „Chruszcze”. Pomimo politycznej presji, wojny i przesiedlenia jej głównym przesłaniem pozostaje przetrwanie: wierz w siebie, kochaj całym sercem i nigdy nie trać nadziei. Obok wielkich wydarzeń historycznych utwór zachowuje także intymne wspomnienia — pierwszą miłość o imieniu Kasia, pocałunki przed windą przy ulicy Stawowej oraz pełne zabawy walki na trawie w Gliwicach, prowadzone niczym przez rycerza. W ostatnich zwrotkach opowieść przenosi się w polskie góry. Chłopiec wchodzi na Kasprowy Wierch w Zakopanem, pędzi na nartach w dół zbocza, a w Poroninie symbolicznie spotyka Lenina i poetę Jana Kasprowicza. Historia, poezja i pamięć łączą się ze sobą, aż poezję można niemal „pić uszami”. „Jak byłeś mały” to piosenka o chłopcu, który nosi Polskę w sobie. Opowiada o bohaterach, których podziwiał, książkach, które go ukształtowały, ludziach, których kochał, oraz historii, która towarzyszyła mu przez całe życie. Jest jednocześnie hołdem dla polskiej kultury i emocjonalnym poszukiwaniem własnych korzeni.",
+      },
+    ],
+  },
+  {
+    slug: "warum-deutsch-polnisch",
+    title: "Warum Deutsch und Polnisch? Wir spenden alles an das Kinderhospiz in Krakau",
+    dateLabel: "Juli 2026",
+    cover: "/images/hospiz/visite.png",
+    coverContain: true,
+    excerpt:
+      "Mit 13 aus Polen über Friedland. Heute Lieder in zwei Sprachen – und alle Einnahmen gehen an das Kinderhospiz in Krakau.",
+    paragraphs: [
+      "Ich bin mit meiner Mutter mit 13 Jahren aus Polen über Friedland gekommen (meine Mutter ist vor 50 Jahren geflüchtet) — das wollte meine Mutter. Alte Geschichte: Schlesien war deutsch-polnisch usw. Wir waren evangelisch und durch die alten Kriege gemischt, und meine Mutter wollte in ihre Heimat. Ich versuche, meine polnischen Wurzeln aufzuarbeiten und Lieder in zwei Sprachen zu schreiben.",
+      "Zurzeit haben wir gut 2500 Zuhörer in Polen, und die Zahl wächst — bei nur zwei Liedern über 5000 Streams. Zusätzlich haben wir eine Einladung bekommen, rüberzufahren und dort zu singen. Und damit ich es erwähne: Alles, was wir tun, ist charitativ; wir spenden alles an:",
+      "Gemeinnützige Anstalt — Krakowskie Hospicjum dla Dzieci im. ks. Józefa Tischnera, KRS 0000203313. E-Mail: kontakt@hospicjumtischnera.org · Telefon: +48 12 269 86 20 · IBAN: 98 1240 1444 1111 0010 1566 6214 · SWIFT: PKOPPLPW",
+    ],
+    extra: [
+      {
+        heading: "Polski",
+        body: "Przyjechałem z mamą do Niemiec z Polski przez Friedland, gdy miałem 13 lat. Moja mama uciekła z Polski około 50 lat temu. To było jej wielkie marzenie – wrócić do swojej ojczyzny. Historia naszej rodziny jest skomplikowana. Śląsk przez wieki był zarówno niemiecki, jak i polski, a losy wielu rodzin zostały naznaczone przez wojny, przesiedlenia i zmieniające się granice. Byliśmy rodziną ewangelicką i, jak wiele osób w naszym regionie, nosimy w sobie zarówno polskie, jak i niemieckie korzenie. Dziś próbuję na nowo odkrywać i pielęgnować swoje polskie korzenie. Dlatego piszę i wykonuję piosenki w dwóch językach – po polsku i po niemiecku – aby muzyką budować mosty między ludźmi i kulturami. Obecnie nasze utwory mają już około 2500 słuchaczy w Polsce oraz ponad 5000 odtworzeń, mimo że opublikowaliśmy dopiero dwie piosenki. Liczba słuchaczy stale rośnie. Otrzymaliśmy również zaproszenie do Polski, aby tam wystąpić i zaśpiewać, co jest dla nas ogromnym wyróżnieniem. Chciałbym również podkreślić, że wszystko, co robimy w ramach tego projektu muzycznego, ma charakter charytatywny. Całość dochodów przeznaczamy na Hospicjum im. Ks. Józefa Tischnera w Krakowie.",
+      },
+    ],
+  },
+  {
+    slug: "ty-tylko-ty",
+    title: "Ty tylko ty – polnisches Kinderlied",
+    dateLabel: "Juli 2026",
+    cover: "/images/blog/thumb-ty-tylko-ty.jpg",
+    excerpt:
+      "Piosenka dla wszystkich, którą śpiewałam przy ognisku. Ein Kinderlied, adaptiert – Erinnerung an die Wurzeln.",
+    paragraphs: [
+      "TY, TYLKO TY. Piosenka dla wszystkich, którą śpiewałam przy ognisku. Nie myślałem o iskrze, która wiele obiecuje, a potem gaśnie, ale zawsze o kobiecie, która wiele obiecuje, a potem nagle znika (i bajka się kończy).",
+      "Lied für alle, das ich am Lagerfeuer gesungen habe. Dabei dachte ich nicht an den Funken, der viel verspricht und dann ausgeht, sondern immer an eine Frau, die viel verspricht und dann plötzlich verschwindet (und das Märchen ist zu Ende). Das ist das polnische Lied — ein adaptiertes Kinderlied —, das mich an meine Wurzeln erinnert.",
+      "Rom Lee – Akkorde zur Studioaufnahme: A-Moll · ca. 108 BPM · 4/4. Hauptakkorde: Am · E7 · Dm · G · C. Refrain: Dm – G – C – Am.",
+      "Zwrotka 1: Na Wojtusia z popielnika / Iskiereczka mruga: / „Chodź, opowiem ci bajeczkę, / Bajka będzie długa”. / Była sobie raz królewna, / Pokochała grajka, / Obiecała mi królestwo, / A skończyła się nagle bajka.",
+      "Refren: Ty, tylko ty jesteś tą królewną, / Ty, tylko ty umiesz kłamać cudnie. / Ty, tylko ty jesteś tą królewną.",
+      "Zwrotka 2: Była sobie ta królewna, / Miała główkę cudną, / A w tej główce same dziwy — / Psst, iskierka zgasła. / Patrzy Wojtuś, patrzy długo, / Łzami zaszły oczęta. / „Czemu mnie oszukałaś?” / Wojtuś zapamięta.",
+      "Zwrotka 3: Już ci nigdy nie uwierzę, / Ty królewno mała. / Najpierw błyśniesz, potem zgaśniesz — / Ot, i bajka cała.",
+    ],
+  },
+  {
+    slug: "willkommen-bei-rom-lee",
+    title: "Willkommen bei Rom Lee",
+    dateLabel: "Juli 2026",
+    cover: "/images/logo.png",
+    excerpt:
+      "Das Leben spielt 1000 Streiche. Hinter jedem Lied steckt ein Schicksal — eigene Geschichte, Patienten, Segeln, Sommer.",
+    paragraphs: [
+      "Das Leben spielt 1000 Streiche. Irgendwann hat man genug, und nach der Musikpause schreibt man wieder Texte und Musik. Und plötzlich finden die anderen es gut und schön und wollen mehr. Also schreibe ich, und wir schauen, wohin die Reise geht. Die Texte sind mir besonders wichtig. Dankbar bin ich dem Musiker und Produzenten Hanno di Rosa. Danke an meine Patienten: Hinter jedem Lied steckt ein Schicksal.",
+      "„Steh auf“: das ist meine eigene Geschichte. „Tanze so lange es geht“: das ist mein Patient S. im Rollstuhl, nach einem Unfall mit Querschnittslähmung. „Du bist 45“: das Schicksal einer Patientin, wie bei vielen Frauen.",
+      "„Lebe den Sommer“ soll Freude und Spaß vermitteln. Es ist auch der Protest gegen die aktuelle Zeit und gegen die allgemeine Depression, vor allem in Deutschland. In Spanien, wo ich auch etwa sechs Monate im Jahr bin, ist diese Stimmung selten — aber die Spanier spielen auch besser Fußball.",
+      "Beruflich bin ich Kardiologe (Roman Leischik) und habe nur die Arbeitszeit reduziert. Ich betreue weiter auch schwerkranke Patienten, aber mit Spaß, auf einem hohen wissenschaftlichen Niveau, jedoch ohne „Weißkittel-Syndrom“. Mit 40 Jahren klinischer und wissenschaftlicher Erfahrung brauche ich den „Weißkittel“ nicht als Nimbus und Abgrenzung.",
+      "Den Künstlernamen habe ich gewählt, weil Musik für mich privat ist und bleiben soll — kein Karrierewunsch. Eigentlich wollte ich Musik für mich, meine Freude und meine Patienten, die einfach gut ist und Spaß macht. Mein Freund Michael, mit dem ich oft segeln gehe, wollte gute Musik zum Segeln, und jetzt haben wir das.",
+      "Spotify und Musik waren immer Lebensbegleiter: Glashaus, Xavier, Söhne Mannheims, Grönemeyer, Reamonn. Coldplay (meine Lieblingsband) und Crowded House waren oft Lebensretter. Im Jahr höre ich bestimmt bis zu 3000 Lieder. 15 Jahre Training und die Teilnahme an Ironman-Wettkämpfen weltweit wären ohne Musik nicht möglich gewesen. Musik ist Spaß und Leben.",
+      "In der Schule hatte ich eine Band, sang im Chor und spielte am Lagerfeuer. Aber auch oft in der Kirche bei Jugendgottesdiensten und bei Abschlussfeiern. Dann noch mit 18 bis 20 Jahren in der Spinne in Hagen gegen freie Getränke — das war die Liedermacherzeit. Nach überstandenen schweren Erkrankungen, als ich mich schon im Jenseits fühlte, bin ich dankbar für jeden Tag. Deshalb sind mir die Texte wichtig, aber auch die Musik zum Spaßhaben ohne Schnörkel und zum Abtanzen.",
+      "Die Kombination von Musik, Rhythmus und Text ist gedacht zum Hören im Auto, morgens zu Hause nach dem Aufstehen oder im Garten. Die Hauptmotivation war, gute Musik für alle zu schreiben. In jedem Lied sollte jeder etwas finden, was ihn berührt, ihm gefällt und auch Spaß macht. Man kann zu den Liedern tanzen, mitsingen, arbeiten oder auch einfach nur zuhören.",
+      "Ich und unsere Truppe (wir nennen sie Rom Lee Music Group) tanzen dazu und haben Spaß. Euch wünsche ich viel Liebe und Spaß an den Texten und an der Musik. Danke an die Palma Music Studios. Ihr seid großartig.",
+    ],
+  },
+  {
+    slug: "musik-puls-herz-sport",
+    title: "Music, Pulse, Heart and Sport",
+    dateLabel: "Wissenschaftlicher Artikel",
+    cover: "/images/blog/musik-puls-herz-pubmed.png",
+    coverContain: true,
+    excerpt:
+      "Musik ist nicht nur etwas, das wir hören. Wir spüren Rhythmus mit dem Körper – eine wissenschaftliche Arbeit von E. R. Gasenzer und R. Leischik.",
+    paragraphs: [
+      "Music is not only something we hear. We feel rhythm with our bodies, associate melodies with memories and emotions, and respond physiologically to tempo, harmony, and sound. Years before Rom Lee became a music project, this connection between music, the heart, and physical performance was already the subject of scientific work.",
+      "In the medical review “Music, Pulse, Heart and Sport,” E. R. Gasenzer and R. Leischik examined how music can influence the cardiovascular system, exercise, rehabilitation, motivation, and recovery. Research discussed in the article shows that music can affect heart rate, exercise performance, motivation, and post-exercise recovery.",
+      "At the same time, the effect of music is highly individual: rhythm, tempo, emotional meaning, personal preference, physical activity, and underlying disease all matter.",
+      "Herz. 2018 Feb;43(1):43-52. doi: 10.1007/s00059-016-4520-7. PMID: 28116463.",
+      "Den vollständigen Artikel gibt es als PDF und bei PubMed.",
+    ],
+  },
+];
+
+export function getPost(slug: string) {
+  return POSTS.find((p) => p.slug === slug);
+}
+
+export { localizePost } from "@/data/blog-i18n";
