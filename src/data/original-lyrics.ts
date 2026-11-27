@@ -2,6 +2,20 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+  "slug": "danke-an-die-maechtigen",
+  "title": "Danke (an die Mächtigen)",
+  "lang": "de",
+  "youtubeId": "",
+  "text": "Wenn ich heute auf diese Welt schaue\nDann sehe ich, wie dunkel sie wurde\nDie da oben sitzen, haben uns vergessen\nUnd die Dinge werden jeden Tag schlimmer\nDer Druck im Alltag steigt auf alle\nUnd die da oben singen: Danke\n\nDanke, danke, danke, danke, danke, oooh\n\nIm Westen ist einer wahnsinnig geworden\nUnd im Osten ist auch einer durchgedreht\nUnd zwischen den beiden geht unser Leben weiter\nWir können nur zuschauen, was als Nächstes passiert\nSie spielen mit unserer ganzen Welt\nUnd sehen nicht, was die einfachen Menschen tun\n\nDanke, danke, danke, danke, danke, oooh\n\nDer kalte Wind bläst durch das Land\nUnd weht unsere Worte fort\nDoch niemand hört, was wir sagen\nUnd die alte Angst kehrt zurück\nWir wissen nicht, was der Tag bringen wird\nUnd der Wind singt: Danke\n\nDanke, danke, danke, danke, danke, oooh\n\nDie Spekulanten regieren die Welt\nUnd es zählt nur das Geld\nNiemand sieht, was wir alle brauchen\nUnd die einfachen Menschen zahlen den Preis\nDie einfachen Menschen halten die Welt am Laufen\nUnd die da oben singen: Danke\n\nDanke, danke, danke, danke, danke, oooh\n\nIch bin nur ein einfacher Regentropfen\nUnd du bist es auch\nAber zusammen können wir eine Welle werden\nUnd viele Wellen werden dann zum Ozean\nLass uns zusammenstehen, Seite an Seite\nUnd zusammen singen wir: Danke\nDanke, danke, danke, danke, danke."
+},
+  {
+  "slug": "jak-byles-maly",
+  "title": "Jak byłeś mały",
+  "lang": "pl",
+  "youtubeId": "BmlVyZ6hTGs",
+  "text": "Ty jesteś mały i kochasz twój kraj\nByłeś Janosikiem i Kościuszką\nWalczyłeś pod Grunwaldem\nI powstańcem byłeś też\nZ Chłopcem z Placu Broni umarłeś\nA w Oświęcimiu płakałeś\n\nSienkiewicza z dziesiątką czytałeś\nW pustyni i w puszczy uciekałeś\nKochałeś jak Wołodyjowski\nI Tatarów zwalczałeś jak lew\nJako ułan wierzyłeś w Napoleona\nI z szablą na Moskwę szedłeś\n\nO Litwo, ojczyzno moja\nJa wiem, jak to płakać jest\nJak ci nazwisko zmienili\nI z Lesia powstał czołg\nKtóry jechał jako Leopard\nI śpiewał w marszu rytm\nI śpiewał w marszu rytm\n\nDziękuję Bogu, że przeżyłeś\nNie dobili Cię Gomułki\nCzy Chruszcze, czy inne wszy\nWierz w siebie, kochaj, serce moje\nKochaj, kochaj i wierz\nRazem z wami będę zawsze żyć\n\nO Kasiu, wiesz, jak na Stawowej\nCię bardzo kochałem\nI przed windą cię całowałem\nI w Gliwicach jako rycerz\nNa trawie walczyłem, żeby\nNaszą wojnę wygrać tą\n\nO Litwo, ojczyzno moja\nJa wiem, jak to płakać jest\nJak ci nazwisko zmienili\nI z Lesia powstał czołg\nKtóry jechał jako Leopard\nI śpiewał w marszu rytm\nI śpiewał w marszu rytm\n\nW Zakopanem wchodziłeś\nNa Kasprowy, żeby na nartach\nJa, wariat, na dół gnać\nW Poroninie spotkałeś Lenina\nŻeby z Kasprowiczem\nWiersze uszami pić\nŻeby z Kasprowiczem\nWiersze uszami pić"
+},
+  {
   "slug": "durny-sen",
   "title": "Durny sen",
   "lang": "pl",
