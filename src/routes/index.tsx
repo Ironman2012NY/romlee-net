@@ -48,10 +48,55 @@ function Home() {
   return (
     <SiteShell solidHeader>
       <WaterSeo />
+      <section className="relative min-h-[92dvh] overflow-hidden">
+        <img
+          src="/images/fotos/hero-portocolom.jpg"
+          alt=""
+          className="pointer-events-none absolute inset-0 size-full object-cover"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg/80 via-bg/25 to-transparent" />
+        <div className="relative mx-auto flex min-h-[92dvh] max-w-6xl flex-col justify-end px-4 pb-16 pt-32 sm:px-6 sm:pb-20">
+          <p className="text-xs uppercase tracking-[0.22em] text-accent">{SITE.brand}</p>
+          <h1 className="mt-3 font-display text-3xl leading-[0.9] tracking-tight text-fg sm:text-6xl">
+            {SITE.name}
+          </h1>
+          <p className="mt-2 text-base text-muted sm:text-lg">({SITE.alsoAs})</p>
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-fg/90 sm:text-lg">
+            {SITE.tagline}
+          </p>
+          <div className="mt-8">
+            <YoutubeLiveStats stats={yt} variant="hero" />
+          </div>
+          <div className="mt-10 flex flex-wrap gap-3">
+            <Link
+              to="/videos"
+              className="inline-flex min-h-11 items-center gap-2 rounded-md bg-fg px-5 text-sm font-medium text-accent-fg"
+            >
+              {copy.watchVideos}
+              <ArrowRight className="size-4" />
+            </Link>
+            <Link
+              to="/songs"
+              className="inline-flex min-h-11 items-center rounded-md border border-border-strong px-5 text-sm text-fg"
+            >
+              {copy.nav["/songs"]}
+            </Link>
+            <a
+              href={SITE.youtube.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-11 items-center rounded-md border border-border-strong px-5 text-sm text-fg"
+            >
+              {copy.youtubeChannel}
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="border-t border-border bg-surface">
-        <div className="mx-auto max-w-6xl px-4 pb-12 pt-32 sm:px-6 sm:pt-36">
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
           <div className="flex items-end justify-between">
-            <h1 className="font-display text-3xl tracking-tight text-fg">{copy.blogTitle}</h1>
+            <h2 className="font-display text-3xl tracking-tight text-fg">{copy.blogTitle}</h2>
             <Link to="/blog" className="text-sm text-muted hover:text-fg">
               {copy.allPosts}
             </Link>
@@ -103,50 +148,6 @@ function Home() {
             <Link to="/blog/$slug" params={{ slug: "thank-you-to-the-people-in-power" }} className="underline underline-offset-4">Thank You to the People in Power</Link>
             <Link to="/blog/$slug" params={{ slug: "christmas-dance" }} className="underline underline-offset-4">Christmas Dance</Link>
             <Link to="/weihnachten" className="underline underline-offset-4">{christmasCopy(locale).title}</Link>
-          </div>
-        </div>
-      </section>
-      <section className="relative min-h-[92dvh] overflow-hidden">
-        <img
-          src="/images/fotos/hero-portocolom.jpg"
-          alt=""
-          className="pointer-events-none absolute inset-0 size-full object-cover"
-        />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg/80 via-bg/25 to-transparent" />
-        <div className="relative mx-auto flex min-h-[92dvh] max-w-6xl flex-col justify-end px-4 pb-16 pt-32 sm:px-6 sm:pb-20">
-          <p className="text-xs uppercase tracking-[0.22em] text-accent">{SITE.brand}</p>
-          <h2 className="mt-3 font-display text-3xl leading-[0.9] tracking-tight text-fg sm:text-6xl">
-            {SITE.name}
-          </h2>
-          <p className="mt-2 text-base text-muted sm:text-lg">({SITE.alsoAs})</p>
-          <p className="mt-4 max-w-xl text-base leading-relaxed text-fg/90 sm:text-lg">
-            {SITE.tagline}
-          </p>
-          <div className="mt-8">
-            <YoutubeLiveStats stats={yt} variant="hero" />
-          </div>
-          <div className="mt-10 flex flex-wrap gap-3">
-            <Link
-              to="/videos"
-              className="inline-flex min-h-11 items-center gap-2 rounded-md bg-fg px-5 text-sm font-medium text-accent-fg"
-            >
-              {copy.watchVideos}
-              <ArrowRight className="size-4" />
-            </Link>
-            <Link
-              to="/songs"
-              className="inline-flex min-h-11 items-center rounded-md border border-border-strong px-5 text-sm text-fg"
-            >
-              {copy.nav["/songs"]}
-            </Link>
-            <a
-              href={SITE.youtube.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center rounded-md border border-border-strong px-5 text-sm text-fg"
-            >
-              {copy.youtubeChannel}
-            </a>
           </div>
         </div>
       </section>
