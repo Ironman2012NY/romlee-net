@@ -354,8 +354,7 @@ function Home() {
             </span>
             <h3 className="mt-3 font-display text-2xl text-fg">YouTube</h3>
             <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
-              {formatNumber(yt.subscribers)} {copy.subs} · {formatNumber(yt.videoCount)} {copy.videos} ·{" "}
-              {formatNumber(yt.totalViews)} {copy.viewsTotal}.
+              <YoutubeLiveStats stats={yt} variant="summary" />
             </p>
             <span className="mt-4 inline-flex items-center gap-2 text-sm text-fg">
               {copy.toChannel}
