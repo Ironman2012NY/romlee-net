@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { LANG_LABEL, tracksByLang, type Lang } from "@/data/tracks";
+import { tracksByLang, type Lang } from "@/data/tracks";
 import { PageHead, SiteShell } from "@/components/site-shell";
 import { TrackRow } from "@/components/track-row";
 import { useT } from "@/components/lang-switch";
@@ -421,7 +421,7 @@ function SongsPage() {
           return (
             <section key={lang}>
               <h2 className="mb-4 font-display text-2xl tracking-tight text-fg">
-                {LANG_LABEL[lang]}
+                {new Intl.DisplayNames([locale], { type: "language" }).of(lang) ?? lang}
               </h2>
               <div className="divide-y divide-border rounded-xl border border-border bg-surface p-2">
                 {list.map((t) => (
