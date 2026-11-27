@@ -2,6 +2,27 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+  "slug": "ty-tylko-ty-feat-janina-porazinska",
+  "title": "Ty, tylko Ty",
+  "lang": "pl",
+  "youtubeId": "-hQxHSV_PI4",
+  "text": "Na Wojtusia z popielnika\nIskiereczka mruga\nChodź, opowiem ci bajeczkę\nBajka będzie długa\n\nByła sobie raz królewna\nPokochała grajka\nObiecała mi królestwo\nA skończyła sie nagle bajka\n\nTy, tylko ty jesteś tą królewną\nTy, tylko ty umiesz kłamać cudnie\nTy, tylko ty jesteś tą królewną\n\nByła sobie ta królewna\nMiała główkę cudną\nA w tej główce same dziwy\nPsst, iskierka zgasła\n\nPatrzy Wojtuś, patrzy długo\nŁzami zaszły oczęta\nCzemu mnie oszukałaś?\nWojtuś zapamięta\n\nTy, tylko ty jesteś tą królewną\nTy, tylko ty umiesz kłamać cudnie\nTy, tylko ty jesteś tą królewną\n\nJuż ci nigdy nie uwierzę\nTy królewno mała\nNajpierw błyśniesz, potem zgaśniesz\nOt, i bajka cała\n\nJuż ci nigdy nie uwierzę\nTy królewno mała\nNajpierw błyśniesz, potem zgaśniesz\nOt, i bajka cała"
+},
+  {
+  "slug": "immer-schon-hab-ich-gewollt",
+  "title": "Immer schon hab ich gewollt",
+  "lang": "de",
+  "youtubeId": "5DnsZEeOzLs",
+  "text": "Immer schon hab ich gewollt\nDass du mich liebst\nImmer schon hab ich gewollt\nDass du nur an mich denkst\nImmer schon hab ich gewollt\nDass ich nur der Eine bin\n\nDann kam immer was dazwischen\nMal eine sie bei mir, mal ein er bei dir\nWenn ich frei war, warst du besetzt\nDann kam der falsche Sommer\nUnd dann der falsche Herbst\n\nImmer schon hab ich gewollt,dass du mich liebst\nImmer schon hab ich gewollt\nDass du nur an mich denkst\nImmer schon hab ich gewollt\nDass ich nur der Eine bin\n\nDann warst du in der Ehe\nDann kam ein kleines Kind\nUnd nun bist du geschieden\nAber ich bin nicht mehr frei\nSo dreht sich unser Leben weiter\nUnd wir laufen nur vorbei\n\nIrgendwo lebst du in mir\nVielleicht in einem Traum\nWir verpassen die Momente\nFinden uns im falschen Raum\nWir verpassen uns im Leben\nNur nicht in der Fantasie\nWas wir nie erleben konnten\nLebt in dieser Melodie\n\nImmer schon hab ich gewollt\nDass du mich liebst\nImmer schon hab ich gewollt\nDass du nur an mich denkst\nImmer schon hab ich gewollt\nDass ich nur der Eine bin\n\nSo standen wir immer am falschen Ort\nZur falschen Zeit, mit dem richtigen Gefühl\nImmer schon hab ich gewollt\nDass du mich liebst."
+},
+  {
+  "slug": "lebe-den-sommer",
+  "title": "Lebe den Sommer",
+  "lang": "de",
+  "youtubeId": "ygt6tbs7-n8",
+  "text": "Lebe den Sommer, küsse die Sonne\nSpring ins Wasser mit Freude und Spaß\nTrink Spumante, lach dich halb tot\nIss mit Freunden und knutsch dich k.o\nSommer im Herzen, Salz auf der Haut\nAlles ist leicht, alles ist laut\nWir lassen uns treiben, wir leben im Jetzt\nBis die Sonne im Meer sich schlafen legt\n\nSommer ist Leben\nWie zur besten Zeit\nAlles ist hell, warm und blau\nAlles ist rosa und Ferrarirot\nWir segeln lachend in unserem Boot\nSommer ist Leben, weil du da bist\nWeil jeder Kuss wie die Sonne ist\nAlles viel schöner, so warm und blau\nWenn ich in deine Augen schau\n\nMit Freunden am Strand, das Herz voller Licht\nDie Welt dreht sich weiter, wir merken es nicht\nEin Kuss auf die Lippen, ein Blick fast zu nah\nUnd plötzlich ist alles so wunderbar\nDie Nacht ist der Wahsinn, der Himmel glüht rot\nWir tanzen barfuß und kennen kein Verbot\nDu lachst mich an, und ich weiß ganz genau\nMit dir bleibt der Sommer für immer blau\n\nSommer ist Leben\nWie zur besten Zeit\nAlles ist hell, warm und blau\nAlles ist rosa und Ferrarirot\nWir segeln lachend in unserem Boot\nSommer ist Leben, weil du bei mir bist\nWeil jeder Kuss wie die Sonne ist\nAlles viel schöner, so warm und blau\nWenn ich in deine Augen schau."
+},
+  {
   "slug": "du-bist-das-licht",
   "title": "Du bist das Licht",
   "lang": "de",
