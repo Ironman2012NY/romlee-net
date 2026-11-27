@@ -30,7 +30,7 @@ const extraLyrics = SONG_TEXTS.flatMap((song) => {
   }
   return [];
 });
-const allLyrics = [...new Map([...ORIGINAL_LYRICS, ...extraLyrics].map(song => [song.slug, song])).values()];
+const allLyrics = [...new Map([...extraLyrics, ...ORIGINAL_LYRICS].map(song => [song.slug, song])).values()];
 
 // The complete catalog remains visible, even when an authorized lyric is not yet available.
 const normalizeTitle = (value: string) => value.toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
@@ -43,7 +43,7 @@ function NumberedLyrics({ text, lang }: { text: string; lang: Lang }) {
   return <div lang={lang} dir="ltr" className="mx-auto max-w-2xl rounded-lg border border-border bg-bg/50 px-4 py-5 sm:px-7">
     {text.split(/\r?\n/).map((line, index) => {
       if (!line.trim()) return <div key={index} className="h-4" aria-hidden="true" />;
-      if (heading.test(line.trim())) return <h3 key={index} className="mb-2 mt-5 text-base font-semibold tracking-wide text-accent first:mt-0">{line}</h3>;
+      if (heading.test(line.trim()) || /^(?:Strophe|Refrain) (?:eins|zwei|drei|vier|fünf)$|^Finaler Refrain$/i.test(line.trim())) return <h3 key={index} className="mb-2 mt-5 text-base font-semibold tracking-wide text-accent first:mt-0">{line}</h3>;
       lineNumber++;
       return <div key={index} className="grid grid-cols-[2rem_minmax(0,1fr)] gap-3 py-0.5 text-base leading-relaxed text-fg"><span className="text-right text-xs leading-7 tabular-nums text-muted select-none" aria-hidden="true">{lineNumber}</span><span className="whitespace-pre-wrap break-words">{line}</span></div>;
     })}

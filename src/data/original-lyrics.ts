@@ -2,6 +2,69 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+  "slug": "45",
+  "title": "45",
+  "lang": "de",
+  "youtubeId": "AViW3mllT4M",
+  "text": "Du bist fünfundvierzig\nDas Leben läuft nur schräg\nDie Kinder versorgst du gut\nDann hast du noch eigenen Job\nFür den Mann wird auch gekocht\nDenn du hast den doppelten Job\n\nSein Vater ist auch krank\nDen versorgst du einfach mit\nFür Träume hast du kaum Zeit\nAbends Netflix ist dein Hit\nKorea-Serie holt dich ein\nDort werden alle Träume wahr\n\nUnd oft stellst du dir vor\nWas könnte anders sein\nDein Mann würde kochen\nUnd so lieb zu dir sein\nDich ins Kino einladen\nUnd eins mit dir sein\n\nUnd wenn du weinst\nDann still im Bett\nDoch glaub mir\nEs gibt immer ein Licht\nSing es aus der Seele\nSuch deine Träume\nWenn deine Seele\nAus der Tiefe schreit\n\nIrgendwann riechst du ein Parfüm\nDu denkst dir nichts dabei\nBis er es von alleine sagt\nEs läuft nicht mehr rund\nFür dich bricht alles ein\nDie Welt wird plötzlich klein\n\nUnd wenn du weinst\nDann still im Bett\nDoch glaub mir\nEs gibt immer ein Licht\nSing es aus der Seele\nSuch deine Träume\nWenn die Seele\nAus der Tiefe schreit\n\nUnd dann kommt der Bruch\nEr kommt nicht mehr heim\nZwei Kinder hast du noch\nUnd deinen Haushalt auch\nFürs Erste bist du platt\nAber du bist doch endlich frei\n\nUnd wenn du weinst\nDann still im Bett\nDoch glaub mir\nEs gibt immer ein Licht\nSing es aus der Seele\nSuch deine Träume\nWenn die Seele\nAus der Tiefe schreit\n\nJetzt bist du aber endlich frei\nDie Kinder sind Gott sei Dank dabei\nDu verdienst echte Liebe\nDenn du bist ein Schatz\nJa, du bist ein wertvoller Schatz"
+},
+  {
+  "slug": "du-bist-45",
+  "title": "Du bist 45",
+  "lang": "de",
+  "youtubeId": "Vqy8buH3vds",
+  "text": "Du bist fünfundvierzig\nDas Leben läuft nur schräg\nDie Kinder versorgst du gut\nDann hast du noch eigenen Job\nFür den Mann wird auch gekocht\nDenn du hast den doppelten Job\n\nSein Vater ist auch krank\nDen versorgst du einfach mit\nFür Träume hast du kaum Zeit\nAbends Netflix ist dein Hit\nKorea-Serie holt dich ein\nDort werden alle Träume wahr\n\nUnd oft stellst du dir vor\nWas könnte anders sein\nDein Mann würde kochen\nUnd so lieb zu dir sein\nDich ins Kino einladen\nUnd eins mit dir sein\n\nUnd wenn du weinst\nDann still im Bett\nDoch glaub mir\nEs gibt immer ein Licht\nSing es aus der Seele\nSuch deine Träume\nWenn deine Seele\nAus der Tiefe schreit\n\nIrgendwann riechst du ein Parfüm\nDu denkst dir nichts dabei\nBis er es von alleine sagt\nEs läuft nicht mehr rund\nFür dich bricht alles ein\nDie Welt wird plötzlich klein\n\nUnd wenn du weinst\nDann still im Bett\nDoch glaub mir\nEs gibt immer ein Licht\nSing es aus der Seele\nSuch deine Träume\nWenn die Seele\nAus der Tiefe schreit\n\nUnd dann kommt der Bruch\nEr kommt nicht mehr heim\nZwei Kinder hast du noch\nUnd deinen Haushalt auch\nFürs Erste bist du platt\nAber du bist doch endlich frei\n\nUnd wenn du weinst\nDann still im Bett\nDoch glaub mir\nEs gibt immer ein Licht\nSing es aus der Seele\nSuch deine Träume\nWenn die Seele\nAus der Tiefe schreit\n\nJetzt bist du aber endlich frei\nDie Kinder sind Gott sei Dank dabei\nDu verdienst echte Liebe\nDenn du bist ein Schatz\nJa, du bist ein wertvoller Schatz"
+},
+  {
+  "slug": "summer-is-fun",
+  "title": "Summer Is Fun",
+  "lang": "en",
+  "youtubeId": "XpwEXF63ZE8",
+  "text": "Summer is fun, dancing in the sun\nFriends all around, and girls and wine\nMusic all around, people everywhere\nEverything feels easy, everybody feels fine\nWe run through the night, we jump into the sea\nThe sky is blue and the world is free\nA kiss in the night, a smile in your eyes\nUnder the stars, beneath a tree\n\nSummer is fun, dancing and sun\nFriends all around, girls and wine\nLiving the dream, feeling so young\nThis is our moment, this is our time\nSummer is life, warm and so calm\nI feel your love here in my arms\nWe sing together, all we need is love\nAnd the Beatles smile down from above\n\nThe moon is shining, the stars are singing\nYou take my hand and my heart is swinging\nNo worries today, no tears anymore\nJust love, music and waves on the shore\nLiving the dream, feeling so young\nThis is our moment, our song has begun\nThis is your time, let love shine\nDancing together till the morning has come\n\nSummer is fun, dancing and sun\nFriends all around, girls and wine\nLiving the dream, feeling so young\nThis is our moment, this is our time\nSummer is life, warm and so calm\nI feel your love here in my arms\nWe sing together, all we need is love\nAnd the Beatles smile down from above."
+},
+  {
+  "slug": "steh-auf",
+  "title": "Steh auf",
+  "lang": "de",
+  "youtubeId": "aOfD3XeRNcU",
+  "text": "Du wachst am Morgen auf\nTausend Gedanken jagen durch den Kopf\nDie Kinder sind schwierig\nIn der Liebe gibt es Stress\nUnd in der Arbeit jagt\nEine Katastrophe die nächste\n\nDu fühlst dich schwach\nDu fühlst dich krank\nDoch keiner glaubt daran\nIm Kopf geht nichts mehr weiter\nUnd du fragst dich irgendwann\nWie soll das alles weitergehen?\n\nVielleicht ist es die Dunkelheit\nVielleicht eine Depression\nDoch als Mann sagt man es nicht\nMan funktioniert einfach schon\nDu gibst nicht auf, du sagst kein Wort\nDoch tief in dir brennt alles fort\n\nRefrain\n\nEs geht dir schlecht, du fühlst dich schlapp\nDoch keiner glaubt daran\nBis du es sagst\n\nUnd wenn du fällst und fast zerbrichst\nDann glaub mir eins\nDas Ende ist es nicht\n\nEs ist nicht die Kunst zu fallen\nSondern nochmal aufzustehen\nUnd wenn alle Lichter untergehen\nSag ich dir: Steh auf. Steh auf\n\nStrophe zwei\n\nEines Tages stehst du nicht auf\nHast einfach keine Kraft\nKörper sagt: Jetzt reicht es auch\nJetzt hört das Schweigen auf\nDa ist etwas in dir\nWie ein Alien tief versteckt\n\nDu gehst damit zum Arzt\nUnd plötzlich geht die Reise los\nMRT und CT\nDie Angst wird riesengroß\nDann sieht man dieses Alien\nDas keiner vorher sah\n\nRefrain zwei\n\nEs geht dir schlecht, du fühlst dich schlapp\nDoch keiner glaubt daran\nBis du es sagst\n\nUnd wenn du fällst und fast zerbrichst\nDann glaub mir eins\nDas Ende ist es nicht\n\nEs ist nicht die Kunst zu fallen\nSondern nochmal aufzustehen\nEs ist nicht die Kunst zu sterben\nSondern es zu überstehen\nUnd wenn alle Lichter untergehen\nSag ich dir: Steh auf. Steh auf\n\nBridge\n\nIrgendwann schneiden sie es raus\nUnd du bist immer noch da\nManchmal beginnt ein neues Leben\nNicht mit Licht, doch mit Schmerz\nWer durch diese Nacht gegangen ist\nTrägt danach ein stärkeres Herz\n\nFinaler Refrain\n\nEs geht dir schlecht, du fühlst dich schlapp\nDoch keiner glaubt daran\nBis du es sagst\n\nUnd wenn du fällst und fast zerbrichst\nDann glaub mir eins\nDas Ende ist es nicht\n\nEs ist nicht die Kunst zu fallen\nSondern nochmal aufzustehen\nEs ist nicht die Kunst zu sterben\nSondern weiterzugehen\nUnd wenn alle Lichter untergehen\nSag ich dir: Steh auf. Steh auf\n\nUnd wenn alle Lichter untergehen\nSag ich dir: Steh auf. Steh auf."
+},
+  {
+  "slug": "ty-tylko-ty-feat-janina-porazinska",
+  "title": "Ty, tylko Ty",
+  "lang": "pl",
+  "youtubeId": "-hQxHSV_PI4",
+  "text": "Na Wojtusia z popielnika\nIskiereczka mruga\nChodź, opowiem ci bajeczkę\nBajka będzie długa\n\nByła sobie raz królewna\nPokochała grajka\nObiecała mi królestwo\nA skończyła sie nagle bajka\n\nTy, tylko ty jesteś tą królewną\nTy, tylko ty umiesz kłamać cudnie\nTy, tylko ty jesteś tą królewną\n\nByła sobie ta królewna\nMiała główkę cudną\nA w tej główce same dziwy\nPsst, iskierka zgasła\n\nPatrzy Wojtuś, patrzy długo\nŁzami zaszły oczęta\nCzemu mnie oszukałaś?\nWojtuś zapamięta\n\nTy, tylko ty jesteś tą królewną\nTy, tylko ty umiesz kłamać cudnie\nTy, tylko ty jesteś tą królewną\n\nJuż ci nigdy nie uwierzę\nTy królewno mała\nNajpierw błyśniesz, potem zgaśniesz\nOt, i bajka cała\n\nJuż ci nigdy nie uwierzę\nTy królewno mała\nNajpierw błyśniesz, potem zgaśniesz\nOt, i bajka cała"
+},
+  {
+  "slug": "immer-schon-hab-ich-gewollt",
+  "title": "Immer schon hab ich gewollt",
+  "lang": "de",
+  "youtubeId": "5DnsZEeOzLs",
+  "text": "Immer schon hab ich gewollt\nDass du mich liebst\nImmer schon hab ich gewollt\nDass du nur an mich denkst\nImmer schon hab ich gewollt\nDass ich nur der Eine bin\n\nDann kam immer was dazwischen\nMal eine sie bei mir, mal ein er bei dir\nWenn ich frei war, warst du besetzt\nDann kam der falsche Sommer\nUnd dann der falsche Herbst\n\nImmer schon hab ich gewollt,dass du mich liebst\nImmer schon hab ich gewollt\nDass du nur an mich denkst\nImmer schon hab ich gewollt\nDass ich nur der Eine bin\n\nDann warst du in der Ehe\nDann kam ein kleines Kind\nUnd nun bist du geschieden\nAber ich bin nicht mehr frei\nSo dreht sich unser Leben weiter\nUnd wir laufen nur vorbei\n\nIrgendwo lebst du in mir\nVielleicht in einem Traum\nWir verpassen die Momente\nFinden uns im falschen Raum\nWir verpassen uns im Leben\nNur nicht in der Fantasie\nWas wir nie erleben konnten\nLebt in dieser Melodie\n\nImmer schon hab ich gewollt\nDass du mich liebst\nImmer schon hab ich gewollt\nDass du nur an mich denkst\nImmer schon hab ich gewollt\nDass ich nur der Eine bin\n\nSo standen wir immer am falschen Ort\nZur falschen Zeit, mit dem richtigen Gefühl\nImmer schon hab ich gewollt\nDass du mich liebst."
+},
+  {
+  "slug": "lebe-den-sommer",
+  "title": "Lebe den Sommer",
+  "lang": "de",
+  "youtubeId": "ygt6tbs7-n8",
+  "text": "Lebe den Sommer, küsse die Sonne\nSpring ins Wasser mit Freude und Spaß\nTrink Spumante, lach dich halb tot\nIss mit Freunden und knutsch dich k.o\nSommer im Herzen, Salz auf der Haut\nAlles ist leicht, alles ist laut\nWir lassen uns treiben, wir leben im Jetzt\nBis die Sonne im Meer sich schlafen legt\n\nSommer ist Leben\nWie zur besten Zeit\nAlles ist hell, warm und blau\nAlles ist rosa und Ferrarirot\nWir segeln lachend in unserem Boot\nSommer ist Leben, weil du da bist\nWeil jeder Kuss wie die Sonne ist\nAlles viel schöner, so warm und blau\nWenn ich in deine Augen schau\n\nMit Freunden am Strand, das Herz voller Licht\nDie Welt dreht sich weiter, wir merken es nicht\nEin Kuss auf die Lippen, ein Blick fast zu nah\nUnd plötzlich ist alles so wunderbar\nDie Nacht ist der Wahsinn, der Himmel glüht rot\nWir tanzen barfuß und kennen kein Verbot\nDu lachst mich an, und ich weiß ganz genau\nMit dir bleibt der Sommer für immer blau\n\nSommer ist Leben\nWie zur besten Zeit\nAlles ist hell, warm und blau\nAlles ist rosa und Ferrarirot\nWir segeln lachend in unserem Boot\nSommer ist Leben, weil du bei mir bist\nWeil jeder Kuss wie die Sonne ist\nAlles viel schöner, so warm und blau\nWenn ich in deine Augen schau."
+},
+  {
+  "slug": "du-bist-das-licht",
+  "title": "Du bist das Licht",
+  "lang": "de",
+  "youtubeId": "ujqlHtEObQY",
+  "text": "Keiner hat mich so geküsst\nSo wie du es tust\nKeiner hat mich so umarmt\nSo wie du mich hältst\nKeiner hat mich so gewärmt\nWenn die Kälte kam\n\nOh, du kannst lieben\nOhne an dich zu denken\nDu bist der Trost\nWenn meine Seele leise weint\nDu bist das Gold in mir\nBist immer, immer für mich da\nDu bist das Licht\nWenn alles um uns dunkel war\n\nKeiner sieht die Tränen früher\nBevor ich sie versteck\nKeiner baut mich wieder auf\nWenn die Welt sich dreht\nKeiner schaut mich so tief an\nDass ich plötzlich nichts mehr weiß\n\nOh, du kannst lieben\nOhne an dich zu denken\nDu bist der Trost\nWenn meine Seele leise weint\nDu bist das Gold in mir\nBist immer, immer für mich da\nDu bist das Licht\nWenn alles um uns dunkel war\n\nIch freu mich auf die Zeit\nDie auf uns noch wartet\nIch freu mich jeden Tag\nAuf deine tausend Küsse\nAuf all die kleinen Wunder\nDie nur wir beide sehen\n\nDu bist das Gold in mir\nBist mein Licht, wenn alles fällt\nDu bist die Liebe meines Lebens\nMein schönster Mensch auf dieser Welt\nMein schönster Mensch auf dieser Welt."
+},
+  {
+  "slug": "ich-habe-dich-gesehen",
+  "title": "Ich habe Dich gesehen",
+  "lang": "de",
+  "youtubeId": "QF7i4Z4yIrY",
+  "text": "Ich habe dich gesehen, und wurde Dich nicht mehr los\nDu warst wie ein helles Licht, und alles andre zählte nicht\nDu warst wie die Sonne, die aus den Wolken kam\nEs war wie reine Wonne, die mir das Herz gefangennahm\n\nSeit jenem ersten Augenblick zieht es mich zu dir zurück\nDein Lächeln blieb mir vor Augen stehen, ich konnte nirgendwo mehr gehen\nDie Welt war plötzlich still, weil du so einfach warst\nUnd das was vorher dunkel schien, begann in deinem Licht zu blüh'n\n\nGib mir mein Herz zurück, sonst zerreißt mich jeder Augenblick\nIch sehe deinen Schatten überall und finde meinen kaum\nGib mir mein Herz zurück, sonst zerreißt mich jeder Augenblick\nIch sehe deinen Schatten überall und finde meinen kaum\nGib mir mein Herz zurück, ich kann es sonst nicht tragen\nEs schlägt immer noch für dich, doch ich darf es niemand sagen\n\nIch suche dich in jedem Licht, in jedem Wort, in jedem Schweigen\nDoch was von uns geblieben ist, will sich mir nicht mehr zeigen\nIch seh deinen Schatten überall, an jeder Wand, in jedem Traum\nUnd wenn der Morgen kommt, verlier ich mich im leeren Raum\n\nLass mich einfach frei, bevor ich dran zerbreche\nDenn jeder Atemzug nach dir ist wie eine kranke Schwäche\nDeine Nähe fehlt wie die Seele, wie ein Teil, der nicht mehr bleibt\nIch halte fest, was längst zerbrochen, auch wenn es mich in Stücke reißt."
+},
+  {
     slug: "bo-ty-jestes-bez-konca",
     title: "Bo ty jesteś bez końca",
     lang: "pl",

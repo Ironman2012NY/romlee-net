@@ -1,6 +1,6 @@
 import { Pause, Play } from "lucide-react";
 import type { Track } from "@/data/tracks";
-import { LANG_LABEL, trackUrl, displaySongTitle } from "@/data/tracks";
+import { trackUrl, displaySongTitle } from "@/data/tracks";
 import { useLocale } from "@/lib/locale";
 import { usePlayer } from "@/lib/player";
 import { cn } from "@/lib/utils";
@@ -51,7 +51,7 @@ export function TrackRow({ track, index }: { track: Track; index?: number }) {
         <p className="text-sm font-medium text-fg">{title}</p>
         {title !== track.title && <p className="text-xs text-muted" lang={track.lang}>{track.title}</p>}
         <p className="text-xs text-subtle">
-          Rom Lee · {LANG_LABEL[track.lang]} · {track.duration}
+          Rom Lee · {new Intl.DisplayNames([locale], {type:"language"}).of(track.lang) ?? track.lang} · {track.duration}
         </p>
       </div>
       <a
