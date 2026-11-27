@@ -509,3 +509,280 @@ export function trackUrl(track: Track) {
   if (track.localVideo) return track.localVideo;
   return `https://www.youtube.com/watch?v=${track.youtubeId}`;
 }
+
+
+// Display translations; release titles and song metadata remain unchanged.
+const TITLE_TRANSLATIONS: Record<string, [string, string, string]> = {
+  "45": [
+    "45",
+    "٤٥",
+    "45"
+  ],
+  "stand-up-for-peace": [
+    "Stand Up for Peace",
+    "انهض من أجل السلام",
+    "为和平挺身而出"
+  ],
+  "water-keep-it-for-tomorrow": [
+    "Water (Keep It for Tomorrow)",
+    "الماء (حافظ عليه للغد)",
+    "水（留给明天）"
+  ],
+  "love-and-peace": [
+    "Love and Peace",
+    "الحب والسلام",
+    "爱与和平"
+  ],
+  "thank-you": [
+    "Thank You",
+    "شكراً",
+    "谢谢"
+  ],
+  "wilki-i-slonce": [
+    "Wolves and the Sun",
+    "الذئاب والشمس",
+    "狼与太阳"
+  ],
+  "sonne-wind-und-wellen": [
+    "Sun, Wind and Waves",
+    "الشمس والرياح والأمواج",
+    "阳光、风与海浪"
+  ],
+  "naechte-und-woelfe": [
+    "Nights and Wolves (Darkness and Light)",
+    "الليالي والذئاب (الظلام والنور)",
+    "夜晚与狼（黑暗与光明）"
+  ],
+  "ich-habe-dich-gesehen": [
+    "I Saw You",
+    "رأيتك",
+    "我看见了你"
+  ],
+  "du-bist-das-licht": [
+    "You Are the Light",
+    "أنت النور",
+    "你是光"
+  ],
+  "immer-schon-hab-ich-gewollt": [
+    "I Wanted You",
+    "أردتك",
+    "我渴望你"
+  ],
+  "lebe-den-sommer": [
+    "Live the Summer",
+    "عش الصيف",
+    "享受夏日"
+  ],
+  "steh-auf": [
+    "Stand Up",
+    "انهض",
+    "站起来"
+  ],
+  "tanze-so-lange-es-geht": [
+    "Dance as Long as You Can",
+    "ارقص ما دمت تستطيع",
+    "尽情跳舞"
+  ],
+  "tancz-dopoki-sie-da": [
+    "Dance as Long as You Can",
+    "ارقص ما دمت تستطيع",
+    "尽情跳舞"
+  ],
+  "du-bist-45": [
+    "You Are 45",
+    "عمرك خمسة وأربعون",
+    "你45岁了"
+  ],
+  "ty-tylko-ty-feat-janina-porazinska": [
+    "You, Only You (feat. Janina Porazinska)",
+    "أنت، أنت وحدك (مع Janina Porazinska)",
+    "你，只有你（与 Janina Porazinska 合作）"
+  ],
+  "ty-tylko-ty": [
+    "You, Only You",
+    "أنت، أنت وحدك",
+    "你，只有你"
+  ],
+  "summer-is-fun": [
+    "Summer Is Fun",
+    "الصيف ممتع",
+    "夏日乐趣"
+  ],
+  "jak-byles-maly": [
+    "When You Were Little",
+    "عندما كنت صغيراً",
+    "当你年幼时"
+  ],
+  "lato-jest-raj-wersja-taneczna": [
+    "Summer Is Paradise (Dance Version)",
+    "الصيف جنة (نسخة راقصة)",
+    "夏日天堂（舞曲版）"
+  ],
+  "lato-jest-raj": [
+    "Summer Is Paradise",
+    "الصيف جنة",
+    "夏日天堂"
+  ],
+  "lato-to-raj-radio-edit": [
+    "Summer Is Paradise (Radio Edit)",
+    "الصيف جنة (نسخة إذاعية)",
+    "夏日天堂（电台版）"
+  ],
+  "lato-to-raj": [
+    "Summer Is Paradise",
+    "الصيف جنة",
+    "夏日天堂"
+  ],
+  "ty-umiesz-kochac": [
+    "You Know How to Love",
+    "أنت تعرف كيف تحب",
+    "你懂得如何去爱"
+  ],
+  "pierwszy-raz": [
+    "First Love",
+    "الحب الأول",
+    "初恋"
+  ],
+  "tu-sabes-amar-feat-marga-nicolau": [
+    "You Know How to Love (feat. Marga Nicolau)",
+    "أنت تعرف كيف تحب (مع Marga Nicolau)",
+    "你懂得如何去爱（与 Marga Nicolau 合作）"
+  ],
+  "tu-sabes-amar": [
+    "You Know How to Love",
+    "أنت تعرف كيف تحب",
+    "你懂得如何去爱"
+  ],
+  "generation-95": [
+    "Generation ’95",
+    "جيل ٩٥",
+    "95一代"
+  ],
+  "durny-sen": [
+    "A Foolish Dream",
+    "حلم أحمق",
+    "一场傻梦"
+  ],
+  "gosia-gosia": [
+    "Gosia Gosia",
+    "غوشا غوشا",
+    "戈西亚 戈西亚"
+  ],
+  "wir-sind-der-ozean": [
+    "We Are the Ocean",
+    "نحن المحيط",
+    "我们是海洋"
+  ],
+  "we-are-the-ocean": [
+    "We Are the Ocean",
+    "نحن المحيط",
+    "我们是海洋"
+  ],
+  "weihnachten-wir-sind-die-engel": [
+    "Christmas – We Are the Angels",
+    "عيد الميلاد – نحن الملائكة",
+    "圣诞节——我们是天使"
+  ],
+  "mister-krawatte": [
+    "Mr. Tie",
+    "السيد ربطة العنق",
+    "领带先生"
+  ],
+  "wir-danken": [
+    "Thank You",
+    "شكراً لكم",
+    "我们感谢你们"
+  ],
+  "liebe": [
+    "Love",
+    "الحب",
+    "爱"
+  ],
+  "christmas-for-all": [
+    "Christmas for All",
+    "عيد الميلاد للجميع",
+    "属于所有人的圣诞节"
+  ],
+  "dance-love-and-peace": [
+    "Dance – Love and Peace",
+    "رقص – الحب والسلام",
+    "舞曲——爱与和平"
+  ],
+  "stand-up-for-peace-deep-house": [
+    "Stand Up for Peace (Deep House)",
+    "انهض من أجل السلام (ديب هاوس)",
+    "为和平挺身而出（Deep House）"
+  ],
+  "revolution": [
+    "Revolution – How to Live?",
+    "الثورة – كيف نعيش؟",
+    "革命——如何生活？"
+  ],
+  "navidad-somos-angeles": [
+    "Christmas – We Are the Angels",
+    "عيد الميلاد – نحن الملائكة",
+    "圣诞节——我们是天使"
+  ],
+  "gracias": [
+    "Dance – Thank You",
+    "رقص – شكراً",
+    "舞曲——谢谢"
+  ],
+  "corka": [
+    "Daughter",
+    "ابنة",
+    "女儿"
+  ],
+  "swieta-aniolami": [
+    "Christmas – We Are the Angels",
+    "عيد الميلاد – نحن الملائكة",
+    "圣诞节——我们是天使"
+  ],
+  "gwiazdka-z-nieba": [
+    "A Star from the Sky",
+    "نجمة من السماء",
+    "来自天空的星星"
+  ],
+  "i-see-angels-dance": [
+    "I See Angels in Your Face (Dance)",
+    "أرى الملائكة في وجهك (رقص)",
+    "我在你脸上看见天使（舞曲）"
+  ],
+  "coming-home-afro-house": [
+    "Coming Home (Afro House)",
+    "العودة إلى الوطن (أفرو هاوس)",
+    "回家（Afro House）"
+  ],
+  "jestesmy-aniolami-dance": [
+    "We Are the Angels (Dance Version)",
+    "نحن الملائكة (نسخة راقصة)",
+    "我们是天使（舞曲版）"
+  ],
+  "tu-eres-el-angel-dance": [
+    "You Are the Angel (Dance)",
+    "أنت الملاك (رقص)",
+    "你是天使（舞曲）"
+  ],
+  "wir-sind-die-engel-koeln": [
+    "Christmas – We Are the Angels",
+    "عيد الميلاد – نحن الملائكة",
+    "圣诞节——我们是天使"
+  ],
+  "bo-ty-jestes-bez-konca": [
+    "Because You Are Infinite",
+    "لأنك بلا نهاية",
+    "因为你无穷无尽"
+  ],
+  "thank-you-to-those-in-power": [
+    "Thank You (To Those in Power)",
+    "شكراً (لأصحاب السلطة)",
+    "谢谢（致掌权者）"
+  ]
+};
+
+export function displaySongTitle(song: Pick<Track, "slug" | "title" | "lang">, locale: string): string {
+  if (locale === song.lang) return song.title;
+  const translation = TITLE_TRANSLATIONS[song.slug];
+  if (!translation) return song.title;
+  return translation[locale === "ar" ? 1 : locale === "zh" ? 2 : 0];
+}
