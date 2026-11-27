@@ -1,10 +1,13 @@
 import { Pause, Play } from "lucide-react";
 import type { Track } from "@/data/tracks";
-import { LANG_LABEL, trackUrl } from "@/data/tracks";
+import { LANG_LABEL, trackUrl, displaySongTitle } from "@/data/tracks";
+import { useLocale } from "@/lib/locale";
 import { usePlayer } from "@/lib/player";
 import { cn } from "@/lib/utils";
 
 export function TrackRow({ track, index }: { track: Track; index?: number }) {
+  const locale = useLocale((s) => s.locale);
+  const title = displaySongTitle(track, locale);
   const current = usePlayer((s) => s.current);
   const playing = usePlayer((s) => s.playing);
   const toggle = usePlayer((s) => s.toggle);
@@ -28,7 +31,7 @@ export function TrackRow({ track, index }: { track: Track; index?: number }) {
           toggle(track);
         }}
         className="relative aspect-video w-[4.75rem] shrink-0 overflow-hidden rounded-sm sm:w-24"
-        aria-label={`${track.title} ${isPlaying ? "pausieren" : "abspielen"}`}
+        aria-label={`${title} · ${isPlaying ? "Pause" : "Play"}`}
       >
         <img src={track.cover} alt="" className="size-full object-cover" />
         <span className="absolute inset-0 flex items-center justify-center bg-bg/40 opacity-0 transition-opacity group-hover:opacity-100">
@@ -45,7 +48,8 @@ export function TrackRow({ track, index }: { track: Track; index?: number }) {
         </span>
       ) : null}
       <div className="min-w-0 flex-1">
-        <p className="truncate text-sm text-fg">{track.title}</p>
+        <p className="text-sm font-medium text-fg">{title}</p>
+        {title !== track.title && <p className="text-xs text-muted" lang={track.lang}>{track.title}</p>}
         <p className="text-xs text-subtle">
           Rom Lee · {LANG_LABEL[track.lang]} · {track.duration}
         </p>
