@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+  "slug": "du-bist-das-licht",
+  "title": "Du bist das Licht",
+  "lang": "de",
+  "youtubeId": "ujqlHtEObQY",
+  "text": "Keiner hat mich so geküsst\nSo wie du es tust\nKeiner hat mich so umarmt\nSo wie du mich hältst\nKeiner hat mich so gewärmt\nWenn die Kälte kam\n\nOh, du kannst lieben\nOhne an dich zu denken\nDu bist der Trost\nWenn meine Seele leise weint\nDu bist das Gold in mir\nBist immer, immer für mich da\nDu bist das Licht\nWenn alles um uns dunkel war\n\nKeiner sieht die Tränen früher\nBevor ich sie versteck\nKeiner baut mich wieder auf\nWenn die Welt sich dreht\nKeiner schaut mich so tief an\nDass ich plötzlich nichts mehr weiß\n\nOh, du kannst lieben\nOhne an dich zu denken\nDu bist der Trost\nWenn meine Seele leise weint\nDu bist das Gold in mir\nBist immer, immer für mich da\nDu bist das Licht\nWenn alles um uns dunkel war\n\nIch freu mich auf die Zeit\nDie auf uns noch wartet\nIch freu mich jeden Tag\nAuf deine tausend Küsse\nAuf all die kleinen Wunder\nDie nur wir beide sehen\n\nDu bist das Gold in mir\nBist mein Licht, wenn alles fällt\nDu bist die Liebe meines Lebens\nMein schönster Mensch auf dieser Welt\nMein schönster Mensch auf dieser Welt."
+},
+  {
   "slug": "ich-habe-dich-gesehen",
   "title": "Ich habe Dich gesehen",
   "lang": "de",
