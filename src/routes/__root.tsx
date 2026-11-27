@@ -29,8 +29,9 @@ export const Route = createRootRoute({
     ],
   }),
   component: () => (
-    <html lang="en" className="antialiased" suppressHydrationWarning>
+    <html lang="en" translate="no" className="antialiased notranslate" suppressHydrationWarning>
       <head>
+        <meta name="google" content="notranslate" />
         <meta property="og:title" content={SITE.shareText} />
         <meta property="og:description" content={SITE.shareText} />
         <meta property="og:type" content="website" />
