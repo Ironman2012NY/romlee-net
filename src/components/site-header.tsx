@@ -22,11 +22,13 @@ export function SiteHeader({ solid = false }: { solid?: boolean }) {
         <div className="flex items-center justify-between gap-3">
           <Link to="/" search={locale === "en" ? undefined : { lang: locale }} className="flex shrink-0 items-center gap-3">
             <img
-              src="/images/fotos/reserve.jpg"
+              src="/images/romlee-music-logo.png"
               alt="Rom Lee Music"
-              className="size-10 rounded-full object-cover object-[50%_38%] ring-1 ring-border sm:size-12"
+              width={900}
+              height={415}
+              className="h-12 w-28 rounded-md bg-white/95 p-1.5 object-contain sm:h-14 sm:w-32"
             />
-            <span className="leading-tight">
+            <span className="hidden leading-tight sm:block">
               <span className="block font-display text-xl tracking-tight text-fg sm:text-2xl">
                 {SITE.name}
               </span>
