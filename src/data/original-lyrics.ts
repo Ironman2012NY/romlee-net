@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+    "slug": "milosc",
+    "title": "Miłość",
+    "lang": "pl",
+    "youtubeId": "r9ORk5ZI9RI",
+    "text": "Jak bardzo cię kocham\nNoce całe i zawsze będę\nWidzę cię we śnie\nI widzę cię za dnia\n\nI nie mogę już spać\nI nie mogę już żyć\nBo wszędzie jesteś ty\nJest tylko snem\n\nI wiem, że to wszystko\nJest tylko w mojej głowie\nBo w życiu niestety\nCałkiem inaczej wszystko jest\n\nTy jesteś jak słońce to\nTy jesteś jak ten księżyc mój\nA życie bez ciebie jest smutne\nA z tobą byłoby wszystko jak cud\n\nZ tobą czuję się jak w niebie\nBo tylko z tobą chciałbym być\nBudzić się z rana koło ciebie\nI zasypiać z tobą tylko chcę\n\nTy jesteś dla mnie wszystkim\nW moim sercu mieszkasz tylko ty\nZ tobą wszystko nie ma granic.\nZ tobą ten świat nie kończy się\n\nProszę, posłuchaj mnie\nPosłuchaj, jak śpiewam\nI wtedy możesz zrozumieć\nCo miłość naprawdę znaczy\n\nI wiem że ty sama\nTeż nie możesz żyć\nAle życie cię tak oddaliło\nŻe związać nas może tylko Bóg\n\nTy jesteś jak słońce to\nTy jesteś jak ten księżyc mój\nA życie bez ciebie jest smutne\nA z tobą byłoby wszystko jak cud\n\nZ tobą czuję się jak w niebie\nBo tylko z tobą chciałbym być\nBudzić się z rana koło ciebie\nI zasypiać z tobą tylko chcę\n\nDlatego śpiewam dalej\nI wtedy może znajdziesz mnie\nI mnie uratujesz,\nI mnie w ramiona weźmiesz twe\n\nI wtedy będziemy my\nI to wszystko, czego chcę\nO czym marzę i chcę\nŻeby naprawdę się zdarzyło\n\nWięc proszę, posłuchaj mnie\nPosłuchaj, jak śpiewam\nI wtedy może znajdziesz mnie\nI wtedy będziemy my\n\nTy jesteś jak słońce to,\nTy jesteś jak ten księżyc mój\nA życie bez ciebie jest smutne\nA z tobą byłoby wszystko jak cud\n\nZ tobą czuję się jak w niebie\nBo tylko z tobą chciałbym być\nBudzić się z rana koło ciebie\nI zasypiać z tobą tylko chcę\n\nProszę, posłuchaj mnie\nPosłuchaj, jak śpiewam\nI wtedy może znajdziesz mnie\nI wtedy będziemy my"
+  },
+  {
     "slug": "jak-to-zyc",
     "title": "Jak to żyć?",
     "lang": "pl",
