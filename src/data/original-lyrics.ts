@@ -2,6 +2,20 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+  "slug": "45",
+  "title": "45",
+  "lang": "de",
+  "youtubeId": "AViW3mllT4M",
+  "text": "Du bist fünfundvierzig\nDas Leben läuft nur schräg\nDie Kinder versorgst du gut\nDann hast du noch eigenen Job\nFür den Mann wird auch gekocht\nDenn du hast den doppelten Job\n\nSein Vater ist auch krank\nDen versorgst du einfach mit\nFür Träume hast du kaum Zeit\nAbends Netflix ist dein Hit\nKorea-Serie holt dich ein\nDort werden alle Träume wahr\n\nUnd oft stellst du dir vor\nWas könnte anders sein\nDein Mann würde kochen\nUnd so lieb zu dir sein\nDich ins Kino einladen\nUnd eins mit dir sein\n\nUnd wenn du weinst\nDann still im Bett\nDoch glaub mir\nEs gibt immer ein Licht\nSing es aus der Seele\nSuch deine Träume\nWenn deine Seele\nAus der Tiefe schreit\n\nIrgendwann riechst du ein Parfüm\nDu denkst dir nichts dabei\nBis er es von alleine sagt\nEs läuft nicht mehr rund\nFür dich bricht alles ein\nDie Welt wird plötzlich klein\n\nUnd wenn du weinst\nDann still im Bett\nDoch glaub mir\nEs gibt immer ein Licht\nSing es aus der Seele\nSuch deine Träume\nWenn die Seele\nAus der Tiefe schreit\n\nUnd dann kommt der Bruch\nEr kommt nicht mehr heim\nZwei Kinder hast du noch\nUnd deinen Haushalt auch\nFürs Erste bist du platt\nAber du bist doch endlich frei\n\nUnd wenn du weinst\nDann still im Bett\nDoch glaub mir\nEs gibt immer ein Licht\nSing es aus der Seele\nSuch deine Träume\nWenn die Seele\nAus der Tiefe schreit\n\nJetzt bist du aber endlich frei\nDie Kinder sind Gott sei Dank dabei\nDu verdienst echte Liebe\nDenn du bist ein Schatz\nJa, du bist ein wertvoller Schatz"
+},
+  {
+  "slug": "du-bist-45",
+  "title": "Du bist 45",
+  "lang": "de",
+  "youtubeId": "Vqy8buH3vds",
+  "text": "Du bist fünfundvierzig\nDas Leben läuft nur schräg\nDie Kinder versorgst du gut\nDann hast du noch eigenen Job\nFür den Mann wird auch gekocht\nDenn du hast den doppelten Job\n\nSein Vater ist auch krank\nDen versorgst du einfach mit\nFür Träume hast du kaum Zeit\nAbends Netflix ist dein Hit\nKorea-Serie holt dich ein\nDort werden alle Träume wahr\n\nUnd oft stellst du dir vor\nWas könnte anders sein\nDein Mann würde kochen\nUnd so lieb zu dir sein\nDich ins Kino einladen\nUnd eins mit dir sein\n\nUnd wenn du weinst\nDann still im Bett\nDoch glaub mir\nEs gibt immer ein Licht\nSing es aus der Seele\nSuch deine Träume\nWenn deine Seele\nAus der Tiefe schreit\n\nIrgendwann riechst du ein Parfüm\nDu denkst dir nichts dabei\nBis er es von alleine sagt\nEs läuft nicht mehr rund\nFür dich bricht alles ein\nDie Welt wird plötzlich klein\n\nUnd wenn du weinst\nDann still im Bett\nDoch glaub mir\nEs gibt immer ein Licht\nSing es aus der Seele\nSuch deine Träume\nWenn die Seele\nAus der Tiefe schreit\n\nUnd dann kommt der Bruch\nEr kommt nicht mehr heim\nZwei Kinder hast du noch\nUnd deinen Haushalt auch\nFürs Erste bist du platt\nAber du bist doch endlich frei\n\nUnd wenn du weinst\nDann still im Bett\nDoch glaub mir\nEs gibt immer ein Licht\nSing es aus der Seele\nSuch deine Träume\nWenn die Seele\nAus der Tiefe schreit\n\nJetzt bist du aber endlich frei\nDie Kinder sind Gott sei Dank dabei\nDu verdienst echte Liebe\nDenn du bist ein Schatz\nJa, du bist ein wertvoller Schatz"
+},
+  {
   "slug": "summer-is-fun",
   "title": "Summer Is Fun",
   "lang": "en",
