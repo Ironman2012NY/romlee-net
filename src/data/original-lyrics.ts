@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+  "slug": "durny-sen",
+  "title": "Durny sen",
+  "lang": "pl",
+  "youtubeId": "3UJvZX06lVU",
+  "text": "Oczy czarne, i przecudne\nOczy me, jak kocham was\nOczy czarne, jak was zobaczyłem\nTo zaraz się w nich utopiłem\nNie wiem nawet, jak głęboko\nTwoje oczy są\nJak was zobaczyłem\nTo już się straciłem\nI nie mogłem zrobić już nic\n\nOczy czarne i przecudne\nOczy piękne, oczy me\nJak ja kocham was\nJak się boję was\nI jak już bez nich\nNie mogę żyć\nOczy czarne i przecudne\nOczy piękne, oczy me\nJak ja kocham was\nJak się boję was\nI jak już bez nich\nNie mogę żyć\n\nTylko ten jeden raz spojrzałaś się na mnie\nI przechyliłaś główkę z boku ty\nTak cudnie się spojrzałaś\nA ja straciłem zmysł\nI od tego czasu nawet nic nie powiedziałem\nAle w głowie miałem tylko tylko jedno to\nOczy czarne i przecudne\nOczy piękne, oczy me\nJak ja kocham was\nJak się boję was\nI jak już bez nich\nNie mogę żyć\n\nOczy czarne i przecudne\nOczy piękne, oczy me\nJak ja kocham was\nJak się boję was\nI jak już bez nich\nNie mogę żyć\nJak już bez nich\nNie mogę żyć\n\nI tak byliśmy, i tak kochałaś mnie\nPrzez trzy lata też\nJa byłem w siódmym niebie\nI czasem myślałem, że umiem latać\nŻe nawet uniwersum nie ma granic\nWszystko, tak myślałem w główce mojej\nBo w oczach twoich się zgubiłem\nI widziałem tylko to, co chciałem widzieć\nI to byłaś ty, jak ten wielki\nJak ten wielki, durny sen\nBo oczach twoich się zgubiłem\nAle szczęśliwy byłem też\n\nOczy czarne i przecudne\nOczy piękne, oczy me\nJak ja kocham was\nJak się boję was\nI jak już bez nich\nNie mogę żyć\nOczy czarne i przecudne\nOczy piękne, oczy me\nJak ja kocham was\nJak się boję was\nI ja już bez nich\nNie mogę żyć\nJa już bez nich\nNie mogę żyć"
+},
+  {
   "slug": "du-bist-so-unendlich",
   "title": "Du bist so unendlich",
   "lang": "de",
