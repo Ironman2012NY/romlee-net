@@ -76,7 +76,7 @@ function SongtextePage() {
                     <span className="min-w-0"><span className="block text-base text-fg">{title}</span>{title !== song.title && <span className="block text-xs text-muted" lang={song.lang}>{song.title}</span>}</span>
                     <span className="shrink-0 text-xs text-accent">{ready} <span aria-hidden="true" className="inline-block group-open:rotate-180">⌄</span></span>
                   </summary>
-                  <div className="pb-4"><NumberedLyrics text={song.text} lang={song.lang} /><a href={track ? trackUrl(track) : "https://www.youtube.com/watch?v=" + song.youtubeId} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm text-accent underline underline-offset-4">{copy.watchVideos}<ExternalLink className="size-3.5" /></a></div>
+                  <div className="pb-4"><NumberedLyrics text={song.text} lang={song.lang} />{song.youtubeId && <a href={track ? trackUrl(track) : "https://www.youtube.com/watch?v=" + song.youtubeId} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm text-accent underline underline-offset-4">{copy.watchVideos}<ExternalLink className="size-3.5" /></a>}</div>
                 </details> : <div className="flex min-h-12 items-center justify-between gap-3 py-3"><span className="min-w-0"><span className="block text-base text-fg">{title}</span>{title !== song.title && <span className="block text-xs text-muted" lang={song.lang}>{song.title}</span>}</span><span className="shrink-0 text-xs text-muted">{pending}</span></div>}
               </li>; })}
             </ul>
