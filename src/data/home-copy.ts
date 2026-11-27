@@ -262,7 +262,16 @@ const id: HomeCopy = {
     "Kami tidak ingin lagu yang menuding. Lagu berirama, juga ringan: minumlah air. English, Español, Polski. Pesan pusatnya sederhana: air memberi hidup, dan kita harus menyimpannya untuk esok.",
 };
 
-const MAP: Record<Locale, HomeCopy> = {
+const MAP: Record<Locale | "zh", HomeCopy> = {
+  zh: {
+  "newRelease": "新发行",
+  "newSong": "新歌",
+  "listenSpotify": "在 Spotify 收听",
+  "standUpLead": "所有宗教都渴望和平。无论冲突的原因是政治、历史、领土还是宗教，不同信仰的人们都可以团结在一起。不同的信仰，同一个人类，同一个希望。为和平挺身而出。基督教、伊斯兰教、犹太教和佛教讲述不同的故事，却一再回归相同的人类价值：同情、仁慈、宽恕与和平。",
+  "loveLead": "借助音乐视频和短片，《Love and Peace》已成为一首面向全世界的和平之歌。视频观看 {video} 次，短片观看 {short} 次——合计 {sum}。",
+  "waterLead1": "我为什么写这首歌……波托科洛姆的西班牙朋友，尤其是 Rosa，请我写一首关于水的歌。马德里、瓦伦西亚、安达卢西亚、马略卡岛以及波托科洛姆的水资源日益短缺。《Drink the Water》讲述乡村童年的故事：祖母家旁清澈的小溪，孩子在溪中游泳、用手捧水喝，全家也依靠这条小溪生活。影片将回忆与一个简单的信息联系在一起：水赋予我们生命，因此我们必须保护水，为明天留下水。",
+  "waterLead2": "我们不想用歌曲说教，而是创作一首轻松而富有节奏的歌曲：喝水。英语、西班牙语、波兰语。核心信息很简单：水赋予我们生命，我们必须为明天保护水。"
+},
   de,
   en,
   pl,
