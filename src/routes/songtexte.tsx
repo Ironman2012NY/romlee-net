@@ -3,13 +3,13 @@ import { useState } from "react";
 import { ExternalLink } from "lucide-react";
 import { SONG_TEXTS } from "@/data/lyrics";
 import { ORIGINAL_LYRICS } from "@/data/original-lyrics";
-import { LANG_LABEL, TRACKS, displaySongTitle, type Lang } from "@/data/tracks";
+import { LANG_LABEL, TRACKS, displaySongTitle, trackUrl, type Lang } from "@/data/tracks";
 import { PageHead, SiteShell } from "@/components/site-shell";
 import { useT } from "@/components/lang-switch";
 import { useLocale } from "@/lib/locale";
 
 export const Route = createFileRoute("/songtexte")({ component: SongtextePage });
-const LANGUAGES: Lang[] = ["en", "de", "pl", "es"];
+const LANGUAGES: Lang[] = ["de", "pl", "en", "es"];
 const filters: ("all" | Lang)[] = ["all", ...LANGUAGES];
 
 // Keep descriptions out of Lyrics. Extract only the clearly marked original verses.
@@ -31,6 +31,11 @@ const extraLyrics = SONG_TEXTS.flatMap((song) => {
   return [];
 });
 const allLyrics = [...new Map([...ORIGINAL_LYRICS, ...extraLyrics].map(song => [song.slug, song])).values()];
+
+// The complete catalog remains visible, even when an authorized lyric is not yet available.
+const normalizeTitle = (value: string) => value.toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
+const pendingTracks = TRACKS.filter((track, index) => !allLyrics.some(song => song.lang === track.lang && (song.slug === track.slug || song.youtubeId === track.youtubeId || normalizeTitle(song.title) === normalizeTitle(track.title))) && TRACKS.findIndex(other => other.lang === track.lang && normalizeTitle(other.title) === normalizeTitle(track.title)) === index);
+const catalog = [...allLyrics.map(song => ({ ...song, available: true })), ...pendingTracks.map(track => ({ ...track, text: "", available: false }))];
 
 function NumberedLyrics({ text, lang }: { text: string; lang: Lang }) {
   let lineNumber = 0;
@@ -56,26 +61,25 @@ function SongtextePage() {
       <div className="mb-8 flex flex-wrap gap-2">
         {filters.map(id => <button key={id} type="button" onClick={() => setFilter(id)} aria-pressed={filter === id} className={filter === id ? "min-h-11 rounded-md bg-fg px-4 text-sm font-medium text-accent-fg" : "min-h-11 rounded-md border border-border px-4 text-sm text-muted hover:text-fg"}>{id === "all" ? copy.allFilter : LANG_LABEL[id]}</button>)}
       </div>
-      <div className="space-y-9">
+      <div className="grid items-start gap-5 md:grid-cols-2">
         {LANGUAGES.filter(lang => filter === "all" || filter === lang).map(lang => {
-          const list = allLyrics.filter(song => song.lang === lang);
+          const list = catalog.filter(song => song.lang === lang);
           if (!list.length) return null;
-          return <section key={lang}>
-            <h2 className="mb-4 font-display text-2xl text-fg">{LANG_LABEL[lang]} <span className="ml-2 text-sm text-muted">{list.length}</span></h2>
-            <div className="space-y-3">
-              {list.map(song => { const track = TRACKS.find(t => t.youtubeId === song.youtubeId); const title = displaySongTitle(song, locale); return <details key={song.slug} id={song.slug} className="group rounded-xl border border-border bg-surface open:bg-elevated">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-4 py-4 sm:px-6 [&::-webkit-details-marker]:hidden">
-                  <span className="flex min-w-0 items-center gap-3">
-                    <img src={track?.cover ?? "/images/fotos/reserve.jpg"} alt="" className="aspect-video w-20 shrink-0 rounded-sm object-cover" />
-                    <span><span className="block font-display text-xl text-fg">{title}</span>{title !== song.title && <span className="block text-xs text-muted" lang={song.lang}>{song.title}</span>}</span>
-                  </span><span className="text-muted group-open:rotate-180" aria-hidden="true">⌄</span>
-                </summary>
-                <div className="border-t border-border px-3 py-5 sm:px-6">
-                  <NumberedLyrics text={song.text} lang={song.lang} />
-                  <a href={"https://www.youtube.com/watch?v=" + song.youtubeId} target="_blank" rel="noopener noreferrer" className="mx-auto mt-5 flex max-w-2xl items-center gap-2 text-sm text-fg underline underline-offset-4">{copy.watchVideos}<ExternalLink className="size-3.5" /></a>
-                </div>
-              </details>; })}
-            </div>
+          const pending = locale === "de" ? "Text folgt" : locale === "pl" ? "Tekst w przygotowaniu" : locale === "es" ? "Letra pendiente" : locale === "ar" ? "الكلمات قيد الإعداد" : locale === "zh" ? "歌词待补充" : "Lyrics pending";
+          const ready = locale === "de" ? "Text lesen" : locale === "pl" ? "Czytaj tekst" : locale === "es" ? "Leer letra" : locale === "ar" ? "اقرأ الكلمات" : locale === "zh" ? "查看歌词" : "Read lyrics";
+          return <section key={lang} className="rounded-xl border border-border bg-surface px-4 py-5 sm:px-6">
+            <h2 className="mb-3 font-display text-2xl text-accent">{LANG_LABEL[lang]}</h2>
+            <ul className="divide-y divide-border border-t border-border">
+              {list.map(song => { const title = displaySongTitle(song, locale); const track = TRACKS.find(t => t.youtubeId === song.youtubeId); return <li key={song.slug}>
+                {song.available ? <details id={song.slug} className="group">
+                  <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 [&::-webkit-details-marker]:hidden">
+                    <span className="min-w-0"><span className="block text-base text-fg">{title}</span>{title !== song.title && <span className="block text-xs text-muted" lang={song.lang}>{song.title}</span>}</span>
+                    <span className="shrink-0 text-xs text-accent">{ready} <span aria-hidden="true" className="inline-block group-open:rotate-180">⌄</span></span>
+                  </summary>
+                  <div className="pb-4"><NumberedLyrics text={song.text} lang={song.lang} /><a href={track ? trackUrl(track) : "https://www.youtube.com/watch?v=" + song.youtubeId} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center gap-2 text-sm text-accent underline underline-offset-4">{copy.watchVideos}<ExternalLink className="size-3.5" /></a></div>
+                </details> : <div className="flex min-h-12 items-center justify-between gap-3 py-3"><span className="min-w-0"><span className="block text-base text-fg">{title}</span>{title !== song.title && <span className="block text-xs text-muted" lang={song.lang}>{song.title}</span>}</span><span className="shrink-0 text-xs text-muted">{pending}</span></div>}
+              </li>; })}
+            </ul>
           </section>;
         })}
       </div>
