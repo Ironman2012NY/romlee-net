@@ -2,6 +2,27 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+  "slug": "christmas-for-all",
+  "title": "Christmas for All · English / Polski / Español / Deutsch",
+  "lang": "en",
+  "youtubeId": "sd_elh2GVhE",
+  "text": "Christmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home\n\nChristmas comes to us all\nAnd all are filled with joy\nA wondrous time for all\nIt feels like paradise\nEach child waits for the day\nWhen Santa comes at last\n\nChristmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home\n\nŚwięta do nas przyjdą\nKażdy dziś się cieszy\nTo cudowny jest czas\nTo raj dla nas wszystkich\nKażde dziecko czeka\nBo Mikołaj przyjdzie\n\nChristmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home\n\nYa llega Navidad\nHoy todos celebran\nEs tiempo de soñar\nEs un paraíso\nLos niños esperan\nPor fin llega Santa\n\nChristmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home\n\nWeihnachten kommt zu uns\nUnd alle freuen sich\nDie schönste Zeit im Jahr\nFast wie im Paradies\nDie Kinder warten schon\nBald kommt der Nikolaus\n\nChristmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home"
+},
+  {
+  "slug": "christmas-for-all-acoustic",
+  "title": "Christmas for All (Acoustic)",
+  "lang": "en",
+  "youtubeId": "66t5vdeQAkw",
+  "text": "Christmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home\n\nChristmas comes to us all\nAnd all are filled with joy\nA wondrous time for all\nIt feels like paradise\nEach child waits for the day\nWhen Santa comes at last\n\nChristmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home\n\nŚwięta do nas przyjdą\nKażdy dziś się cieszy\nTo cudowny jest czas\nTo raj dla nas wszystkich\nKażde dziecko czeka\nBo Mikołaj przyjdzie\n\nChristmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home\n\nYa llega Navidad\nHoy todos celebran\nEs tiempo de soñar\nEs un paraíso\nLos niños esperan\nPor fin llega Santa\n\nChristmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home\n\nWeihnachten kommt zu uns\nUnd alle freuen sich\nDie schönste Zeit im Jahr\nFast wie im Paradies\nDie Kinder warten schon\nBald kommt der Nikolaus\n\nChristmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home"
+},
+  {
+  "slug": "christmas-for-us-all-intimate",
+  "title": "Christmas for us all (Intimate)",
+  "lang": "en",
+  "youtubeId": "fklubAC-n2Q",
+  "text": "Christmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home\n\nChristmas comes to us all\nAnd all are filled with joy\nA wondrous time for all\nIt feels like paradise\nEach child waits for the day\nWhen Santa comes at last\n\nChristmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home\n\nŚwięta do nas przyjdą\nKażdy dziś się cieszy\nTo cudowny jest czas\nTo raj dla nas wszystkich\nKażde dziecko czeka\nBo Mikołaj przyjdzie\n\nChristmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home\n\nYa llega Navidad\nHoy todos celebran\nEs tiempo de soñar\nEs un paraíso\nLos niños esperan\nPor fin llega Santa\n\nChristmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home\n\nWeihnachten kommt zu uns\nUnd alle freuen sich\nDie schönste Zeit im Jahr\nFast wie im Paradies\nDie Kinder warten schon\nBald kommt der Nikolaus\n\nChristmas is for us all\nChristmas is for us all\nThis is a time of love\nChristmas is for each soul\nIt touches every heart\nChristmas will bring us home"
+},
+  {
   "slug": "lato-to-raj-radio-edit",
   "title": "Lato to raj (Radio Edit)",
   "lang": "pl",
