@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { loadYoutubeStats, mergeYoutubeStats, YT_WATCH_HOURS, type YtStats } from "@/lib/youtube";
-import { formatNumber, cn } from "@/lib/utils";
+import { loadYoutubeStats, mergeYoutubeStats, YT_WATCH_HOURS, YT_STUDIO_VIEWS_365, YT_STUDIO_DATE, type YtStats } from "@/lib/youtube";
+import { cn } from "@/lib/utils";
 import { useT } from "@/components/lang-switch";
+import { useLocale } from "@/lib/locale";
 
 const POLL_MS = 60_000;
 const STORE_KEY = "romlee-yt-floor";
@@ -70,18 +71,22 @@ export function YoutubeLiveStats({
   variant?: "hero" | "panel";
 }) {
   const copy = useT();
+  const locale = useLocale(s => s.locale);
+  const compact = (value: number) => new Intl.NumberFormat(locale, { notation: "compact", maximumFractionDigits: 1 }).format(value);
+  const exactNumber = (value: number) => new Intl.NumberFormat(locale, { maximumFractionDigits: 1 }).format(value);
+  const labels = locale === "de" ? ["Einzelne Zuschauer", "Aufrufe in 48 Std."] : locale === "pl" ? ["Unikalni widzowie", "Wyświetlenia w 48 godz."] : locale === "es" ? ["Espectadores únicos", "Vistas en 48 h"] : locale === "ar" ? ["المشاهدون الفريدون", "المشاهدات خلال 48 ساعة"] : locale === "zh" ? ["独立观众", "48小时观看次数"] : ["Unique viewers", "Views in 48h"];
   const items = [
-    { value: formatNumber(stats.subscribers), label: copy.subs, exact: stats.subscribers },
-    { value: formatNumber(stats.totalViews), label: copy.viewsTotal, exact: stats.totalViews },
+    { value: exactNumber(stats.subscribers), label: copy.subs, exact: exactNumber(stats.subscribers) },
+    { value: "≈ " + compact(YT_STUDIO_VIEWS_365), label: `${copy.views365} (Studio)`, exact: "≈ " + compact(YT_STUDIO_VIEWS_365) },
     {
-      value: new Intl.NumberFormat("de-DE", {
+      value: new Intl.NumberFormat(locale, {
         minimumFractionDigits: 1,
         maximumFractionDigits: 1,
       }).format(YT_WATCH_HOURS),
       label: `${copy.watchHours} (Studio)`,
-      exact: YT_WATCH_HOURS,
+      exact: exactNumber(YT_WATCH_HOURS),
     },
-    { value: formatNumber(stats.videoCount), label: copy.videos, exact: stats.videoCount },
+    { value: exactNumber(stats.videoCount), label: copy.videos, exact: exactNumber(stats.videoCount) },
   ];
 
   return (
@@ -94,7 +99,7 @@ export function YoutubeLiveStats({
         )}
       >
         {items.map((item) => (
-          <div key={item.label} className="min-w-0" title={formatNumber(item.exact)}>
+          <div key={item.label} className="min-w-0" title={item.exact}>
             <p className="font-sans text-[clamp(1.05rem,3vw,2rem)] font-semibold leading-tight tabular-nums text-fg">
               {item.value}
             </p>
@@ -102,11 +107,12 @@ export function YoutubeLiveStats({
           </div>
         ))}
       </div>
-      <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-subtle">
+      <div className="mt-3 grid grid-cols-2 gap-3 text-fg sm:max-w-xl"><div className="rounded-md bg-bg/80 px-3 py-2"><strong className="font-semibold tabular-nums">≈ {compact(9_600_000)}</strong><span className="ml-2 text-xs text-fg/80">{labels[0]} (365d)</span></div><div className="rounded-md bg-bg/80 px-3 py-2"><strong className="font-semibold tabular-nums">{exactNumber(723_098)}</strong><span className="ml-2 text-xs text-fg/80">{labels[1]}</span></div></div>
+      <p className="mt-3 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-fg/80">
         <span className="inline-block size-1.5 rounded-full bg-accent" aria-hidden="true" />
         YouTube
         {stats.joined ? ` · ${copy.channelSince} ${formatJoined(stats.joined)}` : ""} ·{" "}
-        {formatNumber(stats.totalViews)} {copy.viewsWord}
+        YouTube Studio · {copy.asOf} {new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeZone: "UTC" }).format(new Date(YT_STUDIO_DATE + "T00:00:00Z"))}
       </p>
     </div>
   );
