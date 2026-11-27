@@ -13,6 +13,7 @@ export type Track = {
   lang: Lang;
   featured?: boolean;
   localVideo?: string;
+  releaseUrl?: string;
 };
 
 export const TRACKS: Track[] = [
@@ -420,7 +421,8 @@ export const TRACKS: Track[] = [
   {
     id: "gwiazdka",
     title: "Gwiazdka z nieba",
-    duration: "Video",
+    duration: "5:32",
+    releaseUrl: "https://distrokid.com/hyperfollow/romlee/gwiazdka-z-nieba",
     slug: "gwiazdka-z-nieba",
     cover: "/api/yt-thumb/JRFkofdFLnE",
     youtubeId: "JRFkofdFLnE",
@@ -506,6 +508,7 @@ export function localVideoForYoutubeId(id: string): string | undefined {
 }
 
 export function trackUrl(track: Track) {
+  if (track.releaseUrl) return track.releaseUrl;
   if (track.localVideo) return track.localVideo;
   return `https://www.youtube.com/watch?v=${track.youtubeId}`;
 }
