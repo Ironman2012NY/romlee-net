@@ -22,7 +22,28 @@ export type PageExtra = {
   currentDiscussion: string;
 };
 
-const PAGE: Record<Locale, PageExtra> = {
+const PAGE: Record<Locale | "zh", PageExtra> = {
+  zh: {
+  "playlistsLead": "德国歌曲、波兰歌曲、英语和西班牙语歌曲、热门视频、粉丝短片和我的最爱——在 YouTube 收听。",
+  "latestUploads": "最新上传",
+  "fromLibrary": "来自媒体库",
+  "lovePeaceLine": "《Love and Peace》通过视频与短片成为面向全世界的和平之歌（视频观看次数：{n}）。",
+  "listenOnYoutube": "在 YouTube 收听",
+  "backToPosts": "返回全部文章",
+  "readPdfArticle": "阅读学术文章 PDF",
+  "aboutSongsAi": "关于歌曲与人工智能",
+  "videoProductionNote": "视频制作说明",
+  "lyricsTeaser": "按原始语言浏览歌词，保留主歌、副歌及行号。",
+  "toLyrics": "查看歌词 →",
+  "allFilter": "全部",
+  "channelSince": "频道创建于",
+  "viewsWord": "次观看",
+  "asOf": "截至",
+  "toChannel": "前往频道",
+  "summaryTitle": "总结（适用于所有歌曲）",
+  "asOfSongs": "截至2026年7月23日 · {n} 首歌曲",
+  "currentDiscussion": "最新文章"
+},
   de: {
     playlistsLead:
       "German Songs, Polish Songs, English / Español, Beliebte Videos, Fan Shorts und My Favorite — Anhören auf YouTube.",
