@@ -271,54 +271,54 @@ Bo ty jesteś bez końca`,
     title: "Thank You (To Those in Power)",
     lang: "en",
     youtubeId: "6sd7QXLOTmI",
-    text: `VERSE 1
+    text: `When I look at the world today
+I see how dark it's become
+They climb up high and forget us
+And things keep getting worse each day
+And those above are singing: Thank you
+Thank you, thank you, thank you, thank you
+Thank you thank you
 
-When I look at the world today,
-I see how dark it's become.
-They climb up high and forget us,
-And things keep getting worse each day.
-And those above are singing: Thank you, thank you.
-Thank you, thank you, thank you, thank you, thank you
+In the West, someone's lost their mind
+In the East, someone's gone mad
+And we must go on living here between them
+And we just watch and see what happens next
+They keep on playing with our whole world
+They don't see the common folk
 
-VERSE 2
+Thank you,Thank you, thank you
+Thank you, thank you, thank you
 
-In the West, someone's lost their mind,
-In the East, someone's gone mad.
-And we must go on living here between them,
-And we just watch and see what happens next.
-They keep on playing with our whole world,
-They don't see the common folk.
-Thank you, thank you, thank you, thank you, thank you
+A cold wind howls across the land
+And carries all our words away
+But no one hears the words we say
+And all our fears return again
 
-VERSE 3
+We don't know what the day will bring
+The wind sings: Oh, thank you
+Thank you, thank you, thank you, thank you
+Thank you thank you
 
-A cold wind howls across the land,
-And carries all our words away.
-But no one hears the words we say,
-And all our fears return again.
-We don't know what the day will bring,
-The wind sings: Oh, thank you, thank you.
-Thank you, thank you, thank you, thank you, thank you.
+Now speculation rules the world
+And only money seems to count
+They never see what we all need
+The common people pay the price
 
-VERSE 4
+The people keep the whole world alive
+Up above they keep singing: Thank you
+Thank you, thank you
+Thank you, thank you, thank you
 
-Now speculation rules the world,
-And only money seems to count.
-They never see what we all need,
-The common people pay the price.
-The people keep the whole world alive,
-Up above they keep singing: Thank you,
-Thank you, thank you, thank you, thank you, thank you.
+I'm just a little drop of rain
+And you are just a little drop like me
+And together we can make a wave
+And from our many waves an ocean grows
 
-VERSE 5
-
-I'm just a little drop of rain,
-And you are just a little drop like me.
-And together we can make a wave,
-And from our many waves an ocean grows.
-Let's stand together, side by side,
+Let's stand together, side by side
 And together we sing: Thank you
-Thank you, thank you, thank you, thank you, thank you`,
+Thank you, thank you, Thank you
+Thank you, thank you, thank you
+Thank you thank you,`,
   },
   {
     slug: "wir-sind-die-engel-koeln",
