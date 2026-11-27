@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+  "slug": "steh-auf",
+  "title": "Steh auf",
+  "lang": "de",
+  "youtubeId": "aOfD3XeRNcU",
+  "text": "Du wachst am Morgen auf\nTausend Gedanken jagen durch den Kopf\nDie Kinder sind schwierig\nIn der Liebe gibt es Stress\nUnd in der Arbeit jagt\nEine Katastrophe die nächste\n\nDu fühlst dich schwach\nDu fühlst dich krank\nDoch keiner glaubt daran\nIm Kopf geht nichts mehr weiter\nUnd du fragst dich irgendwann\nWie soll das alles weitergehen?\n\nVielleicht ist es die Dunkelheit\nVielleicht eine Depression\nDoch als Mann sagt man es nicht\nMan funktioniert einfach schon\nDu gibst nicht auf, du sagst kein Wort\nDoch tief in dir brennt alles fort\n\nRefrain\n\nEs geht dir schlecht, du fühlst dich schlapp\nDoch keiner glaubt daran\nBis du es sagst\n\nUnd wenn du fällst und fast zerbrichst\nDann glaub mir eins\nDas Ende ist es nicht\n\nEs ist nicht die Kunst zu fallen\nSondern nochmal aufzustehen\nUnd wenn alle Lichter untergehen\nSag ich dir: Steh auf. Steh auf\n\nStrophe zwei\n\nEines Tages stehst du nicht auf\nHast einfach keine Kraft\nKörper sagt: Jetzt reicht es auch\nJetzt hört das Schweigen auf\nDa ist etwas in dir\nWie ein Alien tief versteckt\n\nDu gehst damit zum Arzt\nUnd plötzlich geht die Reise los\nMRT und CT\nDie Angst wird riesengroß\nDann sieht man dieses Alien\nDas keiner vorher sah\n\nRefrain zwei\n\nEs geht dir schlecht, du fühlst dich schlapp\nDoch keiner glaubt daran\nBis du es sagst\n\nUnd wenn du fällst und fast zerbrichst\nDann glaub mir eins\nDas Ende ist es nicht\n\nEs ist nicht die Kunst zu fallen\nSondern nochmal aufzustehen\nEs ist nicht die Kunst zu sterben\nSondern es zu überstehen\nUnd wenn alle Lichter untergehen\nSag ich dir: Steh auf. Steh auf\n\nBridge\n\nIrgendwann schneiden sie es raus\nUnd du bist immer noch da\nManchmal beginnt ein neues Leben\nNicht mit Licht, doch mit Schmerz\nWer durch diese Nacht gegangen ist\nTrägt danach ein stärkeres Herz\n\nFinaler Refrain\n\nEs geht dir schlecht, du fühlst dich schlapp\nDoch keiner glaubt daran\nBis du es sagst\n\nUnd wenn du fällst und fast zerbrichst\nDann glaub mir eins\nDas Ende ist es nicht\n\nEs ist nicht die Kunst zu fallen\nSondern nochmal aufzustehen\nEs ist nicht die Kunst zu sterben\nSondern weiterzugehen\nUnd wenn alle Lichter untergehen\nSag ich dir: Steh auf. Steh auf\n\nUnd wenn alle Lichter untergehen\nSag ich dir: Steh auf. Steh auf."
+},
+  {
   "slug": "ty-tylko-ty-feat-janina-porazinska",
   "title": "Ty, tylko Ty",
   "lang": "pl",
