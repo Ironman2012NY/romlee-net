@@ -14,24 +14,21 @@ export type YtStats = {
   subscribers: number;
   videoCount: number;
   totalViews: number;
-  views365: number;
   joined: string | null;
   fetchedAt: string;
+  channelStatsAt: string;
   live: boolean;
 };
 
 const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36";
 
-/** YouTube Studio snapshot, 27 Nov 2026: views and watch hours for the 365 days ending 26 Nov. */
-export const YT_WATCH_HOURS = 337_227.3;
-export const YT_STUDIO_VIEWS_365 = 21_100_000;
-export const YT_STUDIO_DATE = "2026-11-26";
+/** Public channel snapshot. These are all-time channel figures, not Studio analytics. */
+export const YT_SNAPSHOT_DATE = "2026-11-27";
 export const YT_FLOOR = {
-  subscribers: 709_548,
+  subscribers: 709_000,
   videoCount: 149,
   totalViews: 20_913_094,
-  views365: 20_913_094,
   viewsById: {
     KBXOvQr3bAY: 7_305_701,
     YTefIyKLBQA: 1_502_374,
@@ -39,41 +36,61 @@ export const YT_FLOOR = {
   } as Record<string, number>,
 };
 
-function floorNum(n: number, min: number) {
-  return Number.isFinite(n) && n > 0 ? Math.max(n, min) : min;
+/** Artist-confirmed YouTube Studio screenshot, 27 November 2026. */
+export const YT_STUDIO = {
+  date: "2026-11-27",
+  periodEnd: "2026-11-26",
+  subscribers: 709_548,
+  views365: 21_100_000,
+  watchHours: 337_227.3,
+  uniqueViewers: 9_600_000,
+  views48: 723_098,
+} as const;
+
+// Existing named exports remain available to other pages.
+export const YT_WATCH_HOURS = YT_STUDIO.watchHours;
+export const YT_STUDIO_VIEWS_365 = YT_STUDIO.views365;
+export const YT_STUDIO_DATE = YT_STUDIO.periodEnd;
+
+function validCount(n: number, fallback: number) {
+  return Number.isFinite(n) && n >= 0 ? n : fallback;
 }
 
-export function applyYoutubeFloor(stats: YtStats): YtStats {
+export function applyYoutubeFallbacks(stats: YtStats): YtStats {
   const viewsById = { ...YT_FLOOR.viewsById };
   for (const e of stats.entries) {
-    viewsById[e.id] = floorNum(e.views, viewsById[e.id] ?? 0);
+    viewsById[e.id] = validCount(e.views, viewsById[e.id] ?? 0);
   }
   return {
     ...stats,
-    subscribers: floorNum(stats.subscribers, YT_FLOOR.subscribers),
-    videoCount: floorNum(stats.videoCount, YT_FLOOR.videoCount),
-    totalViews: floorNum(stats.totalViews, YT_FLOOR.totalViews),
-    views365: floorNum(stats.views365, YT_FLOOR.views365),
+    subscribers: validCount(stats.subscribers, YT_FLOOR.subscribers),
+    videoCount: validCount(stats.videoCount, YT_FLOOR.videoCount),
+    totalViews: validCount(stats.totalViews, YT_FLOOR.totalViews),
+    channelStatsAt: stats.channelStatsAt || YT_SNAPSHOT_DATE,
     entries: stats.entries.map((e) => ({ ...e, views: viewsById[e.id] ?? e.views })),
   };
 }
 
 export function mergeYoutubeStats(prev: YtStats, next: YtStats): YtStats {
-  const a = applyYoutubeFloor(prev);
-  const b = applyYoutubeFloor(next);
+  const a = applyYoutubeFallbacks(prev);
+  const b = applyYoutubeFallbacks(next);
   const byId = new Map<string, YtEntry>();
   for (const e of [...a.entries, ...b.entries]) {
     const old = byId.get(e.id);
-    byId.set(e.id, old ? { ...e, views: Math.max(old.views, e.views) } : e);
+    // A missing feed entry can be a fallback; a fetched entry is authoritative.
+    byId.set(e.id, old && !e.published ? old : e);
   }
+  // Keep the last dated channel snapshot if a refresh fails. Counts may decrease
+  // after YouTube corrections, so never replace a fresh result with a maximum.
+  const channel = b.live || Date.parse(b.channelStatsAt) >= Date.parse(a.channelStatsAt) ? b : a;
   return {
     ...b,
-    subscribers: Math.max(a.subscribers, b.subscribers),
-    videoCount: Math.max(a.videoCount, b.videoCount),
-    totalViews: Math.max(a.totalViews, b.totalViews),
-    views365: Math.max(a.views365, b.views365),
+    subscribers: channel.subscribers,
+    videoCount: channel.videoCount,
+    totalViews: channel.totalViews,
+    channelStatsAt: channel.channelStatsAt,
     entries: [...byId.values()],
-    live: a.live || b.live,
+    live: b.live,
   };
 }
 
@@ -161,32 +178,34 @@ export async function fetchYoutubeStats(): Promise<YtStats> {
   const entries = rssXml ? parseRss(rssXml) : [];
   const html = aboutHtml ?? "";
 
-  const subscribers =
+  const parsedSubscribers =
     firstNumber(html, [
       /"subscriberCountText":"([^"]+)"/,
       /"subscriberCountText":\{"simpleText":"([^"]+)"/,
+      /"subscriberCountText":\{"runs":\[\{"text":"([^"]+)"/,
       /"subscriberCount":"(\d+)"/,
-    ]) ?? YT_FLOOR.subscribers;
+    ]);
 
-  const totalViews =
+  const parsedTotalViews =
     firstNumber(html, [
       /"viewCountText":"([^"]+)"/,
       /"viewCountText":\{"simpleText":"([^"]+)"/,
-      /"viewCount":"(\d+)"/,
-    ]) ?? YT_FLOOR.totalViews;
+      /"viewCountText":\{"runs":\[\{"text":"([^"]+)"/,
+    ]);
 
-  const videoCount =
-    firstNumber(html, [/"videoCountText":"([^"]+)"/, /"videosCountText":"([^"]+)"/]) ??
-    YT_FLOOR.videoCount;
+  const parsedVideoCount = firstNumber(html, [
+    /"videoCountText":"([^"]+)"/,
+    /"videosCountText":"([^"]+)"/,
+    /"videoCountText":\{"simpleText":"([^"]+)"/,
+    /"videosCountText":\{"runs":\[\{"text":"([^"]+)"/,
+  ]);
+
+  const live = parsedSubscribers != null && parsedTotalViews != null && parsedVideoCount != null;
+  const subscribers = live ? parsedSubscribers : YT_FLOOR.subscribers;
+  const totalViews = live ? parsedTotalViews : YT_FLOOR.totalViews;
+  const videoCount = live ? parsedVideoCount : YT_FLOOR.videoCount;
 
   const joined = parseJoined(html) ?? "2026-07-03";
-  const cutoff = Date.now() - 365 * 24 * 60 * 60 * 1000;
-  const joinedMs = joined ? Date.parse(`${joined}T00:00:00Z`) : NaN;
-  const rss365 = entries.reduce((sum, e) => {
-    const t = Date.parse(e.published);
-    return Number.isNaN(t) || t < cutoff ? sum : sum + e.views;
-  }, 0);
-  const views365 = !Number.isNaN(joinedMs) && joinedMs >= cutoff ? totalViews : rss365 || totalViews;
 
   const known = new Set(entries.map((e) => e.id));
   for (const [id, views] of Object.entries(YT_FLOOR.viewsById)) {
@@ -201,15 +220,15 @@ export async function fetchYoutubeStats(): Promise<YtStats> {
     }
   }
 
-  return applyYoutubeFloor({
+  return applyYoutubeFallbacks({
     entries,
     subscribers,
     videoCount,
     totalViews,
-    views365,
     joined,
     fetchedAt,
-    live: Boolean(aboutHtml || rssXml),
+    channelStatsAt: live ? fetchedAt : YT_SNAPSHOT_DATE,
+    live,
   });
 }
 
@@ -219,9 +238,6 @@ export const loadYoutubeStats = createServerFn({ method: "GET" }).handler(async 
 
 export function viewsFor(stats: YtStats | undefined, id: string): number | undefined {
   const live = stats?.entries.find((e) => e.id === id)?.views;
-  const floor = YT_FLOOR.viewsById[id];
-  if (live && floor) return Math.max(live, floor);
-  if (live) return live;
-  if (floor) return floor;
-  return undefined;
+  if (live != null && Number.isFinite(live) && live >= 0) return live;
+  return YT_FLOOR.viewsById[id];
 }
