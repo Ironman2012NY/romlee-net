@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+    "slug": "naechte-und-woelfe",
+    "title": "Nächte und Wölfe",
+    "lang": "de",
+    "youtubeId": "ul5DEIL8A-M",
+    "text": "Kennst du den Schmerz\nDer nachts kommt\nUnd immer weiter bleibt\nUnd manchmal geht er nicht mal\nWenn die Sonne morgens aufgeht\n\nKennst du den Schmerz\nDer mit dem Nebel kommt?\nUnd selbst wenn der Wind\nAlles verweht\nBleibt dieser Schmerz noch immer da\n\nUnd du weißt, wie es ist\nWenn die Nacht kommt\nUnd die Wölfe mit deinen Träumen spielen\nUnd selbst wenn der Mond kommt\nHeulen nicht nur die Wölfe\nMeine Träume heulen noch lauter\n\nWeißt du, wie es ist\nWenn die Nacht kommt\nUnd alles ringsherum\nNoch dunkler wird?\n\nDeshalb warte ich nur darauf\nDass die Sonne aufgeht\nIn der Hoffnung\nDass mit ihrer Wärme\nAuch der Schmerz sich beruhigt\n\nHey, Hey Nächte und Wölfe\nWir werden euch vertreiben\nMit unserer Liebe und unserem Frieden\nWir geben euch einen Punch\n\nAuch euch werden wir überstehen\nDenn nach jeder Nacht\nKommt am Ende die Sonne\nUnd nach den Wölfen\nKommst du\n\nUnd wir lassen uns nicht vertreiben\nIn die Wüste des Grauens\nWir lassen uns nicht vertreiben\nIn die Dunkelheit des Tages\n\nDenn die Sonne scheint für alle\nUnd schenkt allen die Wärme\nDenn die Sonne scheint für alle\nUnd schenkt allen die Wärme\n\nSonne, ich freue mich, dass du da bist\nIch freue mich\nDass du mir diese Wärme gibst\nUnd ich weine vor Freude\nWenn ich sehe, wie viel du\nAll den Pflanzen ringsherum gibst\n\nUnd ich tanze vor Freude\nWenn du morgens aufgehst\nDenn dann wird alles hell\nAlles wird auch warm\nUnd in deinen Strahlen\nSchmelze ich dahin\n\nFreu dich, freu dich\nFreu dich am Leben\nUnd spring vor Freude\nUnd wisse, dass nach jeder Nacht\nEin neuer Tag beginnt\n\nFreu dich jeden Tag\nDass du lebst\nUnd trinke die Freude des Lebens\nUnd, dass alles ringsherum\nGemeinsam mit dir wächst\n\nDenn es gibt Menschen\nDie das nicht mehr haben\nUnd leider geht für sie\nDie Sonne am Morgen nicht mehr auf\n\nDenn es gibt Menschen\nDie das nicht mehr haben\nUnd leider geht für sie\nDie Sonne am Morgen nicht mehr auf\n\nHey, Hey, Nächte und Wölfe\nWir werden euch vertreiben\nMit unserer Liebe und unserem Frieden\nWir geben euch einen Punch\n\nAuch euch werden wir überstehen\nDenn nach jeder Nacht\nKommt am Ende die Sonne\nUnd nach all den Wölfen\nKommst du\n\nUnd wir lassen uns nicht vertreiben\nIn die Wüste des Grauens\nWir lassen uns nicht vertreiben\nIn die Dunkelheit des Tages\n\nDenn die Sonne scheint für alle\nUnd schenkt allen ihre Wärme\nDenn die Sonne scheint für alle\nUnd schenkt allen ihre Wärme."
+  },
+  {
     "slug": "wilki-i-slonce",
     "title": "Wilki i Słońce",
     "lang": "pl",
