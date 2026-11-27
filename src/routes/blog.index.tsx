@@ -1,3 +1,4 @@
+import { aboutSongs, songsSummary, videoAiNote } from "@/data/content-i18n";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { POSTS, localizePost } from "@/data/blog";
 import { SITE } from "@/data/site";
@@ -60,6 +61,11 @@ function BlogIndex() {
           {copy.readPdfArticle}
         </a>
       </div>
+      <section className="mx-auto max-w-6xl space-y-5 px-4 pb-20 sm:px-6" id="production-notes">
+        <details className="rounded-xl border border-border bg-surface p-5 sm:p-7"><summary className="cursor-pointer font-display text-xl text-fg">{copy.aboutSongsAi}</summary><div className="mt-5 space-y-4 text-sm leading-relaxed text-muted">{aboutSongs(locale).map((p, i) => <p key={i}>{p}</p>)}</div></details>
+        <details className="rounded-xl border border-border bg-surface p-5 sm:p-7"><summary className="cursor-pointer font-display text-xl text-fg">{copy.videoProductionNote}</summary><p className="mt-5 whitespace-pre-line text-sm leading-relaxed text-muted">{videoAiNote(locale)}</p></details>
+        <details className="rounded-xl border border-border bg-surface p-5 sm:p-7"><summary className="cursor-pointer font-display text-xl text-fg">{copy.summaryTitle}</summary><p className="mt-5 whitespace-pre-line text-sm leading-relaxed text-muted">{songsSummary(locale)}</p></details>
+      </section>
     </SiteShell>
   );
 }
