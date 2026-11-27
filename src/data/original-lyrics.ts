@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+  "slug": "ich-habe-dich-gesehen",
+  "title": "Ich habe Dich gesehen",
+  "lang": "de",
+  "youtubeId": "QF7i4Z4yIrY",
+  "text": "Ich habe dich gesehen, und wurde Dich nicht mehr los\nDu warst wie ein helles Licht, und alles andre zählte nicht\nDu warst wie die Sonne, die aus den Wolken kam\nEs war wie reine Wonne, die mir das Herz gefangennahm\n\nSeit jenem ersten Augenblick zieht es mich zu dir zurück\nDein Lächeln blieb mir vor Augen stehen, ich konnte nirgendwo mehr gehen\nDie Welt war plötzlich still, weil du so einfach warst\nUnd das was vorher dunkel schien, begann in deinem Licht zu blüh'n\n\nGib mir mein Herz zurück, sonst zerreißt mich jeder Augenblick\nIch sehe deinen Schatten überall und finde meinen kaum\nGib mir mein Herz zurück, sonst zerreißt mich jeder Augenblick\nIch sehe deinen Schatten überall und finde meinen kaum\nGib mir mein Herz zurück, ich kann es sonst nicht tragen\nEs schlägt immer noch für dich, doch ich darf es niemand sagen\n\nIch suche dich in jedem Licht, in jedem Wort, in jedem Schweigen\nDoch was von uns geblieben ist, will sich mir nicht mehr zeigen\nIch seh deinen Schatten überall, an jeder Wand, in jedem Traum\nUnd wenn der Morgen kommt, verlier ich mich im leeren Raum\n\nLass mich einfach frei, bevor ich dran zerbreche\nDenn jeder Atemzug nach dir ist wie eine kranke Schwäche\nDeine Nähe fehlt wie die Seele, wie ein Teil, der nicht mehr bleibt\nIch halte fest, was längst zerbrochen, auch wenn es mich in Stücke reißt."
+},
+  {
     slug: "bo-ty-jestes-bez-konca",
     title: "Bo ty jesteś bez końca",
     lang: "pl",
