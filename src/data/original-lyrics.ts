@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+  "slug": "summer-is-fun",
+  "title": "Summer Is Fun",
+  "lang": "en",
+  "youtubeId": "XpwEXF63ZE8",
+  "text": "Summer is fun, dancing in the sun\nFriends all around, and girls and wine\nMusic all around, people everywhere\nEverything feels easy, everybody feels fine\nWe run through the night, we jump into the sea\nThe sky is blue and the world is free\nA kiss in the night, a smile in your eyes\nUnder the stars, beneath a tree\n\nSummer is fun, dancing and sun\nFriends all around, girls and wine\nLiving the dream, feeling so young\nThis is our moment, this is our time\nSummer is life, warm and so calm\nI feel your love here in my arms\nWe sing together, all we need is love\nAnd the Beatles smile down from above\n\nThe moon is shining, the stars are singing\nYou take my hand and my heart is swinging\nNo worries today, no tears anymore\nJust love, music and waves on the shore\nLiving the dream, feeling so young\nThis is our moment, our song has begun\nThis is your time, let love shine\nDancing together till the morning has come\n\nSummer is fun, dancing and sun\nFriends all around, girls and wine\nLiving the dream, feeling so young\nThis is our moment, this is our time\nSummer is life, warm and so calm\nI feel your love here in my arms\nWe sing together, all we need is love\nAnd the Beatles smile down from above."
+},
+  {
   "slug": "steh-auf",
   "title": "Steh auf",
   "lang": "de",
