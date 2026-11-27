@@ -1,6 +1,7 @@
 import type { Locale } from "@/lib/locale";
 
-const ABOUT: Record<Locale, string[]> = {
+const ABOUT: Record<Locale | "zh", string[]> = {
+  zh: ["歌词、音乐创意、作曲和艺术构思均由 Rom Lee 完成。制作以原创录音、歌声、吉他、节奏及其他音乐元素为基础。现代数字工具和人工智能辅助编曲、音色处理和技术优化。这并非深度伪造声音，而是经过处理的原始录音。人的声音会随日期、时间与录音状态发生自然变化，但仍然是原声。","人工智能并不取代人类创造力，它是将个人构想转化为音乐和画面的工具。每个最终版本均由人选择、编辑并完成。","原创歌词、真实音乐创作、个人故事与现代制作技术相结合，核心始终是歌曲本身、它的意义和情感。","部分演唱录音在不同时间完成。音色、深度、表现力、呼吸及动态会随着健康、时间、水分摄入和录音环境而变化。","这些自然差异是音乐发展的一部分，每一份录音都记录了创作时的状态。","目的不是取代个人声音，而是保留其特色、平衡技术差异并改善清晰度和音乐表现。原创录音和演唱者的诠释始终是歌曲的基础。"],
   de: [
     "Texte, musikalische Ideen, Kompositionen und die künstlerische Konzeption stammen von Rom Lee. Für die Produktion werden eigene Originalaufnahmen, Gesang, Gitarren, Rhythmen und weitere musikalische Elemente verwendet. Moderne digitale und KI-gestützte Werkzeuge helfen dabei, einzelne Arrangements auszuarbeiten, Klänge zu bearbeiten und die Musik technisch zu optimieren. Es handelt sich nicht um eine Deepfake-Stimme, sondern um Originalaufnahmen, die anschließend verarbeitet werden. Es bleibt anzumerken, dass sich die Stimme je nach Tag, Tageszeit und Aufnahmestatus im Monat verändern kann — das sind normale Prozesse. Sie ist nicht an allen Tagen gleich, bleibt aber die Originalstimme.",
     "Die künstliche Intelligenz ersetzt dabei nicht die menschliche Kreativität. Sie ist ein Werkzeug, mit dem persönliche Vorstellungen musikalisch und visuell umgesetzt werden. Jede endgültige Version wird nach menschlichen Vorgaben ausgewählt, bearbeitet und gestaltet.",
@@ -147,7 +148,8 @@ const ABOUT: Record<Locale, string[]> = {
   ],
 };
 
-const VIDEO: Record<Locale, string> = {
+const VIDEO: Record<Locale | "zh", string> = {
+  zh: "Rom Lee 的音乐视频借助现代人工智能工具制作。视觉语言、故事、氛围、场景选择和艺术方向均由人工构思，并根据每首歌曲独立设计。",
   de: `Die Videos zu den Liedern von Rom Lee wurden alle mit Unterstützung moderner KI-Werkzeuge gestaltet. Bildsprache, Handlung, Stimmung, Szenenauswahl und künstlerische Ausrichtung entstanden nach konkreten menschlichen Vorgaben und wurden individuell für die jeweiligen Lieder entwickelt. Der Bildhintergrund ist organisch.
 
 Für die Videos wurden die originalen Musikdateien der veröffentlichten Produktionen verwendet. Texte, musikalische Ideen, Kompositionen und die kreative Konzeption stammen von Rom Lee. Die künstliche Intelligenz diente dabei als technisches und gestalterisches Hilfsmittel zur visuellen Umsetzung der menschlichen Ideen.
@@ -240,7 +242,8 @@ Video memakai berkas musik asli dari produksi yang sudah terbit. Lirik, gagasan 
 Jadi ini bukan karya otomatis murni, melainkan hasil kreativitas manusia, produksi musik sendiri, dan gambar berbantuan AI.`,
 };
 
-const SUM: Record<Locale, string> = {
+const SUM: Record<Locale | "zh", string> = {
+  zh: "歌词、基础演唱、吉他、节奏、作曲和音乐构思：Rom Lee。人工智能辅助工具用于制作、编曲、声音处理、混音和母带处理。作词作曲：Rom Lee（Roman Leischik）。录音以原始素材为基础；部分乐器与人声元素（尤其合唱及和声）由人工智能辅助生成或加工。",
   de: `Text, Gesang als Grundlage sowie Gitarre und Rhythmus, Komposition und musikalische Konzeption: Rom Lee.
 KI-gestützte Werkzeuge wurden ergänzend für Produktion, Arrangement, Klangbearbeitung, Mixing und Mastering eingesetzt.
 Text und Komposition: Rom Lee (Roman Leischik)
