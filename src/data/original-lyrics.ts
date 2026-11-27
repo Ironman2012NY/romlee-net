@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+    "slug": "lato-jest-raj-wersja-taneczna",
+    "title": "Lato to raj (Wersja taneczna)",
+    "lang": "pl",
+    "youtubeId": "xcS-9lsdajg",
+    "text": "Lato to raj, muzyko, graj\nPrzyjaźń i śmiech, dziewczyny i my\nMuzyka gra, a śmiech płynie w dal\nWszystko jest łatwe i wszystko jest git\n\nBiegnij na plażę, skocz do morza\nNiebo błękitne, świat wolny jak ptak\nNocny całus, twój uśmiech i blask\nPod gwiazdami sięgamy do nieba\n\nLato to raj, taniec i błysk\nPrzyjaźń jest wokół, dziewczyny i my\nŻyj tym snem, wciąż jak młodzi\nTo nasza chwila, to jest nasz czas\n\nLato to życie, ciepłe, bez trosk\nCzuję twój czar w sercu mym\nŚpiewamy razem, bo miłość tu jest\nA Beatlesi z nieba całują czule nas\n\nKsiężyc świeci, gwiazdy tańczą\nBierz mnie za rękę, serce niech spiewa\nDzien bez trosk, nie ma juz łez\nTylko miłość, muzyka i morze\n\nŻyjemy tym snem, wciąż jak młodzi\nTo jest ta chwila, niech muzyka gra\nTo jest nasz czas, niech miłość lsni\nTańczymy razem, aż przydzie świt\n\nLato to raj, taniec i błysk\nPrzyjaźń wokół, dziewczyny i my\nŻyj tym snem, wciąż jak młodzi\nTo nasza chwila, to jest nasz czas\n\nLato to życie, ciepłe, bez trosk\nCzuję twój czar w sercu mym\nŚpiewamy razem, bo miłość tu jest\nA Beatlesi z nieba całują czule nas"
+  },
+  {
     "slug": "love-and-peace",
     "title": "Love and Peace",
     "lang": "en",
