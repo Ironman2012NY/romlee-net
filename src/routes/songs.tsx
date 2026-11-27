@@ -1,10 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { aboutSongs, songsSummary, videoAiNote } from "@/data/content-i18n";
-import { LANG_LABEL, TRACKS, tracksByLang, type Lang } from "@/data/tracks";
+import { LANG_LABEL, tracksByLang, type Lang } from "@/data/tracks";
 import { PageHead, SiteShell } from "@/components/site-shell";
 import { TrackRow } from "@/components/track-row";
 import { useT } from "@/components/lang-switch";
-import { useLocale } from "@/lib/locale";
 
 export const Route = createFileRoute("/songs")({ component: SongsPage });
 
@@ -12,10 +10,6 @@ const ORDER: Lang[] = ["de", "en", "es", "pl"];
 
 function SongsPage() {
   const copy = useT();
-  const locale = useLocale((s) => s.locale);
-  const aiNote = videoAiNote(locale);
-  const about = aboutSongs(locale);
-  const summary = songsSummary(locale);
   return (
     <SiteShell>
       <PageHead kicker={copy.songsKicker} title={copy.songsTitle} lead={copy.songsLead} />
@@ -33,7 +27,7 @@ function SongsPage() {
             <p className="text-xs uppercase tracking-[0.18em] text-accent">YouTube</p>
             <h2 className="mt-2 font-display text-2xl tracking-tight text-fg">{copy.lyricsTitle}</h2>
             <p className="mt-2 text-sm leading-relaxed text-muted">
-              {copy.lyricsTeaser}
+              {copy.lyricsLead}
             </p>
             <span className="mt-4 text-sm text-fg">{copy.toLyrics}</span>
           </div>
@@ -56,33 +50,6 @@ function SongsPage() {
           );
         })}
 
-        <section className="rounded-xl border border-border bg-surface p-6 sm:p-8">
-          <h2 className="font-display text-2xl tracking-tight text-fg">
-            {copy.aboutSongsAi}
-          </h2>
-          <div className="mt-6 space-y-4 text-sm leading-relaxed text-muted">
-            {about.map((p) => (
-              <p key={p.slice(0, 48)}>{p}</p>
-            ))}
-          </div>
-        </section>
-
-        <section className="rounded-xl border border-border bg-surface p-6 sm:p-8">
-          <h2 className="font-display text-2xl tracking-tight text-fg">
-            {copy.videoProductionNote}
-          </h2>
-          <p className="mt-4 whitespace-pre-line text-sm leading-relaxed text-muted">
-            {aiNote}
-          </p>
-        </section>
-
-        <section>
-          <h2 className="font-display text-2xl tracking-tight text-fg">
-            {copy.summaryTitle}
-          </h2>
-          <p className="mt-4 whitespace-pre-line text-sm leading-relaxed text-muted">{summary}</p>
-          <p className="mt-4 text-xs text-subtle">{copy.asOfSongs.replace("{n}", String(TRACKS.length))}</p>
-        </section>
       </div>
     </SiteShell>
   );
