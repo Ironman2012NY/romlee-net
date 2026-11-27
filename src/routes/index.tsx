@@ -31,6 +31,14 @@ export const Route = createFileRoute("/")({
 // Most recent full videos on the channel when the RSS feed is unavailable.
 const recentVideoIds = ["KlvjPdkS8xs", "eNLWMLCXAeg", "a1K-o6DXN78", "nK8ASrLCSis", "k894z2QzuEc", "Bw3US7uj4t4"];
 
+const albumCopy = {
+  en: { details: "15 songs · 63 minutes · Released 26 November 2026", lead: "Christmas songs in English, German, Polish and Spanish. Intimate ballads and dance versions, brought together with a wish for peace, happiness and togetherness.", listen: "Listen to the album", videos: "Christmas videos and lyrics" },
+  de: { details: "15 Titel · 63 Minuten · Veröffentlicht am 26. November 2026", lead: "Weihnachtslieder auf Englisch, Deutsch, Polnisch und Spanisch. Persönliche Balladen und Dance-Versionen, verbunden mit dem Wunsch nach Frieden, Glück und Zusammengehörigkeit.", listen: "Das Album hören", videos: "Weihnachtsvideos und Liedtexte" },
+  pl: { details: "15 utworów · 63 minuty · Premiera 26 listopada 2026", lead: "Świąteczne piosenki po angielsku, niemiecku, polsku i hiszpańsku. Kameralne ballady i wersje taneczne, połączone pragnieniem pokoju, szczęścia i wspólnoty.", listen: "Posłuchaj albumu", videos: "Świąteczne teledyski i teksty" },
+  es: { details: "15 canciones · 63 minutos · Publicado el 26 de noviembre de 2026", lead: "Canciones de Navidad en inglés, alemán, polaco y español. Baladas íntimas y versiones para bailar, unidas por el deseo de paz, felicidad y unión.", listen: "Escuchar el álbum", videos: "Vídeos y letras de Navidad" },
+  zh: { details: "15首歌曲 · 63分钟 · 2026年11月26日发行", lead: "用英语、德语、波兰语和西班牙语演唱的圣诞歌曲。温暖的抒情曲与舞曲版本，共同传递对和平、幸福与团聚的祝愿。", listen: "收听专辑", videos: "圣诞音乐视频和歌词" },
+};
+
 function Home() {
   const { yt: initial } = Route.useLoaderData() as { yt: YtStats };
   const yt = useLiveYoutube(initial);
@@ -44,29 +52,29 @@ function Home() {
   const copy = useT();
   const locale = useLocale((s) => s.locale);
   const home = homeCopy(locale);
+  const album = albumCopy[locale as keyof typeof albumCopy] ?? albumCopy.en;
 
   return (
     <SiteShell solidHeader>
       <WaterSeo />
-      <section className="relative min-h-[92dvh] overflow-hidden">
+      <section className="relative overflow-hidden">
+        <div className="relative min-h-[75dvh] overflow-hidden">
         <img
           src="/images/fotos/hero-portocolom.jpg"
           alt=""
           className="pointer-events-none absolute inset-0 size-full object-cover"
+          fetchPriority="high"
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-bg/80 via-bg/25 to-transparent" />
-        <div className="relative mx-auto flex min-h-[92dvh] max-w-6xl flex-col justify-end px-4 pb-16 pt-32 sm:px-6 sm:pb-20">
+        <div className="relative mx-auto flex min-h-[75dvh] max-w-6xl flex-col justify-end px-4 pb-12 pt-44 sm:px-6 sm:pb-16">
           <p className="text-xs uppercase tracking-[0.22em] text-accent">{SITE.brand}</p>
-          <h1 className="mt-3 font-display text-3xl leading-[0.9] tracking-tight text-fg sm:text-6xl">
+          <h1 className="mt-3 font-display text-5xl leading-[0.95] tracking-tight text-fg sm:text-7xl">
             {SITE.name}
           </h1>
           <p className="mt-2 text-base text-muted sm:text-lg">({SITE.alsoAs})</p>
           <p className="mt-4 max-w-xl text-base leading-relaxed text-fg/90 sm:text-lg">
             {SITE.tagline}
           </p>
-          <div className="mt-8">
-            <YoutubeLiveStats stats={yt} variant="hero" />
-          </div>
           <div className="mt-10 flex flex-wrap gap-3">
             <Link
               to="/videos"
@@ -89,6 +97,30 @@ function Home() {
             >
               {copy.youtubeChannel}
             </a>
+          </div>
+        </div>
+        </div>
+        <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
+          <YoutubeLiveStats stats={yt} variant="panel" />
+        </div>
+      </section>
+
+      <section className="border-t border-border bg-surface">
+        <div className="mx-auto grid max-w-6xl items-center gap-8 px-4 py-12 sm:px-6 sm:py-16 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] md:gap-12">
+          <a href="https://music.amazon.fr/albums/B0HSQHD2BX" target="_blank" rel="noopener noreferrer" className="block max-w-md overflow-hidden rounded-xl border border-border">
+            <img src="/images/covers/christmas-for-you-and-me.webp" alt="Rom Lee — Christmas For You and Me (4 Languages), album cover" width={900} height={900} loading="lazy" className="aspect-square w-full object-cover" />
+          </a>
+          <div>
+            <p className="text-xs font-medium uppercase tracking-[0.18em] text-accent">{home.newRelease}</p>
+            <h2 className="mt-3 font-display text-4xl leading-tight tracking-tight text-fg sm:text-5xl">Christmas For You and Me</h2>
+            <p className="mt-2 text-lg text-accent">4 Languages</p>
+            <p className="mt-4 text-sm leading-relaxed text-muted">{album.details}</p>
+            <p className="mt-5 max-w-xl text-base leading-relaxed text-fg/90">{album.lead}</p>
+            <p className="mt-4 text-sm text-muted">English · Deutsch · Polski · Español</p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <a href="https://music.amazon.fr/albums/B0HSQHD2BX" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center gap-2 rounded-md bg-fg px-5 py-3 text-sm font-medium text-accent-fg">{album.listen}<ArrowRight className="size-4" /></a>
+              <Link to="/weihnachten" search={locale === "en" ? undefined : { lang: locale }} className="inline-flex min-h-11 items-center rounded-md border border-border-strong px-5 py-3 text-sm text-fg">{album.videos}</Link>
+            </div>
           </div>
         </div>
       </section>
@@ -323,7 +355,7 @@ function Home() {
             <h3 className="mt-3 font-display text-2xl text-fg">YouTube</h3>
             <p className="mt-2 flex-1 text-sm leading-relaxed text-muted">
               {formatNumber(yt.subscribers)} {copy.subs} · {formatNumber(yt.videoCount)} {copy.videos} ·{" "}
-              {formatNumber(yt.totalViews)} {copy.viewsTotal}, {copy.liveFrom}.
+              {formatNumber(yt.totalViews)} {copy.viewsTotal}.
             </p>
             <span className="mt-4 inline-flex items-center gap-2 text-sm text-fg">
               {copy.toChannel}
