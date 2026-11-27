@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+    "slug": "jak-to-zyc",
+    "title": "Jak to żyć?",
+    "lang": "pl",
+    "youtubeId": "GuuiHXe3ACA",
+    "text": "Jak to żyć? Jak to żyć?\nJak to iść przez ten świat?\nPowiedz mi, jak to żyć,\nJak uniwersum nie odpowiada.\n\nJak we wszystko wierzyć,\nŻe przed nami coś dobrego?\nJak nie zgubić się po drodze,\nNie zgubić przy tym siebie?\n\nJak to żyć? Jak to żyć?\nJak przez życie prosto iść?\nKażdy się o to pyta.\n\nPowiedz mi, co mam zrobić\nW ten dziwny czas,\nW ten dziwny świat.\n\nJak to żyć? Jak to żyć?\nI jak przez życie prosto iść?\nJak wstać rano? Jak to żyć?\n\nMówię ci: wstań,\nWierz i kochaj.\nKrok za krokiem,\nDzień za dniem.\nKrok za krokiem, wstań i idź.\n\nJak wstać rano\nI powiedzieć sobie:\nIdziemy dalej?\n\nJak trzymać dzieci za ręce\nI przejść razem przez ten świat?\nPatrzeć przed siebie\nI wierzyć,\nŻe wszystko będzie dobrze?\n\nJak to żyć? Jak to żyć?\nChyba po prostu iść\nZ dziećmi blisko siebie.\n\nZ sercem, które\nCzasem pęka,\nAle jeszcze marzy,\nŻe wszystko będzie dobrze.\n\nJak to żyć? Jak to żyć?\nJak przez życie prosto iść?\nKażdy się o to pyta.\n\nPowiedz mi, co mam zrobić\nW ten dziwny czas,\nW ten dziwny świat.\n\nJak to żyć? Jak to żyć?\nI jak przez życie prosto iść?\nJak wstać rano? Jak to żyć?\n\nMówię ci: wstań,\nWierz i kochaj.\nKrok za krokiem,\nDzień za dniem.\nKrok za krokiem, wstań i idź.\n\nDzień za dniem,\nDzień za dniem,\nNaokoło wszyscy szaleją.\n\nPowiedz mi,\nPowiedz mi,\nJak mam wszystko to zrozumieć?\n\nJak mam dzieciom\nDać to dalej?\nJak mam sam\nTo zrozumieć?\n\nMam być dzielny,\nW życiu stać,\nTylko czasem\nSiły mi na to brak.\n\nJak to żyć? Jak to żyć?\nJak przez życie prosto iść?\nKażdy się o to pyta.\n\nPowiedz mi, co mam zrobić\nW ten dziwny czas,\nW ten dziwny świat.\n\nJak to żyć? Jak to żyć?\nI jak przez życie prosto iść?\nJak wstać rano? Jak to żyć?\n\nMówię ci: wstań,\nWierz i kochaj.\nKrok za krokiem,\nDzień za dniem.\nKrok za krokiem, wstań i idź."
+  },
+  {
     "slug": "naechte-und-woelfe",
     "title": "Nächte und Wölfe",
     "lang": "de",
