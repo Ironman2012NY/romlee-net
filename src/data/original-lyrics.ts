@@ -2,6 +2,20 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+  "slug": "christmas-is-for-you-and-me",
+  "title": "Christmas Is for You and Me",
+  "lang": "en",
+  "youtubeId": "OeDaUG1m9Sw",
+  "text": "When Christmas comes, the sun comes up,\nAnd all the lights begin to glow.\nWe feel the joy that Christmas brings,\nNo matter where we go tonight.\n\nChristmas is for you and me,\nThere’s a home for everyone.\nChristmas fills our hearts with warmth and joy,\nAnd Christmas brings us all home.\n\nSix weeks before, I start to smile.\nI get things ready while I wait.\nI wait till we’re together here.\nIt’s my most cherished time of year.\n\nChristmas is for you and me,\nThere’s a home for everyone.\nChristmas fills our hearts with warmth and joy,\nAnd Christmas brings us all home.\n\nEveryone is a welcome guest.\nRich or poor, come and take a seat.\nNo matter what your skin tone is,\nCome share the Christmas meal with us.\n\nChristmas is for you and me,\nThere’s a home for everyone.\nChristmas fills our hearts with warmth and joy,\nAnd Christmas brings us all home.\n\nWhatever faith you call your own,\nCome join us at the table too.\nCome on in, you are welcome here.\nWe’re glad to make a home for you.\n\nChristmas is for you and me,\nThere’s a home for everyone.\nChristmas fills our hearts with warmth and joy,\nAnd Christmas brings us all home."
+},
+  {
+  "slug": "generation-95",
+  "title": "Generation ’95",
+  "lang": "de",
+  "youtubeId": "9xtF9Y0XB0g",
+  "text": "Hey Nora du bist dreißig\nUnd zwei Kinder hast du schon\nDas eine eins das andere drei\nDu weißt akt nicht was Urlaub ist\nEigentlich hast du niemals frei\n\nDavid bist einunddreißig\nSozialarbeit ist jetzt dein Traum\nWenn ich alles zusammennehme\nGehst du mit achtzig im Monat heim\nEs bleibt dir zum leben etwas kaum\n\nIhr seid beide schon dreißig\nUnd habt ein Drittel schon gut gut rum\nDie Welt seht ihr am Wochenende\nDoch ihr wisst selbst kaum warum\n\nDer Dollar fällt Spekulanten trinken Wein\nUnd Trump tanzt sein Bitcoin-Bein\nKeiner weiß wohin die Reise geht\nWeil die Welt sich jetzt ganz anders dreht\nWeil die Welt sich jetzt ganz anders dreht\n\nNora Betrieb hast du auch\nMachst die Menschen wieder heil\nUnd dein Mann macht alles mit\nSteht morgens um sechs uhr auf\nDie Kinder halten mit euch Schritt\n\nDann bringt ihr sie zum Hort\nAb zur Arbeit um neunzehn ist Schluss\nNachmittags Kinder bei Oma geparkt\nFalls sie kann sonst wird es knapp\nHauptsache sie bleiben gesund\n\nIhr seid beide schon dreißig\nUnd habt ein Drittel schon gut rum\nDie Welt seht ihr nur am Wochenende\nDoch ihr wisst selbst kaum warum\n\nDer Dollar fällt Spekulanten trinken Wein\nUnd Trump tanzt sein Bitcoin-Bein\nKeiner weiß wohin die Reise geht\nWeil die Welt sich jetzt ganz anders dreht\nWeil die Welt sich jetzt ganz anders dreht\n\nDie Großen der Welt denken\nDie Dreißiger sind nichts wert\nDabei ackern alle täglich\nKeiner weiss obs Rente noch gibt\nUnd wohin die Zukunft führt\n\nLiebt euch liebt euch über alles\nDas wünsche ich euch sehr\nWir haben viel getan\nDoch oft die Falschen gewählt\nMachts Besser ich zieh' vor euch meinen Hut\n\nIhr seid beide schon dreißig\nUnd habt ein Drittel schon gut rum\nDie Welt seht ihr nur am Wochenende\nDoch ihr wisst selbst kaum warum\n\nDer Dollar fällt Spekulanten trinken Wein\nUnd der Trump tanzt sein Bitcoin-Bein\nKeiner weiß wohin die Reise geht\nWeil die Welt sich jetzt ganz anders dreht\nWeil die Welt sich jetzt ganz anders dreht"
+},
+  {
   "slug": "45",
   "title": "45",
   "lang": "de",
