@@ -30,7 +30,7 @@ const extraLyrics = SONG_TEXTS.flatMap((song) => {
   }
   return [];
 });
-const allLyrics = [...new Map([...ORIGINAL_LYRICS, ...extraLyrics].map(song => [song.slug, song])).values()];
+const allLyrics = [...new Map([...extraLyrics, ...ORIGINAL_LYRICS].map(song => [song.slug, song])).values()];
 
 // The complete catalog remains visible, even when an authorized lyric is not yet available.
 const normalizeTitle = (value: string) => value.toLocaleLowerCase().replace(/[^\p{L}\p{N}]/gu, "");
