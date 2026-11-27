@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+  "slug": "lato-to-raj-radio-edit",
+  "title": "Lato to raj (Radio Edit)",
+  "lang": "pl",
+  "youtubeId": "Z5tyIzbLzPE",
+  "text": "Lato to raj, muzyko, graj\nPrzyjaźń i śmiech, dziewczyny i my\nMuzyka gra, a śmiech płynie w dal\nWszystko jest łatwe i wszystko się świeci\nBiegniemy na plażę, skaczemy do morza\nNiebo błękitne, świat wolny jak ptak\nNocny całus, twój uśmiech i blask\nPod gwiazdami i sięgamy do nieba\n\nLato to raj, taniec i błysk\nPrzyjaźń naokoło, dziewczyny i my\nŻyjemy tym snem, wciąż jak młodzi\nTo nasza chwila, to jest nasz czas\nLato to życie, ciepłe bez trosk\nCzuję twój czar, w sercu mym\nŚpiewamy razem, bo miłość jest tu\nA Beatlesi z nieba całują czule nas\n\nKsiężyc świeci, gwiazdy tańczą\nBierzesz mnie za rękę, serce mi tańczy\nDziś bez trosk, nie ma więcej łez\nTylko miłość, muzyka i fale i morze\nŻyjemy tym snem, wciąż jak młodzi\nTo jest ta chwila, niech muzyka gra\nTo jest nasz czas, niech miłość lśni\nTańczymy razem, aż dojdzie świt\n\nLato to raj, taniec i błysk\nPrzyjaźń naokoło, dziewczyny i my\nŻyjemy tym snem, wciąż jak młodzi\nTo nasza chwila, to jest nasz czas\nLato to życie, ciepłe bez trosk\nCzuję twój czar, w sercu mym\nŚpiewamy razem, bo miłość jest tu\nA Beatlesi z nieba całują czule nas"
+},
+  {
   "slug": "danke-an-die-maechtigen",
   "title": "Danke (an die Mächtigen)",
   "lang": "de",
