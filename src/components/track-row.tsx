@@ -60,7 +60,7 @@ export function TrackRow({ track, index }: { track: Track; index?: number }) {
         rel="noopener noreferrer"
         className="hidden min-h-11 items-center text-xs text-muted hover:text-fg sm:inline-flex"
       >
-        {track.localVideo ? "Video" : "YouTube"}
+        {track.releaseUrl ? (locale === "de" ? "Veröffentlichung" : locale === "ar" ? "الإصدار" : String(locale) === "zh" ? "发行" : locale === "pl" ? "Wydanie" : locale === "es" ? "Lanzamiento" : "Release") : track.localVideo ? "Video" : "YouTube"}
       </a>
     </div>
   );
