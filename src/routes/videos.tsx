@@ -45,7 +45,7 @@ function VideosPage() {
     .sort((a, b) => b.views - a.views);
 
   const whole = new Intl.NumberFormat(locale);
-  const compact = new Intl.NumberFormat(locale, { notation: "compact", maximumSignificantDigits: 3 });
+  const compact = new Intl.NumberFormat(locale, { notation: "compact", compactDisplay: "long", maximumSignificantDigits: 3 });
   const date = new Intl.DateTimeFormat(locale, { dateStyle: "medium", timeZone: "UTC" }).format(new Date(YOUTUBE_VIDEO_SNAPSHOT_DATE + "T00:00:00Z"));
   const tabs = [["all", copy.all], ["video", copy.videos], ["short", copy.shorts]] as const;
   const channel = "https://www.youtube.com/@RomLeeMusic";
