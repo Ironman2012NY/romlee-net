@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+  "slug": "du-bist-so-unendlich",
+  "title": "Du bist so unendlich",
+  "lang": "de",
+  "youtubeId": "BzgQ179ZO0s",
+  "text": "Du bist die, welche\nDie weiss, was ich denke\nWann ich zerbreche\nDu weißt alles, einfach alles über mich\n\nDu bist die, welche\nDie weiss, was ich fühle\nUnd wann ich zerfalle\nDu weißt einfach viel zu viel über mich\n\nDu weißt so, einfach\nDass ich dir gehöre\nDir verfallen bin\nUnd dass ich nicht mal frage warum\n\nDu bist so unendlich\nIch hab einen Stern im Universum gesucht\nUnd sehe jetzt: Das Universum bist du\n\nIch hab einen Stern gesucht\nAber das Universum bist du\n\nDeswegen, egal wie tief ich falle\nIch lande immer bei Dir\nWeil du so unendlich bist\n\nDu bist die, welche\nDie weiß, wenn ich schweige\nWann ich mich verliere\nDu kennst jede Sehnsucht tief in mir\n\nDu bist die, welche\nDie weiß, was mir fehlt\nUnd wann ich dich brauche\nDu spürst sogar die Stille tief in mir\n\nDu weißt so, ganz einfach\nDass ich bei dir bleibe\nDir verbunden bin\nUnd dass ich nicht mal frage wie lang\n\nDu bist so unendlich\nIch hab einen Stern im Universum gesucht\nUnd sehe jetzt: Das Universum bist du\n\nIch hab einen Stern gesucht\nAber das Universum bist du\n\nDeswegen, egal wie tief ich fall\nIch lande immer bei Dir\nWeil du so unendlich bist\n\nIch hoffe, es bleibt so\nSo wie es jetzt ist\nKann es kaum glauben\nDass unsere Liebe schon so lange hält\n\nWir haben die sieben\nDie verflixten Jahre\nZusammen geschafft\nOhne dass sich irgendwas geändert hat\n\nIch hoffe, es bleibt so\nNicht nur in meinem Kopf\nDass du es auch fühlst\nUnd dass es für uns beide ewig hält\n\nDu bist so unendlich\nIch hab einen Stern im Universum gesucht\nUnd sehe jetzt: Das Universum bist du\n\nIch hab einen Stern gesucht\nAber das Universum bist du\n\nDeswegen, egal wie tief ich fall\nIch lande immer bei Dir\nWeil du so unendlich bist."
+},
+  {
   "slug": "christmas-is-for-you-and-me",
   "title": "Christmas Is for You and Me",
   "lang": "en",
