@@ -23,16 +23,19 @@ export type YtStats = {
 const UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36";
 
-/** Last observed website channel-count snapshot, 27 Nov 2026; not a fresh Studio export. Watch hours remain the earlier Studio figure. */
-export const YT_WATCH_HOURS = 240_506.9;
+/** YouTube Studio snapshot, 27 Nov 2026: views and watch hours for the 365 days ending 26 Nov. */
+export const YT_WATCH_HOURS = 337_227.3;
+export const YT_STUDIO_VIEWS_365 = 21_100_000;
+export const YT_STUDIO_DATE = "2026-11-26";
 export const YT_FLOOR = {
-  subscribers: 709_000,
+  subscribers: 709_548,
   videoCount: 149,
   totalViews: 20_913_094,
   views365: 20_913_094,
   viewsById: {
-    KBXOvQr3bAY: 7_304_502,
-    YTefIyKLBQA: 1_502_232,
+    KBXOvQr3bAY: 7_305_701,
+    YTefIyKLBQA: 1_502_374,
+    sd_elh2GVhE: 1_911_040,
   } as Record<string, number>,
 };
 
