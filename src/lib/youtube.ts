@@ -39,12 +39,13 @@ export const YT_FLOOR = {
 /** Artist-confirmed YouTube Studio screenshot, 27 November 2026. */
 export const YT_STUDIO = {
   date: "2026-11-27",
+  periodStart: "2025-11-27",
   periodEnd: "2026-11-26",
-  subscribers: 709_548,
+  subscribers: 709_559,
   views365: 21_100_000,
   watchHours: 337_227.3,
   uniqueViewers: 9_600_000,
-  views48: 723_098,
+  views48: 722_153,
 } as const;
 
 // Existing named exports remain available to other pages.
