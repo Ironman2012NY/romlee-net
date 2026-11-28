@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+    "slug": "water-keep-it-for-tomorrow",
+    "title": "Water (Keep It for Tomorrow)",
+    "lang": "en",
+    "youtubeId": "isW24Vr4lhk",
+    "text": "Drink, drink the water\nIt's cool, cool, cool, cool, cool\nIt gives you life\nIt's cool, cool, cool, cool, cool\nKeep it for tomorrow\nIt's cool, cool, cool, cool, cool\nIf you want survive\nIt's cool, cool, cool, cool, cool\nKeep it for tomorrow\nIt's cool, cool, cool, cool, cool\n\nAt my grandma's house\nIn the countryside\nWhere time ran slow\nA little stream by the house\nClear as the morning light\nI swam in it all summer long\nAnd drank the water from my hands\nThey cooked with that same water\nThe river ran the house\n\nDrink, drink the water\nIt's cool, it's cool, cool, cool, cool\nIt gives you life\nIt's cool, it's cool, cool, cool, cool\nKeep it for tomorrow\nIt's cool, it's cool, cool, cool, cool\nIf you want survive\nIt's cool, cool, cool, cool, cool\nKeep it for tomorrow\nIt's cool, cool, cool, cool, cool\n\nEn casa de abuela\nEn el campo\nDonde fluía el tiempo\nJunto a la casa\nUn arroyo\nClaro como el alba\nEn él nadaba todo el verano\nBebía el agua\ncon mis manos\nCocinaban con esa agua\nElla daba vida\nA todo el hogar\n\nDrink, drink the water\nIt's cool, cool, cool, cool, cool\nIt gives you life\nIt's cool, cool, cool, cool, cool\nKeep it for tomorrow\nIt's cool, cool, cool, cool, cool\nIf you want survive\nIt's cool, cool, cool, cool, cool\nKeep it for tomorrow\nIt's cool, cool, cool, cool, cool\n\nJako dziecko u mej babci\nTam na wsi, gdzie płynął czas\nObok domu była rzeczka\nCzysta jak poranny blask\nW niej pływałem całe lato\nWodę piłem z własnych rąk\nZ tej samej wody gotowano\nOna żywiła cały dom\n\nDrink, drink the water\nIt's cool, cool, cool, cool, cool\nIt gives you life\nIt's cool, cool, cool, cool, cool\nKeep it for tomorrow\nIt's cool, it's cool, cool, cool, cool\nIf you want to survive\nIt's cool, cool, cool, cool, cool\nKeep it for tomorrow\nIt's cool, cool, cool, cool, cool"
+  },
+  {
     "slug": "stand-up-for-peace",
     "title": "Stand Up for Peace",
     "lang": "en",
