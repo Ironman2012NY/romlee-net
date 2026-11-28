@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+    "slug": "stand-up-for-peace",
+    "title": "Stand Up for Peace",
+    "lang": "en",
+    "youtubeId": "FDxctULaTKI",
+    "text": "Different religions in\nThis world\nThe message is the same\nStand up for love\nStand up for peace\nDon't give up. Don't give up\n\nJesus said\n\"Look at the Samaritan\"\nSee the wounded man\nDon't walk away\nYusuf said\n\"There is no blame on you today\"\nHe showed us how to forgive\nAnd how to start again\n\nDifferent religions in\nThis world\nThe message is the same\nStand up for love\nStand up for peace\nDon't give up. Don't give up\n\nMoses prayed for mercy\nWhen his people bowed to gold\nHe stood for them\nAnd asked forgiveness for all\nBuddha walked unarmed\nTo Aṅgulimāla\nNo sword met his sword\nAnd his heart grew still\n\nDifferent religions in\nThis world\nThe message is the same\nStand up for love\nStand up for peace\nDon't give up. Don't give up\n\nJesus taught us love\nAnd mercy\nYusuf showed us\nHow to forgive and begin again\nMoses asked for mercy\nFor them all\nBuddha showed us\nHow it can be done\n\nDifferent religions in\nThis world\nThe message is the same\nStand up for love\nStand up for peace\nDon't give up. Don't give up\n\nI hope we learn\nI hope we stay humble\nFor when we all stand up for love\nWho can ever stop us then?\nFor when we all stand up for love\nWho can ever stop us then?"
+  },
+  {
     "slug": "gwiazdka-z-nieba",
     "title": "Gwiazdka z nieba",
     "lang": "pl",
