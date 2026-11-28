@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ExternalLink } from "lucide-react";
 import { SONG_TEXTS } from "@/data/lyrics";
 import { ORIGINAL_LYRICS } from "@/data/original-lyrics";
@@ -43,7 +43,7 @@ function NumberedLyrics({ text, lang }: { text: string; lang: Lang }) {
   return <div lang={lang} dir="ltr" className="mx-auto max-w-2xl rounded-lg border border-border bg-bg/50 px-4 py-5 sm:px-7">
     {text.split(/\r?\n/).map((line, index) => {
       if (!line.trim()) return <div key={index} className="h-4" aria-hidden="true" />;
-      if (heading.test(line.trim()) || /^(?:Strophe|Refrain) (?:eins|zwei|drei|vier|fünf)$|^Finaler Refrain$/i.test(line.trim())) return <h3 key={index} className="mb-2 mt-5 text-base font-semibold tracking-wide text-accent first:mt-0">{line}</h3>;
+      if (heading.test(line.trim()) || /^(?:Strophe|Refrain) (?:eins|zwei|drei|vier|fünf)$|^(?:Finaler Refrain|Final Chorus)$/i.test(line.trim())) return <h3 key={index} className="mb-2 mt-5 text-base font-semibold tracking-wide text-accent first:mt-0">{line}</h3>;
       lineNumber++;
       return <div key={index} className="grid grid-cols-[2rem_minmax(0,1fr)] gap-3 py-0.5 text-base leading-relaxed text-fg"><span className="text-right text-xs leading-7 tabular-nums text-muted select-none" aria-hidden="true">{lineNumber}</span><span className="whitespace-pre-wrap break-words">{line}</span></div>;
     })}
@@ -52,6 +52,18 @@ function NumberedLyrics({ text, lang }: { text: string; lang: Lang }) {
 
 function SongtextePage() {
   const [filter, setFilter] = useState<"all" | Lang>("all");
+  useEffect(() => {
+    const openLinkedLyrics = () => {
+      const target = document.getElementById(window.location.hash.slice(1));
+      if (target instanceof HTMLDetailsElement) {
+        target.open = true;
+        target.scrollIntoView({ block: "start" });
+      }
+    };
+    openLinkedLyrics();
+    window.addEventListener("hashchange", openLinkedLyrics);
+    return () => window.removeEventListener("hashchange", openLinkedLyrics);
+  }, []);
   const copy = useT();
   const locale = useLocale(s => s.locale);
   const labels = locale === "de" ? { lead: "Originaltexte nach Sprache, mit Strophen, Refrains und nummerierten Zeilen.", songList: "Zur Songübersicht" } : locale === "pl" ? { lead: "Oryginalne teksty według języka, ze zwrotkami, refrenami i numerami wierszy.", songList: "Lista utworów" } : locale === "es" ? { lead: "Letras originales por idioma, con estrofas, estribillos y líneas numeradas.", songList: "Ver canciones" } : locale === "ar" ? { lead: "كلمات الأغاني الأصلية مرتبة حسب اللغة، مع المقاطع واللازمات والأسطر المرقمة.", songList: "قائمة الأغاني" } : String(locale) === "zh" ? { lead: "原版歌词按语言分类，保留主歌、副歌与行号。", songList: "查看歌曲" } : { lead: "Original lyrics by language, with verses, choruses and numbered lines.", songList: "View all songs" };
@@ -71,7 +83,7 @@ function SongtextePage() {
             <h2 className="mb-3 font-display text-2xl text-accent">{LANG_LABEL[lang]}</h2>
             <ul className="divide-y divide-border border-t border-border">
               {list.map(song => { const title = displaySongTitle(song, locale); const track = TRACKS.find(t => t.youtubeId === song.youtubeId); return <li key={song.slug}>
-                {song.available ? <details id={song.slug} className="group">
+                {song.available ? <details id={song.slug} className="group scroll-mt-36 sm:scroll-mt-40">
                   <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 [&::-webkit-details-marker]:hidden">
                     <span className="min-w-0"><span className="block text-base text-fg">{title}</span>{title !== song.title && <span className="block text-xs text-muted" lang={song.lang}>{song.title}</span>}</span>
                     <span className="shrink-0 text-xs text-accent">{ready} <span aria-hidden="true" className="inline-block group-open:rotate-180">⌄</span></span>
