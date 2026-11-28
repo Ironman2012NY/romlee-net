@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+    "slug": "gwiazdka-z-nieba",
+    "title": "Gwiazdka z nieba",
+    "lang": "pl",
+    "youtubeId": "2BuIXXIyvfs",
+    "text": "Po ulicach idą pary,\nKażda własny niesie świat.\nA ja liczę moje kroki,\nTak stracilem kilka lat.\nW ich spojrzeniach tyle słońca,\nW moich ciągle pada deszcz.\nWśród tysiąca obcych twarzy\nTylko Ciebie szukam wciąż.\n\nGdybym tylko, tylko mógł,\nDałbym Tobie gwiazdkę z nieba.\nDalbym Tobie ją na dłoni,\nAle Gwiazd Tobie nie potzeba\nDałbym serce, dałbym sny,\nWszystkie noce, wszystkie dni.\nAle dla wariata\nNie ma miejsca w myslach twych\n\nIdę nocą brzegiem morza,\nFala ściera z piasku ślad.\nPiszę Twoje imię w ciszy,\nWiatr je niesie w obcy świat.\nPytam morze, czemu miłość\nCzasem nie chce wracać już.\nOno tylko szumi cicho,\nJakby znało każdy ból.\n\nGdybym tylko, tylko mógł,\nDałbym Tobie gwiazdkę z nieba.\nDalbym Tobie ją na dłoni,\nAle Gwiazd Tobie nie potzeba\nDałbym serce, dałbym sny,\nWszystkie noce, wszystkie dni.\nAle dla wariata\nNie ma miejsca w myslach twych\n\nWszyscy wokół mają kogoś,\nKomu mogą oddać dzień.\nJa mam tylko Twoje zdjęcie\nI wspomnienie tamtych miejsc.\nNie rozumiem, czemu serce\nWciąż wybiera właśnie Cię.\nSkoro wiesz, jak bardzo cie kocham,\nCzemu nie pokochasz mnie?\n\nGdybym tylko, tylko mógł,\nDałbym Tobie gwiazdkę z nieba.\nDalbym Tobie ją na dłoni,\nAle Gwiazd Tobie nie potzeba\nDałbym serce, dałbym sny,\nWszystkie noce, wszystkie dni.\nAle dla wariata\nNie ma miejsca w myslach twych\n\nMoże kiedyś przyjdzie ranek,\nKiedy nie zaboli nic.\nKtoś mnie weźmie za tę rękę,\nKtóra teraz pusta jest\nMoże kiedy tez zrozumiesz\nCo stracilas w zyciu swym\nA to co ty wybralas\nNie przyniesie szczęscia Ci\n\nGdybym tylko, tylko mógł,\nDałbym Tobie gwiazdkę z nieba.\nDalbym Tobie ją na dłoni,\nAle Gwiazd Tobie nie potzeba\nDałbym serce, dałbym sny,\nWszystkie noce, wszystkie dni.\nAle dla wariata\nNie ma miejsca w myslach twych\n\nGdybym tylko, tylko mógł…\nDałbym Tobie gwiazdkę z nieba.\nLecz już wiem, że nawet gwiazda\nNie zastąpi słowa \"kocham cie \"."
+  },
+  {
     "slug": "corka",
     "title": "Córka",
     "lang": "pl",
