@@ -11,10 +11,9 @@ type Props = {
   title: string;
   views?: number;
   short?: boolean;
-  autoPlay?: boolean;
 };
 
-export function YoutubeEmbed({ videoId, title, views, short, autoPlay = false }: Props) {
+export function YoutubeEmbed({ videoId, title, views, short }: Props) {
   const hydrated = useHydrated();
   const locale = useLocale(state => state.locale);
   const youtube = useConsent((s) => s.youtube);
@@ -22,8 +21,8 @@ export function YoutubeEmbed({ videoId, title, views, short, autoPlay = false }:
   const copy = useT();
   const poster = coverForYoutubeId(videoId);
   const local = localVideoForYoutubeId(videoId);
-  const vertical = Boolean(short || local);
-  const frame = vertical ? "aspect-[9/16] max-h-[32rem] mx-auto" : "aspect-video";
+  const vertical = short ?? Boolean(local);
+  const frame = vertical ? "mx-auto aspect-[9/16] w-full max-w-72 bg-black" : "aspect-video w-full bg-black";
 
   if (local) {
     return (
@@ -32,7 +31,6 @@ export function YoutubeEmbed({ videoId, title, views, short, autoPlay = false }:
           <video
             src={local}
             poster={poster}
-            autoPlay={autoPlay}
             controls
             playsInline
             preload="metadata"
@@ -81,9 +79,9 @@ export function YoutubeEmbed({ videoId, title, views, short, autoPlay = false }:
     <div className="overflow-hidden rounded-xl border border-border bg-surface">
       <div className={frame}>
         <iframe
-          src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0&playsinline=1&hl=${locale}&autoplay=${autoPlay ? 1 : 0}`}
+          src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0&playsinline=1&hl=${locale}`}
           title={title}
-          className="size-full"
+          className="block size-full"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
           loading="lazy"
