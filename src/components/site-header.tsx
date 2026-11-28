@@ -5,6 +5,17 @@ import { LangSwitch, useT } from "@/components/lang-switch";
 import { useLocale } from "@/lib/locale";
 import { cn } from "@/lib/utils";
 
+const artistAlias = {
+  en: "also known as Leszek", de: "auch bekannt als Leszek", pl: SITE.alsoAs,
+  es: "también conocido como Leszek", fr: "également connu sous le nom de Leszek",
+  it: "noto anche come Leszek", pt: "também conhecido como Leszek",
+  no: "også kjent som Leszek", tr: "Leszek olarak da bilinir",
+  ru: "также известен как Лешек", uk: "також відомий як Лешек",
+  ar: "يُعرف أيضًا باسم ليشيك", he: "מוכר גם בשם לשק", hi: "लेशेक के नाम से भी जाने जाते हैं",
+  th: "รู้จักกันในชื่อ Leszek", zh: "也叫 Leszek", ja: "別名 Leszek",
+  ko: "다른 이름은 Leszek", id: "juga dikenal sebagai Leszek",
+};
+
 export function SiteHeader({ solid = false }: { solid?: boolean }) {
   const copy = useT();
   const locale = useLocale((s) => s.locale);
@@ -32,7 +43,7 @@ export function SiteHeader({ solid = false }: { solid?: boolean }) {
               <span className="block font-display text-xl tracking-tight text-fg sm:text-2xl">
                 {SITE.name}
               </span>
-              <span className="block text-[11px] text-subtle">({SITE.alsoAs})</span>
+              <span className="block text-[11px] text-subtle">({artistAlias[locale]})</span>
             </span>
           </Link>
           <LangSwitch />
