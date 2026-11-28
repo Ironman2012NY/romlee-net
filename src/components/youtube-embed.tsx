@@ -1,5 +1,6 @@
 import { Play } from "lucide-react";
 import { useConsent } from "@/lib/consent";
+import { useLocale } from "@/lib/locale";
 import { useHydrated } from "@/lib/use-hydrated";
 import { formatViews } from "@/lib/utils";
 import { useT } from "@/components/lang-switch";
@@ -10,10 +11,12 @@ type Props = {
   title: string;
   views?: number;
   short?: boolean;
+  autoPlay?: boolean;
 };
 
-export function YoutubeEmbed({ videoId, title, views, short }: Props) {
+export function YoutubeEmbed({ videoId, title, views, short, autoPlay = false }: Props) {
   const hydrated = useHydrated();
+  const locale = useLocale(state => state.locale);
   const youtube = useConsent((s) => s.youtube);
   const acceptAll = useConsent((s) => s.acceptAll);
   const copy = useT();
@@ -29,10 +32,11 @@ export function YoutubeEmbed({ videoId, title, views, short }: Props) {
           <video
             src={local}
             poster={poster}
+            autoPlay={autoPlay}
             controls
             playsInline
             preload="metadata"
-            className="size-full object-cover"
+            className="size-full bg-black object-contain"
             title={title}
           />
         </div>
@@ -77,7 +81,7 @@ export function YoutubeEmbed({ videoId, title, views, short }: Props) {
     <div className="overflow-hidden rounded-xl border border-border bg-surface">
       <div className={frame}>
         <iframe
-          src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0`}
+          src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0&playsinline=1&hl=${locale}&autoplay=${autoPlay ? 1 : 0}`}
           title={title}
           className="size-full"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
