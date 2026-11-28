@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+    "slug": "corka",
+    "title": "Córka",
+    "lang": "pl",
+    "youtubeId": "a16PCeDdBj4",
+    "text": "Przyszłaś na świat w środku nocy,\nOczy miałaś tak ogromne.\nA ja pierwszy ujrzałem cię.\nW twoich oczach wszechświat,\nPoza nimi nie widziałem nic.\nPrzyszłaś, żeby zostać,\nWziąłem cię w me ramiona,\nA ty, A ty patrzyłaś tylko na mnie.\nJakbyś od dawna już wiedziała,\nŻe przy mnie nic ci się nie stanie.\nDziękuję Bogu, że przyszłaś.\nJesteś tą, o której marzyłem,\nMalutka jak promyczek\nPrawie kropelka rosy\nA już rozjaśniasz mój świat.\nA mi sie serce prawie topi\n\nCórko ukochana, płakałem, tuląc cię,\nTak mocno, zeby trzymać ten czas.\nMama jeszcze spała, nie widziała cię,\nA ja w ramionach miałem cały świat.\nPrzyszłaś, żeby zostać,\nCórko ukochana, płakałem, tuląc cię,\nTak mocno, zeby trzymać ten czas.\nMama jeszcze spała, nie widziała cię,\nA ja w ramionach miałem cały świat.\nPrzyszłaś, żeby zostać,\n\nLeżałaś zawsze na moim brzuchu,\nA ja stroiłem śmieszne miny.\nCiągnęłaś mnie za nos, bo duży był\nI znów żeśmy się śmiali\nBo ty byłaś słońcem tym\nWesoła i i cudna\nI rosłaś tak bez końca\nZawsze z uśmiechem na ustach\nGdy sadzałem cię na rower,\ntwoja radość nie miała końca.\nA na nartach były duże łzy,\nLecz gdy w wodzie byłem rekinem,\nPiszczałaś, trzymając się mnie.\nBo woda to twój raj\nRobiłem dla ciebie głupoty,\nBy znów usłyszeć twój śmiech.\n\nCórko ukochana, płakałem, tuląc cię,\ntak mocno, zeby trzymać ten czas.\nMama jeszcze spała, nie widziała cię,\nA ja w ramionach miałem cały świat.\nPrzyszłaś, żeby zostać,\nCórko ukochana, płakałem, tuląc cię,\nTak mocno, zeby trzymać ten czas.\nMama jeszcze spała, nie widziała cię,\nA ja w ramionach miałem cały świat.\nPrzyszłaś, żeby zostać,"
+  },
+  {
     "slug": "lato-jest-raj-wersja-taneczna",
     "title": "Lato to raj (Wersja taneczna)",
     "lang": "pl",
