@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+    "slug": "tu-sabes-amar-feat-marga-nicolau",
+    "title": "Tú sabes amar (feat. Marga Nicolau)",
+    "lang": "es",
+    "youtubeId": "8lwKk-_sjXo",
+    "text": "Nadie me ha besado así\nComo me besas tú\nNadie me ha abrazado así\nComo me abrazas tú\nNadie me ha dado calor\nCuando siento frío\nSolo tú\nSolo tú\n\nNadie ve mis lágrimas\nCuando mi alma llora\nNadie me levanta como tú\nCuando todo está al revés\nNadie mira tan profundo\nQue ya no sé qué decir\nSolo tú\nSolo tú\n\nTú sabes amar\nSin pensar nunca en ti\nEres mi alegría\nCuando mi alma llora en silencio\nEres el oro que llevo\nEn mi corazón, en mi corazón\n\nTú sabes amar\nSin pensar nunca en ti\nEres mi alegría\nCuando mi alma llora en silencio\nEres el oro que llevo\nEn mi corazón, en mi corazón\nEstrofa dos\nMe alegra cada instante\nQue nos espera\n\nCada día espero con ilusión\nTus miles de besos\nTodos esos milagros\nQue solo vemos tú y yo\nY solo tú\nY solo tu\n\nTú sabes amar\nSin pensar nunca en ti\nEres mi alegría\nCuando mi alma llora en silencio\nEres el oro que llevo\nEn mi corazón, en mi corazón\n\nTú sabes amar\nSin pensar nunca en ti\nEres mi alegría\nCuando mi alma llora en silencio\nEres el oro que llevo\nEn mi corazón, en mi corazón\nEstrofa tres\nEres el oro que llevo\nEres la luz cuando el mundo tiembla\nEres la luz\nCuando llega la noche\nTú eres la persona más hermosa\nTú eres la persona más hermosa."
+  },
+  {
     "slug": "navidad-somos-angeles",
     "title": "Navidad – Somos Ángeles",
     "lang": "es",
