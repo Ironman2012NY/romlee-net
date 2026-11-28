@@ -2,6 +2,13 @@ import type { SongText } from "./lyrics";
 
 export const ORIGINAL_LYRICS: SongText[] = [
   {
+    "slug": "weihnachten-wir-sind-die-engel",
+    "title": "We Are the Angels",
+    "lang": "en",
+    "youtubeId": "sqXEEGy_UdI",
+    "text": "We have all been on the road\nThis year was full of trouble\nSo many days, so many storms\nSo many miles behind us\n\nNow on Christmas we come home\nNow we finally come together\nFrom every corner of the world\nWe gather here for Christmas\n\nYou live now in Australia\nYou live last time in Dubai\nMy son, you come from Bochum\nAnd I come from Mallorca\n\nNow at last we meet again\nNow at last we see each other\nChristmas brings us back together\nChristmas brings us home\n\nChristmas is here for all\nEven the angels are singing\nIn the night we see them all\nAnd we are the Angels of course\n\nChristmas Time is time for love\nNow is time to live in peace\nStand together, sing together\nAnd see the Angels in your face\n\nChristmas is here for all\nChristmas is here for us\nAfter all the roads we travelled\nWe are Christmas now at home\n\nMy daughter, now your children\nAre finally walking on their own\nThey laugh, they grow, they run around\nAnd that is beautiful to see\n\nOur friends are all healthy\nAnd for that we give our thanks\nHealth is more than we can ask for\nHealth is the best gift of life\n\nMy son, you found your wife\nYou found your love at last\nAfter such a long, long time\nYou are happy, and that is good\n\nChristmas is here for all\nEven the angels are singing\nIn the night we see them all\nAnd we are the Angels of course\n\nChristmas Time is time for love\nNow is time to live in peace\nStand together, sing together\nAnd see the Angels in your face\n\nChristmas is here for all\nChristmas is here for us\nAfter all the roads we travelled\nWe are Christmas now at home\n\nI hope we learn to stay humble\nI hope we learn to stay kind\nEven when we sing with angels\nWe are only human hearts\n\nThis time should be for everyone\nFor every life, for every soul\nOther faiths have other seasons\nBut the language of love is one\n\nThen we hope that war will fade\nThen we hope that evil leaves\nThen we hope the world remembers\nWhat this time is meant to be\nFinal Chorus\nChristmas is here for all\nEven the angels are singing\nIn the night we see them all\nAnd we are the Angels of course\n\nChristmas Time is time for love\nNow is time to live in peace\nStand together, sing together\nAnd see the Angels in your face\n\nChristmas is here for all\nChristmas is here for us\nAfter all the roads we travelled\nWe are Christmas now at home"
+  },
+  {
     "slug": "water-keep-it-for-tomorrow",
     "title": "Water (Keep It for Tomorrow)",
     "lang": "en",
